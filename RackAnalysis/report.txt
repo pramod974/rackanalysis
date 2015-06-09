@@ -1,0 +1,61 @@
+Execution Started
+****************************************************************************************************
+---------------------------------------------------------------------------------------------------
+Supplier: Exxon 	 Account type: MANSFIELD OIL COMPANY OF 106305 IW 	
+ product name: ULSD 	 Terminal name: LOCKPORT IL (MOC) - 00MD
+--------------------------------- 	 Period: daily ------------------------------------------------
+***************************************Missing Values***************************************************
+	 	 	 All days of month have the period: daily
+****************************************************************************************************
+****************************************Miscellaneous Inferences*****************************************
+Number of Lifted gallons greater than beginning gallons :  10
+Number of Remaining gallons less than zero  10
+Number of additional_gallons_allowed zero  8
+Number of additional_gallons_remaining less than or equal to zero  8
+===================================================================================================
+--------------------------------- 	 Period: weekly ------------------------------------------------
+***************************************Missing Values***************************************************
+	 	 	Total periods Missing for period weekly 18
+****************************************************************************************************
+****************************************Miscellaneous Inferences*****************************************
+===================================================================================================
+--------------------------------- 	 Period: monthly ------------------------------------------------
+***************************************Missing Values***************************************************
+	 	 	Total periods Missing for period monthly 18
+****************************************************************************************************
+****************************************Miscellaneous Inferences*****************************************
+=========================================Contradiction=============================================
+
+
+******** Cumulative Daily Lifted and Lifed Gallons Monthly********
+
+Number of Errors where lifted_Monthly != cum_lifted_daily :  31
+
+
+******** Cumulative Daily Lifted per Week and Lifed Gallons Weekly********
+
+Number of rows where lifted_weekly == cum_lifted_daily_perWeek   :  2
+Number of Errors where lifted_weekly != cum_lifted_daily_perWeek :  29
+
+====================================Consistency of Next_Refresh_Date================================
+0                     18
+05/14 00:00:00 CDT     7
+05/07 00:00:00 CDT     6
+dtype: int64
+======================================Trend In Percentage Allocation================================
+Percentage allocation Daily Mean 96.6129032258
+Percentage allocation Monthly Mean 41.935483871
+Percentage allocation Weekly Mean 58.7096774194
+Percentage allocation Daily Min:  50  max: 150
+Percentage allocation Monthly Min 0  max: 100
+Percentage allocation Weekly Min 0  max: 140
+count     31.000000
+mean      96.612903
+std       45.941758
+min       50.000000
+25%       50.000000
+50%      100.000000
+75%      150.000000
+max      150.000000
+Name: percentage_allocation, dtype: float64
+---------------------------------------------------------------------------------------------------
