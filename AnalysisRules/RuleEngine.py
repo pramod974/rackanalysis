@@ -1,6 +1,4 @@
 __author__ = 'pramod.kumar'
-__author__ = 'pramod.kumar'
-__author__ = 'pramod.kumar'
 import pandas as pd
 import calendar
 import datetime
