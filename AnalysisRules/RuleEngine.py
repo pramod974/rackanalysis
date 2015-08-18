@@ -8,7 +8,7 @@ class rules:
 
     def __init__(self,details):
         errors={}
-        self.filename=""
+        self.fileName=""
         self.savepath=r"C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules"+"\\"
         self.customer=details[0]
         self.supplier=details[1]
@@ -72,18 +72,66 @@ class rules:
                     validLiftedGallons=df2.loc[df2["WeeksByLiftedGallons"]==key,"lifted_gallons_modified_WeeksByLiftedGallons"].cumsum()==df2.loc[df2["WeeksByLiftedGallons"]==key,"('lifted_gallons', 'Weekly')"]
                     df2.loc[df2["WeeksByLiftedGallons"]==key,"sanityWeekly_CumulativeDaily_WeeksByLiftedGallons"]=validLiftedGallons
         except Exception as e:
-            print e
+            savepath=self.savepath+"\\"+self.supplier+"\\"+self.month
+            file=open(savepath+"\\"+self.fileName+".txt","w")
+            file.write("Exception in Combination:"+"\ncustomer : "+self.customer+"\nSupplier : "+self.supplier+"\nAccount : "+self.account+"\nTerminal: "+self.terminal+"\nProduct : "+self.product+"\nException : "+str(e))
+            file.close()
+            print "Exception in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product,e
+            return 0
+    def verifyWeekByNRD(self,df2):
+        try:
+            df2.insert(df2.keys().get_loc("Modified_NRD"),"Week_switch","Unknown")
+            count=1
+            #Compute Lifted Gallons
+            df2.insert(df2.keys().get_loc("('lifted_gallons', 'Daily')"),"lifted_gallons_modified_NextRefreshDate",df2["('lifted_gallons', 'Daily')"].values)
+            df2.insert(df2.keys().get_loc("lifted_gallons_modified_NextRefreshDate"),"Modified_LGD_NextRefreshDate",0)
+            grpNRD=df2.groupby(["('next_refresh_date', 'Weekly')"])["('lifted_gallons', 'Weekly')","('lifted_gallons', 'Daily')"]
+            df2["sanityWeekly_CumulativeDaily_NextRefreshDate"]=0
+            for key,grp in grpNRD:
+                # print key
+                df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"Week_switch"]="w"+str(count)
+                count=count+1
+                for i in range(1,len(grp)):
+                    if i!=0:
+                        if grp.ix[i-1]["('lifted_gallons', 'Weekly')"] != 0 and grp.ix[i]["('lifted_gallons', 'Weekly')"] != 0:
+                            if df2.loc[str(grp.ix[i]['date']),"('lifted_gallons', 'Daily')"] != (grp.ix[i]["('lifted_gallons', 'Weekly')"]-grp.ix[i-1]["('lifted_gallons', 'Weekly')"]):
+                                df2.loc[str(grp.ix[i]['date']),"lifted_gallons_modified_NextRefreshDate"]=grp.ix[i]["('lifted_gallons', 'Weekly')"]-grp.ix[i-1]["('lifted_gallons', 'Weekly')"]
+                                df2.loc[str(grp.ix[i]['date']),"Modified_LGD_NextRefreshDate"]=1
+                                # print i,grp.ix[i+1]["('lifted_gallons', 'Weekly')"]-grp.ix[i]["('lifted_gallons', 'Weekly'
+                        else:
+                            print "No Data To Fill"
+                    else:
+                        if df2.loc[str(grp.ix[i]['date']),"('lifted_gallons', 'Daily')"] != grp.ix[i]["('lifted_gallons', 'Weekly')"]:
+                            df2.loc[str(grp.ix[i]['date']),"lifted_gallons_modified_NextRefreshDate"]= grp.ix[i]["('lifted_gallons', 'Weekly')"]
+                            df2.loc[str(grp.ix[i]['date']),"Modified_LGD_NextRefreshDate"]=1
+                if df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"lifted_gallons_modified_NextRefreshDate"].cumsum()[-1]==df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"('lifted_gallons', 'Weekly')"][-1]:
+                    print "Modification_Successful"
+                else:
+                    print "Modification_UnSuccessful"
+                validLiftedGallons=df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"lifted_gallons_modified_NextRefreshDate"].cumsum()==df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"('lifted_gallons', 'Weekly')"]
+                df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"sanityWeekly_CumulativeDaily_NextRefreshDate"]=validLiftedGallons
+        except Exception as e:
+            savepath=self.savepath+"\\"+self.supplier+"\\"+self.month
+            file=open(savepath+"\\"+self.fileName+".txt","w")
+            file.write("Exception in verifyWeekByNRD for Combination:"+"\ncustomer : "+self.customer+"\nSupplier : "+self.supplier+"\nAccount : "+self.account+"\nTerminal: "+self.terminal+"\nProduct : "+self.product+"\nException : "+str(e))
+            file.close()
+            print "Exception in verifyWeekByNRD in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product,e
+            return 0
+    def get_filename(self):
+            fileName=self.account.replace(' ','').replace(':','')+"_"+self.terminal.replace(' ','').replace(':','')+"_"+self.product.replace(' ','')
+            fileName=fileName.replace('/','')
+            fileName=fileName.replace('*','')
+            fileName=fileName.replace('>','')
+            fileName=fileName.replace('<','')
+            return fileName
+
     def executeRules(self):
         try:
             print "***** Execution in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product
             savepath=self.savepath+"\\"+self.supplier+"\\"+self.month
             if not os.path.exists(savepath):
                 os.makedirs(savepath)
-            fileName=self.account.replace(' ','').replace(':','')+"_"+self.terminal.replace(' ','').replace(':','')+"_"+self.product.replace(' ','')
-            fileName=fileName.replace('/','')
-            fileName=fileName.replace('*','')
-            fileName=fileName.replace('>','')
-            fileName=fileName.replace('<','')
+            self.fileName=self.get_filename()
             tableName=self.customer+"_"+self.supplier+"_"+self.month
             sql="select * from %s where account_type='%s' and supplier_terminal_name='%s' and product_name='%s';"%(tableName,self.account,self.terminal,self.product)
             db = MySQLdb.connect("172.16.0.55","root","admin123*","rack_analysis")
@@ -99,16 +147,16 @@ class rules:
             findWeeks=dict(df2[u"('next_refresh_date', 'Weekly')"].value_counts())
             if findWeeks.has_key(0):
                 if findWeeks[0]==self.daysInMonth:
-                    file=open(savepath+"\\"+fileName+".txt","w")
-                    file.write("No Weekly Refresh Dates to Compute for combination "+fileName+"....\n Exiting Execution.....")
+                    file=open(savepath+"\\"+self.fileName+".txt","w")
+                    file.write("No Weekly Refresh Dates to Compute for combination "+self.fileName+"....\n Exiting Execution.....")
                     file.close()
                     print "No Weekly Refresh Dates to Compute....\n Exiting Execution....."
                     return 0
             validateLiftedValuesWeekly=dict(df2["('lifted_gallons', 'Weekly')"].value_counts())
             if validateLiftedValuesWeekly.has_key(0):
                 if validateLiftedValuesWeekly[0]==self.daysInMonth:
-                    file=open(savepath+"\\"+fileName+".txt","w")
-                    file.write("No Weekly Lifted gallons to Compute week switches for combination "+fileName+"....\n Exiting Execution.....")
+                    file=open(savepath+"\\"+self.fileName+".txt","w")
+                    file.write("No Weekly Lifted gallons to Compute week switches for combination "+self.fileName+"....\n Exiting Execution.....")
                     file.close()
                     print "No Weekly Lifted gallons to Compute week switches....\n Exiting Execution....."
                     return 0
@@ -154,53 +202,30 @@ class rules:
                         df2.loc[str(dateDetails.replace(day=validDate[0])),'product_name']=df2.loc[str(xcc[validDate[1]]),'product_name']
                         df2.loc[str(dateDetails.replace(day=validDate[0])),"Modified_NRD"]=1
                         # print validDate
-                self.verifyWeekByDailyLiftedValues(df2)
-                #Find Week_Switch
-                df2.insert(df2.keys().get_loc("Modified_NRD"),"Week_switch","Unknown")
-                count=1
-                #Compute Lifted Gallons
-                df2.insert(df2.keys().get_loc("('lifted_gallons', 'Daily')"),"lifted_gallons_modified_NextRefreshDate",df2["('lifted_gallons', 'Daily')"].values)
-                df2.insert(df2.keys().get_loc("lifted_gallons_modified_NextRefreshDate"),"Modified_LGD_NextRefreshDate",0)
-                grpNRD=df2.groupby(["('next_refresh_date', 'Weekly')"])["('lifted_gallons', 'Weekly')","('lifted_gallons', 'Daily')"]
-                df2["sanityWeekly_CumulativeDaily_NextRefreshDate"]=0
-                for key,grp in grpNRD:
-                    # print key
-                    df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"Week_switch"]="w"+str(count)
-                    count=count+1
-                    for i in range(1,len(grp)):
-                        if i!=0:
-                            if grp.ix[i-1]["('lifted_gallons', 'Weekly')"] != 0 and grp.ix[i]["('lifted_gallons', 'Weekly')"] != 0:
-                                if df2.loc[str(grp.ix[i]['date']),"('lifted_gallons', 'Daily')"] != (grp.ix[i]["('lifted_gallons', 'Weekly')"]-grp.ix[i-1]["('lifted_gallons', 'Weekly')"]):
-                                    df2.loc[str(grp.ix[i]['date']),"lifted_gallons_modified_NextRefreshDate"]=grp.ix[i]["('lifted_gallons', 'Weekly')"]-grp.ix[i-1]["('lifted_gallons', 'Weekly')"]
-                                    df2.loc[str(grp.ix[i]['date']),"Modified_LGD_NextRefreshDate"]=1
-                                    # print i,grp.ix[i+1]["('lifted_gallons', 'Weekly')"]-grp.ix[i]["('lifted_gallons', 'Weekly'
-                            else:
-                                print "No Data To Fill"
-                        else:
-                            if df2.loc[str(grp.ix[i]['date']),"('lifted_gallons', 'Daily')"] != grp.ix[i]["('lifted_gallons', 'Weekly')"]:
-                                df2.loc[str(grp.ix[i]['date']),"lifted_gallons_modified_NextRefreshDate"]= grp.ix[i]["('lifted_gallons', 'Weekly')"]
-                                df2.loc[str(grp.ix[i]['date']),"Modified_LGD_NextRefreshDate"]=1
-                    if df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"lifted_gallons_modified_NextRefreshDate"].cumsum()[-1]==df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"('lifted_gallons', 'Weekly')"][-1]:
-                        print "Modification_Successful"
-                    else:
-                        print "Modification_UnSuccessful"
-                    validLiftedGallons=df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"lifted_gallons_modified_NextRefreshDate"].cumsum()==df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"('lifted_gallons', 'Weekly')"]
-                    df2.loc[df2["('next_refresh_date', 'Weekly')"]==key,"sanityWeekly_CumulativeDaily_NextRefreshDate"]=validLiftedGallons
-                # fileName=self.account.replace(' ','').replace(':','')+"_"+self.terminal.replace(' ','').replace(':','')+"_"+self.product.replace(' ','')
-                # if not os.path.exists(savepath):
-                #     os.makedirs(savepath)
+                #Find Week_Switch_by weekly values
+                stat=self.verifyWeekByDailyLiftedValues(df2)
+                if stat:
+                    return 0
+                #Find Week_Switch_verify LG by NRD
+                stat=self.verifyWeekByNRD(df2)
+                if stat:
+                    return 0
                 if "('lifted_gallons', 'Monthly')" in df2.keys():
                     df2["sanityMonthly_CumulativeDaily_WeeksByLiftedGallons"]=0
                     df2.loc[df2.loc[:,"lifted_gallons_modified_WeeksByLiftedGallons"].cumsum()==df2.loc[:,"('lifted_gallons', 'Monthly')"],"sanityMonthly_CumulativeDaily_WeeksByLiftedGallons"]=1
                     df2["sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate"]=0
                     df2.loc[df2.loc[:,"lifted_gallons_modified_NextRefreshDate"].cumsum()==df2.loc[:,"('lifted_gallons', 'Monthly')"],"sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate"]=1
-                df2.to_excel(savepath+"\\"+fileName+".xls")
+                df2.to_excel(savepath+"\\"+self.fileName+".xls")
                 db.close()
                 return df2
             else:
                 print "All next refresh Dates Valid"
         except Exception as e:
+            file=open(savepath+"\\"+self.fileName+".txt","w")
+            file.write("Exception in Combination:"+"\ncustomer : "+self.customer+"\nSupplier : "+self.supplier+"\nAccount : "+self.account+"\nTerminal: "+self.terminal+"\nProduct : "+self.product+"\nException : "+str(e))
+            file.close()
             print "Exception in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product,e
+            return 0
 
 
 class ruleEngine:
@@ -224,10 +249,11 @@ class ruleEngine:
        except Exception as e:
            db.close()
            print e
-    def runRules(self):
+    def runRules(self,suppliersCombinations=[]):
         try:
-            suppliers=self.fetchSupplier()
-            for supplierInfo in suppliers:
+            if suppliersCombinations==[]:
+                suppliersCombinations=self.fetchSupplier()
+            for supplierInfo in suppliersCombinations:
                 details=[self.customer,self.supplier,supplierInfo[0],supplierInfo[1],supplierInfo[2],self.month,self.analysisDate]
                 supplierRule=rules(details)
                 frame=supplierRule.executeRules()
@@ -235,13 +261,13 @@ class ruleEngine:
                     self.frames.append(frame)
             result=pd.concat(self.frames)
             db = MySQLdb.connect("172.16.0.55","root","admin123*","rack_analysis")
-            result.to_sql(name=self.customer+"_"+self.supplier+"_reconsiled",con=db,flavor='mysql', if_exists='append')
+            result.to_sql(name=self.customer+"_"+self.supplier+"_reconsiled",con=db,flavor='mysql', if_exists='replace')
             db.close()
             result.to_excel(self.supplier+"_reconsiled.xls")
         except Exception as e:
             print e
 # 'BP','Holly','Chevron','Exxon','Valero','P66','Tesoro'
-suppliers=['BP','Holly']
+suppliers=['Chevron']
 for i in suppliers:
     detailedList=["pilot",i,"june",'01-06-2015']
     executeEngine=ruleEngine(detailedList)
