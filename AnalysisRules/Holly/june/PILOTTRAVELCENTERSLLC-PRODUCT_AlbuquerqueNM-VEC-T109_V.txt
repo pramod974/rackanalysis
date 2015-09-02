@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : Holly
+Account : PILOT TRAVEL CENTERS LLC - PRODUCT
+Terminal: Albuquerque NM - VEC - T109
+Product : V
+Exception : can't compare datetime.datetime to int

@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : P66
+Account : PILOT TRAVEL CENTERS LLC-10024029BR
+Terminal: SCOTT CITY MO TEP - 03L7
+Product : GASOLINE
+Exception : index 3 is out of bounds for axis 0 with size 3

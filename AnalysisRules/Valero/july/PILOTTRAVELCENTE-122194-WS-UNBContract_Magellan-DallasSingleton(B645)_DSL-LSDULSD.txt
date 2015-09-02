@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : Valero
+Account : PILOT TRAVEL CENTE-122194-W/S - UNB Contract
+Terminal: Magellan - Dallas/Singleton (B645)
+Product : DSL - LSD/ULSD
+Exception : can't compare datetime.datetime to int

@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : P66
+Account : PILOT TRAVEL CENTERS LLC-10024029UB
+Terminal: AMARILLO TX VAL - A3CE
+Product : DISTILLATES
+Exception : can't compare datetime.datetime to int

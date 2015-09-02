@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : Tesoro
+Account : HIGH VOLUME TRUCK STOP
+Terminal: NuStar Moorhead MN
+Product : NGP ULSD #2
+Exception : can't compare datetime.datetime to int

@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : Exxon
+Account : PILOT TRAVEL CENTERS LLC 103637 IW
+Terminal: MEMPHIS TN (MOC) - 00QE
+Product : Prem CBOB<9
+Exception : can't compare datetime.datetime to int

@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : Tesoro
+Account : HIGH VOLUME TRUCK STOP
+Terminal: CA - SAN JOSE ALL TERMINALS
+Product : CA Mid & Pre Oxy Gasoline
+Exception : can't compare datetime.datetime to int

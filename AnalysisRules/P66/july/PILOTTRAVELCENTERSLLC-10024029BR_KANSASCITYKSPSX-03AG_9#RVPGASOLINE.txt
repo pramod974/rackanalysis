@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : P66
+Account : PILOT TRAVEL CENTERS LLC-10024029BR
+Terminal: KANSAS CITY KS PSX - 03AG
+Product : 9# RVP GASOLINE
+Exception : can't compare datetime.datetime to int

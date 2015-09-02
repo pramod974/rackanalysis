@@ -1,0 +1,937 @@
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Albuquerque NM - VEC - T109 ALB GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Albuquerque NM - VEC - T109 V
+2015-07-01 00:00:00 1
+2015-07-02 00:00:00 1
+2015-07-03 00:00:00 1
+2015-07-04 00:00:00 1
+2015-07-05 00:00:00 1
+2015-07-06 00:00:00 1
+[Timestamp('2015-07-01 00:00:00', offset='D'), Timestamp('2015-07-02 00:00:00', offset='D'), Timestamp('2015-07-03 00:00:00', offset='D'), Timestamp('2015-07-04 00:00:00', offset='D'), Timestamp('2015-07-05 00:00:00', offset='D'), Timestamp('2015-07-06 00:00:00', offset='D')]
+2015-07-07 00:00:00 2
+2015-07-08 00:00:00 2
+[Timestamp('2015-07-07 00:00:00', offset='D'), Timestamp('2015-07-08 00:00:00', offset='D')]
+2015-07-09 00:00:00 3
+2015-07-10 00:00:00 3
+2015-07-11 00:00:00 3
+2015-07-12 00:00:00 3
+2015-07-13 00:00:00 3
+[Timestamp('2015-07-09 00:00:00', offset='D'), Timestamp('2015-07-10 00:00:00', offset='D'), Timestamp('2015-07-11 00:00:00', offset='D'), Timestamp('2015-07-12 00:00:00', offset='D'), Timestamp('2015-07-13 00:00:00', offset='D')]
+2015-07-14 00:00:00 4
+2015-07-15 00:00:00 4
+2015-07-16 00:00:00 4
+2015-07-17 00:00:00 4
+2015-07-18 00:00:00 4
+2015-07-19 00:00:00 4
+2015-07-20 00:00:00 4
+[Timestamp('2015-07-14 00:00:00', offset='D'), Timestamp('2015-07-15 00:00:00', offset='D'), Timestamp('2015-07-16 00:00:00', offset='D'), Timestamp('2015-07-17 00:00:00', offset='D'), Timestamp('2015-07-18 00:00:00', offset='D'), Timestamp('2015-07-19 00:00:00', offset='D'), Timestamp('2015-07-20 00:00:00', offset='D')]
+2015-07-21 00:00:00 5
+2015-07-22 00:00:00 5
+2015-07-23 00:00:00 5
+2015-07-24 00:00:00 5
+2015-07-25 00:00:00 5
+2015-07-26 00:00:00 5
+2015-07-27 00:00:00 5
+[Timestamp('2015-07-21 00:00:00', offset='D'), Timestamp('2015-07-22 00:00:00', offset='D'), Timestamp('2015-07-23 00:00:00', offset='D'), Timestamp('2015-07-24 00:00:00', offset='D'), Timestamp('2015-07-25 00:00:00', offset='D'), Timestamp('2015-07-26 00:00:00', offset='D'), Timestamp('2015-07-27 00:00:00', offset='D')]
+2015-07-28 00:00:00 6
+2015-07-29 00:00:00 6
+2015-07-30 00:00:00 6
+2015-07-31 00:00:00 6
+[Timestamp('2015-07-28 00:00:00', offset='D'), Timestamp('2015-07-29 00:00:00', offset='D'), Timestamp('2015-07-30 00:00:00', offset='D'), Timestamp('2015-07-31 00:00:00', offset='D')]
+2015-07-01    w1
+2015-07-02    w1
+2015-07-03    w1
+2015-07-04    w1
+2015-07-05    w1
+2015-07-06    w1
+2015-07-07    w2
+2015-07-08    w2
+2015-07-09    w3
+2015-07-10    w3
+2015-07-11    w3
+2015-07-12    w3
+2015-07-13    w3
+2015-07-14    w4
+2015-07-15    w4
+2015-07-16    w4
+2015-07-17    w4
+2015-07-18    w4
+2015-07-19    w4
+2015-07-20    w4
+2015-07-21    w5
+2015-07-22    w5
+2015-07-23    w5
+2015-07-24    w5
+2015-07-25    w5
+2015-07-26    w5
+2015-07-27    w5
+2015-07-28    w6
+2015-07-29    w6
+2015-07-30    w6
+2015-07-31    w6
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-01                   w1                            0   
+2015-07-02                   w1                            0   
+2015-07-03                   w1                            0   
+2015-07-04                   w1                            0   
+2015-07-05                   w1                            0   
+2015-07-06                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                             0  
+2015-07-02                             0  
+2015-07-03                             0  
+2015-07-04                          7504  
+2015-07-05                         15204  
+2015-07-06                         22904  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-07                   w2                         7700   
+2015-07-08                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-07                          7700  
+2015-07-08                          7700  
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-09                   w3                            0   
+2015-07-10                   w3                         7701   
+2015-07-11                   w3                            0   
+2015-07-12                   w3                         7708   
+2015-07-13                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-09                             0  
+2015-07-10                         30605  
+2015-07-11                         30605  
+2015-07-12                         38313  
+2015-07-13                         38313  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-14                   w4                            0   
+2015-07-15                   w4                         7703   
+2015-07-16                   w4                         7481   
+2015-07-17                   w4                            0   
+2015-07-18                   w4                         7701   
+2015-07-19                   w4                         7702   
+2015-07-20                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-14                             0  
+2015-07-15                          7703  
+2015-07-16                         15184  
+2015-07-17                         15184  
+2015-07-18                         22885  
+2015-07-19                         30587  
+2015-07-20                         30587  
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-21                   w5                            0   
+2015-07-22                   w5                         7701   
+2015-07-23                   w5                         7771   
+2015-07-24                   w5                         7776   
+2015-07-25                   w5                         7699   
+2015-07-26                   w5                            0   
+2015-07-27                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-21                             0  
+2015-07-22                         15403  
+2015-07-23                         23174  
+2015-07-24                         30950  
+2015-07-25                         38649  
+2015-07-26                         38649  
+2015-07-27                         38649  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-28                   w6                         7702   
+2015-07-29                   w6                            0   
+2015-07-30                   w6                         7851   
+2015-07-31                   w6                         7852   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-28                          7702  
+2015-07-29                          7702  
+2015-07-30                         15553  
+2015-07-31                         23405  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-01                      2015-07-07                            0   
+2015-07-02                      2015-07-07                            0   
+2015-07-03                      2015-07-07                            0   
+2015-07-04                      2015-07-07                            0   
+2015-07-05                      2015-07-07                            0   
+2015-07-06                      2015-07-07                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                             0  
+2015-07-02                             0  
+2015-07-03                             0  
+2015-07-04                          7504  
+2015-07-05                         15204  
+2015-07-06                         22904  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-07                      2015-07-14                         7700   
+2015-07-08                      2015-07-14                            0   
+2015-07-09                      2015-07-14                            0   
+2015-07-10                      2015-07-14                         7701   
+2015-07-11                      2015-07-14                            0   
+2015-07-12                      2015-07-14                         7708   
+2015-07-13                      2015-07-14                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-07                          7700  
+2015-07-08                          7700  
+2015-07-09                             0  
+2015-07-10                         30605  
+2015-07-11                         30605  
+2015-07-12                         38313  
+2015-07-13                         38313  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-14                      2015-07-21                            0   
+2015-07-15                      2015-07-21                         7703   
+2015-07-16                      2015-07-21                         7481   
+2015-07-17                      2015-07-21                            0   
+2015-07-18                      2015-07-21                         7701   
+2015-07-19                      2015-07-21                         7702   
+2015-07-20                      2015-07-21                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-14                             0  
+2015-07-15                          7703  
+2015-07-16                         15184  
+2015-07-17                         15184  
+2015-07-18                         22885  
+2015-07-19                         30587  
+2015-07-20                         30587  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-21                      2015-07-28                            0   
+2015-07-22                      2015-07-28                         7701   
+2015-07-23                      2015-07-28                         7771   
+2015-07-24                      2015-07-28                         7776   
+2015-07-25                      2015-07-28                         7699   
+2015-07-26                      2015-07-28                            0   
+2015-07-27                      2015-07-28                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-21                             0  
+2015-07-22                         15403  
+2015-07-23                         23174  
+2015-07-24                         30950  
+2015-07-25                         38649  
+2015-07-26                         38649  
+2015-07-27                         38649  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-28                      2015-08-04                         7702   
+2015-07-29                      2015-08-04                            0   
+2015-07-30                      2015-08-04                         7851   
+2015-07-31                      2015-08-04                         7852   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-28                          7702  
+2015-07-29                          7702  
+2015-07-30                         15553  
+2015-07-31                         23405  
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Artesia NM - HEP - 2000 ARTESIA-GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Artesia NM - HEP - 2000 V
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Bloomfield NM - WRC - T293 BLOOMFIELD-DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Bloomfield NM - WRC - T293 BLOOMFIELD-GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Boise ID - TSO - T144 BOISE CONVENTIONAL GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Boise ID - TSO - T144 BOISE OXY GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Boise ID - TSO - T144 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cedar City UT - HEP - T115 Cedar City Gasolines
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cedar City UT - HEP - T115 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cedar City UT - HEP - T115 V
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cheyenne WY - HEP - 2600 CHEYENNE REFINERY BIO DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cheyenne WY - HEP - 2600 CHEYENNE REFINERY GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cheyenne WY - MAG - T220 CHEYENNE MAGELLAN DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cheyenne WY - MAG - T220 CHEYENNE MAGELLAN GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cheyenne WY - MAG - T220 CHEYENNE MAGELLAN PREMIUM
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Denver CO - MAG - T196 DENVER - AURORA - DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Denver CO - MAG - T196 DENVER - AURORA - GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Denver CO - MAG - T196 DENVER - AURORA - PREMIUM
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Dupont CO - MAG - T221 DUPONT CO DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Dupont CO - MAG - T221 DUPONT GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Dupont CO - MAG - T221 DUPONT PREMIUM GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT El Dorado GAS/DSL NC GROUP DSL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT El Dorado GAS/DSL NC GROUP GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT El Paso TX - HEP - T101 EL PASO-GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT El Paso TX - HEP - T101 V
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT El Paso TX - MAG - T288 EL PASO MAG GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT El Paso TX - MAG - T288 V
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT El Paso TX - WRC - T102 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Fountain CO - MAG - T222 FOUNTAIN DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Fountain CO - MAG - T222 FOUNTAIN GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Fountain CO - MAG - T222 FOUNTAIN PREMIUM GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Las Vegas NV - HEP - T261 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Las Vegas NV - HEP - T261 LV HEP-CONV NL. E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Las Vegas NV - HEP - T261 LV HEP-CONV. P NL E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Magellan GAS/DSL CONT GROUP DSL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Magellan GAS/DSL NC GROUP GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Magellan Minnesota GROUP DSL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Magellan Minnesota GROUP GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Moriarty NM - HEP - T139 MORIARTY DSL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Moriarty NM - HEP - T139 MORIARTY-GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT NuStar Gas/Dsl Cont GROUP DSL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT NuStar Gas/Dsl Cont GROUP Y
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT NuStar Gas/Dsl NC GROUP GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Odessa TX- MAG - T287 ODESSA-DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Pasco WA - TSO - T142 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Pasco WA - TSO - T142 PASCO OXY GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - CAL - T104 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - CAL - T104 PHX CALJET-CBG PREM. PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - CAL - T104 PHX CALJET-CBG PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - CAL - T104 PHX CALJET-CONV NL E-10 PREM PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - CAL - T104 PHX CALJET-CONV NL E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - CAL - T104 V
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - KMO - T103 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - KMO - T103 PHX KM CONV. PREM. E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - KMO - T103 PHX KM-CONV. NL E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - PRO - T114 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Phoenix AZ - PRO - T114 V
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Sidney NE - PLAINSSID (HOLLYFRONTIER) - T218 SIDNEY DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Sidney NE - PLAINSSID (HOLLYFRONTIER) - T218 SIDNEY GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tucson AZ - HEP - T105 TUCSON HEP-CONV NL E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tucson AZ - HEP - T105 TUCSON HEP-CONV PREM NL E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tucson AZ - HEP - T105 V
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tucson AZ - KMO - T107 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tucson AZ - KMO - T107 TUCSON KM CONV NL E-10 PRODUCTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tucson AZ - KMO - T107 TUCSON KM CONV PNL E-10 PRODUCT
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tulsa East GAS/DSL Cont GROUP DSL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tulsa East GAS/DSL NC GROUP GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tulsa Mag GAS/DSL CONT GROUP DSL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Tulsa Mag GAS/DSL NC GROUP GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Woods Cross UT - HEP - 5000 G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Woods Cross UT - HEP - 5000 V
+2015-07-01 00:00:00 1
+2015-07-02 00:00:00 1
+2015-07-03 00:00:00 1
+2015-07-04 00:00:00 1
+[Timestamp('2015-07-01 00:00:00', offset='D'), Timestamp('2015-07-02 00:00:00', offset='D'), Timestamp('2015-07-03 00:00:00', offset='D'), Timestamp('2015-07-04 00:00:00', offset='D')]
+2015-07-05 00:00:00 2
+2015-07-06 00:00:00 2
+2015-07-07 00:00:00 2
+2015-07-08 00:00:00 2
+2015-07-09 00:00:00 2
+2015-07-10 00:00:00 2
+2015-07-11 00:00:00 2
+2015-07-12 00:00:00 2
+2015-07-13 00:00:00 2
+2015-07-14 00:00:00 2
+2015-07-15 00:00:00 2
+2015-07-16 00:00:00 2
+2015-07-17 00:00:00 2
+2015-07-18 00:00:00 2
+2015-07-19 00:00:00 2
+2015-07-20 00:00:00 2
+2015-07-21 00:00:00 2
+2015-07-22 00:00:00 2
+2015-07-23 00:00:00 2
+2015-07-24 00:00:00 2
+2015-07-25 00:00:00 2
+[Timestamp('2015-07-05 00:00:00', offset='D'), Timestamp('2015-07-06 00:00:00', offset='D'), Timestamp('2015-07-07 00:00:00', offset='D'), Timestamp('2015-07-08 00:00:00', offset='D'), Timestamp('2015-07-09 00:00:00', offset='D'), Timestamp('2015-07-10 00:00:00', offset='D'), Timestamp('2015-07-11 00:00:00', offset='D'), Timestamp('2015-07-12 00:00:00', offset='D'), Timestamp('2015-07-13 00:00:00', offset='D'), Timestamp('2015-07-14 00:00:00', offset='D'), Timestamp('2015-07-15 00:00:00', offset='D'), Timestamp('2015-07-16 00:00:00', offset='D'), Timestamp('2015-07-17 00:00:00', offset='D'), Timestamp('2015-07-18 00:00:00', offset='D'), Timestamp('2015-07-19 00:00:00', offset='D'), Timestamp('2015-07-20 00:00:00', offset='D'), Timestamp('2015-07-21 00:00:00', offset='D'), Timestamp('2015-07-22 00:00:00', offset='D'), Timestamp('2015-07-23 00:00:00', offset='D'), Timestamp('2015-07-24 00:00:00', offset='D'), Timestamp('2015-07-25 00:00:00', offset='D')]
+2015-07-26 00:00:00 3
+2015-07-27 00:00:00 3
+2015-07-28 00:00:00 3
+2015-07-29 00:00:00 3
+2015-07-30 00:00:00 3
+2015-07-31 00:00:00 3
+[Timestamp('2015-07-26 00:00:00', offset='D'), Timestamp('2015-07-27 00:00:00', offset='D'), Timestamp('2015-07-28 00:00:00', offset='D'), Timestamp('2015-07-29 00:00:00', offset='D'), Timestamp('2015-07-30 00:00:00', offset='D'), Timestamp('2015-07-31 00:00:00', offset='D')]
+2015-07-01    w1
+2015-07-02    w1
+2015-07-03    w1
+2015-07-04    w1
+2015-07-05    w2
+2015-07-06    w2
+2015-07-07    w2
+2015-07-08    w2
+2015-07-09    w2
+2015-07-10    w2
+2015-07-11    w2
+2015-07-12    w2
+2015-07-13    w2
+2015-07-14    w2
+2015-07-15    w2
+2015-07-16    w2
+2015-07-17    w2
+2015-07-18    w2
+2015-07-19    w2
+2015-07-20    w2
+2015-07-21    w2
+2015-07-22    w2
+2015-07-23    w2
+2015-07-24    w2
+2015-07-25    w2
+2015-07-26    w3
+2015-07-27    w3
+2015-07-28    w3
+2015-07-29    w3
+2015-07-30    w3
+2015-07-31    w3
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-01                   w1                            0   
+2015-07-02                   w1                            0   
+2015-07-03                   w1                            0   
+2015-07-04                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                          3502  
+2015-07-02                          3502  
+2015-07-03                          3502  
+2015-07-04                          3502  
+Modification_Successful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-05                   w2                            0   
+2015-07-06                   w2                            0   
+2015-07-07                   w2                            0   
+2015-07-08                   w2                            0   
+2015-07-09                   w2                            0   
+2015-07-10                   w2                            0   
+2015-07-11                   w2                            0   
+2015-07-12                   w2                            0   
+2015-07-13                   w2                            0   
+2015-07-14                   w2                            0   
+2015-07-15                   w2                            0   
+2015-07-16                   w2                            0   
+2015-07-17                   w2                            0   
+2015-07-18                   w2                            0   
+2015-07-19                   w2                            0   
+2015-07-20                   w2                            0   
+2015-07-21                   w2                            0   
+2015-07-22                   w2                            0   
+2015-07-23                   w2                            0   
+2015-07-24                   w2                         7515   
+2015-07-25                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-05                             0  
+2015-07-06                             0  
+2015-07-07                             0  
+2015-07-08                             0  
+2015-07-09                             0  
+2015-07-10                             0  
+2015-07-11                             0  
+2015-07-12                             0  
+2015-07-13                             0  
+2015-07-14                             0  
+2015-07-15                             0  
+2015-07-16                             0  
+2015-07-17                             0  
+2015-07-18                             0  
+2015-07-19                             0  
+2015-07-20                             0  
+2015-07-21                             0  
+2015-07-22                             0  
+2015-07-23                             0  
+2015-07-24                          7515  
+2015-07-25                          7515  
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-26                   w3                            0   
+2015-07-27                   w3                            0   
+2015-07-28                   w3                            0   
+2015-07-29                   w3                            0   
+2015-07-30                   w3                            0   
+2015-07-31                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-26                             0  
+2015-07-27                             0  
+2015-07-28                             0  
+2015-07-29                             0  
+2015-07-30                             0  
+2015-07-31                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-01                      2015-07-05                            0   
+2015-07-02                      2015-07-05                            0   
+2015-07-03                      2015-07-05                            0   
+2015-07-04                      2015-07-05                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                          3502  
+2015-07-02                          3502  
+2015-07-03                          3502  
+2015-07-04                          3502  
+Modification_Successful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-05                      2015-07-12                            0   
+2015-07-06                      2015-07-12                            0   
+2015-07-07                      2015-07-12                            0   
+2015-07-08                      2015-07-12                            0   
+2015-07-09                      2015-07-12                            0   
+2015-07-10                      2015-07-12                            0   
+2015-07-11                      2015-07-12                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-05                             0  
+2015-07-06                             0  
+2015-07-07                             0  
+2015-07-08                             0  
+2015-07-09                             0  
+2015-07-10                             0  
+2015-07-11                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-12                      2015-07-19                            0   
+2015-07-13                      2015-07-19                            0   
+2015-07-14                      2015-07-19                            0   
+2015-07-15                      2015-07-19                            0   
+2015-07-16                      2015-07-19                            0   
+2015-07-17                      2015-07-19                            0   
+2015-07-18                      2015-07-19                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-12                             0  
+2015-07-13                             0  
+2015-07-14                             0  
+2015-07-15                             0  
+2015-07-16                             0  
+2015-07-17                             0  
+2015-07-18                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-19                      2015-07-26                            0   
+2015-07-20                      2015-07-26                            0   
+2015-07-21                      2015-07-26                            0   
+2015-07-22                      2015-07-26                            0   
+2015-07-23                      2015-07-26                            0   
+2015-07-24                      2015-07-26                         7515   
+2015-07-25                      2015-07-26                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-19                             0  
+2015-07-20                             0  
+2015-07-21                             0  
+2015-07-22                             0  
+2015-07-23                             0  
+2015-07-24                          7515  
+2015-07-25                          7515  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-26                      2015-08-02                            0   
+2015-07-27                      2015-08-02                            0   
+2015-07-28                      2015-08-02                            0   
+2015-07-29                      2015-08-02                            0   
+2015-07-30                      2015-08-02                            0   
+2015-07-31                      2015-08-02                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-26                             0  
+2015-07-27                             0  
+2015-07-28                             0  
+2015-07-29                             0  
+2015-07-30                             0  
+2015-07-31                             0  
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Woods Cross UT - HEP - 5000 WOODS CROSS GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Woods Cross UT - HEP - 5000 Woods Cross Bio Diesel 5%
+2015-07-01 00:00:00 1
+2015-07-02 00:00:00 1
+2015-07-03 00:00:00 1
+2015-07-04 00:00:00 1
+[Timestamp('2015-07-01 00:00:00', offset='D'), Timestamp('2015-07-02 00:00:00', offset='D'), Timestamp('2015-07-03 00:00:00', offset='D'), Timestamp('2015-07-04 00:00:00', offset='D')]
+2015-07-05 00:00:00 2
+2015-07-06 00:00:00 2
+2015-07-07 00:00:00 2
+2015-07-08 00:00:00 2
+2015-07-09 00:00:00 2
+2015-07-10 00:00:00 2
+2015-07-11 00:00:00 2
+2015-07-12 00:00:00 2
+2015-07-13 00:00:00 2
+2015-07-14 00:00:00 2
+2015-07-15 00:00:00 2
+2015-07-16 00:00:00 2
+2015-07-17 00:00:00 2
+2015-07-18 00:00:00 2
+2015-07-19 00:00:00 2
+2015-07-20 00:00:00 2
+2015-07-21 00:00:00 2
+2015-07-22 00:00:00 2
+2015-07-23 00:00:00 2
+2015-07-24 00:00:00 2
+2015-07-25 00:00:00 2
+[Timestamp('2015-07-05 00:00:00', offset='D'), Timestamp('2015-07-06 00:00:00', offset='D'), Timestamp('2015-07-07 00:00:00', offset='D'), Timestamp('2015-07-08 00:00:00', offset='D'), Timestamp('2015-07-09 00:00:00', offset='D'), Timestamp('2015-07-10 00:00:00', offset='D'), Timestamp('2015-07-11 00:00:00', offset='D'), Timestamp('2015-07-12 00:00:00', offset='D'), Timestamp('2015-07-13 00:00:00', offset='D'), Timestamp('2015-07-14 00:00:00', offset='D'), Timestamp('2015-07-15 00:00:00', offset='D'), Timestamp('2015-07-16 00:00:00', offset='D'), Timestamp('2015-07-17 00:00:00', offset='D'), Timestamp('2015-07-18 00:00:00', offset='D'), Timestamp('2015-07-19 00:00:00', offset='D'), Timestamp('2015-07-20 00:00:00', offset='D'), Timestamp('2015-07-21 00:00:00', offset='D'), Timestamp('2015-07-22 00:00:00', offset='D'), Timestamp('2015-07-23 00:00:00', offset='D'), Timestamp('2015-07-24 00:00:00', offset='D'), Timestamp('2015-07-25 00:00:00', offset='D')]
+2015-07-26 00:00:00 3
+2015-07-27 00:00:00 3
+2015-07-28 00:00:00 3
+2015-07-29 00:00:00 3
+2015-07-30 00:00:00 3
+2015-07-31 00:00:00 3
+[Timestamp('2015-07-26 00:00:00', offset='D'), Timestamp('2015-07-27 00:00:00', offset='D'), Timestamp('2015-07-28 00:00:00', offset='D'), Timestamp('2015-07-29 00:00:00', offset='D'), Timestamp('2015-07-30 00:00:00', offset='D'), Timestamp('2015-07-31 00:00:00', offset='D')]
+2015-07-01    w1
+2015-07-02    w1
+2015-07-03    w1
+2015-07-04    w1
+2015-07-05    w2
+2015-07-06    w2
+2015-07-07    w2
+2015-07-08    w2
+2015-07-09    w2
+2015-07-10    w2
+2015-07-11    w2
+2015-07-12    w2
+2015-07-13    w2
+2015-07-14    w2
+2015-07-15    w2
+2015-07-16    w2
+2015-07-17    w2
+2015-07-18    w2
+2015-07-19    w2
+2015-07-20    w2
+2015-07-21    w2
+2015-07-22    w2
+2015-07-23    w2
+2015-07-24    w2
+2015-07-25    w2
+2015-07-26    w3
+2015-07-27    w3
+2015-07-28    w3
+2015-07-29    w3
+2015-07-30    w3
+2015-07-31    w3
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-01                   w1                            0   
+2015-07-02                   w1                            0   
+2015-07-03                   w1                            0   
+2015-07-04                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                          3502  
+2015-07-02                          3502  
+2015-07-03                          3502  
+2015-07-04                          3502  
+Modification_Successful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-05                   w2                            0   
+2015-07-06                   w2                            0   
+2015-07-07                   w2                            0   
+2015-07-08                   w2                            0   
+2015-07-09                   w2                            0   
+2015-07-10                   w2                            0   
+2015-07-11                   w2                            0   
+2015-07-12                   w2                            0   
+2015-07-13                   w2                            0   
+2015-07-14                   w2                            0   
+2015-07-15                   w2                            0   
+2015-07-16                   w2                            0   
+2015-07-17                   w2                            0   
+2015-07-18                   w2                            0   
+2015-07-19                   w2                            0   
+2015-07-20                   w2                            0   
+2015-07-21                   w2                            0   
+2015-07-22                   w2                            0   
+2015-07-23                   w2                            0   
+2015-07-24                   w2                         7515   
+2015-07-25                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-05                             0  
+2015-07-06                             0  
+2015-07-07                             0  
+2015-07-08                             0  
+2015-07-09                             0  
+2015-07-10                             0  
+2015-07-11                             0  
+2015-07-12                             0  
+2015-07-13                             0  
+2015-07-14                             0  
+2015-07-15                             0  
+2015-07-16                             0  
+2015-07-17                             0  
+2015-07-18                             0  
+2015-07-19                             0  
+2015-07-20                             0  
+2015-07-21                             0  
+2015-07-22                             0  
+2015-07-23                             0  
+2015-07-24                          7515  
+2015-07-25                          7515  
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-07-26                   w3                            0   
+2015-07-27                   w3                            0   
+2015-07-28                   w3                            0   
+2015-07-29                   w3                            0   
+2015-07-30                   w3                            0   
+2015-07-31                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-26                             0  
+2015-07-27                             0  
+2015-07-28                             0  
+2015-07-29                             0  
+2015-07-30                             0  
+2015-07-31                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-01                      2015-07-05                            0   
+2015-07-02                      2015-07-05                            0   
+2015-07-03                      2015-07-05                            0   
+2015-07-04                      2015-07-05                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                          3502  
+2015-07-02                          3502  
+2015-07-03                          3502  
+2015-07-04                          3502  
+Modification_Successful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-05                      2015-07-12                            0   
+2015-07-06                      2015-07-12                            0   
+2015-07-07                      2015-07-12                            0   
+2015-07-08                      2015-07-12                            0   
+2015-07-09                      2015-07-12                            0   
+2015-07-10                      2015-07-12                            0   
+2015-07-11                      2015-07-12                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-05                             0  
+2015-07-06                             0  
+2015-07-07                             0  
+2015-07-08                             0  
+2015-07-09                             0  
+2015-07-10                             0  
+2015-07-11                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-12                      2015-07-19                            0   
+2015-07-13                      2015-07-19                            0   
+2015-07-14                      2015-07-19                            0   
+2015-07-15                      2015-07-19                            0   
+2015-07-16                      2015-07-19                            0   
+2015-07-17                      2015-07-19                            0   
+2015-07-18                      2015-07-19                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-12                             0  
+2015-07-13                             0  
+2015-07-14                             0  
+2015-07-15                             0  
+2015-07-16                             0  
+2015-07-17                             0  
+2015-07-18                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-19                      2015-07-26                            0   
+2015-07-20                      2015-07-26                            0   
+2015-07-21                      2015-07-26                            0   
+2015-07-22                      2015-07-26                            0   
+2015-07-23                      2015-07-26                            0   
+2015-07-24                      2015-07-26                         7515   
+2015-07-25                      2015-07-26                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-19                             0  
+2015-07-20                             0  
+2015-07-21                             0  
+2015-07-22                             0  
+2015-07-23                             0  
+2015-07-24                          7515  
+2015-07-25                          7515  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-26                      2015-08-02                            0   
+2015-07-27                      2015-08-02                            0   
+2015-07-28                      2015-08-02                            0   
+2015-07-29                      2015-08-02                            0   
+2015-07-30                      2015-08-02                            0   
+2015-07-31                      2015-08-02                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-26                             0  
+2015-07-27                             0  
+2015-07-28                             0  
+2015-07-29                             0  
+2015-07-30                             0  
+2015-07-31                             0  
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT ZZZ**Bloomfield NM - HEP - T100** DO NOT USE BLOOMFIELD-GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT ZZZ**Bloomfield NM - HEP - T100** DO NOT USE G
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT ZZZ**Sidney NE-PLAINSSID (HFC)-T218 DO NOT USE** SIDNEY DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT ZZZ**Sidney NE-PLAINSSID (HFC)-T218 DO NOT USE** SIDNEY GASOLINE
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot holly PILOT TRAVEL CENTERS LLC - PRODUCT Cheyenne WY - HEP - 2600 CHEYENNE REFINERY PREMIUM
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+Completed Execution Thanks for you Patience 

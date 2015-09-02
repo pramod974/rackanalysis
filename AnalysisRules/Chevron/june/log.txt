@@ -1,0 +1,2427 @@
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1010 SAN JOSE CA TRM CHEVRON DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1037 PASCAGOULA MS TRM CHEVRON DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1042 LAS VEGAS NV TRM CALNEV DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1076 CHICO CA TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1080 EUGENE OR TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1083 FRESNO CA TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1089 IMPERIAL CA TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 1127 SPARKS NV TRM BERRY HINCKLEY DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 2732 COLTON CA TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 3191 PASCO WA TRM TIDEWATER DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : AC7460761 3351 PHOENIX AZ TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1002 TRACY CA TRM CHEVRON DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+2015-06-20 00:00:00 3
+2015-06-21 00:00:00 3
+2015-06-22 00:00:00 3
+2015-06-23 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+2015-06-27 00:00:00 4
+2015-06-28 00:00:00 4
+2015-06-29 00:00:00 4
+2015-06-30 00:00:00 4
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w3
+2015-06-21    w3
+2015-06-22    w3
+2015-06-23    w3
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w4
+2015-06-28    w4
+2015-06-29    w4
+2015-06-30    w4
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        139253  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                            0   
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                         7802   
+2015-06-15                   w2                        38514   
+2015-06-16                   w2                        30812   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         30811  
+2015-06-14                         38613  
+2015-06-15                         77127  
+2015-06-16                        107939  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                        29107   
+2015-06-18                   w3                        15407   
+2015-06-19                   w3                        23110   
+2015-06-20                   w3                            0   
+2015-06-21                   w3                         7803   
+2015-06-22                   w3                        53914   
+2015-06-23                   w3                        38512   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         29107  
+2015-06-18                         44514  
+2015-06-19                         67624  
+2015-06-20                         67624  
+2015-06-21                         75427  
+2015-06-22                        129341  
+2015-06-23                        167853  
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w4                        38515   
+2015-06-25                   w4                        38414   
+2015-06-26                   w4                        46215   
+2015-06-27                   w4                         7604   
+2015-06-28                   w4                         7703   
+2015-06-29                   w4                        23105   
+2015-06-30                   w4                        38414   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         38515  
+2015-06-25                         84632  
+2015-06-26                        130847  
+2015-06-27                        138451  
+2015-06-28                        146154  
+2015-06-29                        169259  
+2015-06-30                        207673  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        139253  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                            0   
+2015-06-04                      2015-06-10                            0   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                            0   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                            0   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                            0   
+2015-06-14                      2015-06-17                         7802   
+2015-06-15                      2015-06-17                        38514   
+2015-06-16                      2015-06-17                        30812   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         30811  
+2015-06-14                         38613  
+2015-06-15                         77127  
+2015-06-16                        107939  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        29107   
+2015-06-18                      2015-06-24                        15407   
+2015-06-19                      2015-06-24                        23110   
+2015-06-20                      2015-06-24                            0   
+2015-06-21                      2015-06-24                         7803   
+2015-06-22                      2015-06-24                        53914   
+2015-06-23                      2015-06-24                        38512   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         29107  
+2015-06-18                         44514  
+2015-06-19                         67624  
+2015-06-20                         67624  
+2015-06-21                         75427  
+2015-06-22                        129341  
+2015-06-23                        167853  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                        38515   
+2015-06-25                      2015-07-01                        38414   
+2015-06-26                      2015-07-01                        46215   
+2015-06-27                      2015-07-01                         7604   
+2015-06-28                      2015-07-01                         7703   
+2015-06-29                      2015-07-01                        23105   
+2015-06-30                      2015-07-01                        38414   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         38515  
+2015-06-25                         84632  
+2015-06-26                        130847  
+2015-06-27                        138451  
+2015-06-28                        146154  
+2015-06-29                        169259  
+2015-06-30                        207673  
+Modification_Successful
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1021 FT LAUDERDALE FL TRM CHEVRON DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1022 TAMPA FL TRM CHEVRON DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+2015-06-11 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 5
+2015-06-13 00:00:00 5
+2015-06-14 00:00:00 5
+2015-06-15 00:00:00 5
+2015-06-16 00:00:00 5
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 6
+2015-06-18 00:00:00 6
+2015-06-19 00:00:00 6
+2015-06-20 00:00:00 6
+2015-06-21 00:00:00 6
+2015-06-22 00:00:00 6
+2015-06-23 00:00:00 6
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 7
+2015-06-25 00:00:00 7
+2015-06-26 00:00:00 7
+2015-06-27 00:00:00 7
+2015-06-28 00:00:00 7
+2015-06-29 00:00:00 7
+2015-06-30 00:00:00 7
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w4
+2015-06-12    w5
+2015-06-13    w5
+2015-06-14    w5
+2015-06-15    w5
+2015-06-16    w5
+2015-06-17    w6
+2015-06-18    w6
+2015-06-19    w6
+2015-06-20    w6
+2015-06-21    w6
+2015-06-22    w6
+2015-06-23    w6
+2015-06-24    w7
+2015-06-25    w7
+2015-06-26    w7
+2015-06-27    w7
+2015-06-28    w7
+2015-06-29    w7
+2015-06-30    w7
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                        28232   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        540102  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                        45481   
+2015-06-04                   w2                        19871   
+2015-06-05                   w2                        13340   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         45481  
+2015-06-04                        157706  
+2015-06-05                        230497  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        387722  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                            0   
+2015-06-11                   w4                        22518   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                        126777  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w5                            0   
+2015-06-13                   w5                        59836   
+2015-06-14                   w5                        38409   
+2015-06-15                   w5                        75454   
+2015-06-16                   w5                        53230   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                        305014  
+2015-06-14                        343423  
+2015-06-15                        418877  
+2015-06-16                        472107  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w6                        97164   
+2015-06-18                   w6                       134239   
+2015-06-19                   w6                        97738   
+2015-06-20                   w6                        60569   
+2015-06-21                   w6                         7605   
+2015-06-22                   w6                        82930   
+2015-06-23                   w6                       105514   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         97164  
+2015-06-18                        239008  
+2015-06-19                        336746  
+2015-06-20                        412620  
+2015-06-21                        420225  
+2015-06-22                        503155  
+2015-06-23                        616172  
+Modification_Successful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w7                       128472   
+2015-06-25                   w7                        90732   
+2015-06-26                   w7                       105353   
+2015-06-27                   w7                        37774   
+2015-06-28                   w7                        22507   
+2015-06-29                   w7                       117328   
+2015-06-30                   w7                       165737   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                        128472  
+2015-06-25                        219204  
+2015-06-26                        324557  
+2015-06-27                        362331  
+2015-06-28                        384838  
+2015-06-29                        502166  
+2015-06-30                        667903  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                        28232   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        540102  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                        45481   
+2015-06-04                      2015-06-10                        19871   
+2015-06-05                      2015-06-10                        13340   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                            0   
+2015-06-09                      2015-06-10                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         45481  
+2015-06-04                        157706  
+2015-06-05                        230497  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        387722  
+2015-06-09                             0  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-10                      2015-06-17                            0   
+2015-06-11                      2015-06-17                        22518   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                        59836   
+2015-06-14                      2015-06-17                        38409   
+2015-06-15                      2015-06-17                        75454   
+2015-06-16                      2015-06-17                        53230   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-10                             0  
+2015-06-11                        126777  
+2015-06-12                             0  
+2015-06-13                        305014  
+2015-06-14                        343423  
+2015-06-15                        418877  
+2015-06-16                        472107  
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        97164   
+2015-06-18                      2015-06-24                       134239   
+2015-06-19                      2015-06-24                        97738   
+2015-06-20                      2015-06-24                        60569   
+2015-06-21                      2015-06-24                         7605   
+2015-06-22                      2015-06-24                        82930   
+2015-06-23                      2015-06-24                       105514   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         97164  
+2015-06-18                        239008  
+2015-06-19                        336746  
+2015-06-20                        412620  
+2015-06-21                        420225  
+2015-06-22                        503155  
+2015-06-23                        616172  
+Modification_Successful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                       128472   
+2015-06-25                      2015-07-01                        90732   
+2015-06-26                      2015-07-01                       105353   
+2015-06-27                      2015-07-01                        37774   
+2015-06-28                      2015-07-01                        22507   
+2015-06-29                      2015-07-01                       117328   
+2015-06-30                      2015-07-01                       165737   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                        128472  
+2015-06-25                        219204  
+2015-06-26                        324557  
+2015-06-27                        362331  
+2015-06-28                        384838  
+2015-06-29                        502166  
+2015-06-30                        667903  
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1025 DORAVILLE GA TRM CHEVRON DIESEL #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1037 PASCAGOULA MS TRM CHEVRON DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D')]
+2015-06-11 00:00:00 5
+[Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 6
+2015-06-13 00:00:00 6
+2015-06-14 00:00:00 6
+2015-06-15 00:00:00 6
+2015-06-16 00:00:00 6
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 7
+2015-06-18 00:00:00 7
+2015-06-19 00:00:00 7
+2015-06-20 00:00:00 7
+2015-06-21 00:00:00 7
+2015-06-22 00:00:00 7
+2015-06-23 00:00:00 7
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 8
+2015-06-25 00:00:00 8
+2015-06-26 00:00:00 8
+2015-06-27 00:00:00 8
+2015-06-28 00:00:00 8
+2015-06-29 00:00:00 8
+2015-06-30 00:00:00 8
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w5
+2015-06-12    w6
+2015-06-13    w6
+2015-06-14    w6
+2015-06-15    w6
+2015-06-16    w6
+2015-06-17    w7
+2015-06-18    w7
+2015-06-19    w7
+2015-06-20    w7
+2015-06-21    w7
+2015-06-22    w7
+2015-06-23    w7
+2015-06-24    w8
+2015-06-25    w8
+2015-06-26    w8
+2015-06-27    w8
+2015-06-28    w8
+2015-06-29    w8
+2015-06-30    w8
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                        20295   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        463209  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                        15273   
+2015-06-04                   w2                        11822   
+2015-06-05                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         15273  
+2015-06-04                         84064  
+2015-06-05                        160046  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                        50776   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        307153  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                        76742   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                        453333  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-11                   w5                        19095   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                        119233  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w6                            0   
+2015-06-13                   w6                        66086   
+2015-06-14                   w6                        53782   
+2015-06-15                   w6                        66718   
+2015-06-16                   w6                        61939   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                        320549  
+2015-06-14                        382055  
+2015-06-15                        452774  
+2015-06-16                        522516  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w7                        97510   
+2015-06-18                   w7                        89739   
+2015-06-19                   w7                        53908   
+2015-06-20                   w7                        69624   
+2015-06-21                   w7                        66513   
+2015-06-22                   w7                        46114   
+2015-06-23                   w7                        80240   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         97510  
+2015-06-18                        194973  
+2015-06-19                        256550  
+2015-06-20                        341618  
+2015-06-21                        408131  
+2015-06-22                        454245  
+2015-06-23                        542154  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w8                        49335   
+2015-06-25                   w8                        89737   
+2015-06-26                   w8                        59223   
+2015-06-27                   w8                        62005   
+2015-06-28                   w8                        92397   
+2015-06-29                   w8                        76817   
+2015-06-30                   w8                        84455   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         49335  
+2015-06-25                        146733  
+2015-06-26                        209256  
+2015-06-27                        271261  
+2015-06-28                        363658  
+2015-06-29                        440475  
+2015-06-30                        524930  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                        20295   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        463209  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                        15273   
+2015-06-04                      2015-06-10                        11822   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                        50776   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                        76742   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         15273  
+2015-06-04                         84064  
+2015-06-05                        160046  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        307153  
+2015-06-09                             0  
+2015-06-10                        453333  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                        19095   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                        66086   
+2015-06-14                      2015-06-17                        53782   
+2015-06-15                      2015-06-17                        66718   
+2015-06-16                      2015-06-17                        61939   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                        119233  
+2015-06-12                             0  
+2015-06-13                        320549  
+2015-06-14                        382055  
+2015-06-15                        452774  
+2015-06-16                        522516  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        97510   
+2015-06-18                      2015-06-24                        89739   
+2015-06-19                      2015-06-24                        53908   
+2015-06-20                      2015-06-24                        69624   
+2015-06-21                      2015-06-24                        66513   
+2015-06-22                      2015-06-24                        46114   
+2015-06-23                      2015-06-24                        80240   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         97510  
+2015-06-18                        194973  
+2015-06-19                        256550  
+2015-06-20                        341618  
+2015-06-21                        408131  
+2015-06-22                        454245  
+2015-06-23                        542154  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                        49335   
+2015-06-25                      2015-07-01                        89737   
+2015-06-26                      2015-07-01                        59223   
+2015-06-27                      2015-07-01                        62005   
+2015-06-28                      2015-07-01                        92397   
+2015-06-29                      2015-07-01                        76817   
+2015-06-30                      2015-07-01                        84455   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         49335  
+2015-06-25                        146733  
+2015-06-26                        209256  
+2015-06-27                        271261  
+2015-06-28                        363658  
+2015-06-29                        440475  
+2015-06-30                        524930  
+Modification_Successful
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1043 MONTEBELLO CA TRM CHEVRON DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D')]
+2015-06-11 00:00:00 5
+[Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 6
+2015-06-13 00:00:00 6
+2015-06-14 00:00:00 6
+2015-06-15 00:00:00 6
+2015-06-16 00:00:00 6
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 7
+2015-06-18 00:00:00 7
+2015-06-19 00:00:00 7
+2015-06-20 00:00:00 7
+2015-06-21 00:00:00 7
+2015-06-22 00:00:00 7
+2015-06-23 00:00:00 7
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 8
+2015-06-25 00:00:00 8
+2015-06-26 00:00:00 8
+2015-06-27 00:00:00 8
+2015-06-28 00:00:00 8
+2015-06-29 00:00:00 8
+2015-06-30 00:00:00 8
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w5
+2015-06-12    w6
+2015-06-13    w6
+2015-06-14    w6
+2015-06-15    w6
+2015-06-16    w6
+2015-06-17    w7
+2015-06-18    w7
+2015-06-19    w7
+2015-06-20    w7
+2015-06-21    w7
+2015-06-22    w7
+2015-06-23    w7
+2015-06-24    w8
+2015-06-25    w8
+2015-06-26    w8
+2015-06-27    w8
+2015-06-28    w8
+2015-06-29    w8
+2015-06-30    w8
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                        30304   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        204104  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                        15204   
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         15204  
+2015-06-04                         22804  
+2015-06-05                         68103  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                         7500   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         90806  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                        45602   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                        151513  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-11                   w5                         7600   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         60602  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w6                            0   
+2015-06-13                   w6                        15201   
+2015-06-14                   w6                         7600   
+2015-06-15                   w6                        22799   
+2015-06-16                   w6                        22799   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                        136407  
+2015-06-14                        151608  
+2015-06-15                        189606  
+2015-06-16                        220004  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w7                        45407   
+2015-06-18                   w7                        37905   
+2015-06-19                   w7                        22797   
+2015-06-20                   w7                        22602   
+2015-06-21                   w7                         7500   
+2015-06-22                   w7                        37899   
+2015-06-23                   w7                        15399   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         45407  
+2015-06-18                         90912  
+2015-06-19                        113709  
+2015-06-20                        143912  
+2015-06-21                        159014  
+2015-06-22                        204513  
+2015-06-23                        219912  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w8                        45400   
+2015-06-25                   w8                        37967   
+2015-06-26                   w8                        45604   
+2015-06-27                   w8                        22701   
+2015-06-28                   w8                        30400   
+2015-06-29                   w8                        15202   
+2015-06-30                   w8                        30388   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         45400  
+2015-06-25                         83367  
+2015-06-26                        128971  
+2015-06-27                        159272  
+2015-06-28                        204873  
+2015-06-29                        227676  
+2015-06-30                        265662  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                        30304   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        204104  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                        15204   
+2015-06-04                      2015-06-10                            0   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                         7500   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                        45602   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         15204  
+2015-06-04                         22804  
+2015-06-05                         68103  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         90806  
+2015-06-09                             0  
+2015-06-10                        151513  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                         7600   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                        15201   
+2015-06-14                      2015-06-17                         7600   
+2015-06-15                      2015-06-17                        22799   
+2015-06-16                      2015-06-17                        22799   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         60602  
+2015-06-12                             0  
+2015-06-13                        136407  
+2015-06-14                        151608  
+2015-06-15                        189606  
+2015-06-16                        220004  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        45407   
+2015-06-18                      2015-06-24                        37905   
+2015-06-19                      2015-06-24                        22797   
+2015-06-20                      2015-06-24                        22602   
+2015-06-21                      2015-06-24                         7500   
+2015-06-22                      2015-06-24                        37899   
+2015-06-23                      2015-06-24                        15399   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         45407  
+2015-06-18                         90912  
+2015-06-19                        113709  
+2015-06-20                        143912  
+2015-06-21                        159014  
+2015-06-22                        204513  
+2015-06-23                        219912  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                        45400   
+2015-06-25                      2015-07-01                        37967   
+2015-06-26                      2015-07-01                        45604   
+2015-06-27                      2015-07-01                        22701   
+2015-06-28                      2015-07-01                        30400   
+2015-06-29                      2015-07-01                        15202   
+2015-06-30                      2015-07-01                        30388   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         45400  
+2015-06-25                         83367  
+2015-06-26                        128971  
+2015-06-27                        159272  
+2015-06-28                        204873  
+2015-06-29                        227676  
+2015-06-30                        265662  
+Modification_Successful
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1045 SALT LAKE CITY UT TRM CHEVRON DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D')]
+2015-06-11 00:00:00 5
+[Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 6
+2015-06-13 00:00:00 6
+2015-06-14 00:00:00 6
+2015-06-15 00:00:00 6
+2015-06-16 00:00:00 6
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 7
+2015-06-18 00:00:00 7
+2015-06-19 00:00:00 7
+2015-06-20 00:00:00 7
+2015-06-21 00:00:00 7
+2015-06-22 00:00:00 7
+2015-06-23 00:00:00 7
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 8
+2015-06-25 00:00:00 8
+2015-06-26 00:00:00 8
+2015-06-27 00:00:00 8
+2015-06-28 00:00:00 8
+2015-06-29 00:00:00 8
+2015-06-30 00:00:00 8
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w5
+2015-06-12    w6
+2015-06-13    w6
+2015-06-14    w6
+2015-06-15    w6
+2015-06-16    w6
+2015-06-17    w7
+2015-06-18    w7
+2015-06-19    w7
+2015-06-20    w7
+2015-06-21    w7
+2015-06-22    w7
+2015-06-23    w7
+2015-06-24    w8
+2015-06-25    w8
+2015-06-26    w8
+2015-06-27    w8
+2015-06-28    w8
+2015-06-29    w8
+2015-06-30    w8
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        284568  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                        20501   
+2015-06-04                   w2                        10499   
+2015-06-05                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         20501  
+2015-06-04                         54498  
+2015-06-05                         95501  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                        37000   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        217908  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                        90496   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                        354926  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-11                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         88521  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w6                            0   
+2015-06-13                   w6                        52018   
+2015-06-14                   w6                       104412   
+2015-06-15                   w6                       109315   
+2015-06-16                   w6                       109629   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                        306252  
+2015-06-14                        410664  
+2015-06-15                        519979  
+2015-06-16                        629608  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w7                        95106   
+2015-06-18                   w7                       193830   
+2015-06-19                   w7                        66012   
+2015-06-20                   w7                       128321   
+2015-06-21                   w7                        89926   
+2015-06-22                   w7                        91423   
+2015-06-23                   w7                       144957   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         95106  
+2015-06-18                        291936  
+2015-06-19                        357948  
+2015-06-20                        532165  
+2015-06-21                        634110  
+2015-06-22                        725533  
+2015-06-23                        870490  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w8                       195043   
+2015-06-25                   w8                       271024   
+2015-06-26                   w8                       137511   
+2015-06-27                   w8                       176148   
+2015-06-28                   w8                        55707   
+2015-06-29                   w8                        87947   
+2015-06-30                   w8                       103095   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                        195043  
+2015-06-25                        478268  
+2015-06-26                        615779  
+2015-06-27                        791927  
+2015-06-28                        847634  
+2015-06-29                        935581  
+2015-06-30                       1045677  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        284568  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                        20501   
+2015-06-04                      2015-06-10                        10499   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                        37000   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                        90496   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                         20501  
+2015-06-04                         54498  
+2015-06-05                         95501  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        217908  
+2015-06-09                             0  
+2015-06-10                        354926  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                            0   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                        52018   
+2015-06-14                      2015-06-17                       104412   
+2015-06-15                      2015-06-17                       109315   
+2015-06-16                      2015-06-17                       109629   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         88521  
+2015-06-12                             0  
+2015-06-13                        306252  
+2015-06-14                        410664  
+2015-06-15                        519979  
+2015-06-16                        629608  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        95106   
+2015-06-18                      2015-06-24                       193830   
+2015-06-19                      2015-06-24                        66012   
+2015-06-20                      2015-06-24                       128321   
+2015-06-21                      2015-06-24                        89926   
+2015-06-22                      2015-06-24                        91423   
+2015-06-23                      2015-06-24                       144957   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         95106  
+2015-06-18                        291936  
+2015-06-19                        357948  
+2015-06-20                        532165  
+2015-06-21                        634110  
+2015-06-22                        725533  
+2015-06-23                        870490  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                       195043   
+2015-06-25                      2015-07-01                       271024   
+2015-06-26                      2015-07-01                       137511   
+2015-06-27                      2015-07-01                       176148   
+2015-06-28                      2015-07-01                        55707   
+2015-06-29                      2015-07-01                        87947   
+2015-06-30                      2015-07-01                       103095   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                        195043  
+2015-06-25                        478268  
+2015-06-26                        615779  
+2015-06-27                        791927  
+2015-06-28                        847634  
+2015-06-29                        935581  
+2015-06-30                       1045677  
+Modification_Successful
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1046 SAN DIEGO CA TRM CHEVRON DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D')]
+2015-06-11 00:00:00 5
+[Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 6
+2015-06-13 00:00:00 6
+2015-06-14 00:00:00 6
+2015-06-15 00:00:00 6
+2015-06-16 00:00:00 6
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 7
+2015-06-18 00:00:00 7
+2015-06-19 00:00:00 7
+2015-06-20 00:00:00 7
+2015-06-21 00:00:00 7
+2015-06-22 00:00:00 7
+2015-06-23 00:00:00 7
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 8
+2015-06-25 00:00:00 8
+2015-06-26 00:00:00 8
+2015-06-27 00:00:00 8
+2015-06-28 00:00:00 8
+2015-06-29 00:00:00 8
+2015-06-30 00:00:00 8
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w5
+2015-06-12    w6
+2015-06-13    w6
+2015-06-14    w6
+2015-06-15    w6
+2015-06-16    w6
+2015-06-17    w7
+2015-06-18    w7
+2015-06-19    w7
+2015-06-20    w7
+2015-06-21    w7
+2015-06-22    w7
+2015-06-23    w7
+2015-06-24    w8
+2015-06-25    w8
+2015-06-26    w8
+2015-06-27    w8
+2015-06-28    w8
+2015-06-29    w8
+2015-06-30    w8
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        108911  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                            0   
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         22834  
+2015-06-05                         45666  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                         7603   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         60880  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                        22834   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                         98933  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-11                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         22838  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w6                            0   
+2015-06-13                   w6                         7607   
+2015-06-14                   w6                         7702   
+2015-06-15                   w6                        22832   
+2015-06-16                   w6                        15621   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                         83684  
+2015-06-14                         91386  
+2015-06-15                        114218  
+2015-06-16                        129839  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w7                        31244   
+2015-06-18                   w7                        23432   
+2015-06-19                   w7                        23429   
+2015-06-20                   w7                         7603   
+2015-06-21                   w7                         7601   
+2015-06-22                   w7                        23432   
+2015-06-23                   w7                        15621   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         31244  
+2015-06-18                         54676  
+2015-06-19                         78105  
+2015-06-20                         85708  
+2015-06-21                         93309  
+2015-06-22                        116741  
+2015-06-23                        132362  
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w8                        23436   
+2015-06-25                   w8                        23436   
+2015-06-26                   w8                        31034   
+2015-06-27                   w8                        15202   
+2015-06-28                   w8                            0   
+2015-06-29                   w8                        23433   
+2015-06-30                   w8                        15624   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         23436  
+2015-06-25                         46872  
+2015-06-26                         77906  
+2015-06-27                         93108  
+2015-06-28                         93108  
+2015-06-29                        116541  
+2015-06-30                        132165  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        108911  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                            0   
+2015-06-04                      2015-06-10                            0   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                         7603   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                        22834   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         22834  
+2015-06-05                         45666  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         60880  
+2015-06-09                             0  
+2015-06-10                         98933  
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                            0   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                         7607   
+2015-06-14                      2015-06-17                         7702   
+2015-06-15                      2015-06-17                        22832   
+2015-06-16                      2015-06-17                        15621   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         22838  
+2015-06-12                             0  
+2015-06-13                         83684  
+2015-06-14                         91386  
+2015-06-15                        114218  
+2015-06-16                        129839  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        31244   
+2015-06-18                      2015-06-24                        23432   
+2015-06-19                      2015-06-24                        23429   
+2015-06-20                      2015-06-24                         7603   
+2015-06-21                      2015-06-24                         7601   
+2015-06-22                      2015-06-24                        23432   
+2015-06-23                      2015-06-24                        15621   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         31244  
+2015-06-18                         54676  
+2015-06-19                         78105  
+2015-06-20                         85708  
+2015-06-21                         93309  
+2015-06-22                        116741  
+2015-06-23                        132362  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                        23436   
+2015-06-25                      2015-07-01                        23436   
+2015-06-26                      2015-07-01                        31034   
+2015-06-27                      2015-07-01                        15202   
+2015-06-28                      2015-07-01                            0   
+2015-06-29                      2015-07-01                        23433   
+2015-06-30                      2015-07-01                        15624   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         23436  
+2015-06-25                         46872  
+2015-06-26                         77906  
+2015-06-27                         93108  
+2015-06-28                         93108  
+2015-06-29                        116541  
+2015-06-30                        132165  
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1066 BOISE ID TRM TESORO DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D')]
+2015-06-11 00:00:00 5
+[Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 6
+2015-06-13 00:00:00 6
+2015-06-14 00:00:00 6
+2015-06-15 00:00:00 6
+2015-06-16 00:00:00 6
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 7
+2015-06-18 00:00:00 7
+2015-06-19 00:00:00 7
+2015-06-20 00:00:00 7
+2015-06-21 00:00:00 7
+2015-06-22 00:00:00 7
+2015-06-23 00:00:00 7
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 8
+2015-06-25 00:00:00 8
+2015-06-26 00:00:00 8
+2015-06-27 00:00:00 8
+2015-06-28 00:00:00 8
+2015-06-29 00:00:00 8
+2015-06-30 00:00:00 8
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w5
+2015-06-12    w6
+2015-06-13    w6
+2015-06-14    w6
+2015-06-15    w6
+2015-06-16    w6
+2015-06-17    w7
+2015-06-18    w7
+2015-06-19    w7
+2015-06-20    w7
+2015-06-21    w7
+2015-06-22    w7
+2015-06-23    w7
+2015-06-24    w8
+2015-06-25    w8
+2015-06-26    w8
+2015-06-27    w8
+2015-06-28    w8
+2015-06-29    w8
+2015-06-30    w8
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        109455  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                            0   
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         19706  
+2015-06-05                         39631  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         98820  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                        29283   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                        148012  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-11                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         19809  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w6                            0   
+2015-06-13                   w6                         9901   
+2015-06-14                   w6                         7606   
+2015-06-15                   w6                        17604   
+2015-06-16                   w6                        19801   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                         79337  
+2015-06-14                         86943  
+2015-06-15                        104547  
+2015-06-16                        124348  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w7                        10005   
+2015-06-18                   w7                         7707   
+2015-06-19                   w7                        19909   
+2015-06-20                   w7                            0   
+2015-06-21                   w7                         9910   
+2015-06-22                   w7                        10008   
+2015-06-23                   w7                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         10005  
+2015-06-18                         17712  
+2015-06-19                         37621  
+2015-06-20                         37621  
+2015-06-21                         47531  
+2015-06-22                         67435  
+2015-06-23                         67435  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w8                        19921   
+2015-06-25                   w8                         9901   
+2015-06-26                   w8                        19899   
+2015-06-27                   w8                        19480   
+2015-06-28                   w8                        10010   
+2015-06-29                   w8                        19863   
+2015-06-30                   w8                        39496   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         19921  
+2015-06-25                         39825  
+2015-06-26                         69724  
+2015-06-27                        108681  
+2015-06-28                        118691  
+2015-06-29                        138554  
+2015-06-30                        178050  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        109455  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                            0   
+2015-06-04                      2015-06-10                            0   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                            0   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                        29283   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         19706  
+2015-06-05                         39631  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         98820  
+2015-06-09                             0  
+2015-06-10                        148012  
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                            0   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                         9901   
+2015-06-14                      2015-06-17                         7606   
+2015-06-15                      2015-06-17                        17604   
+2015-06-16                      2015-06-17                        19801   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         19809  
+2015-06-12                             0  
+2015-06-13                         79337  
+2015-06-14                         86943  
+2015-06-15                        104547  
+2015-06-16                        124348  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        10005   
+2015-06-18                      2015-06-24                         7707   
+2015-06-19                      2015-06-24                        19909   
+2015-06-20                      2015-06-24                            0   
+2015-06-21                      2015-06-24                         9910   
+2015-06-22                      2015-06-24                        10008   
+2015-06-23                      2015-06-24                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         10005  
+2015-06-18                         17712  
+2015-06-19                         37621  
+2015-06-20                         37621  
+2015-06-21                         47531  
+2015-06-22                         67435  
+2015-06-23                         67435  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                        19921   
+2015-06-25                      2015-07-01                         9901   
+2015-06-26                      2015-07-01                        19899   
+2015-06-27                      2015-07-01                        19480   
+2015-06-28                      2015-07-01                        10010   
+2015-06-29                      2015-07-01                        19863   
+2015-06-30                      2015-07-01                        39496   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         19921  
+2015-06-25                         39825  
+2015-06-26                         69724  
+2015-06-27                        108681  
+2015-06-28                        118691  
+2015-06-29                        138554  
+2015-06-30                        178050  
+Modification_Successful
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1107 ORLANDO FL TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1107 ORLANDO FL TRM KINDER MORGAN GASOLINE
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 2456 FT LAUDERDALE FL TRM MOTIVA DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 2732 COLTON CA TRM KINDER MORGAN DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 2778 STOCKTON CA TRM NUSTAR DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D')]
+2015-06-11 00:00:00 5
+[Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 6
+2015-06-13 00:00:00 6
+2015-06-14 00:00:00 6
+2015-06-15 00:00:00 6
+2015-06-16 00:00:00 6
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 7
+2015-06-18 00:00:00 7
+2015-06-19 00:00:00 7
+2015-06-20 00:00:00 7
+2015-06-21 00:00:00 7
+2015-06-22 00:00:00 7
+2015-06-23 00:00:00 7
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 8
+2015-06-25 00:00:00 8
+2015-06-26 00:00:00 8
+2015-06-27 00:00:00 8
+2015-06-28 00:00:00 8
+2015-06-29 00:00:00 8
+2015-06-30 00:00:00 8
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w5
+2015-06-12    w6
+2015-06-13    w6
+2015-06-14    w6
+2015-06-15    w6
+2015-06-16    w6
+2015-06-17    w7
+2015-06-18    w7
+2015-06-19    w7
+2015-06-20    w7
+2015-06-21    w7
+2015-06-22    w7
+2015-06-23    w7
+2015-06-24    w8
+2015-06-25    w8
+2015-06-26    w8
+2015-06-27    w8
+2015-06-28    w8
+2015-06-29    w8
+2015-06-30    w8
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                         7700   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                          7700  
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                            0   
+2015-06-04                   w2                         7702   
+2015-06-05                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         46303  
+2015-06-05                         61808  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                         7800   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        138914  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                        46206   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                        216020  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-11                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         30612  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w6                            0   
+2015-06-13                   w6                         7600   
+2015-06-14                   w6                        15400   
+2015-06-15                   w6                         7600   
+2015-06-16                   w6                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                         91923  
+2015-06-14                        107323  
+2015-06-15                        114923  
+2015-06-16                        122523  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w7                            0   
+2015-06-18                   w7                         7600   
+2015-06-19                   w7                            0   
+2015-06-20                   w7                            0   
+2015-06-21                   w7                            0   
+2015-06-22                   w7                            0   
+2015-06-23                   w7                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                         15200  
+2015-06-19                         15200  
+2015-06-20                         15200  
+2015-06-21                         15200  
+2015-06-22                         15200  
+2015-06-23                         15200  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w8                            0   
+2015-06-25                   w8                            0   
+2015-06-26                   w8                            0   
+2015-06-27                   w8                            0   
+2015-06-28                   w8                            0   
+2015-06-29                   w8                            0   
+2015-06-30                   w8                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                         7700   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                          7700  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                            0   
+2015-06-04                      2015-06-10                         7702   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                         7800   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                        46206   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         46303  
+2015-06-05                         61808  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                        138914  
+2015-06-09                             0  
+2015-06-10                        216020  
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                            0   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                         7600   
+2015-06-14                      2015-06-17                        15400   
+2015-06-15                      2015-06-17                         7600   
+2015-06-16                      2015-06-17                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                         30612  
+2015-06-12                             0  
+2015-06-13                         91923  
+2015-06-14                        107323  
+2015-06-15                        114923  
+2015-06-16                        122523  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                            0   
+2015-06-18                      2015-06-24                         7600   
+2015-06-19                      2015-06-24                            0   
+2015-06-20                      2015-06-24                            0   
+2015-06-21                      2015-06-24                            0   
+2015-06-22                      2015-06-24                            0   
+2015-06-23                      2015-06-24                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                         15200  
+2015-06-19                         15200  
+2015-06-20                         15200  
+2015-06-21                         15200  
+2015-06-22                         15200  
+2015-06-23                         15200  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                            0   
+2015-06-25                      2015-07-01                            0   
+2015-06-26                      2015-07-01                            0   
+2015-06-27                      2015-07-01                            0   
+2015-06-28                      2015-07-01                            0   
+2015-06-29                      2015-07-01                            0   
+2015-06-30                      2015-07-01                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 3351 PHOENIX AZ TRM KINDER MORGAN DIESEL #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
+2015-06-03 00:00:00 2
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+[Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D')]
+2015-06-06 00:00:00 3
+2015-06-07 00:00:00 3
+2015-06-08 00:00:00 3
+[Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D')]
+2015-06-09 00:00:00 4
+2015-06-10 00:00:00 4
+[Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D')]
+2015-06-11 00:00:00 5
+[Timestamp('2015-06-11 00:00:00', offset='D')]
+2015-06-12 00:00:00 6
+2015-06-13 00:00:00 6
+2015-06-14 00:00:00 6
+2015-06-15 00:00:00 6
+2015-06-16 00:00:00 6
+[Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 7
+2015-06-18 00:00:00 7
+2015-06-19 00:00:00 7
+2015-06-20 00:00:00 7
+2015-06-21 00:00:00 7
+2015-06-22 00:00:00 7
+2015-06-23 00:00:00 7
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D')]
+2015-06-24 00:00:00 8
+2015-06-25 00:00:00 8
+2015-06-26 00:00:00 8
+2015-06-27 00:00:00 8
+2015-06-28 00:00:00 8
+2015-06-29 00:00:00 8
+2015-06-30 00:00:00 8
+[Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w2
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w3
+2015-06-07    w3
+2015-06-08    w3
+2015-06-09    w4
+2015-06-10    w4
+2015-06-11    w5
+2015-06-12    w6
+2015-06-13    w6
+2015-06-14    w6
+2015-06-15    w6
+2015-06-16    w6
+2015-06-17    w7
+2015-06-18    w7
+2015-06-19    w7
+2015-06-20    w7
+2015-06-21    w7
+2015-06-22    w7
+2015-06-23    w7
+2015-06-24    w8
+2015-06-25    w8
+2015-06-26    w8
+2015-06-27    w8
+2015-06-28    w8
+2015-06-29    w8
+2015-06-30    w8
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        123989  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-03                   w2                            0   
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         29000  
+2015-06-05                         46900  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-06                   w3                            0   
+2015-06-07                   w3                            0   
+2015-06-08                   w3                         7500   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         79601  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-09                   w4                            0   
+2015-06-10                   w4                        22425   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-09                             0  
+2015-06-10                        129191  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-11                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                          7500  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-12                   w6                            0   
+2015-06-13                   w6                            0   
+2015-06-14                   w6                         4900   
+2015-06-15                   w6                         5250   
+2015-06-16                   w6                        34902   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-12                             0  
+2015-06-13                         66058  
+2015-06-14                         70958  
+2015-06-15                         76208  
+2015-06-16                        111110  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w7                        37410   
+2015-06-18                   w7                         7500   
+2015-06-19                   w7                        28950   
+2015-06-20                   w7                         7500   
+2015-06-21                   w7                         7500   
+2015-06-22                   w7                        15020   
+2015-06-23                   w7                         7503   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         37410  
+2015-06-18                         44910  
+2015-06-19                         73860  
+2015-06-20                         81360  
+2015-06-21                         88860  
+2015-06-22                        103880  
+2015-06-23                        111383  
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-24                   w8                        14900   
+2015-06-25                   w8                        15075   
+2015-06-26                   w8                        20400   
+2015-06-27                   w8                        16100   
+2015-06-28                   w8                         3600   
+2015-06-29                   w8                        23430   
+2015-06-30                   w8                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         14900  
+2015-06-25                         29975  
+2015-06-26                         50375  
+2015-06-27                         66475  
+2015-06-28                         70075  
+2015-06-29                         93505  
+2015-06-30                         93505  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-03                            0   
+2015-06-02                      2015-06-03                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                        123989  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-03                      2015-06-10                            0   
+2015-06-04                      2015-06-10                            0   
+2015-06-05                      2015-06-10                            0   
+2015-06-06                      2015-06-10                            0   
+2015-06-07                      2015-06-10                            0   
+2015-06-08                      2015-06-10                         7500   
+2015-06-09                      2015-06-10                            0   
+2015-06-10                      2015-06-10                        22425   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-03                             0  
+2015-06-04                         29000  
+2015-06-05                         46900  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                         79601  
+2015-06-09                             0  
+2015-06-10                        129191  
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-11                      2015-06-17                            0   
+2015-06-12                      2015-06-17                            0   
+2015-06-13                      2015-06-17                            0   
+2015-06-14                      2015-06-17                         4900   
+2015-06-15                      2015-06-17                         5250   
+2015-06-16                      2015-06-17                        34902   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-11                          7500  
+2015-06-12                             0  
+2015-06-13                         66058  
+2015-06-14                         70958  
+2015-06-15                         76208  
+2015-06-16                        111110  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-17                      2015-06-24                        37410   
+2015-06-18                      2015-06-24                         7500   
+2015-06-19                      2015-06-24                        28950   
+2015-06-20                      2015-06-24                         7500   
+2015-06-21                      2015-06-24                         7500   
+2015-06-22                      2015-06-24                        15020   
+2015-06-23                      2015-06-24                         7503   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                         37410  
+2015-06-18                         44910  
+2015-06-19                         73860  
+2015-06-20                         81360  
+2015-06-21                         88860  
+2015-06-22                        103880  
+2015-06-23                        111383  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                        14900   
+2015-06-25                      2015-07-01                        15075   
+2015-06-26                      2015-07-01                        20400   
+2015-06-27                      2015-07-01                        16100   
+2015-06-28                      2015-07-01                         3600   
+2015-06-29                      2015-07-01                        23430   
+2015-06-30                      2015-07-01                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         14900  
+2015-06-25                         29975  
+2015-06-26                         50375  
+2015-06-27                         66475  
+2015-06-28                         70075  
+2015-06-29                         93505  
+2015-06-30                         93505  
+***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 RENO NV TRM KINDER MORGAN - 2776 DIESEL #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+Completed Execution Thanks for you Patience 

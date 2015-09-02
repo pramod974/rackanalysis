@@ -1,0 +1,7 @@
+Exception in verifyWeekByNRD for Combination:
+customer : pilot
+Supplier : p66
+Account : PILOT TRAVEL CENTERS LLC-10024029BR
+Terminal: GRAPEVINE TX MMP - A3ZC
+Product : GASOLINE
+Exception : unsupported operand type(s) for -: 'float' and 'NoneType'

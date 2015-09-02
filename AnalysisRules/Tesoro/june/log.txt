@@ -1,0 +1,3186 @@
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP AZ - PHOENIX KM & PRO CA EPA ULSD
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         47710  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                         15001  
+2015-06-15                         30101  
+2015-06-16                         30101  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         97006  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                            0   
+2015-06-22                   w4                            0   
+2015-06-23                   w4                            0   
+2015-06-24                   w4                            0   
+2015-06-25                   w4                            0   
+2015-06-26                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                         21600  
+2015-06-23                         29050  
+2015-06-24                         64255  
+2015-06-25                         86755  
+2015-06-26                         94255  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                            0   
+2015-06-30                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         15200  
+2015-06-29                         30400  
+2015-06-30                         45400  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP AZ - PHOENIX KM & PRO CA EPA ULSD can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - Barstow-Colton KM CA CARB ULSD
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                        16400   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        107400  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                        30300   
+2015-06-14                   w2                        52900   
+2015-06-15                   w2                        30440   
+2015-06-16                   w2                        30400   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         30300  
+2015-06-14                         90800  
+2015-06-15                        136460  
+2015-06-16                        182070  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        227670  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                        15231   
+2015-06-22                   w4                        22802   
+2015-06-23                   w4                         9000   
+2015-06-24                   w4                            0   
+2015-06-25                   w4                        15200   
+2015-06-26                   w4                        15200   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         60641  
+2015-06-22                         83443  
+2015-06-23                        122842  
+2015-06-24                        160281  
+2015-06-25                        175481  
+2015-06-26                        236280  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                        45600   
+2015-06-30                   w5                        55378   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         15400  
+2015-06-29                         91402  
+2015-06-30                        146780  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - Barstow-Colton KM CA CARB ULSD can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - CHICO KM CA CARB ULSD
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        105755  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                        37517   
+2015-06-14                   w2                        30327   
+2015-06-15                   w2                        30455   
+2015-06-16                   w2                        22645   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         37517  
+2015-06-14                         67844  
+2015-06-15                         98299  
+2015-06-16                        120944  
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                        30521   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        219908  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                            0   
+2015-06-22                   w4                        22902   
+2015-06-23                   w4                            0   
+2015-06-24                   w4                         7602   
+2015-06-25                   w4                         7377   
+2015-06-26                   w4                        15199   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         29649  
+2015-06-22                         82237  
+2015-06-23                        105015  
+2015-06-24                        135481  
+2015-06-25                        188256  
+2015-06-26                        218984  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                        11677   
+2015-06-30                   w5                        44400   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         45603  
+2015-06-29                        109805  
+2015-06-30                        154205  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - CHICO KM CA CARB ULSD can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SACRAMENTO ALL TERMINALS CA CARB ULSD
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                        15301   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        221861  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                        22950   
+2015-06-14                   w2                        45900   
+2015-06-15                   w2                        61201   
+2015-06-16                   w2                        15301   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         22950  
+2015-06-14                         76500  
+2015-06-15                        145351  
+2015-06-16                        175952  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                        61201   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        321305  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                            0   
+2015-06-22                   w4                        22950   
+2015-06-23                   w4                            0   
+2015-06-24                   w4                        15300   
+2015-06-25                   w4                            0   
+2015-06-26                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         45900  
+2015-06-22                        107100  
+2015-06-23                        122402  
+2015-06-24                        206558  
+2015-06-25                        267781  
+2015-06-26                        321381  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                        45903   
+2015-06-30                   w5                         7652   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         53550  
+2015-06-29                        145366  
+2015-06-30                        153018  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SACRAMENTO ALL TERMINALS CA CARB ULSD can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA CARB ULSD
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         44002  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                        22800   
+2015-06-14                   w2                         7600   
+2015-06-15                   w2                         7600   
+2015-06-16                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         22800  
+2015-06-14                         30400  
+2015-06-15                         38000  
+2015-06-16                         45600  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                        15200   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         78300  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                            0   
+2015-06-22                   w4                            0   
+2015-06-23                   w4                            0   
+2015-06-24                   w4                        15199   
+2015-06-25                   w4                            0   
+2015-06-26                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                         22799  
+2015-06-25                         30399  
+2015-06-26                         30399  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                        22700   
+2015-06-30                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         15200  
+2015-06-29                         55300  
+2015-06-30                         55300  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA CARB ULSD can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Mid & Pre Oxy Gasoline
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+2015-06-17 00:00:00 2
+2015-06-18 00:00:00 2
+2015-06-19 00:00:00 2
+2015-06-20 00:00:00 2
+2015-06-21 00:00:00 2
+2015-06-22 00:00:00 2
+2015-06-23 00:00:00 2
+2015-06-24 00:00:00 2
+2015-06-25 00:00:00 2
+2015-06-26 00:00:00 2
+2015-06-27 00:00:00 2
+2015-06-28 00:00:00 2
+2015-06-29 00:00:00 2
+2015-06-30 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D'), Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w2
+2015-06-18    w2
+2015-06-19    w2
+2015-06-20    w2
+2015-06-21    w2
+2015-06-22    w2
+2015-06-23    w2
+2015-06-24    w2
+2015-06-25    w2
+2015-06-26    w2
+2015-06-27    w2
+2015-06-28    w2
+2015-06-29    w2
+2015-06-30    w2
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                          6922  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+2015-06-17                   w2                            0   
+2015-06-18                   w2                            0   
+2015-06-19                   w2                            0   
+2015-06-20                   w2                            0   
+2015-06-21                   w2                            0   
+2015-06-22                   w2                            0   
+2015-06-23                   w2                            0   
+2015-06-24                   w2                            0   
+2015-06-25                   w2                            0   
+2015-06-26                   w2                            0   
+2015-06-27                   w2                            0   
+2015-06-28                   w2                            0   
+2015-06-29                   w2                            0   
+2015-06-30                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Mid & Pre Oxy Gasoline can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Reg Oxy Gasoline
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+2015-06-17 00:00:00 2
+2015-06-18 00:00:00 2
+2015-06-19 00:00:00 2
+2015-06-20 00:00:00 2
+2015-06-21 00:00:00 2
+2015-06-22 00:00:00 2
+2015-06-23 00:00:00 2
+2015-06-24 00:00:00 2
+2015-06-25 00:00:00 2
+2015-06-26 00:00:00 2
+2015-06-27 00:00:00 2
+2015-06-28 00:00:00 2
+2015-06-29 00:00:00 2
+2015-06-30 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D'), Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w2
+2015-06-18    w2
+2015-06-19    w2
+2015-06-20    w2
+2015-06-21    w2
+2015-06-22    w2
+2015-06-23    w2
+2015-06-24    w2
+2015-06-25    w2
+2015-06-26    w2
+2015-06-27    w2
+2015-06-28    w2
+2015-06-29    w2
+2015-06-30    w2
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         23180  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+2015-06-17                   w2                            0   
+2015-06-18                   w2                            0   
+2015-06-19                   w2                            0   
+2015-06-20                   w2                            0   
+2015-06-21                   w2                            0   
+2015-06-22                   w2                            0   
+2015-06-23                   w2                            0   
+2015-06-24                   w2                            0   
+2015-06-25                   w2                            0   
+2015-06-26                   w2                            0   
+2015-06-27                   w2                            0   
+2015-06-28                   w2                            0   
+2015-06-29                   w2                            0   
+2015-06-30                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Reg Oxy Gasoline can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - Colton TSO & KM CA CARB ULSD
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        145338  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         68500  
+2015-06-14                        109240  
+2015-06-15                        184661  
+2015-06-16                        222161  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        426381  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                            0   
+2015-06-22                   w4                            0   
+2015-06-23                   w4                            0   
+2015-06-24                   w4                            0   
+2015-06-25                   w4                            0   
+2015-06-26                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                        100400  
+2015-06-22                        176700  
+2015-06-23                        206900  
+2015-06-24                        282440  
+2015-06-25                        372940  
+2015-06-26                        425740  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                            0   
+2015-06-30                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         60850  
+2015-06-29                        139854  
+2015-06-30                        164954  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - Colton TSO & KM CA CARB ULSD can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - East Hynes and Vinvale CA CARB ULSD
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        280587  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                         45712  
+2015-06-14                         98910  
+2015-06-15                        136910  
+2015-06-16                        167310  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        501685  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                            0   
+2015-06-22                   w4                            0   
+2015-06-23                   w4                            0   
+2015-06-24                   w4                            0   
+2015-06-25                   w4                            0   
+2015-06-26                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         60912  
+2015-06-22                        122012  
+2015-06-23                        221122  
+2015-06-24                        319432  
+2015-06-25                        420290  
+2015-06-26                        534342  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                            0   
+2015-06-30                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         83850  
+2015-06-29                        152150  
+2015-06-30                        266500  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - East Hynes and Vinvale CA CARB ULSD can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP MTN - SALT LAKE CITY BIG WEST MTN ULSD #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+2015-06-04 00:00:00 1
+2015-06-05 00:00:00 1
+2015-06-06 00:00:00 1
+2015-06-07 00:00:00 1
+2015-06-08 00:00:00 1
+2015-06-09 00:00:00 1
+2015-06-10 00:00:00 1
+2015-06-11 00:00:00 1
+2015-06-12 00:00:00 1
+2015-06-13 00:00:00 1
+2015-06-14 00:00:00 1
+2015-06-15 00:00:00 1
+2015-06-16 00:00:00 1
+2015-06-17 00:00:00 1
+2015-06-18 00:00:00 1
+2015-06-19 00:00:00 1
+2015-06-20 00:00:00 1
+2015-06-21 00:00:00 1
+2015-06-22 00:00:00 1
+2015-06-23 00:00:00 1
+2015-06-24 00:00:00 1
+2015-06-25 00:00:00 1
+2015-06-26 00:00:00 1
+2015-06-27 00:00:00 1
+2015-06-28 00:00:00 1
+2015-06-29 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D'), Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D'), Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w1
+2015-06-05    w1
+2015-06-06    w1
+2015-06-07    w1
+2015-06-08    w1
+2015-06-09    w1
+2015-06-10    w1
+2015-06-11    w1
+2015-06-12    w1
+2015-06-13    w1
+2015-06-14    w1
+2015-06-15    w1
+2015-06-16    w1
+2015-06-17    w1
+2015-06-18    w1
+2015-06-19    w1
+2015-06-20    w1
+2015-06-21    w1
+2015-06-22    w1
+2015-06-23    w1
+2015-06-24    w1
+2015-06-25    w1
+2015-06-26    w1
+2015-06-27    w1
+2015-06-28    w1
+2015-06-29    w1
+2015-06-30    w2
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+2015-06-04                   w1                            0   
+2015-06-05                   w1                            0   
+2015-06-06                   w1                            0   
+2015-06-07                   w1                            0   
+2015-06-08                   w1                            0   
+2015-06-09                   w1                            0   
+2015-06-10                   w1                            0   
+2015-06-11                   w1                            0   
+2015-06-12                   w1                            0   
+2015-06-13                   w1                            0   
+2015-06-14                   w1                            0   
+2015-06-15                   w1                            0   
+2015-06-16                   w1                            0   
+2015-06-17                   w1                            0   
+2015-06-18                   w1                            0   
+2015-06-19                   w1                            0   
+2015-06-20                   w1                            0   
+2015-06-21                   w1                            0   
+2015-06-22                   w1                            0   
+2015-06-23                   w1                            0   
+2015-06-24                   w1                            0   
+2015-06-25                   w1                            0   
+2015-06-26                   w1                            0   
+2015-06-27                   w1                            0   
+2015-06-28                   w1                        12000   
+2015-06-29                   w1                        46800   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                             0  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                         22500  
+2015-06-28                         34500  
+2015-06-29                        112801  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-30                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-30                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-07                            0   
+2015-06-02                      2015-06-07                            0   
+2015-06-03                      2015-06-07                            0   
+2015-06-04                      2015-06-07                            0   
+2015-06-05                      2015-06-07                            0   
+2015-06-06                      2015-06-07                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                             0  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-07                      2015-06-14                            0   
+2015-06-08                      2015-06-14                            0   
+2015-06-09                      2015-06-14                            0   
+2015-06-10                      2015-06-14                            0   
+2015-06-11                      2015-06-14                            0   
+2015-06-12                      2015-06-14                            0   
+2015-06-13                      2015-06-14                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-14                      2015-06-21                            0   
+2015-06-15                      2015-06-21                            0   
+2015-06-16                      2015-06-21                            0   
+2015-06-17                      2015-06-21                            0   
+2015-06-18                      2015-06-21                            0   
+2015-06-19                      2015-06-21                            0   
+2015-06-20                      2015-06-21                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-21                      2015-06-28                            0   
+2015-06-22                      2015-06-28                            0   
+2015-06-23                      2015-06-28                            0   
+2015-06-24                      2015-06-28                            0   
+2015-06-25                      2015-06-28                            0   
+2015-06-26                      2015-06-28                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-06-30                            0   
+2015-06-28                      2015-06-30                        12000   
+2015-06-29                      2015-06-30                        46800   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                         22500  
+2015-06-28                         34500  
+2015-06-29                        112801  
+Modification_Successful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-30                      2015-07-07                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-30                             0  
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP MTN - SALT LAKE CITY TESORO MTN ULSD #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D')]
+2015-06-15 00:00:00 3
+2015-06-16 00:00:00 3
+[Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 4
+2015-06-18 00:00:00 4
+2015-06-19 00:00:00 4
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 5
+2015-06-21 00:00:00 5
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D')]
+2015-06-22 00:00:00 6
+2015-06-23 00:00:00 6
+2015-06-24 00:00:00 6
+2015-06-25 00:00:00 6
+2015-06-26 00:00:00 6
+2015-06-27 00:00:00 6
+2015-06-28 00:00:00 6
+2015-06-29 00:00:00 6
+2015-06-30 00:00:00 6
+[Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w3
+2015-06-16    w3
+2015-06-17    w4
+2015-06-18    w4
+2015-06-19    w4
+2015-06-20    w5
+2015-06-21    w5
+2015-06-22    w6
+2015-06-23    w6
+2015-06-24    w6
+2015-06-25    w6
+2015-06-26    w6
+2015-06-27    w6
+2015-06-28    w6
+2015-06-29    w6
+2015-06-30    w6
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                        10505   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        147448  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                        85568   
+2015-06-14                   w2                        99371   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                        422956  
+2015-06-14                        522327  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-15                   w3                        66259   
+2015-06-16                   w3                        27453   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-15                         66259  
+2015-06-16                         93712  
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w4                            0   
+2015-06-18                   w4                            0   
+2015-06-19                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        426694  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w5                            0   
+2015-06-21                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                        580362  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-22                   w6                        70928   
+2015-06-23                   w6                        52808   
+2015-06-24                   w6                        17704   
+2015-06-25                   w6                            0   
+2015-06-26                   w6                            0   
+2015-06-27                   w6                            0   
+2015-06-28                   w6                            0   
+2015-06-29                   w6                            0   
+2015-06-30                   w6                        19909   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-22                         70928  
+2015-06-23                        155888  
+2015-06-24                        243028  
+2015-06-25                        275042  
+2015-06-26                        284739  
+2015-06-27                        305831  
+2015-06-28                        338836  
+2015-06-29                        338836  
+2015-06-30                        358745  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-08                            0   
+2015-06-02                      2015-06-08                            0   
+2015-06-03                      2015-06-08                        10505   
+2015-06-04                      2015-06-08                            0   
+2015-06-05                      2015-06-08                            0   
+2015-06-06                      2015-06-08                            0   
+2015-06-07                      2015-06-08                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        147448  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-08                      2015-06-15                            0   
+2015-06-09                      2015-06-15                            0   
+2015-06-10                      2015-06-15                            0   
+2015-06-11                      2015-06-15                            0   
+2015-06-12                      2015-06-15                            0   
+2015-06-13                      2015-06-15                        85568   
+2015-06-14                      2015-06-15                        99371   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                        422956  
+2015-06-14                        522327  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-15                      2015-06-22                        66259   
+2015-06-16                      2015-06-22                        27453   
+2015-06-17                      2015-06-22                            0   
+2015-06-18                      2015-06-22                            0   
+2015-06-19                      2015-06-22                            0   
+2015-06-20                      2015-06-22                            0   
+2015-06-21                      2015-06-22                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-15                         66259  
+2015-06-16                         93712  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        426694  
+2015-06-20                             0  
+2015-06-21                        580362  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-22                      2015-06-29                        70928   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-22                         70928  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-23                      2015-07-01                        52808   
+2015-06-24                      2015-07-01                        17704   
+2015-06-25                      2015-07-01                            0   
+2015-06-26                      2015-07-01                            0   
+2015-06-27                      2015-07-01                            0   
+2015-06-28                      2015-07-01                            0   
+2015-06-29                      2015-07-01                            0   
+2015-06-30                      2015-07-01                        19909   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-23                        155888  
+2015-06-24                        243028  
+2015-06-25                        275042  
+2015-06-26                        284739  
+2015-06-27                        305831  
+2015-06-28                        338836  
+2015-06-29                        338836  
+2015-06-30                        358745  
+Modification_Successful
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP NuStar Moorhead MN NGP ULSD #1
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP NuStar Moorhead MN NGP ULSD #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+2015-06-17 00:00:00 2
+2015-06-18 00:00:00 2
+2015-06-19 00:00:00 2
+2015-06-20 00:00:00 2
+2015-06-21 00:00:00 2
+2015-06-22 00:00:00 2
+2015-06-23 00:00:00 2
+2015-06-24 00:00:00 2
+2015-06-25 00:00:00 2
+2015-06-26 00:00:00 2
+2015-06-27 00:00:00 2
+2015-06-28 00:00:00 2
+2015-06-29 00:00:00 2
+2015-06-30 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D'), Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w2
+2015-06-18    w2
+2015-06-19    w2
+2015-06-20    w2
+2015-06-21    w2
+2015-06-22    w2
+2015-06-23    w2
+2015-06-24    w2
+2015-06-25    w2
+2015-06-26    w2
+2015-06-27    w2
+2015-06-28    w2
+2015-06-29    w2
+2015-06-30    w2
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        168201  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+2015-06-17                   w2                            0   
+2015-06-18                   w2                            0   
+2015-06-19                   w2                            0   
+2015-06-20                   w2                            0   
+2015-06-21                   w2                            0   
+2015-06-22                   w2                            0   
+2015-06-23                   w2                            0   
+2015-06-24                   w2                            0   
+2015-06-25                   w2                            0   
+2015-06-26                   w2                            0   
+2015-06-27                   w2                            0   
+2015-06-28                   w2                            0   
+2015-06-29                   w2                            0   
+2015-06-30                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP NuStar Moorhead MN NGP ULSD #2 can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP PNW - ANACORTES ALL TERMINALS PNW DIESEL
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 3
+2015-06-18 00:00:00 3
+2015-06-19 00:00:00 3
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 4
+2015-06-21 00:00:00 4
+2015-06-22 00:00:00 4
+2015-06-23 00:00:00 4
+2015-06-24 00:00:00 4
+2015-06-25 00:00:00 4
+2015-06-26 00:00:00 4
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D')]
+2015-06-27 00:00:00 5
+2015-06-28 00:00:00 5
+2015-06-29 00:00:00 5
+2015-06-30 00:00:00 5
+[Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w3
+2015-06-18    w3
+2015-06-19    w3
+2015-06-20    w4
+2015-06-21    w4
+2015-06-22    w4
+2015-06-23    w4
+2015-06-24    w4
+2015-06-25    w4
+2015-06-26    w4
+2015-06-27    w5
+2015-06-28    w5
+2015-06-29    w5
+2015-06-30    w5
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         77893  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                          9797  
+2015-06-14                         29794  
+2015-06-15                         58884  
+2015-06-16                         68885  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w3                            0   
+2015-06-18                   w3                            0   
+2015-06-19                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         98179  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w4                            0   
+2015-06-21                   w4                            0   
+2015-06-22                   w4                            0   
+2015-06-23                   w4                            0   
+2015-06-24                   w4                            0   
+2015-06-25                   w4                            0   
+2015-06-26                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                          9497  
+2015-06-22                         28991  
+2015-06-23                         58586  
+2015-06-24                         58586  
+2015-06-25                         87874  
+2015-06-26                        117666  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-27                   w5                            0   
+2015-06-28                   w5                            0   
+2015-06-29                   w5                            0   
+2015-06-30                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                         10001  
+2015-06-30                         29498  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP PNW - ANACORTES ALL TERMINALS PNW DIESEL can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP Tesoro Mandan ND NGP Gasoline
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D')]
+2015-06-15 00:00:00 3
+2015-06-16 00:00:00 3
+[Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D')]
+2015-06-17 00:00:00 4
+2015-06-18 00:00:00 4
+2015-06-19 00:00:00 4
+[Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D')]
+2015-06-20 00:00:00 5
+2015-06-21 00:00:00 5
+[Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D')]
+2015-06-22 00:00:00 6
+2015-06-23 00:00:00 6
+2015-06-24 00:00:00 6
+2015-06-25 00:00:00 6
+2015-06-26 00:00:00 6
+2015-06-27 00:00:00 6
+2015-06-28 00:00:00 6
+2015-06-29 00:00:00 6
+2015-06-30 00:00:00 6
+[Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w3
+2015-06-16    w3
+2015-06-17    w4
+2015-06-18    w4
+2015-06-19    w4
+2015-06-20    w5
+2015-06-21    w5
+2015-06-22    w6
+2015-06-23    w6
+2015-06-24    w6
+2015-06-25    w6
+2015-06-26    w6
+2015-06-27    w6
+2015-06-28    w6
+2015-06-29    w6
+2015-06-30    w6
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         29800  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                        100840  
+2015-06-14                        110843  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-15                   w3                            0   
+2015-06-16                   w3                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-15                         16200  
+2015-06-16                         17601  
+Modification_Successful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-17                   w4                            0   
+2015-06-18                   w4                            0   
+2015-06-19                   w4                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         34156  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-20                   w5                            0   
+2015-06-21                   w5                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         49151  
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-22                   w6                            0   
+2015-06-23                   w6                            0   
+2015-06-24                   w6                            0   
+2015-06-25                   w6                            0   
+2015-06-26                   w6                            0   
+2015-06-27                   w6                            0   
+2015-06-28                   w6                            0   
+2015-06-29                   w6                            0   
+2015-06-30                   w6                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-22                          9997  
+2015-06-23                         19989  
+2015-06-24                         41996  
+2015-06-25                         51198  
+2015-06-26                         62504  
+2015-06-27                         77503  
+2015-06-28                         92406  
+2015-06-29                        132477  
+2015-06-30                        149490  
+Modification_Successful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-08                            0   
+2015-06-02                      2015-06-08                            0   
+2015-06-03                      2015-06-08                            0   
+2015-06-04                      2015-06-08                            0   
+2015-06-05                      2015-06-08                            0   
+2015-06-06                      2015-06-08                            0   
+2015-06-07                      2015-06-08                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         29800  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-08                      2015-06-15                            0   
+2015-06-09                      2015-06-15                            0   
+2015-06-10                      2015-06-15                            0   
+2015-06-11                      2015-06-15                            0   
+2015-06-12                      2015-06-15                            0   
+2015-06-13                      2015-06-15                            0   
+2015-06-14                      2015-06-15                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                        100840  
+2015-06-14                        110843  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-15                      2015-06-22                            0   
+2015-06-16                      2015-06-22                            0   
+2015-06-17                      2015-06-22                            0   
+2015-06-18                      2015-06-22                            0   
+2015-06-19                      2015-06-22                            0   
+2015-06-20                      2015-06-22                            0   
+2015-06-21                      2015-06-22                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-15                         16200  
+2015-06-16                         17601  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         34156  
+2015-06-20                             0  
+2015-06-21                         49151  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-22                      2015-06-29                            0   
+2015-06-23                      2015-06-29                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-22                          9997  
+2015-06-23                         19989  
+Modification_Successful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-24                      2015-07-01                            0   
+2015-06-25                      2015-07-01                            0   
+2015-06-26                      2015-07-01                            0   
+2015-06-27                      2015-07-01                            0   
+2015-06-28                      2015-07-01                            0   
+2015-06-29                      2015-07-01                            0   
+2015-06-30                      2015-07-01                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-24                         41996  
+2015-06-25                         51198  
+2015-06-26                         62504  
+2015-06-27                         77503  
+2015-06-28                         92406  
+2015-06-29                        132477  
+2015-06-30                        149490  
+Modification_Successful
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP Tesoro Mandan ND NGP ULSD #2
+2015-06-01 00:00:00 1
+2015-06-02 00:00:00 1
+2015-06-03 00:00:00 1
+[Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D'), Timestamp('2015-06-03 00:00:00', offset='D')]
+2015-06-04 00:00:00 2
+2015-06-05 00:00:00 2
+2015-06-06 00:00:00 2
+2015-06-07 00:00:00 2
+2015-06-08 00:00:00 2
+2015-06-09 00:00:00 2
+2015-06-10 00:00:00 2
+2015-06-11 00:00:00 2
+2015-06-12 00:00:00 2
+2015-06-13 00:00:00 2
+2015-06-14 00:00:00 2
+2015-06-15 00:00:00 2
+2015-06-16 00:00:00 2
+2015-06-17 00:00:00 2
+2015-06-18 00:00:00 2
+2015-06-19 00:00:00 2
+2015-06-20 00:00:00 2
+2015-06-21 00:00:00 2
+2015-06-22 00:00:00 2
+2015-06-23 00:00:00 2
+2015-06-24 00:00:00 2
+2015-06-25 00:00:00 2
+2015-06-26 00:00:00 2
+2015-06-27 00:00:00 2
+2015-06-28 00:00:00 2
+2015-06-29 00:00:00 2
+2015-06-30 00:00:00 2
+[Timestamp('2015-06-04 00:00:00', offset='D'), Timestamp('2015-06-05 00:00:00', offset='D'), Timestamp('2015-06-06 00:00:00', offset='D'), Timestamp('2015-06-07 00:00:00', offset='D'), Timestamp('2015-06-08 00:00:00', offset='D'), Timestamp('2015-06-09 00:00:00', offset='D'), Timestamp('2015-06-10 00:00:00', offset='D'), Timestamp('2015-06-11 00:00:00', offset='D'), Timestamp('2015-06-12 00:00:00', offset='D'), Timestamp('2015-06-13 00:00:00', offset='D'), Timestamp('2015-06-14 00:00:00', offset='D'), Timestamp('2015-06-15 00:00:00', offset='D'), Timestamp('2015-06-16 00:00:00', offset='D'), Timestamp('2015-06-17 00:00:00', offset='D'), Timestamp('2015-06-18 00:00:00', offset='D'), Timestamp('2015-06-19 00:00:00', offset='D'), Timestamp('2015-06-20 00:00:00', offset='D'), Timestamp('2015-06-21 00:00:00', offset='D'), Timestamp('2015-06-22 00:00:00', offset='D'), Timestamp('2015-06-23 00:00:00', offset='D'), Timestamp('2015-06-24 00:00:00', offset='D'), Timestamp('2015-06-25 00:00:00', offset='D'), Timestamp('2015-06-26 00:00:00', offset='D'), Timestamp('2015-06-27 00:00:00', offset='D'), Timestamp('2015-06-28 00:00:00', offset='D'), Timestamp('2015-06-29 00:00:00', offset='D'), Timestamp('2015-06-30 00:00:00', offset='D')]
+2015-06-01    w1
+2015-06-02    w1
+2015-06-03    w1
+2015-06-04    w2
+2015-06-05    w2
+2015-06-06    w2
+2015-06-07    w2
+2015-06-08    w2
+2015-06-09    w2
+2015-06-10    w2
+2015-06-11    w2
+2015-06-12    w2
+2015-06-13    w2
+2015-06-14    w2
+2015-06-15    w2
+2015-06-16    w2
+2015-06-17    w2
+2015-06-18    w2
+2015-06-19    w2
+2015-06-20    w2
+2015-06-21    w2
+2015-06-22    w2
+2015-06-23    w2
+2015-06-24    w2
+2015-06-25    w2
+2015-06-26    w2
+2015-06-27    w2
+2015-06-28    w2
+2015-06-29    w2
+2015-06-30    w2
+Freq: D, Name: WeeksByLiftedGallons, dtype: object
+****Invalid Week****
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-01                   w1                            0   
+2015-06-02                   w1                            0   
+2015-06-03                   w1                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        146407  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
+No Enough Data available to Fill Lifted Gallons
+Modification_UnSuccessful
+****Valid Week***
+           WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
+2015-06-04                   w2                            0   
+2015-06-05                   w2                            0   
+2015-06-06                   w2                            0   
+2015-06-07                   w2                            0   
+2015-06-08                   w2                            0   
+2015-06-09                   w2                            0   
+2015-06-10                   w2                            0   
+2015-06-11                   w2                            0   
+2015-06-12                   w2                            0   
+2015-06-13                   w2                            0   
+2015-06-14                   w2                            0   
+2015-06-15                   w2                            0   
+2015-06-16                   w2                            0   
+2015-06-17                   w2                            0   
+2015-06-18                   w2                            0   
+2015-06-19                   w2                            0   
+2015-06-20                   w2                            0   
+2015-06-21                   w2                            0   
+2015-06-22                   w2                            0   
+2015-06-23                   w2                            0   
+2015-06-24                   w2                            0   
+2015-06-25                   w2                            0   
+2015-06-26                   w2                            0   
+2015-06-27                   w2                            0   
+2015-06-28                   w2                            0   
+2015-06-29                   w2                            0   
+2015-06-30                   w2                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
+Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP Tesoro Mandan ND NGP ULSD #2 can't compare datetime.datetime to int
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP UT-SALT LAKE CITY-CHEVRON-762798-T003 MTN ULSD #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP UT-WOODS CROSS-HOLLY-762793-T934 MTN ULSD #2
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK AZ - PHOENIX CALJET CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK AZ - PHOENIX KM CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK AZ - PHOENIX KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK AZ - PHOENIX PRO PETROL CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BARSTOW KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BARSTOW KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BARSTOW KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BARSTOW KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRADSHAW KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRADSHAW KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRADSHAW KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRADSHAW KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRISBANE KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRISBANE KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRISBANE KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - BRISBANE KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CARSON WATSON KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CARSON WATSON KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CARSON WATSON KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CARSON WATSON KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CHICO KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CHICO KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CHICO KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - CHICO KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - COLTON KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - COLTON KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - COLTON KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - COLTON KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - FRESNO KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - FRESNO KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - FRESNO KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - FRESNO KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - GOLDEN EAGLE TSO CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - GOLDEN EAGLE TSO CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - GOLDEN EAGLE TSO CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - GOLDEN EAGLE TSO CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - IMPERIAL KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - IMPERIAL KM CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - IMPERIAL KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - IMPERIAL KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - IMPERIAL KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - ORANGE KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - ORANGE KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - ORANGE KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - ORANGE KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - RICHMOND CASTRO CHEV CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - RICHMOND CASTRO CHEV CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - RICHMOND CASTRO CHEV CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - RICHMOND CASTRO CHEV CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN DIEGO MIS VAL KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN DIEGO MIS VAL KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN DIEGO MIS VAL KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN DIEGO MIS VAL KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE KM CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE SHELL CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE SHELL CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE SHELL CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - SAN JOSE SHELL CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - STOCKTON NUSTAR CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - STOCKTON NUSTAR CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - STOCKTON NUSTAR CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - STOCKTON TSO CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - STOCKTON TSO CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - STOCKTON TSO CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - STOCKTON TSO CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - W SACRAMENTO BUCKEYE CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - W SACRAMENTO BUCKEYE CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - W SACRAMENTO BUCKEYE HI GAS & DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - WILMINGTON TSO CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - WILMINGTON TSO CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - WILMINGTON TSO CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA - WILMINGTON TSO CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA -W SACRAMENTO SHELL CA CARB ULSD
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA -W SACRAMENTO SHELL CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA -W SACRAMENTO SHELL CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CA -W SACRAMENTO SHELL CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-COLTON-TESORO-T820 CA CARB ULSD
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-EAST HYNES CA CARB ULSD
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-EAST HYNES CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-EAST HYNES CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-LAS VEGAS-PRO-869162-T797 CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-LAS VEGAS-PRO-869162-T797 CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-SAN DIEGO-TESORO-T815 CA CARB ULSD
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-VINVALE CA CARB ULSD
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-VINVALE CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CAS-VINVALE CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CSW - 800 - ALL TERMINALS CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CSW - 800 - ALL TERMINALS CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CSW - 800 - ALL TERMINALS CA Mid & Pre Clear Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CSW - 800 - ALL TERMINALS CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CSW - 800 - ALL TERMINALS CA Reg Clear Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK CSW - 800 - ALL TERMINALS CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - BOISE-TSO (FKA:NWTC Chev) MTN GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - BOISE-TSO (FKA:NWTC Chev) MTN ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - POCATELLO MTN GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - POCATELLO MTN ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - SALT LAKE CITY TESORO MTN MIDGRADE GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - SALT LAKE CITY TESORO MTN PREMIUM GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - SALT LAKE CITY TESORO MTN REGULAR 85 OR LESS GAS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - SALT LAKE CITY TESORO MTN ULSD #1
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK MTN - SALT LAKE CITY TESORO MTN ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NV - LAS VEGAS KM CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NV - LAS VEGAS KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NV - RENO KM CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NV - RENO KM CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NV - RENO KM CA Non-Standard Products
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NV - RENO KM CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Jamestown North ND NGP Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Jamestown North ND NGP ULSD #1
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Jamestown North ND NGP ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Jamestown North ND ULR 87 Clear
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Moorhead MN NGP B5 DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Moorhead MN NGP Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Moorhead MN NGP ULSD #1
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Moorhead MN NGP ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Moorhead MN ULR 87 Clear
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Roseville MN NGP B5 DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Roseville MN NGP Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Roseville MN NGP ULSD #1
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Roseville MN NGP ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN NGP B5 DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN NGP Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN NGP ULSD #1
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN NGP ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - ANACORTES REFINERY PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - ANACORTES SHELL PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - ANACORTES SHELL PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - EUGENE KINDER MORGAN PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - EUGENE KINDER MORGAN PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - EUGENE KINDER MORGAN Y
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - PASCO TIDEWATER PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - PASCO TIDEWATER PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - PASCO TSO PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - PASCO TSO PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - SEATTLE KINDER MORGAN PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - SEATTLE KINDER MORGAN PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - SEATTLE SHELL PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - SEATTLE SHELL PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - TACOMA NUSTAR PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - TACOMA NUSTAR PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - TACOMA NUSTAR Shell CONV 91 E10
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - TACOMA TARGA P5T
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - TACOMA TARGA PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - TACOMA TARGA PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - UMATILLA TIDEWATER PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - VANCOUVER - TSO P
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - VANCOUVER - TSO PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - VANCOUVER - TSO PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - WILLBRIDGE KINDER MORGAN PNW DIESEL
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - WILLBRIDGE KINDER MORGAN PNW GASOLINE & COMPONENTS
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - WILLBRIDGE KINDER MORGAN PNW JET
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - WILLBRIDGE KINDER MORGAN Y
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK TWC-CA/SW REGION- LA - 1200 - ALL TERMINALS CA CARB ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK TWC-CA/SW REGION- LA - 1200 - ALL TERMINALS CA EPA ULSD
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK TWC-CA/SW REGION- LA - 1200 - ALL TERMINALS CA Mid & Pre Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK TWC-CA/SW REGION- LA - 1200 - ALL TERMINALS CA Reg Oxy Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK Tesoro Mandan ND NGP Gasoline
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK Tesoro Mandan ND NGP ULSD #1
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK Tesoro Mandan ND NGP ULSD #2
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN DF2<15PPM B10 DYED
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN DF2<15PPM B10 UNDYED
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN DF2<15PPM B20 DYED
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK NuStar Sauk Centre MN DF2<15ppm B20 UNDYED
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - SEATTLE KINDER MORGAN Oxy 92 E10
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK PNW - SEATTLE SHELL P2A
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK Tesoro Mandan ND Oxy 91 10% etoh
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK Tesoro Mandan ND TT 87 E10
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+***** Execution in Combination: pilot Tesoro UNBRANDED OPEN RACK Tesoro Mandan ND ULP 91 Clear
+No Weekly Refresh Dates to Compute....
+ Exiting Execution.....
+Completed Execution Thanks for you Patience 
