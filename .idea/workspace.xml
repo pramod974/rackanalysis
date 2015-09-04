@@ -1,7 +1,611 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81926c22-6a48-49fa-9b10-85316a115f9c" name="Default" comment="" />
+    <list default="true" id="81926c22-6a48-49fa-9b10-85316a115f9c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spark/data_fetch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spark/entities.py" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\BP_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1010SANJOSECATRMCHEVRON_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1037PASCAGOULAMSTRMCHEVRON_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1042LASVEGASNVTRMCALNEV_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1076CHICOCATRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1080EUGENEORTRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1083FRESNOCATRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1089IMPERIALCATRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_1127SPARKSNVTRMBERRYHINCKLEY_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_2732COLTONCATRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_3191PASCOWATRMTIDEWATER_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCAC7460761_3351PHOENIXAZTRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCCHV7460761_1021FTLAUDERDALEFLTRMCHEVRON_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCCHV7460761_1025DORAVILLEGATRMCHEVRON_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCCHV7460761_1107ORLANDOFLTRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCCHV7460761_1107ORLANDOFLTRMKINDERMORGAN_GASOLINE.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCCHV7460761_2456FTLAUDERDALEFLTRMMOTIVA_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCCHV7460761_2732COLTONCATRMKINDERMORGAN_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron\june\PILOTTRAVELCENTERSLLCCHV7460761_RENONVTRMKINDERMORGAN-2776_DIESEL#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_july_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_july_reconsiledPivot.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_july_reconsiled_new.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_june_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_june_reconsiledPivot.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_june_reconsiledPivotAll.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_june_reconsiled_modified.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Chevron_reconsiled_july.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_GLENDIVEMTCENEXEX-02PT_ULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_PremRFG.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_RegRFG.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_ULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB9.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon\june\Exception\PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB9.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon_july_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon_july_reconsiledPivot.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon_july_reconsiledPivotAll.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon_june_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon_june_reconsiledPivot.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon_june_reconsiledPivot_old.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Exxon_reconsiled_july.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Holly_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\P66_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_CA-SANJOSEALLTERMINALS_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_CA-SANJOSEALLTERMINALS_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYBIGWEST_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_NuStarMoorheadMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_NuStarMoorheadMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_TesoroMandanND_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_UT-SALTLAKECITY-CHEVRON-762798-T003_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\HIGHVOLUMETRUCKSTOP_UT-WOODSCROSS-HOLLY-762793-T934_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_AZ-PHOENIXCALJET_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_AZ-PHOENIXKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_AZ-PHOENIXKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_AZ-PHOENIXPROPETROL_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BARSTOWKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BARSTOWKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BARSTOWKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BARSTOWKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRISBANEKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRISBANEKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRISBANEKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-BRISBANEKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CHICOKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CHICOKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CHICOKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-CHICOKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-COLTONKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-COLTONKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-COLTONKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-COLTONKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-FRESNOKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-FRESNOKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-FRESNOKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-FRESNOKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-IMPERIALKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-IMPERIALKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-IMPERIALKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-IMPERIALKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-IMPERIALKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-ORANGEKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-ORANGEKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-ORANGEKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-ORANGEKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSEKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSEKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSEKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSEKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-STOCKTONNUSTAR_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-STOCKTONNUSTAR_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-STOCKTONNUSTAR_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WSACRAMENTOBUCKEYE_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WSACRAMENTOBUCKEYE_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WSACRAMENTOBUCKEYE_HIGAS&amp;DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-COLTON-TESORO-T820_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-EASTHYNES_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-EASTHYNES_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-EASTHYNES_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-LASVEGAS-PRO-869162-T797_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-LASVEGAS-PRO-869162-T797_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-SANDIEGO-TESORO-T815_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-VINVALE_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-VINVALE_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CAS-VINVALE_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CAMid&amp;PreClearGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CARegClearGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-BOISE-TSO(FKANWTCChev)_MTNGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-BOISE-TSO(FKANWTCChev)_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-POCATELLO_MTNGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-POCATELLO_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNMIDGRADEGAS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNPREMIUMGAS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNREGULAR85ORLESSGAS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NV-LASVEGASKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NV-LASVEGASKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NV-RENOKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NV-RENOKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NV-RENOKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NV-RENOKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarJamestownNorthND_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarJamestownNorthND_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarJamestownNorthND_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarJamestownNorthND_Oxy89E10.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarJamestownNorthND_ShellCONV91E10.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarJamestownNorthND_ULP91Clear.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarJamestownNorthND_ULR87Clear.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPB5DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarMoorheadMN_ULR87Clear.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPB5DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPB5DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-ANACORTESREFINERY_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-ANACORTESSHELL_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-ANACORTESSHELL_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-EUGENEKINDERMORGAN_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-EUGENEKINDERMORGAN_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-EUGENEKINDERMORGAN_Y.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-PASCOTIDEWATER_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-PASCOTIDEWATER_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-PASCOTSO_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-PASCOTSO_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-SEATTLEKINDERMORGAN_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-SEATTLEKINDERMORGAN_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-SEATTLESHELL_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-SEATTLESHELL_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-TACOMANUSTAR_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-TACOMANUSTAR_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-TACOMANUSTAR_ShellCONV91E10.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-TACOMATARGA_P5T.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-TACOMATARGA_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-TACOMATARGA_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-UMATILLATIDEWATER_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_D.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_DB4.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_P.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_PNWJET.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_Y.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TesoroMandanND_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TesoroMandanND_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TesoroMandanND_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TesoroMandanND_Oxy9110%etoh.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TesoroMandanND_TT87E10.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\july\UNBRANDEDOPENRACK_TesoroMandanND_ULP91Clear.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_AZ-PHOENIXKM&amp;PRO_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CA-Barstow-ColtonKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CA-CHICOKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CA-SACRAMENTOALLTERMINALS_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CA-SANJOSEALLTERMINALS_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CA-SANJOSEALLTERMINALS_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CA-SANJOSEALLTERMINALS_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CAS-ColtonTSO&amp;KM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_CAS-EastHynesandVinvale_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYBIGWEST_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYTESORO_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_NuStarMoorheadMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_NuStarMoorheadMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_PNW-ANACORTESALLTERMINALS_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_TesoroMandanND_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_TesoroMandanND_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_UT-SALTLAKECITY-CHEVRON-762798-T003_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\HIGHVOLUMETRUCKSTOP_UT-WOODSCROSS-HOLLY-762793-T934_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_AZ-PHOENIXCALJET_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_AZ-PHOENIXKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_AZ-PHOENIXKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_AZ-PHOENIXPROPETROL_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BARSTOWKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BARSTOWKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BARSTOWKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BARSTOWKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRADSHAWKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRISBANEKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRISBANEKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRISBANEKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-BRISBANEKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CARSONWATSONKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CHICOKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CHICOKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CHICOKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-CHICOKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-COLTONKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-COLTONKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-COLTONKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-COLTONKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-FRESNOKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-FRESNOKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-FRESNOKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-FRESNOKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-GOLDENEAGLETSO_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-IMPERIALKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-IMPERIALKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-IMPERIALKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-IMPERIALKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-IMPERIALKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-ORANGEKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-ORANGEKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-ORANGEKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-ORANGEKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-RICHMONDCASTROCHEV_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANDIEGOMISVALKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSEKM_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSEKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSEKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSEKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-SANJOSESHELL_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-STOCKTONNUSTAR_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-STOCKTONNUSTAR_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-STOCKTONNUSTAR_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-STOCKTONTSO_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WILMINGTONTSO_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WSACRAMENTOBUCKEYE_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WSACRAMENTOBUCKEYE_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WSACRAMENTOBUCKEYE_HIGAS&amp;DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CA-WSACRAMENTOSHELL_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-COLTON-TESORO-T820_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-EASTHYNES_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-EASTHYNES_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-EASTHYNES_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-LASVEGAS-PRO-869162-T797_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-LASVEGAS-PRO-869162-T797_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-SANDIEGO-TESORO-T815_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-VINVALE_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-VINVALE_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CAS-VINVALE_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CAMid&amp;PreClearGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CARegClearGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_CSW-800-ALLTERMINALS_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-BOISE-TSO(FKANWTCChev)_MTNGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-BOISE-TSO(FKANWTCChev)_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-POCATELLO_MTNGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-POCATELLO_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNMIDGRADEGAS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNPREMIUMGAS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNREGULAR85ORLESSGAS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_MTN-SALTLAKECITYTESORO_MTNULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NV-LASVEGASKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NV-LASVEGASKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NV-RENOKM_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NV-RENOKM_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NV-RENOKM_CANon-StandardProducts.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NV-RENOKM_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarJamestownNorthND_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarJamestownNorthND_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarJamestownNorthND_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarJamestownNorthND_ULR87Clear.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPB5DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarMoorheadMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarMoorheadMN_ULR87Clear.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPB5DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarRosevilleMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_DF215PPMB10DYED.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_DF215PPMB10UNDYED.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_DF215PPMB20DYED.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_DF215ppmB20UNDYED.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPB5DIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_NuStarSaukCentreMN_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-ANACORTESREFINERY_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-ANACORTESSHELL_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-ANACORTESSHELL_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-EUGENEKINDERMORGAN_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-EUGENEKINDERMORGAN_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-EUGENEKINDERMORGAN_Y.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-PASCOTIDEWATER_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-PASCOTIDEWATER_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-PASCOTSO_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-PASCOTSO_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-SEATTLEKINDERMORGAN_Oxy92E10.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-SEATTLEKINDERMORGAN_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-SEATTLEKINDERMORGAN_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-SEATTLESHELL_P2A.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-SEATTLESHELL_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-SEATTLESHELL_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-TACOMANUSTAR_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-TACOMANUSTAR_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-TACOMANUSTAR_ShellCONV91E10.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-TACOMATARGA_P5T.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-TACOMATARGA_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-TACOMATARGA_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-UMATILLATIDEWATER_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_P.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-VANCOUVER-TSO_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_PNWDIESEL.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_PNWGASOLINE&amp;COMPONENTS.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_PNWJET.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_PNW-WILLBRIDGEKINDERMORGAN_Y.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CACARBULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CAEPAULSD.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CAMid&amp;PreOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TWC-CASWREGION-LA-1200-ALLTERMINALS_CARegOxyGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TesoroMandanND_NGPGasoline.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TesoroMandanND_NGPULSD#1.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TesoroMandanND_NGPULSD#2.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TesoroMandanND_Oxy9110%etoh.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TesoroMandanND_TT87E10.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\UNBRANDEDOPENRACK_TesoroMandanND_ULP91Clear.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\tesoro_june_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro\june\tesoro_june_reconsiledPivotAll.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Tesoro_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\Valero_reconsiled.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\log_aug14_11-30.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\testNRDwithvaluesModifiedFinal.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\testpivot.xls" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\AnalysisRules\testpivot1.xls" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/Chevron_july_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/Chevron_july_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/Chevron_july_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/Chevron_july_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/Chevron_june_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/Chevron_june_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/Chevron_june_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/Chevron_june_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/Exxon_july_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/Exxon_july_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/Exxon_july_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/Exxon_july_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/Exxon_june_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/Exxon_june_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/Exxon_june_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/Exxon_june_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_AZ-PHOENIXKM&amp;PRO_CAEPAULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_AZ-PHOENIXKM&amp;PRO_CAEPAULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-Barstow-ColtonKM_CACARBULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-Barstow-ColtonKM_CACARBULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-CHICOKM_CACARBULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-CHICOKM_CACARBULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-SACRAMENTOALLTERMINALS_CACARBULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-SACRAMENTOALLTERMINALS_CACARBULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-SANJOSEALLTERMINALS_CACARBULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CA-SANJOSEALLTERMINALS_CACARBULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CAS-ColtonTSO&amp;KM_CACARBULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CAS-ColtonTSO&amp;KM_CACARBULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CAS-EastHynesandVinvale_CACARBULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_CAS-EastHynesandVinvale_CACARBULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYBIGWEST_MTNULSD#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYBIGWEST_MTNULSD#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYTESORO_MTNULSD#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYTESORO_MTNULSD#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYTESORO_MTNULSD#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/HIGHVOLUMETRUCKSTOP_MTN-SALTLAKECITYTESORO_MTNULSD#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_PNW-ANACORTESALLTERMINALS_PNWDIESEL.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_PNW-ANACORTESALLTERMINALS_PNWDIESEL.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_PNW-EUGENEKINDERMORGAN_PNWDIESEL.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_PNW-EUGENEKINDERMORGAN_PNWDIESEL.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_PNW-WILLBRIDGEKINDERMORGAN_PNWDIESEL.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_PNW-WILLBRIDGEKINDERMORGAN_PNWDIESEL.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_TesoroMandanND_NGPGasoline.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/HIGHVOLUMETRUCKSTOP_TesoroMandanND_NGPGasoline.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/HIGHVOLUMETRUCKSTOP_TesoroMandanND_NGPGasoline.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/HIGHVOLUMETRUCKSTOP_TesoroMandanND_NGPGasoline.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/july/Holly_july_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/july/Holly_july_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/july/Holly_july_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/july/Holly_july_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/june/Holly_june_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/june/Holly_june_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/june/Holly_june_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/june/Holly_june_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/P66_july_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/P66_july_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/P66_july_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/P66_july_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/P66_june_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/P66_june_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/P66_june_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/P66_june_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/july/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Ardmore(PBAM)_DSL-LSDULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/july/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Ardmore(PBAM)_DSL-LSDULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/june/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Ardmore(PBAM)_DSL-LSDULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/june/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Ardmore(PBAM)_DSL-LSDULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/july/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Memphis(PBMM)_DSL-LSDULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/july/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Memphis(PBMM)_DSL-LSDULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/june/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Memphis(PBMM)_DSL-LSDULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/june/PILOTTRAVELCENTE-122194-WS-UNBContract_Valero-Memphis(PBMM)_DSL-LSDULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_ALBUQUERQUENMPSX-030A_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_ALBUQUERQUENMPSX-030A_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_ALBUQUERQUENMPSX-030A_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_ALBUQUERQUENMPSX-030A_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_AMARILLOTXPSX-030J_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_AMARILLOTXPSX-030J_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_AMARILLOTXPSX-030J_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_AMARILLOTXPSX-030J_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_BEAUMONTTXEM-0320_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_BEAUMONTTXEM-0320_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_BEAUMONTTXEM-0320_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_BEAUMONTTXEM-0320_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_BETTENDORFIAUSOIL-A3OE_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_BETTENDORFIAUSOIL-A3OE_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_BETTENDORFIAUSOIL-A3OE_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_BETTENDORFIAUSOIL-A3OE_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_BOSSIERCITYLAENT-A3J7_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_BOSSIERCITYLAENT-A3J7_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_BOSSIERCITYLAENT-A3J7_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_BOSSIERCITYLAENT-A3J7_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_CAHOKIAILPSX-036M_REFORMULATEDGASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_CAHOKIAILPSX-036M_REFORMULATEDGASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_CAHOKIAILPSX-036M_REFORMULATEDGASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_CAHOKIAILPSX-036M_REFORMULATEDGASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_CHEYENNEWYMMP-A3T4_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_CHEYENNEWYMMP-A3T4_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_CHEYENNEWYMMP-A3T4_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_CHEYENNEWYMMP-A3T4_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_COMMERCECITYCOPSX-0351_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_COMMERCECITYCOPSX-0351_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_EVANSVILLEWYSI-0339_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_GLENPOOLOKPSX-032N_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_GLENPOOLOKPSX-032N_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_GLENPOOLOKPSX-032N_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_GLENPOOLOKPSX-032N_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_GRAPEVINETXMMP-A3ZC_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_GRAPEVINETXMMP-A3ZC_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_GRAPEVINETXMMP-A3ZC_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_GRAPEVINETXMMP-A3ZC_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_HARTFORDILPSXCLLC-0394_B5.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_HARTFORDILPSXCLLC-0394_B5.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_HARTFORDILPSXCLLC-0394_B5.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_HARTFORDILPSXCLLC-0394_B5.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_KANSASCITYKSPSX-03AG_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_KANSASCITYKSPSX-03AG_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_KANSASCITYKSPSX-03AG_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_KANSASCITYKSPSX-03AG_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_LINCOLNNEPSX-03R5_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_LINCOLNNEPSX-03R5_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_LINCOLNNEPSX-03R5_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_LINCOLNNEPSX-03R5_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_MTVERNONMOPSX-03DR_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_MTVERNONMOPSX-03DR_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_MTVERNONMOPSX-03DR_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_MTVERNONMOPSX-03DR_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_NPLATTENENUS-03E6_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_NPLATTENENUS-03E6_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_NPLATTENENUS-03E6_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_NPLATTENENUS-03E6_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_NPLATTENENUS-03E6_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_NPLATTENENUS-03E6_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_OKLAHOMACITYOKPSX-03FD_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_OKLAHOMACITYOKPSX-03FD_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_OKLAHOMACITYOKPSX-03FD_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_OKLAHOMACITYOKPSX-03FD_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_PASADENATXPSXCLLC-03FV_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_PASADENATXPSXCLLC-03FV_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_PASADENATXPSXCLLC-03FV_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_PASADENATXPSXCLLC-03FV_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_PASADENATXPSXCLLC-03FV_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_PASADENATXPSXCLLC-03FV_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_ROCKSPRINGSWYPSX-03JM_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_SCOTTCITYMOTEP-03L7_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_SCOTTCITYMOTEP-03L7_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_SPOKANEWAPSX-03M2_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_SPOKANEWAPSX-03M2_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_SPOKANEWAPSX-03M2_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_SPOKANEWAPSX-03M2_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WATERLOOIAMMP-03NW_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WATERLOOIAMMP-03NW_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WATERLOOIAMMP-03NW_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WATERLOOIAMMP-03NW_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_GASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WICHITAKSPSXN-03P9_GASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WOODRIVERILBP-03PF_CONVENTIONALGASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029BR_WOODRIVERILBP-03PF_CONVENTIONALGASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WOODRIVERILBP-03PF_CONVENTIONALGASOLINE.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029BR_WOODRIVERILBP-03PF_CONVENTIONALGASOLINE.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_FORSYTHILBU-A3Y8_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_FORSYTHILBU-A3Y8_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_FORSYTHILBU-A3Y8_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_FORSYTHILBU-A3Y8_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_LUBBOCKTXPSX-03BN_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_LUBBOCKTXPSX-03BN_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_LUBBOCKTXPSX-03BN_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_LUBBOCKTXPSX-03BN_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_STOCKTONCAVA-03MH_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_STOCKTONCAVA-03MH_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_STOCKTONCAVA-03MH_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_STOCKTONCAVA-03MH_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_ZIONSVILLEINBU-03PL_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/PILOTTRAVELCENTERSLLC-10024029UB_ZIONSVILLEINBU-03PL_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_ZIONSVILLEINBU-03PL_DISTILLATES.xls" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/PILOTTRAVELCENTERSLLC-10024029UB_ZIONSVILLEINBU-03PL_DISTILLATES.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/july/PILOTTRAVELCENTERSLLC-PRODUCT_AlbuquerqueNM-VEC-T109_V.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/july/PILOTTRAVELCENTERSLLC-PRODUCT_AlbuquerqueNM-VEC-T109_V.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/july/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_V.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/july/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_V.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/june/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_V.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/june/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_V.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/july/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_WoodsCrossBioDiesel5%.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/july/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_WoodsCrossBioDiesel5%.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/june/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_WoodsCrossBioDiesel5%.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/june/PILOTTRAVELCENTERSLLC-PRODUCT_WoodsCrossUT-HEP-5000_WoodsCrossBioDiesel5%.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_PremCGDS.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_PremCGDS.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_PremCGDS.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_PremCGDS.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_RegCGDS.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_RegCGDS.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_RegCGDS.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_RegCGDS.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_BATONROUGELA(MOC)-00CE_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_PremiumConventionalE10.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_PremiumConventionalE10.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_PremiumConventionalE10.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_PremiumConventionalE10.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_RegularRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_RegularRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_RegularRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_COLTONCAKMTP-00WM_RegularRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_DESPLAINESIL(MOC)-00BN_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_DESPLAINESIL(MOC)-00BN_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_DESPLAINESIL(MOC)-00BN_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_DESPLAINESIL(MOC)-00BN_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_GLENDIVEMTCENEXEX-02PT_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_GLENDIVEMTCENEXEX-02PT_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_GLENDIVEMTCENEXEX-02PT_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_GLENDIVEMTCENEXEX-02PT_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_PremRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_PremRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_PremRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_PremRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_RegRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_RegRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_RegRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_RegRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_HAMMONDIN(MOC)-00DH_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_LOCKPORTIL(MOC)-00MD_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_LOCKPORTIL(MOC)-00MD_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_LOCKPORTIL(MOC)-00MD_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_LOCKPORTIL(MOC)-00MD_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB9.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB9.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB9.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_PremCBOB9.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB9.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB9.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB9.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_RegCBOB9.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_ULSD.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_MEMPHISTN(MOC)-00QE_ULSD.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_PremRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_PremRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_PremRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_PremRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_RegRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_RegRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_RegRFG.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/PILOTTRAVELCENTERSLLC103637IW_VERNONCA(MOC)-00N6_RegRFG.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCAC7460761_1037PASCAGOULAMSTRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCAC7460761_1037PASCAGOULAMSTRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1002TRACYCATRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1002TRACYCATRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1002TRACYCATRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1002TRACYCATRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1022TAMPAFLTRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1022TAMPAFLTRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1022TAMPAFLTRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1022TAMPAFLTRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1037PASCAGOULAMSTRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1037PASCAGOULAMSTRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1037PASCAGOULAMSTRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1037PASCAGOULAMSTRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1043MONTEBELLOCATRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1043MONTEBELLOCATRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1043MONTEBELLOCATRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1043MONTEBELLOCATRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1045SALTLAKECITYUTTRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1045SALTLAKECITYUTTRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1045SALTLAKECITYUTTRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1045SALTLAKECITYUTTRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1046SANDIEGOCATRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1046SANDIEGOCATRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1046SANDIEGOCATRMCHEVRON_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1046SANDIEGOCATRMCHEVRON_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1066BOISEIDTRMTESORO_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_1066BOISEIDTRMTESORO_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1066BOISEIDTRMTESORO_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_1066BOISEIDTRMTESORO_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_2778STOCKTONCATRMNUSTAR_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_2778STOCKTONCATRMNUSTAR_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_3351PHOENIXAZTRMKINDERMORGAN_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/PILOTTRAVELCENTERSLLCCHV7460761_3351PHOENIXAZTRMKINDERMORGAN_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_3351PHOENIXAZTRMKINDERMORGAN_DIESEL#2.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/PILOTTRAVELCENTERSLLCCHV7460761_3351PHOENIXAZTRMKINDERMORGAN_DIESEL#2.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/Tesoro_july_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/Tesoro_july_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/Tesoro_july_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/Tesoro_july_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/Tesoro_june_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/Tesoro_june_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/Tesoro_june_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/Tesoro_june_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/july/Valero_july_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/july/Valero_july_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/july/Valero_july_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/july/Valero_july_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/june/Valero_june_reconciled.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/june/Valero_june_reconciled.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/june/Valero_june_reconciledPivotAll.xls" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/june/Valero_june_reconciledPivotAll.xls" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py" afterPath="$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/RuleEngine.py" afterPath="$PROJECT_DIR$/AnalysisRules/RuleEngine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RackAnalysis/analyse_all.py" afterPath="$PROJECT_DIR$/RackAnalysis/analyse_all.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/july/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/july/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Chevron/june/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Chevron/june/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/july/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/july/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Exxon/june/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Exxon/june/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/july/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/july/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Holly/june/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Holly/june/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/july/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/P66/july/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/P66/june/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/P66/june/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/july/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Tesoro/june/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/july/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/july/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AnalysisRules/Valero/june/log.txt" afterPath="$PROJECT_DIR$/AnalysisRules/Valero/june/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RackAnalysis/report.txt" afterPath="$PROJECT_DIR$/RackAnalysis/report.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/spark_code.py" afterPath="$PROJECT_DIR$/spark/spark_code.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="rackanalysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,12 +628,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="analyse_all.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RackAnalysis/analyse_all.py">
+      <file leaf-file-name="ParseNextRefreshDate.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5635359" vertical-offset="0" max-vertical-offset="3502">
-              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-              <folding />
+            <state vertical-scroll-proportion="-2.04" vertical-offset="7820" max-vertical-offset="9418">
+              <caret line="545" column="0" selection-start-line="545" selection-start-column="0" selection-end-line="545" selection-end-column="7" />
+              <folding>
+                <element signature="e#56#75#0" expanded="true" />
+                <element signature="e#22952#30727#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleEngine.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.68" vertical-offset="4061" max-vertical-offset="4641">
+              <caret line="618" column="23" selection-start-line="618" selection-start-column="23" selection-end-line="618" selection-end-column="23" />
+              <folding>
+                <element signature="e#204#223#0" expanded="true" />
+                <element signature="e#2254#2660#0" expanded="false" />
+                <element signature="e#5608#6667#0" expanded="false" />
+                <element signature="e#6718#14974#0" expanded="false" />
+                <element signature="e#15019#22793#0" expanded="false" />
+                <element signature="e#22834#23182#0" expanded="false" />
+                <element signature="e#23238#23735#0" expanded="false" />
+                <element signature="e#23790#24217#0" expanded="false" />
+                <element signature="e#24272#24931#0" expanded="false" />
+                <element signature="e#24969#32682#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="combinedRules_Monthly.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.56266665" vertical-offset="7864" max-vertical-offset="8347">
+              <caret line="636" column="33" selection-start-line="636" selection-start-column="33" selection-end-line="636" selection-end-column="33" />
+              <folding>
+                <element signature="e#204#223#0" expanded="true" />
+                <element signature="e#1822#2245#0" expanded="false" />
+                <element signature="e#5913#6972#0" expanded="false" />
+                <element signature="e#7023#15288#0" expanded="false" />
+                <element signature="e#23224#23572#0" expanded="false" />
+                <element signature="e#23628#24125#0" expanded="false" />
+                <element signature="e#38342#39781#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spark_code.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark/spark_code.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.84" vertical-offset="8710" max-vertical-offset="10608">
+              <caret line="604" column="0" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+              <folding>
+                <element signature="e#204#223#0" expanded="true" />
+                <element signature="e#350#1285#0" expanded="false" />
+                <element signature="e#1310#2408#0" expanded="false" />
+                <element signature="e#37956#38156#0" expanded="false" />
+                <element signature="e#38198#39639#0" expanded="false" />
+                <element signature="e#39684#41404#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark/entities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1598">
+              <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,13 +724,28 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/RackAnalysis/play.py" />
+        <option value="$PROJECT_DIR$/testCarto.py" />
+        <option value="$PROJECT_DIR$/Count_Meaures.py" />
+        <option value="$PROJECT_DIR$/Count_Measures.py" />
+        <option value="$PROJECT_DIR$/OpenRefineService/InsertNMFTA.py" />
+        <option value="$PROJECT_DIR$/OpenRefineService/test.py" />
+        <option value="$PROJECT_DIR$/OpenRefineService/carrierService.py" />
+        <option value="$PROJECT_DIR$/Change_count.py" />
+        <option value="$PROJECT_DIR$/RackAnalysis_New_Report.py" />
         <option value="$PROJECT_DIR$/RackAnalysis/analyse_all.py" />
+        <option value="$PROJECT_DIR$/AnalysisRules/RuleEngine.py" />
+        <option value="$PROJECT_DIR$/spark_code.py" />
+        <option value="$PROJECT_DIR$/spark/data_fetch.py" />
+        <option value="$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py" />
+        <option value="$PROJECT_DIR$/spark/spark_code.py" />
+        <option value="$PROJECT_DIR$/spark/entities.py" />
+        <option value="$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="width" value="1364" />
+    <option name="width" value="1360" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -81,6 +771,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -109,43 +800,147 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="RackAnalysis" />
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rackanalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rackanalysis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AnalysisRules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="project.propDebugger" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="C:/EQ_Data/Python_Project" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings />
     </option>
   </component>
-  <component name="RunManager" selected="Python.analyse_all">
-    <configuration default="false" name="analyse_all" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\spark" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.combinedRules_Monthly">
+    <configuration default="false" name="ParseNextRefreshDate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RackAnalysis" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AnalysisRules" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="rackanalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RackAnalysis/analyse_all.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RuleEngine" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AnalysisRules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AnalysisRules/RuleEngine.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="internals" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="C:/Python27/Lib/site-packages/pandas/core" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="C:/Python27/Lib/site-packages/pandas/core/internals.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="combinedRules_Monthly" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/AnalysisRules" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="spark_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spark" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spark/spark_code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -271,16 +1066,27 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Python.analyse_all" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Python.ParseNextRefreshDate" />
+      <item index="1" class="java.lang.String" itemvalue="Python.RuleEngine" />
+      <item index="2" class="java.lang.String" itemvalue="Python.internals" />
+      <item index="3" class="java.lang.String" itemvalue="Python.combinedRules_Monthly" />
+      <item index="4" class="java.lang.String" itemvalue="Python.spark_code" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.analyse_all" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.combinedRules_Monthly" />
+        <item index="1" class="java.lang.String" itemvalue="Python.spark_code" />
+        <item index="2" class="java.lang.String" itemvalue="Python.RuleEngine" />
+        <item index="3" class="java.lang.String" itemvalue="Python.ParseNextRefreshDate" />
+        <item index="4" class="java.lang.String" itemvalue="Python.internals" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="81926c22-6a48-49fa-9b10-85316a115f9c" name="Default" comment="" />
@@ -288,30 +1094,80 @@
       <option name="number" value="Default" />
       <updated>1433842545548</updated>
     </task>
+    <task id="LOCAL-00001" summary="latest">
+      <created>1439384941373</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1439384941373</updated>
+    </task>
+    <task id="LOCAL-00002" summary="latest">
+      <created>1439385501076</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1439385501076</updated>
+    </task>
+    <task id="LOCAL-00003" summary="latest">
+      <created>1439804237924</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1439804237924</updated>
+    </task>
+    <task id="LOCAL-00004" summary="latest-refactored">
+      <created>1439889503857</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1439889503857</updated>
+    </task>
+    <task id="LOCAL-00005" summary="latest-refactored">
+      <created>1440061293642</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1440061293642</updated>
+    </task>
+    <task id="LOCAL-00006" summary="latest-refactored">
+      <created>1440657727478</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1440657727478</updated>
+    </task>
+    <task id="LOCAL-00007" summary="modifications to input and also corrected few exceptions">
+      <created>1441171393427</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1441171393427</updated>
+    </task>
+    <task id="LOCAL-00008" summary="spark_code">
+      <created>1441351715918</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1441351715918</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="0" width="1364" height="728" extended-state="0" />
+    <frame x="0" y="0" width="1360" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24943481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32943144" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34949833" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26588628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3068783" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3277592" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24943481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.409699" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -327,20 +1183,710 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="latest" />
+    <MESSAGE value="latest-refactored" />
+    <MESSAGE value="modifications to input and also corrected few exceptions" />
+    <MESSAGE value="spark_code" />
+    <option name="LAST_COMMIT_MESSAGE" value="spark_code" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>246</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>152</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>131</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>141</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/play.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/testCarto.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/testCarto.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/testCarto.py</url>
+          <line>3</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/testCarto.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/testCarto.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Count_Measures.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Count_Measures.py</url>
+          <line>6</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/OpenRefineService/carrierService.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/OpenRefineService/InsertNMFTA.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/OpenRefineService/InsertNMFTA.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/OpenRefineService/carrierService.py</url>
+          <line>12</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RackAnalysis/analyse_all.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py</url>
+          <line>191</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>614</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>540</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>611</line>
+          <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>304</line>
+          <option name="timeStamp" value="197" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>462</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>528</line>
+          <option name="timeStamp" value="207" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py</url>
+          <line>447</line>
+          <option name="timeStamp" value="208" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py</url>
+          <line>520</line>
+          <option name="timeStamp" value="218" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py</url>
+          <line>643</line>
+          <option name="timeStamp" value="219" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py</url>
+          <line>632</line>
+          <option name="timeStamp" value="221" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py</url>
+          <line>408</line>
+          <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py</url>
+          <line>390</line>
+          <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/data_fetch.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/data_fetch.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>694</line>
+          <option name="timeStamp" value="255" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>604</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>631</line>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>555</line>
+          <option name="timeStamp" value="275" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>690</line>
+          <option name="timeStamp" value="276" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>621</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>619</line>
+          <option name="timeStamp" value="282" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>608</line>
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
+          <line>96</line>
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="288" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Change_count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="82" max-vertical-offset="680">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenRefineService/carrierService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="884">
+          <caret line="12" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="23" />
+          <folding>
+            <element signature="e#56#101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenRefineService/InsertNMFTA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1003">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#14#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Count_Measures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="595">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="5746">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/report_citgo_.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8976">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="374">
+          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCarto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="28186">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RackAnalysis/analyse_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5635359" vertical-offset="0" max-vertical-offset="3502">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4556">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Count_Measures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="595">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="400" max-vertical-offset="5746">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/report_citgo_.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8976">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="374">
+          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCarto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="28186">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/analyse_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4556">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="374">
+          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCarto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="28186">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/analyse_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="4556">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="374">
+          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCarto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="28186">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCarto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="28186">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenRefineService/InsertNMFTA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1003">
+          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#14#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/flask/globals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="434" max-vertical-offset="833">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/flask/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="12334" max-vertical-offset="30991">
+          <caret line="757" column="0" selection-start-line="757" selection-start-column="0" selection-end-line="757" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenRefineService/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3518072" vertical-offset="0" max-vertical-offset="935">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OpenRefineService/carrierService.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.42265195" vertical-offset="459" max-vertical-offset="884">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#56#101#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Count_Measures.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.36187845" vertical-offset="233" max-vertical-offset="595">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/MySQLdb/connections.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29333332" vertical-offset="400" max-vertical-offset="5746">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/report_citgo_.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.04" vertical-offset="765" max-vertical-offset="8976">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Change_count.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="12" max-vertical-offset="680">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="2431">
+          <caret line="42" column="19" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="34859" max-vertical-offset="46155">
+          <caret line="2057" column="0" selection-start-line="2057" selection-start-column="0" selection-end-line="2057" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33142856" vertical-offset="30246" max-vertical-offset="84881">
+          <caret line="1786" column="0" selection-start-line="1786" selection-start-column="0" selection-end-line="1786" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/IPython/core/interactiveshell.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.3632653" vertical-offset="50613" max-vertical-offset="56661">
+          <caret line="3036" column="33" selection-start-line="3036" selection-start-column="33" selection-end-line="3036" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/internals.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19660194" vertical-offset="51599" max-vertical-offset="75276">
+          <caret line="3072" column="0" selection-start-line="3072" selection-start-column="0" selection-end-line="3072" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/indexing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334" vertical-offset="21682" max-vertical-offset="30124">
+          <caret line="1293" column="0" selection-start-line="1293" selection-start-column="0" selection-end-line="1293" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.4583333" vertical-offset="12383" max-vertical-offset="49742">
+          <caret line="787" column="16" selection-start-line="787" selection-start-column="16" selection-end-line="787" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis_New_Report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="162" max-vertical-offset="493">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RackAnalysis/analyse_all.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4743">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="50" />
+          <folding>
+            <element signature="e#28#47#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/io/sql.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.1791768" vertical-offset="14466" max-vertical-offset="27217">
+          <caret line="815" column="19" selection-start-line="815" selection-start-column="19" selection-end-line="815" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33171913" vertical-offset="15792" max-vertical-offset="70482">
+          <caret line="962" column="16" selection-start-line="962" selection-start-column="16" selection-end-line="962" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalysisRules/RuleEngine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.68" vertical-offset="4061" max-vertical-offset="4641">
+          <caret line="618" column="23" selection-start-line="618" selection-start-column="23" selection-end-line="618" selection-end-column="23" />
+          <folding>
+            <element signature="e#204#223#0" expanded="true" />
+            <element signature="e#2254#2660#0" expanded="false" />
+            <element signature="e#5608#6667#0" expanded="false" />
+            <element signature="e#6718#14974#0" expanded="false" />
+            <element signature="e#15019#22793#0" expanded="false" />
+            <element signature="e#22834#23182#0" expanded="false" />
+            <element signature="e#23238#23735#0" expanded="false" />
+            <element signature="e#23790#24217#0" expanded="false" />
+            <element signature="e#24272#24931#0" expanded="false" />
+            <element signature="e#24969#32682#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/tools/merge.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2639225" vertical-offset="11723" max-vertical-offset="18598">
+          <caret line="719" column="0" selection-start-line="719" selection-start-column="0" selection-end-line="719" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/data_fetch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.5813334" vertical-offset="0" max-vertical-offset="1445">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#28#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalysisRules/ParseNextRefreshDate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.04" vertical-offset="7820" max-vertical-offset="9418">
+          <caret line="545" column="0" selection-start-line="545" selection-start-column="0" selection-end-line="545" selection-end-column="7" />
+          <folding>
+            <element signature="e#56#75#0" expanded="true" />
+            <element signature="e#22952#30727#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1598">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark/spark_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.84" vertical-offset="8710" max-vertical-offset="10608">
+          <caret line="604" column="0" selection-start-line="604" selection-start-column="0" selection-end-line="604" selection-end-column="0" />
+          <folding>
+            <element signature="e#204#223#0" expanded="true" />
+            <element signature="e#350#1285#0" expanded="false" />
+            <element signature="e#1310#2408#0" expanded="false" />
+            <element signature="e#37956#38156#0" expanded="false" />
+            <element signature="e#38198#39639#0" expanded="false" />
+            <element signature="e#39684#41404#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AnalysisRules/combinedRules_Monthly.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56266665" vertical-offset="7864" max-vertical-offset="8347">
+          <caret line="636" column="33" selection-start-line="636" selection-start-column="33" selection-end-line="636" selection-end-column="33" />
+          <folding>
+            <element signature="e#204#223#0" expanded="true" />
+            <element signature="e#1822#2245#0" expanded="false" />
+            <element signature="e#5913#6972#0" expanded="false" />
+            <element signature="e#7023#15288#0" expanded="false" />
+            <element signature="e#23224#23572#0" expanded="false" />
+            <element signature="e#23628#24125#0" expanded="false" />
+            <element signature="e#38342#39781#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

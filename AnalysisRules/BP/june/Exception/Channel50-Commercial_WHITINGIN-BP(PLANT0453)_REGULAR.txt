@@ -1,0 +1,7 @@
+Exception in Combination:
+customer : pilot
+Supplier : BP
+Account : Channel: 50 - Commercial
+Terminal: WHITING IN - BP (PLANT 0453)
+Product : REGULAR
+Exception : "('lifted_gallons', 'Monthly')"

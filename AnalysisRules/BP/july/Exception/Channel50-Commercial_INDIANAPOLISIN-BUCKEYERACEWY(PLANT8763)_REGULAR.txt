@@ -1,0 +1,7 @@
+Exception in Combination:
+customer : pilot
+Supplier : BP
+Account : Channel: 50 - Commercial
+Terminal: INDIANAPOLIS IN - BUCKEYE RACEWY (PLANT 8763)
+Product : REGULAR
+Exception : "('lifted_gallons', 'Monthly')"

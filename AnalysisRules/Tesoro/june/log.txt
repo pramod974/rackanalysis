@@ -1,4 +1,6 @@
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP AZ - PHOENIX KM & PRO CA EPA ULSD
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -167,8 +169,99 @@ Modification_UnSuccessful
 2015-06-30                         45400  
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP AZ - PHOENIX KM & PRO CA EPA ULSD can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         47710  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                            0   
+2015-06-14                      2015-06-20                            0   
+2015-06-15                      2015-06-20                            0   
+2015-06-16                      2015-06-20                            0   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                             0  
+2015-06-14                         15001  
+2015-06-15                         30101  
+2015-06-16                         30101  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         97006  
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                            0   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                            0   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                         21600  
+2015-06-23                         29050  
+2015-06-24                         64255  
+2015-06-25                         86755  
+2015-06-26                         94255  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                            0   
+2015-06-30                      2015-07-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         15200  
+2015-06-29                         30400  
+2015-06-30                         45400  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - Barstow-Colton KM CA CARB ULSD
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -335,8 +428,102 @@ Modification_UnSuccessful
 2015-06-30                        146780  
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - Barstow-Colton KM CA CARB ULSD can't compare datetime.datetime to int
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                        16400   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        107400  
+2015-06-04                             0  
+2015-06-05                             0  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                        30300   
+2015-06-14                      2015-06-20                        52900   
+2015-06-15                      2015-06-20                        30440   
+2015-06-16                      2015-06-20                        30400   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                         30300  
+2015-06-14                         90800  
+2015-06-15                        136460  
+2015-06-16                        182070  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        227670  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                        15231   
+2015-06-22                      2015-06-27                        22802   
+2015-06-23                      2015-06-27                         9000   
+2015-06-24                      2015-06-27                            0   
+2015-06-25                      2015-06-27                        15200   
+2015-06-26                      2015-06-27                        15200   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         60641  
+2015-06-22                         83443  
+2015-06-23                        122842  
+2015-06-24                        160281  
+2015-06-25                        175481  
+2015-06-26                        236280  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                        45600   
+2015-06-30                      2015-07-04                        55378   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         15400  
+2015-06-29                         91402  
+2015-06-30                        146780  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - CHICO KM CA CARB ULSD
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -493,8 +680,97 @@ Modification_UnSuccessful
 2015-06-30                        154205  
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - CHICO KM CA CARB ULSD can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        105755  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                        37517   
+2015-06-14                      2015-06-20                        30327   
+2015-06-15                      2015-06-20                        30455   
+2015-06-16                      2015-06-20                        22645   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                        30521   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                         37517  
+2015-06-14                         67844  
+2015-06-15                         98299  
+2015-06-16                        120944  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        219908  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                        22902   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                         7602   
+2015-06-25                      2015-06-27                         7377   
+2015-06-26                      2015-06-27                        15199   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         29649  
+2015-06-22                         82237  
+2015-06-23                        105015  
+2015-06-24                        135481  
+2015-06-25                        188256  
+2015-06-26                        218984  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                        11677   
+2015-06-30                      2015-07-04                        44400   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         45603  
+2015-06-29                        109805  
+2015-06-30                        154205  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SACRAMENTO ALL TERMINALS CA CARB ULSD
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -661,8 +937,102 @@ Modification_UnSuccessful
 2015-06-30                        153018  
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SACRAMENTO ALL TERMINALS CA CARB ULSD can't compare datetime.datetime to int
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                        15301   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        221861  
+2015-06-04                             0  
+2015-06-05                             0  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                        22950   
+2015-06-14                      2015-06-20                        45900   
+2015-06-15                      2015-06-20                        61201   
+2015-06-16                      2015-06-20                        15301   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                        61201   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                         22950  
+2015-06-14                         76500  
+2015-06-15                        145351  
+2015-06-16                        175952  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        321305  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                        22950   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                        15300   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         45900  
+2015-06-22                        107100  
+2015-06-23                        122402  
+2015-06-24                        206558  
+2015-06-25                        267781  
+2015-06-26                        321381  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                        45903   
+2015-06-30                      2015-07-04                         7652   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         53550  
+2015-06-29                        145366  
+2015-06-30                        153018  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA CARB ULSD
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -832,8 +1202,100 @@ Modification_UnSuccessful
 2015-06-30                         55300  
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA CARB ULSD can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         44002  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                        22800   
+2015-06-14                      2015-06-20                         7600   
+2015-06-15                      2015-06-20                         7600   
+2015-06-16                      2015-06-20                            0   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                        15200   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                         22800  
+2015-06-14                         30400  
+2015-06-15                         38000  
+2015-06-16                         45600  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         78300  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                            0   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                        15199   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                         22799  
+2015-06-25                         30399  
+2015-06-26                         30399  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                        22700   
+2015-06-30                      2015-07-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         15200  
+2015-06-29                         55300  
+2015-06-30                         55300  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Mid & Pre Oxy Gasoline
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -968,8 +1430,89 @@ Modification_UnSuccessful
 2015-06-28                             0  
 2015-06-29                             0  
 2015-06-30                             0  
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Mid & Pre Oxy Gasoline can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                          6922  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                            0   
+2015-06-14                      2015-06-20                            0   
+2015-06-15                      2015-06-20                            0   
+2015-06-16                      2015-06-20                            0   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                             0  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                            0   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                            0   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                            0   
+2015-06-30                      2015-07-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Reg Oxy Gasoline
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -1104,8 +1647,89 @@ Modification_UnSuccessful
 2015-06-28                             0  
 2015-06-29                             0  
 2015-06-30                             0  
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CA - SAN JOSE ALL TERMINALS CA Reg Oxy Gasoline can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         23180  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                            0   
+2015-06-14                      2015-06-20                            0   
+2015-06-15                      2015-06-20                            0   
+2015-06-16                      2015-06-20                            0   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                             0  
+2015-06-14                             0  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                            0   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                            0   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                             0  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                            0   
+2015-06-30                      2015-07-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                             0  
+2015-06-30                             0  
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - Colton TSO & KM CA CARB ULSD
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -1272,8 +1896,97 @@ Modification_UnSuccessful
 2015-06-30                        164954  
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - Colton TSO & KM CA CARB ULSD can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        145338  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                            0   
+2015-06-14                      2015-06-20                            0   
+2015-06-15                      2015-06-20                            0   
+2015-06-16                      2015-06-20                            0   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                         68500  
+2015-06-14                        109240  
+2015-06-15                        184661  
+2015-06-16                        222161  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        426381  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                            0   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                            0   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                        100400  
+2015-06-22                        176700  
+2015-06-23                        206900  
+2015-06-24                        282440  
+2015-06-25                        372940  
+2015-06-26                        425740  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                            0   
+2015-06-30                      2015-07-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         60850  
+2015-06-29                        139854  
+2015-06-30                        164954  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - East Hynes and Vinvale CA CARB ULSD
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -1440,8 +2153,97 @@ Modification_UnSuccessful
 2015-06-30                        266500  
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP CAS - East Hynes and Vinvale CA CARB ULSD can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        280587  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                            0   
+2015-06-14                      2015-06-20                            0   
+2015-06-15                      2015-06-20                            0   
+2015-06-16                      2015-06-20                            0   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                         45712  
+2015-06-14                         98910  
+2015-06-15                        136910  
+2015-06-16                        167310  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                        501685  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                            0   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                            0   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                         60912  
+2015-06-22                        122012  
+2015-06-23                        221122  
+2015-06-24                        319432  
+2015-06-25                        420290  
+2015-06-26                        534342  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                            0   
+2015-06-30                      2015-07-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                         83850  
+2015-06-29                        152150  
+2015-06-30                        266500  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP MTN - SALT LAKE CITY BIG WEST MTN ULSD #2
+[datetime.datetime(2015, 6, 7, 0, 0)]
+[datetime.datetime(2015, 6, 7, 0, 0), datetime.datetime(2015, 6, 14, 0, 0), datetime.datetime(2015, 6, 21, 0, 0), datetime.datetime(2015, 6, 28, 0, 0), datetime.datetime(2015, 7, 5, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -1684,6 +2486,8 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-06-30                             0  
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP MTN - SALT LAKE CITY TESORO MTN ULSD #2
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0)]
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0), datetime.datetime(2015, 6, 15, 0, 0), datetime.datetime(2015, 6, 22, 0, 0), datetime.datetime(2015, 6, 29, 0, 0), datetime.datetime(2015, 7, 6, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -1958,6 +2762,8 @@ Modification_Successful
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP NuStar Moorhead MN NGP ULSD #2
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0)]
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0), datetime.datetime(2015, 6, 15, 0, 0), datetime.datetime(2015, 6, 22, 0, 0), datetime.datetime(2015, 6, 29, 0, 0), datetime.datetime(2015, 7, 6, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -2092,8 +2898,89 @@ Modification_UnSuccessful
 2015-06-28                             0  
 2015-06-29                             0  
 2015-06-30                             0  
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP NuStar Moorhead MN NGP ULSD #2 can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-08                            0   
+2015-06-02                      2015-06-08                            0   
+2015-06-03                      2015-06-08                            0   
+2015-06-04                      2015-06-08                            0   
+2015-06-05                      2015-06-08                            0   
+2015-06-06                      2015-06-08                            0   
+2015-06-07                      2015-06-08                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        168201  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-08                      2015-06-15                            0   
+2015-06-09                      2015-06-15                            0   
+2015-06-10                      2015-06-15                            0   
+2015-06-11                      2015-06-15                            0   
+2015-06-12                      2015-06-15                            0   
+2015-06-13                      2015-06-15                            0   
+2015-06-14                      2015-06-15                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-15                      2015-06-22                            0   
+2015-06-16                      2015-06-22                            0   
+2015-06-17                      2015-06-22                            0   
+2015-06-18                      2015-06-22                            0   
+2015-06-19                      2015-06-22                            0   
+2015-06-20                      2015-06-22                            0   
+2015-06-21                      2015-06-22                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+2015-06-21                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-22                      2015-06-29                            0   
+2015-06-23                      2015-06-29                            0   
+2015-06-24                      2015-06-29                            0   
+2015-06-25                      2015-06-29                            0   
+2015-06-26                      2015-06-29                            0   
+2015-06-27                      2015-06-29                            0   
+2015-06-28                      2015-06-29                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-29                      2015-07-06                            0   
+2015-06-30                      2015-07-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-29                             0  
+2015-06-30                             0  
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP PNW - ANACORTES ALL TERMINALS PNW DIESEL
+[datetime.datetime(2015, 6, 6, 0, 0)]
+[datetime.datetime(2015, 6, 6, 0, 0), datetime.datetime(2015, 6, 13, 0, 0), datetime.datetime(2015, 6, 20, 0, 0), datetime.datetime(2015, 6, 27, 0, 0), datetime.datetime(2015, 7, 4, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -2261,8 +3148,98 @@ Modification_UnSuccessful
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP PNW - ANACORTES ALL TERMINALS PNW DIESEL can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-06                            0   
+2015-06-02                      2015-06-06                            0   
+2015-06-03                      2015-06-06                            0   
+2015-06-04                      2015-06-06                            0   
+2015-06-05                      2015-06-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                         77893  
+2015-06-04                             0  
+2015-06-05                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-06                      2015-06-13                            0   
+2015-06-07                      2015-06-13                            0   
+2015-06-08                      2015-06-13                            0   
+2015-06-09                      2015-06-13                            0   
+2015-06-10                      2015-06-13                            0   
+2015-06-11                      2015-06-13                            0   
+2015-06-12                      2015-06-13                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-06                             0  
+2015-06-07                             0  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-13                      2015-06-20                            0   
+2015-06-14                      2015-06-20                            0   
+2015-06-15                      2015-06-20                            0   
+2015-06-16                      2015-06-20                            0   
+2015-06-17                      2015-06-20                            0   
+2015-06-18                      2015-06-20                            0   
+2015-06-19                      2015-06-20                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-13                          9797  
+2015-06-14                         29794  
+2015-06-15                         58884  
+2015-06-16                         68885  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                         98179  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-20                      2015-06-27                            0   
+2015-06-21                      2015-06-27                            0   
+2015-06-22                      2015-06-27                            0   
+2015-06-23                      2015-06-27                            0   
+2015-06-24                      2015-06-27                            0   
+2015-06-25                      2015-06-27                            0   
+2015-06-26                      2015-06-27                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-20                             0  
+2015-06-21                          9497  
+2015-06-22                         28991  
+2015-06-23                         58586  
+2015-06-24                         58586  
+2015-06-25                         87874  
+2015-06-26                        117666  
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-27                      2015-07-04                            0   
+2015-06-28                      2015-07-04                            0   
+2015-06-29                      2015-07-04                            0   
+2015-06-30                      2015-07-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-27                             0  
+2015-06-28                             0  
+2015-06-29                         10001  
+2015-06-30                         29498  
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP Tesoro Mandan ND NGP Gasoline
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0)]
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0), datetime.datetime(2015, 6, 15, 0, 0), datetime.datetime(2015, 6, 22, 0, 0), datetime.datetime(2015, 6, 29, 0, 0), datetime.datetime(2015, 7, 6, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -2529,6 +3506,8 @@ Modification_Successful
 2015-06-30                        149490  
 Modification_Successful
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP Tesoro Mandan ND NGP ULSD #2
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0)]
+[datetime.datetime(2015, 6, 1, 0, 0), datetime.datetime(2015, 6, 8, 0, 0), datetime.datetime(2015, 6, 15, 0, 0), datetime.datetime(2015, 6, 22, 0, 0), datetime.datetime(2015, 6, 29, 0, 0), datetime.datetime(2015, 7, 6, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -2663,7 +3642,86 @@ Modification_UnSuccessful
 2015-06-28                             0  
 2015-06-29                             0  
 2015-06-30                             0  
-Exception in verifyWeekByNRD in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP Tesoro Mandan ND NGP ULSD #2 can't compare datetime.datetime to int
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-01                      2015-06-08                            0   
+2015-06-02                      2015-06-08                            0   
+2015-06-03                      2015-06-08                            0   
+2015-06-04                      2015-06-08                            0   
+2015-06-05                      2015-06-08                            0   
+2015-06-06                      2015-06-08                            0   
+2015-06-07                      2015-06-08                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-01                             0  
+2015-06-02                             0  
+2015-06-03                        146407  
+2015-06-04                             0  
+2015-06-05                             0  
+2015-06-06                             0  
+2015-06-07                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-08                      2015-06-15                            0   
+2015-06-09                      2015-06-15                            0   
+2015-06-10                      2015-06-15                            0   
+2015-06-11                      2015-06-15                            0   
+2015-06-12                      2015-06-15                            0   
+2015-06-13                      2015-06-15                            0   
+2015-06-14                      2015-06-15                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-08                             0  
+2015-06-09                             0  
+2015-06-10                             0  
+2015-06-11                             0  
+2015-06-12                             0  
+2015-06-13                             0  
+2015-06-14                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-15                      2015-06-22                            0   
+2015-06-16                      2015-06-22                            0   
+2015-06-17                      2015-06-22                            0   
+2015-06-18                      2015-06-22                            0   
+2015-06-19                      2015-06-22                            0   
+2015-06-20                      2015-06-22                            0   
+2015-06-21                      2015-06-22                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-15                             0  
+2015-06-16                             0  
+2015-06-17                             0  
+2015-06-18                             0  
+2015-06-19                             0  
+2015-06-20                             0  
+2015-06-21                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-22                      2015-06-29                            0   
+2015-06-23                      2015-06-29                            0   
+2015-06-24                      2015-06-29                            0   
+2015-06-25                      2015-06-29                            0   
+2015-06-26                      2015-06-29                            0   
+2015-06-27                      2015-06-29                            0   
+2015-06-28                      2015-06-29                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-22                             0  
+2015-06-23                             0  
+2015-06-24                             0  
+2015-06-25                             0  
+2015-06-26                             0  
+2015-06-27                             0  
+2015-06-28                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-06-29                      2015-07-06                            0   
+2015-06-30                      2015-07-06                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-06-29                             0  
+2015-06-30                             0  
 ***** Execution in Combination: pilot Tesoro HIGH VOLUME TRUCK STOP UT-SALT LAKE CITY-CHEVRON-762798-T003 MTN ULSD #2
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
@@ -3184,3 +4242,4 @@ No Weekly Refresh Dates to Compute....
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
 Completed Execution Thanks for you Patience 
+0:00:18.546000

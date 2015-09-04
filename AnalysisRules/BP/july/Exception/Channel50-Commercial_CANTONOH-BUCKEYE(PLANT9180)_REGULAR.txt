@@ -1,0 +1,7 @@
+Exception in Combination:
+customer : pilot
+Supplier : BP
+Account : Channel: 50 - Commercial
+Terminal: CANTON OH - BUCKEYE (PLANT 9180)
+Product : REGULAR
+Exception : "('lifted_gallons', 'Monthly')"

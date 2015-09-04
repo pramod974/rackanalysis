@@ -1,0 +1,7 @@
+Exception in Combination:
+customer : pilot
+Supplier : BP
+Account : Channel: 50 - Commercial
+Terminal: CUYAHOGA OH - BUCKEYE (PLANT 9178)
+Product : PREMIUM
+Exception : "('lifted_gallons', 'Monthly')"

@@ -1,61 +1,424 @@
 Execution Started
 ****************************************************************************************************
 ---------------------------------------------------------------------------------------------------
-Supplier: Exxon 	 Account type: MANSFIELD OIL COMPANY OF 106305 IW 	
- product name: ULSD 	 Terminal name: LOCKPORT IL (MOC) - 00MD
+Supplier: Citgo 	 Account type: MANSFIELD OIL CO-383369 	 EnAccount type: Contract 	
+ product name: PRM 	 Terminal name: 1262-LEMONT-CITGO
 --------------------------------- 	 Period: daily ------------------------------------------------
+Python 2.7.8 (default, Jun 30 2014, 16:03:49) [MSC v.1500 32 bit (Intel)]
+Type "copyright", "credits" or "license" for more information.
+
+IPython 3.1.0 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+Out[1]: 
+           enallocationstatus percentage_allocation             account_type  \
+2015-05-01            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-02            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-03            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-04            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-05            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-06            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-07            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-08            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-09            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-10            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-11            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-12            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-13            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-14            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-15            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-16            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-17            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-18            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-19            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-20            Unknown                  200%  MANSFIELD OIL CO-383369   
+2015-05-21            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-22            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-23            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-24            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-25            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-26            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-27            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-28            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-29            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-30            Unknown                  125%  MANSFIELD OIL CO-383369   
+2015-05-31            Unknown                  125%  MANSFIELD OIL CO-383369   
+
+            base_gallons  beginning_gallons      terminal_name  \
+2015-05-01         16129              32258  1262-LEMONT-CITGO   
+2015-05-02         16129              32258  1262-LEMONT-CITGO   
+2015-05-03         16129              32258  1262-LEMONT-CITGO   
+2015-05-04         16129              32258  1262-LEMONT-CITGO   
+2015-05-05         16129              32258  1262-LEMONT-CITGO   
+2015-05-06         16129              32258  1262-LEMONT-CITGO   
+2015-05-07         16129              32258  1262-LEMONT-CITGO   
+2015-05-08         16129              32258  1262-LEMONT-CITGO   
+2015-05-09         16129              32258  1262-LEMONT-CITGO   
+2015-05-10         16129              32258  1262-LEMONT-CITGO   
+2015-05-11         16129              32258  1262-LEMONT-CITGO   
+2015-05-12         16129              32258  1262-LEMONT-CITGO   
+2015-05-13         16129              32258  1262-LEMONT-CITGO   
+2015-05-14         16129              32258  1262-LEMONT-CITGO   
+2015-05-15         16129              32258  1262-LEMONT-CITGO   
+2015-05-16         16129              32258  1262-LEMONT-CITGO   
+2015-05-17         16129              32258  1262-LEMONT-CITGO   
+2015-05-18         16129              32258  1262-LEMONT-CITGO   
+2015-05-19         16129              32258  1262-LEMONT-CITGO   
+2015-05-20         16129              32258  1262-LEMONT-CITGO   
+2015-05-21         16129              20161  1262-LEMONT-CITGO   
+2015-05-22         16129              20161  1262-LEMONT-CITGO   
+2015-05-23         16129              20161  1262-LEMONT-CITGO   
+2015-05-24         16129              20161  1262-LEMONT-CITGO   
+2015-05-25         16129              20161  1262-LEMONT-CITGO   
+2015-05-26         16129              20161  1262-LEMONT-CITGO   
+2015-05-27         16129              20161  1262-LEMONT-CITGO   
+2015-05-28         17484              21855  1262-LEMONT-CITGO   
+2015-05-29         17484              21855  1262-LEMONT-CITGO   
+2015-05-30         17484              21855  1262-LEMONT-CITGO   
+2015-05-31         24926              31158  1262-LEMONT-CITGO   
+
+            lifted_gallons  remaining_gallons  additional_gallons_allowed  \
+2015-05-01           17394              14864                         NaN   
+2015-05-02           26093               6165                         NaN   
+2015-05-03           26096               6162                         NaN   
+2015-05-04           18394              13864                         NaN   
+2015-05-05            8699              23559                         NaN   
+2015-05-06           39807              -7549                         NaN   
+2015-05-07            8697              23561                         NaN   
+2015-05-08           26102               6156                         NaN   
+2015-05-09           37300              -5042                         NaN   
+2015-05-10            8700              23558                         NaN   
+2015-05-11           17399              14859                         NaN   
+2015-05-12           20893              11365                         NaN   
+2015-05-13           37313              -5055                        7000   
+2015-05-14           17307              14951                         NaN   
+2015-05-15           17401              14857                         NaN   
+2015-05-16           10720              21538                         NaN   
+2015-05-17           19922              12336                         NaN   
+2015-05-18           25899               6359                         NaN   
+2015-05-19           23207               9051                         NaN   
+2015-05-20               0              32258                         NaN   
+2015-05-21           26098              -5937                         NaN   
+2015-05-22           22513              -2352                         NaN   
+2015-05-23           22413              -2252                         500   
+2015-05-24           20928               -767                         NaN   
+2015-05-25               0              20161                         NaN   
+2015-05-26               0              20161                         NaN   
+2015-05-27               0              20161                         NaN   
+2015-05-28           19600               2255                         NaN   
+2015-05-29           12195               9660                         NaN   
+2015-05-30               0              21855                         NaN   
+2015-05-31               0              31158                         NaN   
+
+            additional_gallons_remaining        ...              rid  \
+2015-05-01                           NaN        ...          1235868   
+2015-05-02                           NaN        ...          1274505   
+2015-05-03                           NaN        ...          1311555   
+2015-05-04                           NaN        ...          1349933   
+2015-05-05                           NaN        ...          1388104   
+2015-05-06                           NaN        ...          1430729   
+2015-05-07                           NaN        ...          1470877   
+2015-05-08                           NaN        ...          1510750   
+2015-05-09                           NaN        ...          1557330   
+2015-05-10                           NaN        ...          1592752   
+2015-05-11                           NaN        ...          1632684   
+2015-05-12                           NaN        ...          1671861   
+2015-05-13                         -1699        ...          1713929   
+2015-05-14                           NaN        ...          1752481   
+2015-05-15                           NaN        ...          1783142   
+2015-05-16                           NaN        ...          1828420   
+2015-05-17                           NaN        ...          1858822   
+2015-05-18                           NaN        ...          1900171   
+2015-05-19                           NaN        ...          1940113   
+2015-05-20                           NaN        ...          1982042   
+2015-05-21                           NaN        ...          2025120   
+2015-05-22                           NaN        ...          2064972   
+2015-05-23                         -1752        ...          2103767   
+2015-05-24                           NaN        ...          2139506   
+2015-05-25                           NaN        ...          2178544   
+2015-05-26                           NaN        ...          2217991   
+2015-05-27                           NaN        ...          2256918   
+2015-05-28                           NaN        ...          2294388   
+2015-05-29                           NaN        ...          2333696   
+2015-05-30                           NaN        ...          2371922   
+2015-05-31                           NaN        ...          2407440   
+
+                 date Month Day  cum_base_gallons avg_base_perday  \
+2015-05-01 2015-05-01     5   1             16129           16129   
+2015-05-02 2015-05-02     5   2             32258           16129   
+2015-05-03 2015-05-03     5   3             48387           16129   
+2015-05-04 2015-05-04     5   4             64516           16129   
+2015-05-05 2015-05-05     5   5             80645           16129   
+2015-05-06 2015-05-06     5   6             96774           16129   
+2015-05-07 2015-05-07     5   7            112903           16129   
+2015-05-08 2015-05-08     5   8            129032           16129   
+2015-05-09 2015-05-09     5   9            145161           16129   
+2015-05-10 2015-05-10     5  10            161290           16129   
+2015-05-11 2015-05-11     5  11            177419           16129   
+2015-05-12 2015-05-12     5  12            193548           16129   
+2015-05-13 2015-05-13     5  13            209677           16129   
+2015-05-14 2015-05-14     5  14            225806           16129   
+2015-05-15 2015-05-15     5  15            241935           16129   
+2015-05-16 2015-05-16     5  16            258064           16129   
+2015-05-17 2015-05-17     5  17            274193           16129   
+2015-05-18 2015-05-18     5  18            290322           16129   
+2015-05-19 2015-05-19     5  19            306451           16129   
+2015-05-20 2015-05-20     5  20            322580           16129   
+2015-05-21 2015-05-21     5  21            338709           16129   
+2015-05-22 2015-05-22     5  22            354838           16129   
+2015-05-23 2015-05-23     5  23            370967           16129   
+2015-05-24 2015-05-24     5  24            387096           16129   
+2015-05-25 2015-05-25     5  25            403225           16129   
+2015-05-26 2015-05-26     5  26            419354           16129   
+2015-05-27 2015-05-27     5  27            435483           16129   
+2015-05-28 2015-05-28     5  28            452967           16177   
+2015-05-29 2015-05-29     5  29            470451           16222   
+2015-05-30 2015-05-30     5  30            487935           16264   
+2015-05-31 2015-05-31     5  31            512861           16543   
+
+            cum_beginning_gallons avg_beginning_perday  cum_lifted_gallons  \
+2015-05-01                  32258                32258               17394   
+2015-05-02                  64516                32258               43487   
+2015-05-03                  96774                32258               69583   
+2015-05-04                 129032                32258               87977   
+2015-05-05                 161290                32258               96676   
+2015-05-06                 193548                32258              136483   
+2015-05-07                 225806                32258              145180   
+2015-05-08                 258064                32258              171282   
+2015-05-09                 290322                32258              208582   
+2015-05-10                 322580                32258              217282   
+2015-05-11                 354838                32258              234681   
+2015-05-12                 387096                32258              255574   
+2015-05-13                 419354                32258              292887   
+2015-05-14                 451612                32258              310194   
+2015-05-15                 483870                32258              327595   
+2015-05-16                 516128                32258              338315   
+2015-05-17                 548386                32258              358237   
+2015-05-18                 580644                32258              384136   
+2015-05-19                 612902                32258              407343   
+2015-05-20                 645160                32258              407343   
+2015-05-21                 665321                31681              433441   
+2015-05-22                 685482                31158              455954   
+2015-05-23                 705643                30680              478367   
+2015-05-24                 725804                30241              499295   
+2015-05-25                 745965                29838              499295   
+2015-05-26                 766126                29466              499295   
+2015-05-27                 786287                29121              499295   
+2015-05-28                 808142                28862              518895   
+2015-05-29                 829997                28620              531090   
+2015-05-30                 851852                28395              531090   
+2015-05-31                 883010                28484              531090   
+
+            avg_lifted_perday  
+2015-05-01              17394  
+2015-05-02              21743  
+2015-05-03              23194  
+2015-05-04              21994  
+2015-05-05              19335  
+2015-05-06              22747  
+2015-05-07              20740  
+2015-05-08              21410  
+2015-05-09              23175  
+2015-05-10              21728  
+2015-05-11              21334  
+2015-05-12              21297  
+2015-05-13              22529  
+2015-05-14              22156  
+2015-05-15              21839  
+2015-05-16              21144  
+2015-05-17              21072  
+2015-05-18              21340  
+2015-05-19              21439  
+2015-05-20              20367  
+2015-05-21              20640  
+2015-05-22              20725  
+2015-05-23              20798  
+2015-05-24              20803  
+2015-05-25              19971  
+2015-05-26              19203  
+2015-05-27              18492  
+2015-05-28              18531  
+2015-05-29              18313  
+2015-05-30              17703  
+2015-05-31              17131  
+
+[31 rows x 26 columns]
+Out[2]: 
+array([['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 17394L, 14864L, nan, nan,
+        '05/02 00:01:00 CDT', None, 'PRM', 'Daily', 11L,
+        Timestamp('2015-05-01 22:01:06'), 1235868L,
+        Timestamp('2015-05-01 00:00:00'), 5L, 1L, 16129L, 16129L, 32258L,
+        32258L, 17394L, 17394L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 26093L, 6165L, nan, nan, '05/03 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-02 22:01:05'),
+        1274505L, Timestamp('2015-05-02 00:00:00'), 5L, 2L, 32258L, 16129L,
+        64516L, 32258L, 43487L, 21743L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 26096L, 6162L, nan, nan, '05/04 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-03 22:01:08'),
+        1311555L, Timestamp('2015-05-03 00:00:00'), 5L, 3L, 48387L, 16129L,
+        96774L, 32258L, 69583L, 23194L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 18394L, 13864L, nan, nan,
+        '05/05 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-04 22:01:07'), 1349933L,
+        Timestamp('2015-05-04 00:00:00'), 5L, 4L, 64516L, 16129L, 129032L,
+        32258L, 87977L, 21994L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 8699L, 23559L, nan, nan, '05/06 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-05 22:01:06'),
+        1388104L, Timestamp('2015-05-05 00:00:00'), 5L, 5L, 80645L, 16129L,
+        161290L, 32258L, 96676L, 19335L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 39807L, -7549L, nan, nan,
+        '05/07 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-06 22:01:04'), 1430729L,
+        Timestamp('2015-05-06 00:00:00'), 5L, 6L, 96774L, 16129L, 193548L,
+        32258L, 136483L, 22747L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 8697L, 23561L, nan, nan, '05/08 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-07 22:01:09'),
+        1470877L, Timestamp('2015-05-07 00:00:00'), 5L, 7L, 112903L,
+        16129L, 225806L, 32258L, 145180L, 20740L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 26102L, 6156L, nan, nan, '05/09 00:01:00 CDT',
+        None, 'PRM', 'Daily', 11L, Timestamp('2015-05-08 22:00:09'),
+        1510750L, Timestamp('2015-05-08 00:00:00'), 5L, 8L, 129032L,
+        16129L, 258064L, 32258L, 171282L, 21410L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 37300L, -5042L, nan, nan,
+        '05/10 00:01:00 CDT', None, 'PRM', 'Daily', 6L,
+        Timestamp('2015-05-09 22:00:09'), 1557330L,
+        Timestamp('2015-05-09 00:00:00'), 5L, 9L, 145161L, 16129L, 290322L,
+        32258L, 208582L, 23175L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 8700L, 23558L, nan, nan, '05/11 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-10 22:00:07'),
+        1592752L, Timestamp('2015-05-10 00:00:00'), 5L, 10L, 161290L,
+        16129L, 322580L, 32258L, 217282L, 21728L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 17399L, 14859L, nan, nan,
+        '05/12 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-11 22:00:09'), 1632684L,
+        Timestamp('2015-05-11 00:00:00'), 5L, 11L, 177419L, 16129L,
+        354838L, 32258L, 234681L, 21334L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 20893L, 11365L, nan, nan,
+        '05/13 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-12 22:00:10'), 1671861L,
+        Timestamp('2015-05-12 00:00:00'), 5L, 12L, 193548L, 16129L,
+        387096L, 32258L, 255574L, 21297L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 37313L, -5055L, 7000.0, -1699.0,
+        '05/14 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-13 22:00:06'), 1713929L,
+        Timestamp('2015-05-13 00:00:00'), 5L, 13L, 209677L, 16129L,
+        419354L, 32258L, 292887L, 22529L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 17307L, 14951L, nan, nan,
+        '05/15 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-14 22:00:10'), 1752481L,
+        Timestamp('2015-05-14 00:00:00'), 5L, 14L, 225806L, 16129L,
+        451612L, 32258L, 310194L, 22156L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 17401L, 14857L, nan, nan,
+        '05/16 00:01:00 CDT', None, 'PRM', 'Daily', 8L,
+        Timestamp('2015-05-15 19:00:09'), 1783142L,
+        Timestamp('2015-05-15 00:00:00'), 5L, 15L, 241935L, 16129L,
+        483870L, 32258L, 327595L, 21839L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 10720L, 21538L, nan, nan,
+        '05/17 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-16 22:00:11'), 1828420L,
+        Timestamp('2015-05-16 00:00:00'), 5L, 16L, 258064L, 16129L,
+        516128L, 32258L, 338315L, 21144L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 19922L, 12336L, nan, nan,
+        '05/18 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-17 22:00:07'), 1858822L,
+        Timestamp('2015-05-17 00:00:00'), 5L, 17L, 274193L, 16129L,
+        548386L, 32258L, 358237L, 21072L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 25899L, 6359L, nan, nan, '05/19 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-18 22:00:08'),
+        1900171L, Timestamp('2015-05-18 00:00:00'), 5L, 18L, 290322L,
+        16129L, 580644L, 32258L, 384136L, 21340L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 23207L, 9051L, nan, nan, '05/20 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-19 22:00:10'),
+        1940113L, Timestamp('2015-05-19 00:00:00'), 5L, 19L, 306451L,
+        16129L, 612902L, 32258L, 407343L, 21439L],
+       ['Unknown', '200%', 'MANSFIELD OIL CO-383369', 16129L, 32258L,
+        '1262-LEMONT-CITGO', 0L, 32258L, nan, nan, '05/21 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-20 22:00:11'),
+        1982042L, Timestamp('2015-05-20 00:00:00'), 5L, 20L, 322580L,
+        16129L, 645160L, 32258L, 407343L, 20367L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 16129L, 20161L,
+        '1262-LEMONT-CITGO', 26098L, -5937L, nan, nan,
+        '05/22 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-21 22:00:08'), 2025120L,
+        Timestamp('2015-05-21 00:00:00'), 5L, 21L, 338709L, 16129L,
+        665321L, 31681L, 433441L, 20640L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 16129L, 20161L,
+        '1262-LEMONT-CITGO', 22513L, -2352L, nan, nan,
+        '05/23 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-22 22:00:06'), 2064972L,
+        Timestamp('2015-05-22 00:00:00'), 5L, 22L, 354838L, 16129L,
+        685482L, 31158L, 455954L, 20725L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 16129L, 20161L,
+        '1262-LEMONT-CITGO', 22413L, -2252L, 500.0, -1752.0,
+        '05/24 00:01:00 CDT', None, 'PRM', 'Daily', 10L,
+        Timestamp('2015-05-23 22:00:07'), 2103767L,
+        Timestamp('2015-05-23 00:00:00'), 5L, 23L, 370967L, 16129L,
+        705643L, 30680L, 478367L, 20798L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 16129L, 20161L,
+        '1262-LEMONT-CITGO', 20928L, -767L, nan, nan, '05/25 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-24 22:00:07'),
+        2139506L, Timestamp('2015-05-24 00:00:00'), 5L, 24L, 387096L,
+        16129L, 725804L, 30241L, 499295L, 20803L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 16129L, 20161L,
+        '1262-LEMONT-CITGO', 0L, 20161L, nan, nan, '05/26 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-25 22:00:09'),
+        2178544L, Timestamp('2015-05-25 00:00:00'), 5L, 25L, 403225L,
+        16129L, 745965L, 29838L, 499295L, 19971L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 16129L, 20161L,
+        '1262-LEMONT-CITGO', 0L, 20161L, nan, nan, '05/27 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-26 22:00:10'),
+        2217991L, Timestamp('2015-05-26 00:00:00'), 5L, 26L, 419354L,
+        16129L, 766126L, 29466L, 499295L, 19203L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 16129L, 20161L,
+        '1262-LEMONT-CITGO', 0L, 20161L, nan, nan, '05/28 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-27 22:00:08'),
+        2256918L, Timestamp('2015-05-27 00:00:00'), 5L, 27L, 435483L,
+        16129L, 786287L, 29121L, 499295L, 18492L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 17484L, 21855L,
+        '1262-LEMONT-CITGO', 19600L, 2255L, nan, nan, '05/29 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-28 22:01:06'),
+        2294388L, Timestamp('2015-05-28 00:00:00'), 5L, 28L, 452967L,
+        16177L, 808142L, 28862L, 518895L, 18531L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 17484L, 21855L,
+        '1262-LEMONT-CITGO', 12195L, 9660L, nan, nan, '05/30 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-29 22:01:09'),
+        2333696L, Timestamp('2015-05-29 00:00:00'), 5L, 29L, 470451L,
+        16222L, 829997L, 28620L, 531090L, 18313L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 17484L, 21855L,
+        '1262-LEMONT-CITGO', 0L, 21855L, nan, nan, '05/31 00:01:00 CDT',
+        None, 'PRM', 'Daily', 9L, Timestamp('2015-05-30 22:01:08'),
+        2371922L, Timestamp('2015-05-30 00:00:00'), 5L, 30L, 487935L,
+        16264L, 851852L, 28395L, 531090L, 17703L],
+       ['Unknown', '125%', 'MANSFIELD OIL CO-383369', 24926L, 31158L,
+        '1262-LEMONT-CITGO', 0L, 31158L, nan, nan, '06/01 00:01:00 CDT',
+        None, 'PRM', 'Daily', 10L, Timestamp('2015-05-31 22:01:05'),
+        2407440L, Timestamp('2015-05-31 00:00:00'), 5L, 31L, 512861L,
+        16543L, 883010L, 28484L, 531090L, 17131L]], dtype=object)
 ***************************************Missing Values***************************************************
-	 	 	 All days of month have the period: daily
-****************************************************************************************************
-****************************************Miscellaneous Inferences*****************************************
-Number of Lifted gallons greater than beginning gallons :  10
-Number of Remaining gallons less than zero  10
-Number of additional_gallons_allowed zero  8
-Number of additional_gallons_remaining less than or equal to zero  8
-===================================================================================================
---------------------------------- 	 Period: weekly ------------------------------------------------
-***************************************Missing Values***************************************************
-	 	 	Total periods Missing for period weekly 18
-****************************************************************************************************
-****************************************Miscellaneous Inferences*****************************************
-===================================================================================================
---------------------------------- 	 Period: monthly ------------------------------------------------
-***************************************Missing Values***************************************************
-	 	 	Total periods Missing for period monthly 18
-****************************************************************************************************
-****************************************Miscellaneous Inferences*****************************************
-=========================================Contradiction=============================================
+Out[3]: 
+Empty DataFrame
+Columns: [enallocationstatus, percentage_allocation, account_type, base_gallons, beginning_gallons, terminal_name, lifted_gallons, remaining_gallons, additional_gallons_allowed, additional_gallons_remaining, next_refresh_date, next_refresh_base_gallons, product_name, period, batchno, execution_date, rid, date, Month, Day, cum_base_gallons, avg_base_perday, cum_beginning_gallons, avg_beginning_perday, cum_lifted_gallons, avg_lifted_perday]
+Index: []
 
-
-******** Cumulative Daily Lifted and Lifed Gallons Monthly********
-
-Number of Errors where lifted_Monthly != cum_lifted_daily :  31
-
-
-******** Cumulative Daily Lifted per Week and Lifed Gallons Weekly********
-
-Number of rows where lifted_weekly == cum_lifted_daily_perWeek   :  2
-Number of Errors where lifted_weekly != cum_lifted_daily_perWeek :  29
-
-====================================Consistency of Next_Refresh_Date================================
-0                     18
-05/14 00:00:00 CDT     7
-05/07 00:00:00 CDT     6
-dtype: int64
-======================================Trend In Percentage Allocation================================
-Percentage allocation Daily Mean 96.6129032258
-Percentage allocation Monthly Mean 41.935483871
-Percentage allocation Weekly Mean 58.7096774194
-Percentage allocation Daily Min:  50  max: 150
-Percentage allocation Monthly Min 0  max: 100
-Percentage allocation Weekly Min 0  max: 140
-count     31.000000
-mean      96.612903
-std       45.941758
-min       50.000000
-25%       50.000000
-50%      100.000000
-75%      150.000000
-max      150.000000
-Name: percentage_allocation, dtype: float64
----------------------------------------------------------------------------------------------------
+[0 rows x 26 columns]

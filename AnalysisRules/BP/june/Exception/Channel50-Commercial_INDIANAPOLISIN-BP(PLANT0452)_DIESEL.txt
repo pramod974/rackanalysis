@@ -1,0 +1,7 @@
+Exception in Combination:
+customer : pilot
+Supplier : BP
+Account : Channel: 50 - Commercial
+Terminal: INDIANAPOLIS IN - BP (PLANT 0452)
+Product : DIESEL
+Exception : "('lifted_gallons', 'Monthly')"

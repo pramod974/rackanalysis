@@ -1,0 +1,7 @@
+Exception in Combination:
+customer : pilot
+Supplier : BP
+Account : Channel: 50 - Commercial
+Terminal: SOUTH BEND IN - BUCKEYE (PLANT 9121)
+Product : DIESEL
+Exception : "('lifted_gallons', 'Monthly')"

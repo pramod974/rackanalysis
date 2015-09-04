@@ -1,0 +1,7 @@
+Exception in Combination:
+customer : pilot
+Supplier : BP
+Account : Channel: 50 - Commercial
+Terminal: WARREN OH - BUCKEYE (PLANT 9182)
+Product : DIESEL
+Exception : "('lifted_gallons', 'Monthly')"

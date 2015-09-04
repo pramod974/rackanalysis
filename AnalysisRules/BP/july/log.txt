@@ -1,0 +1,107 @@
+***** Execution in Combination: pilot BP Channel: 50 - Commercial CANTON OH - BUCKEYE (PLANT 9180) PREMIUM
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial CANTON OH - BUCKEYE (PLANT 9180) PREMIUM "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial CANTON OH - BUCKEYE (PLANT 9180) REGULAR
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial CANTON OH - BUCKEYE (PLANT 9180) REGULAR "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial CEDAR RAPIDS IA - BUCKEYE (PLANT 9120) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial CEDAR RAPIDS IA - BUCKEYE (PLANT 9120) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial CUYAHOGA OH - BUCKEYE (PLANT 9178) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial CUYAHOGA OH - BUCKEYE (PLANT 9178) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial CUYAHOGA OH - BUCKEYE (PLANT 9178) PREMIUM
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial CUYAHOGA OH - BUCKEYE (PLANT 9178) PREMIUM "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial CUYAHOGA OH - BUCKEYE (PLANT 9178) REGULAR
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial CUYAHOGA OH - BUCKEYE (PLANT 9178) REGULAR "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BP (PLANT 0452) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BP (PLANT 0452) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BP (PLANT 0452) PREMIUM
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BP (PLANT 0452) PREMIUM "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BP (PLANT 0452) REGULAR
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BP (PLANT 0452) REGULAR "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial KANSAS CITY KS - MAGELLAN (PLANT 0330) DIESEL
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot BP Channel: 50 - Commercial NAPOLEON MI - BUCKEYE (PLANT 9122) PREMIUM 9
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot BP Channel: 50 - Commercial RIVER ROUGE MI - BUCKEYE (PLANT 9123) PREMIUM
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial RIVER ROUGE MI - BUCKEYE (PLANT 9123) PREMIUM "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial RIVER ROUGE MI - BUCKEYE (PLANT 9123) REGULAR
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial RIVER ROUGE MI - BUCKEYE (PLANT 9123) REGULAR "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial ROCHELLE IL - BP (PLANT 0448) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial ROCHELLE IL - BP (PLANT 0448) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial SOUTH BEND IN - BUCKEYE (PLANT 9121) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial SOUTH BEND IN - BUCKEYE (PLANT 9121) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial WARREN OH - BUCKEYE (PLANT 9182) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial WARREN OH - BUCKEYE (PLANT 9182) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial WHITING IN - BP (PLANT 0453) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial WHITING IN - BP (PLANT 0453) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial WHITING IN - BP (PLANT 0453) PREMIUM
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial WHITING IN - BP (PLANT 0453) PREMIUM "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial WHITING IN - BP (PLANT 0453) REGULAR
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial WHITING IN - BP (PLANT 0453) REGULAR "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial EAST CHICAGO IN - BUCKEYE (PLANT 6410) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial EAST CHICAGO IN - BUCKEYE (PLANT 6410) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial EAST CHICAGO IN - BUCKEYE (PLANT 6410) PREMIUM
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial EAST CHICAGO IN - BUCKEYE (PLANT 6410) PREMIUM "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial EAST CHICAGO IN - BUCKEYE (PLANT 6410) REGULAR
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial EAST CHICAGO IN - BUCKEYE (PLANT 6410) REGULAR "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial CORALVILLE IA - MAGELLAN (PLANT 3385) DIESEL
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial CORALVILLE IA - MAGELLAN (PLANT 3385) DIESEL "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BUCKEYE RACEWY (PLANT 8763) PREMIUM
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BUCKEYE RACEWY (PLANT 8763) PREMIUM "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BUCKEYE RACEWY (PLANT 8763) REGULAR
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
+Exception in Combination: pilot BP Channel: 50 - Commercial INDIANAPOLIS IN - BUCKEYE RACEWY (PLANT 8763) REGULAR "('lifted_gallons', 'Monthly')"
+***** Execution in Combination: pilot BP Channel: 50 - Commercial DES MOINES IA - MAGELLAN (PLANT 0320) DIESEL
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+***** Execution in Combination: pilot BP Channel: 50 - Commercial NILES MI - CITGO (PLANT 4223) DIESEL
+No Weekly Lifted gallons to Compute week switches....
+ Exiting Execution.....
+Exception: All objects passed were None
+Completed Execution Thanks for you Patience 
+0:00:04.834000

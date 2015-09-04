@@ -159,6 +159,66 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                             0  
 2015-07-31                          1200  
+0 0 5500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 2303
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1900
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1250
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                            0   
@@ -413,6 +473,66 @@ Modification_UnSuccessful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                          9000  
 2015-07-31                         26001  
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 9000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7600
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 9000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 16200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 21300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 17700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 24601
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 6800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 17600
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7750
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 17000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 18001
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 17000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 16901
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 25598
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 13101
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 9000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 17001
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                            0   
@@ -440,6 +560,8 @@ Modification_Successful
 2015-07-06                         50300  
 2015-07-07                         84400  
 2015-07-08                         84400  
+Opening Balance Lifted_Daily 16801
+Opening Balance Lifted_Weekly 16801
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -460,6 +582,8 @@ Modification_UnSuccessful
 2015-07-13                         45000  
 2015-07-14                         69601  
 2015-07-15                         77301  
+Opening Balance Lifted_Daily 16801
+Opening Balance Lifted_Weekly 16801
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -670,6 +794,66 @@ Modification_UnSuccessful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                         39100  
 2015-07-31                         77800  
+0 0 42700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 15600
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 7800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 53902
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 15400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 54000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39720
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39510
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 38401
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 23400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 15800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 23500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 23510
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 31100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 38802
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 26935
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 38800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 41501
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 15600
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 38700
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                        38700   
@@ -678,7 +862,8 @@ Modification_UnSuccessful
 2015-07-01                        260607  
 Opening Balance Lifted_Daily 30900
 Opening Balance Lifted_Weekly 30900
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                        42700   
@@ -697,6 +882,8 @@ Modification_Successful
 2015-07-06                         93811  
 2015-07-07                        155513  
 2015-07-08                        170913  
+Opening Balance Lifted_Daily 30900
+Opening Balance Lifted_Weekly 30900
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -716,6 +903,8 @@ Modification_Successful
 2015-07-13                        212930  
 2015-07-14                        251930  
 2015-07-15                        259730  
+Opening Balance Lifted_Daily 30900
+Opening Balance Lifted_Weekly 30900
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -927,6 +1116,64 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                          1200  
 2015-07-31                          1200  
+0 0 5103
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 804
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1900
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 5700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4114
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 3508
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 4900
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 804
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 5003
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 5411
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 804
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 2300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+53455 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+54655 53455 1200
+54655 54655 0
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                            0   
@@ -954,6 +1201,8 @@ Modification_Successful
 2015-07-06                         10611  
 2015-07-07                         16311  
 2015-07-08                         16311  
+Opening Balance Lifted_Daily 1003
+Opening Balance Lifted_Weekly 1003
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -973,6 +1222,8 @@ Modification_Successful
 2015-07-13                         10022  
 2015-07-14                         14722  
 2015-07-15                         14722  
+Opening Balance Lifted_Daily 1003
+Opening Balance Lifted_Weekly 1003
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -1011,6 +1262,8 @@ Modification_UnSuccessful
 2015-07-27                          5504  
 2015-07-28                          6304  
 2015-07-29                          6304  
+Opening Balance Lifted_Daily 1003
+Opening Balance Lifted_Weekly 1003
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1184,6 +1437,64 @@ Modification_UnSuccessful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                             0  
 2015-07-31                             0  
+0 0 11899
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 16206
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 5400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 9400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 10412
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 13507
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8401
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7707
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 12307
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8502
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 12100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 19010
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 11211
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+216474 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+216474 216474 0
+216474 216474 0
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                            0   
@@ -1211,6 +1522,8 @@ Modification_Successful
 2015-07-06                         49305  
 2015-07-07                         57807  
 2015-07-08                         57807  
+Opening Balance Lifted_Daily 7303
+Opening Balance Lifted_Weekly 7303
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1230,6 +1543,8 @@ Modification_Successful
 2015-07-13                         49129  
 2015-07-14                         49129  
 2015-07-15                         49129  
+Opening Balance Lifted_Daily 7303
+Opening Balance Lifted_Weekly 7303
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -1442,6 +1757,66 @@ Modification_Successful
 2015-07-30                         29809  
 2015-07-31                         59620  
 Modification_Successful
+0 0 22362
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 14850
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 7451
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 14915
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7458
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 22364
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 14902
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7451
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22364
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29815
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22365
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22365
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 14909
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22363
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7451
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 14912
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22363
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22364
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22358
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22363
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 14900
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7451
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29366
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29817
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22373
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29809
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22360
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                        29798   
@@ -1450,7 +1825,8 @@ Modification_Successful
 2015-07-01                        141573  
 Opening Balance Lifted_Daily 14894
 Opening Balance Lifted_Weekly 14894
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                        22362   
@@ -1469,6 +1845,8 @@ Modification_Successful
 2015-07-06                         74371  
 2015-07-07                        104190  
 2015-07-08                        126498  
+Opening Balance Lifted_Daily 14894
+Opening Balance Lifted_Weekly 14894
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1488,6 +1866,8 @@ Modification_Successful
 2015-07-13                         89438  
 2015-07-14                        119253  
 2015-07-15                        141618  
+Opening Balance Lifted_Daily 14894
+Opening Balance Lifted_Weekly 14894
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1508,6 +1888,8 @@ Modification_UnSuccessful
 2015-07-20                         82000  
 2015-07-21                        111814  
 2015-07-22                        141629  
+Opening Balance Lifted_Daily 14894
+Opening Balance Lifted_Weekly 14894
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1535,6 +1917,8 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                         29809  
 2015-07-31                         59620  
+Opening Balance Lifted_Daily 14894
+Opening Balance Lifted_Weekly 14894
 Modification_Successful
 ***** Execution in Combination: pilot Exxon PILOT TRAVEL CENTERS LLC 103637 IW GLENDIVE MT CENEX EX - 02PT ULSD
 [datetime.datetime(2015, 7, 2, 0, 0), datetime.datetime(2015, 7, 9, 0, 0), datetime.datetime(2015, 7, 16, 0, 0)]
@@ -1694,6 +2078,51 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
+18800 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+27900 18800 0
+27900 27900 0
+46000 27900 0
+46000 46000 0
+92200 46000 0
+92200 92200 0
+0 92200 0
+110300 110300 0
+128600 110300 0
+137900 128600 0
+156900 137900 0
+0 156900 9200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 9200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 9300
+Insufficient Data to Compute Daily Lifted using Monthly
+184600 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+184600 184600 0
+184600 184600 0
+184600 184600 0
+184600 184600 0
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                            0   
@@ -1736,12 +2165,14 @@ Modification_UnSuccessful
 2015-07-13                             0  
 2015-07-14                         73900  
 2015-07-15                         73900  
+Unable to fetch Opening Balance
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-16                      2015-07-23                            0   
@@ -1778,6 +2209,7 @@ Modification_UnSuccessful
 2015-07-27                             0  
 2015-07-28                             0  
 2015-07-29                             0  
+Unable to fetch Opening Balance
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
@@ -1959,6 +2391,66 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-31                             0  
 Modification_Successful
+0 0 6500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 2400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 5203
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4902
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 9800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1250
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7900
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 9700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4803
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 3200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 9500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1001
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4703
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 5803
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 5403
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 12300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 9200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 4003
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 3301
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 2803
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 5100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 9700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 3401
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                        18800   
@@ -1967,7 +2459,8 @@ Modification_Successful
 2015-07-01                         41906  
 Opening Balance Lifted_Daily 800
 Opening Balance Lifted_Weekly 800
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                         6500   
@@ -1986,6 +2479,8 @@ Modification_Successful
 2015-07-06                         43512  
 2015-07-07                         44762  
 2015-07-08                         52662  
+Opening Balance Lifted_Daily 800
+Opening Balance Lifted_Weekly 800
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2005,6 +2500,8 @@ Modification_Successful
 2015-07-13                         28558  
 2015-07-14                         31758  
 2015-07-15                         41258  
+Opening Balance Lifted_Daily 800
+Opening Balance Lifted_Weekly 800
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2025,6 +2522,8 @@ Modification_UnSuccessful
 2015-07-20                         19907  
 2015-07-21                         25310  
 2015-07-22                         26510  
+Opening Balance Lifted_Daily 800
+Opening Balance Lifted_Weekly 800
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2052,6 +2551,8 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                          9700  
 2015-07-31                             0  
+Opening Balance Lifted_Daily 800
+Opening Balance Lifted_Weekly 800
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ***** Execution in Combination: pilot Exxon PILOT TRAVEL CENTERS LLC 103637 IW HAMMOND IN (MOC) - 00DH Reg RFG
@@ -2225,6 +2726,56 @@ Modification_UnSuccessful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                         44400  
 2015-07-31                         79903  
+0 0 36600
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 23300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29205
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 12104
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 16003
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 39201
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 43401
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 33501
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 73169
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 42308
+Insufficient Data to Compute Daily Lifted using Monthly
+656939 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+696290 656939 0
+746990 696290 0
+811500 746990 0
+863358 811500 0
+918360 863358 0
+991632 918360 0
+1028588 991632 0
+1065294 1028588 0
+1124403 1065294 0
+1163102 1124403 0
+0 1163102 50450
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 72352
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 54454
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 48391
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 31606
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 55110
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 44400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 35503
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                        45510   
@@ -2233,7 +2784,8 @@ Modification_UnSuccessful
 2015-07-01                        310158  
 Opening Balance Lifted_Daily 24500
 Opening Balance Lifted_Weekly 24500
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                        36600   
@@ -2252,6 +2804,8 @@ Modification_Successful
 2015-07-06                        263358  
 2015-07-07                        319659  
 2015-07-08                        363060  
+Opening Balance Lifted_Daily 24500
+Opening Balance Lifted_Weekly 24500
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2271,10 +2825,12 @@ Modification_Successful
 2015-07-13                             0  
 2015-07-14                             0  
 2015-07-15                             0  
+Opening Balance Lifted_Daily 24500
+Opening Balance Lifted_Weekly 24500
 No Enough Data available to Fill Lifted Gallons NRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_UnSuccessful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2312,8 +2868,11 @@ Modification_UnSuccessful
 2015-07-27                        264346  
 2015-07-28                        295952  
 2015-07-29                        351062  
+Opening Balance Lifted_Daily 24500
+Opening Balance Lifted_Weekly 24500
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-30                      2015-08-06                        44400   
@@ -2488,6 +3047,66 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                        478647  
 2015-07-31                        786383  
+0 0 225710
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 104329
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 56813
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 37502
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 69012
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 513889
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 224308
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 333915
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 240546
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 232970
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 288982
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 493809
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 300695
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 423831
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 258171
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 192997
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 144628
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 314393
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 409251
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 509721
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 467026
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 328001
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 164579
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 148875
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 321995
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 529462
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 385466
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 478647
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 307736
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                       534472   
@@ -2496,7 +3115,8 @@ Modification_Successful
 2015-07-01                       2923674  
 Opening Balance Lifted_Daily 546550
 Opening Balance Lifted_Weekly 546550
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                       225710   
@@ -2515,6 +3135,8 @@ Modification_Successful
 2015-07-06                        947596  
 2015-07-07                       1641809  
 2015-07-08                       1896423  
+Opening Balance Lifted_Daily 546550
+Opening Balance Lifted_Weekly 546550
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2534,6 +3156,8 @@ Modification_Successful
 2015-07-13                       1573767  
 2015-07-14                       2089878  
 2015-07-15                       2405323  
+Opening Balance Lifted_Daily 546550
+Opening Balance Lifted_Weekly 546550
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2554,6 +3178,8 @@ Modification_UnSuccessful
 2015-07-20                       1363075  
 2015-07-21                       1787130  
 2015-07-22                       2304351  
+Opening Balance Lifted_Daily 546550
+Opening Balance Lifted_Weekly 546550
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2573,6 +3199,8 @@ Modification_Successful
 2015-07-27                       1468039  
 2015-07-28                       2004701  
 2015-07-29                       2390167  
+Opening Balance Lifted_Daily 546550
+Opening Balance Lifted_Weekly 546550
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2747,6 +3375,66 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                         74167  
 2015-07-31                        133623  
+0 0 59308
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 22453
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7502
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7401
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7402
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 66909
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29905
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 66863
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 43957
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29450
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 59458
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 80820
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 67169
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 66958
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 52160
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 44557
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29656
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 74160
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 66674
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 67075
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 81824
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 44717
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 14800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29755
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 44818
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 67209
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 81620
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 74167
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 59456
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                        81309   
@@ -2755,7 +3443,8 @@ Modification_Successful
 2015-07-01                        401917  
 Opening Balance Lifted_Daily 67308
 Opening Balance Lifted_Weekly 67308
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                        59308   
@@ -2774,6 +3463,8 @@ Modification_Successful
 2015-07-06                        171173  
 2015-07-07                        282385  
 2015-07-08                        326940  
+Opening Balance Lifted_Daily 67308
+Opening Balance Lifted_Weekly 67308
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2793,6 +3484,8 @@ Modification_Successful
 2015-07-13                        289010  
 2015-07-14                        369830  
 2015-07-15                        436999  
+Opening Balance Lifted_Daily 67308
+Opening Balance Lifted_Weekly 67308
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2813,6 +3506,8 @@ Modification_UnSuccessful
 2015-07-20                        274895  
 2015-07-21                        341569  
 2015-07-22                        408644  
+Opening Balance Lifted_Daily 67308
+Opening Balance Lifted_Weekly 67308
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3007,6 +3702,66 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                             0  
 2015-07-31                          1000  
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8610
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 1000
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                            0   
@@ -3034,6 +3789,8 @@ Modification_Successful
 2015-07-06                          2200  
 2015-07-07                          3405  
 2015-07-08                          3405  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
@@ -3264,6 +4021,66 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                         45300  
 2015-07-31                        102250  
+0 0 49590
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 28450
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 13700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 9650
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7850
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 40100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 24950
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 63552
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 56603
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 55400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 46855
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29700
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 58600
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 49875
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 55903
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 62225
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 37849
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29750
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 33501
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 47310
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 29821
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 52000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 38218
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 51256
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 44400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 37775
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 45300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 56950
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                        40500   
@@ -3272,7 +4089,8 @@ Modification_Successful
 2015-07-01                        268555  
 Opening Balance Lifted_Daily 54350
 Opening Balance Lifted_Weekly 54350
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                        49590   
@@ -3291,6 +4109,8 @@ Modification_Successful
 2015-07-06                        260917  
 2015-07-07                        347928  
 2015-07-08                        372878  
+Opening Balance Lifted_Daily 54350
+Opening Balance Lifted_Weekly 54350
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3310,6 +4130,8 @@ Modification_Successful
 2015-07-13                        277912  
 2015-07-14                        307612  
 2015-07-15                        337112  
+Opening Balance Lifted_Daily 54350
+Opening Balance Lifted_Weekly 54350
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -3330,6 +4152,8 @@ Modification_UnSuccessful
 2015-07-20                        264452  
 2015-07-21                        294202  
 2015-07-22                        336703  
+Opening Balance Lifted_Daily 54350
+Opening Balance Lifted_Weekly 54350
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3521,6 +4345,66 @@ Modification_Successful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                             0  
 2015-07-31                          7400  
+0 0 8500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8401
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 6000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 7400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7501
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 7300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8610
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8600
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 16000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 7400
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                            0   
@@ -3545,6 +4429,7 @@ Modification_Successful
 2015-07-06                             0  
 2015-07-07                             0  
 2015-07-08                             0  
+Unable to fetch Opening Balance
 No Enough Data available to Fill Lifted Gallons NRD
 No Enough Data available to Fill Lifted Gallons NRD
 No Enough Data available to Fill Lifted Gallons NRD
@@ -3570,6 +4455,7 @@ Modification_UnSuccessful
 2015-07-13                             0  
 2015-07-14                         30901  
 2015-07-15                         30901  
+Unable to fetch Opening Balance
 No Enough Data available to Fill Lifted Gallons NRD
 No Enough Data available to Fill Lifted Gallons NRD
 No Enough Data available to Fill Lifted Gallons NRD
@@ -3612,6 +4498,7 @@ Modification_UnSuccessful
 2015-07-27                         24700  
 2015-07-28                         24700  
 2015-07-29                         40700  
+Unable to fetch Opening Balance
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3785,6 +4672,66 @@ Modification_UnSuccessful
             ('lifted_gallons', 'Weekly')  
 2015-07-30                         45948  
 2015-07-31                         76523  
+0 0 38635
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7726
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 45175
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 11200
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 23175
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 45650
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 30901
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 46075
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 46150
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 32040
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 30535
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 45851
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 15575
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 46350
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 33499
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 24425
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 37650
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 45740
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 46080
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 30801
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 46154
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 30735
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 30325
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 53225
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 34250
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 38286
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 27275
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 45948
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 30575
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                        45460   
@@ -3793,7 +4740,8 @@ Modification_UnSuccessful
 2015-07-01                        258946  
 Opening Balance Lifted_Daily 45606
 Opening Balance Lifted_Weekly 45606
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                        38635   
@@ -3812,6 +4760,8 @@ Modification_Successful
 2015-07-06                        168661  
 2015-07-07                        222036  
 2015-07-08                        252937  
+Opening Balance Lifted_Daily 45606
+Opening Balance Lifted_Weekly 45606
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3831,6 +4781,8 @@ Modification_Successful
 2015-07-13                        201426  
 2015-07-14                        247277  
 2015-07-15                        262852  
+Opening Balance Lifted_Daily 45606
+Opening Balance Lifted_Weekly 45606
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -4045,6 +4997,66 @@ Modification_Successful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 900
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 900
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 1100
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                          900   
@@ -4053,7 +5065,8 @@ Modification_Successful
 2015-07-01                          1800  
 Opening Balance Lifted_Daily 900
 Opening Balance Lifted_Weekly 900
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                            0   
@@ -4072,6 +5085,8 @@ Modification_Successful
 2015-07-06                           900  
 2015-07-07                          2000  
 2015-07-08                          2000  
+Opening Balance Lifted_Daily 900
+Opening Balance Lifted_Weekly 900
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
@@ -4093,6 +5108,8 @@ Modification_Successful
 2015-07-13                          2700  
 2015-07-14                          2700  
 2015-07-15                          2700  
+Opening Balance Lifted_Daily 900
+Opening Balance Lifted_Weekly 900
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -4131,6 +5148,8 @@ Modification_UnSuccessful
 2015-07-27                             0  
 2015-07-28                             0  
 2015-07-29                             0  
+Opening Balance Lifted_Daily 900
+Opening Balance Lifted_Weekly 900
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
@@ -4309,6 +5328,66 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
+0 0 8501
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 7400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 8301
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 7400
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 7401
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 8300
+Insufficient Data to Compute Daily Lifted using Monthly
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-01                      2015-07-02                         7400   
@@ -4317,7 +5396,8 @@ Modification_UnSuccessful
 2015-07-01                         23100  
 Opening Balance Lifted_Daily 7400
 Opening Balance Lifted_Weekly 7400
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-07-02                      2015-07-09                         8501   
@@ -4336,6 +5416,8 @@ Modification_Successful
 2015-07-06                         32501  
 2015-07-07                         32501  
 2015-07-08                         32501  
+Opening Balance Lifted_Daily 7400
+Opening Balance Lifted_Weekly 7400
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -4355,6 +5437,8 @@ Modification_Successful
 2015-07-13                         30500  
 2015-07-14                         38800  
 2015-07-15                         38800  
+Opening Balance Lifted_Daily 7400
+Opening Balance Lifted_Weekly 7400
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4375,6 +5459,8 @@ Modification_UnSuccessful
 2015-07-20                         16601  
 2015-07-21                         16601  
 2015-07-22                         24001  
+Opening Balance Lifted_Daily 7400
+Opening Balance Lifted_Weekly 7400
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4395,6 +5481,8 @@ Modification_UnSuccessful
 2015-07-27                             0  
 2015-07-28                             0  
 2015-07-29                             0  
+Opening Balance Lifted_Daily 7400
+Opening Balance Lifted_Weekly 7400
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD

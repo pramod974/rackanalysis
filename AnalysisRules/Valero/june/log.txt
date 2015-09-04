@@ -17,6 +17,8 @@ No Weekly Refresh Dates to Compute....
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
 ***** Execution in Combination: pilot Valero PILOT TRAVEL CENTE-122194-W/S - UNB Contract Valero - Ardmore (PBAM) DSL - LSD/ULSD
+[datetime.datetime(2015, 6, 4, 0, 0)]
+[datetime.datetime(2015, 6, 4, 0, 0), datetime.datetime(2015, 6, 11, 0, 0), datetime.datetime(2015, 6, 18, 0, 0), datetime.datetime(2015, 6, 25, 0, 0), datetime.datetime(2015, 7, 2, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -274,6 +276,8 @@ Modification_Successful
 2015-06-30                        240031  
 Modification_Successful
 ***** Execution in Combination: pilot Valero PILOT TRAVEL CENTE-122194-W/S - UNB Contract Valero - Memphis (PBMM) DSL - LSD/ULSD
+[datetime.datetime(2015, 6, 4, 0, 0)]
+[datetime.datetime(2015, 6, 4, 0, 0), datetime.datetime(2015, 6, 11, 0, 0), datetime.datetime(2015, 6, 18, 0, 0), datetime.datetime(2015, 6, 25, 0, 0), datetime.datetime(2015, 7, 2, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 2015-06-03 00:00:00 1
@@ -2535,3 +2539,4 @@ No Weekly Lifted gallons to Compute week switches....
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
 Completed Execution Thanks for you Patience 
+0:00:42.166000

@@ -1,4 +1,6 @@
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR ALBUQUERQUE NM PSX - 030A GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR ALBUQUERQUE NM PSX - 030A GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -87,6 +89,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         70635  
 2015-07-07                         88062  
 2015-07-08                         96867  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -175,6 +179,8 @@ Modification_Successful
 2015-07-06                         70635  
 2015-07-07                         88062  
 2015-07-08                         96867  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -195,6 +201,8 @@ Modification_UnSuccessful
 2015-07-13                         87986  
 2015-07-14                         96695  
 2015-07-15                         96695  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -213,6 +221,8 @@ Modification_UnSuccessful
 2015-07-19                         59745  
 2015-07-20                         77172  
 2015-07-21                         85884  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -232,6 +242,8 @@ Modification_Successful
 2015-07-26                         22522  
 2015-07-27                         22522  
 2015-07-28                         22522  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -243,10 +255,12 @@ Modification_Successful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR ALBUQUERQUE NM VAL - 030V GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR ALBUQUERQUE NM VAL - 030V GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR AMARILLO TX PSX - 030J GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR AMARILLO TX PSX - 030J GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -335,6 +349,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         65342  
 2015-07-07                         86844  
 2015-07-08                         86844  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
@@ -424,6 +440,8 @@ Modification_Successful
 2015-07-06                         65342  
 2015-07-07                         86844  
 2015-07-08                         86844  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -443,6 +461,8 @@ Modification_Successful
 2015-07-13                         64532  
 2015-07-14                         81393  
 2015-07-15                         81393  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -461,6 +481,8 @@ Modification_UnSuccessful
 2015-07-19                         61854  
 2015-07-20                         70729  
 2015-07-21                         79389  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -480,6 +502,8 @@ Modification_Successful
 2015-07-26                         43986  
 2015-07-27                         65294  
 2015-07-28                         73895  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -492,8 +516,12 @@ Modification_UnSuccessful
 2015-07-29                          8804  
 2015-07-30                          8804  
 2015-07-31                         17403  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR BEAUMONT TX EM - 0320 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR BEAUMONT TX EM - 0320 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -582,6 +610,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         49200  
 2015-07-07                         67400  
 2015-07-08                         67400  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
@@ -672,6 +702,8 @@ Modification_UnSuccessful
 2015-07-06                         49200  
 2015-07-07                         67400  
 2015-07-08                         67400  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -691,6 +723,8 @@ Modification_Successful
 2015-07-13                         46200  
 2015-07-14                         55400  
 2015-07-15                         55400  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -709,6 +743,8 @@ Modification_UnSuccessful
 2015-07-19                         19200  
 2015-07-20                         37300  
 2015-07-21                         37300  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -728,6 +764,8 @@ Modification_Successful
 2015-07-26                         37201  
 2015-07-27                         46601  
 2015-07-28                         46601  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -740,15 +778,19 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                          9400  
 2015-07-31                         18200  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR BETTENDORF IA MMP - 03IA GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR BETTENDORF IA MMP - 03IA GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR BETTENDORF IA US OIL - A3OE DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR BETTENDORF IA US OIL - A3OE DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR BETTENDORF IA US OIL - A3OE GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR BETTENDORF IA US OIL - A3OE GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -837,6 +879,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         12947  
 2015-07-07                         19647  
 2015-07-08                         19647  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -930,6 +974,8 @@ Modification_UnSuccessful
 2015-07-06                         12947  
 2015-07-07                         19647  
 2015-07-08                         19647  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -950,6 +996,8 @@ Modification_UnSuccessful
 2015-07-13                         15600  
 2015-07-14                         15600  
 2015-07-15                         24276  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -968,6 +1016,8 @@ Modification_UnSuccessful
 2015-07-19                         16501  
 2015-07-20                         16501  
 2015-07-21                         25301  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -988,6 +1038,8 @@ Modification_UnSuccessful
 2015-07-26                         16803  
 2015-07-27                         25606  
 2015-07-28                         33206  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1000,10 +1052,14 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                          7202  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR BOSSIER CITY LA ENT - A3J7 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR BOSSIER CITY LA ENT - A3J7 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -1092,6 +1148,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         38600  
 2015-07-07                         45600  
 2015-07-08                         45600  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1181,6 +1239,8 @@ Modification_UnSuccessful
 2015-07-06                         38600  
 2015-07-07                         45600  
 2015-07-08                         45600  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1201,6 +1261,8 @@ Modification_UnSuccessful
 2015-07-13                         44300  
 2015-07-14                         51300  
 2015-07-15                         51300  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1219,6 +1281,8 @@ Modification_UnSuccessful
 2015-07-19                         35450  
 2015-07-20                         35450  
 2015-07-21                         44453  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1238,6 +1302,8 @@ Modification_Successful
 2015-07-26                         26100  
 2015-07-27                         26100  
 2015-07-28                         26100  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -1250,13 +1316,15 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR CAHOKIA IL PSX - 036M CONVENTIONAL GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR CAHOKIA IL PSX - 036M CONVENTIONAL GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR CAHOKIA IL PSX - 036M DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR CAHOKIA IL PSX - 036M DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR CAHOKIA IL PSX - 036M REFORMULATED GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR CAHOKIA IL PSX - 036M REFORMULATED GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -1345,6 +1413,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         67660  
 2015-07-07                         92210  
 2015-07-08                         92210  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1436,6 +1506,8 @@ Modification_UnSuccessful
 2015-07-06                         67660  
 2015-07-07                         92210  
 2015-07-08                         92210  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1456,6 +1528,8 @@ Modification_UnSuccessful
 2015-07-13                         59916  
 2015-07-14                         76919  
 2015-07-15                         76919  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1474,6 +1548,8 @@ Modification_UnSuccessful
 2015-07-19                         60576  
 2015-07-20                         69275  
 2015-07-21                         86877  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1493,6 +1569,8 @@ Modification_Successful
 2015-07-26                         51187  
 2015-07-27                         59887  
 2015-07-28                         77086  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1505,9 +1583,13 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                          8001  
 2015-07-31                         41905  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR CHEYENNE WY MMP - A3T4 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR CHEYENNE WY MMP - A3T4 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -1596,6 +1678,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         60813  
 2015-07-07                         84218  
 2015-07-08                         97119  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1687,6 +1771,8 @@ Modification_UnSuccessful
 2015-07-06                         60813  
 2015-07-07                         84218  
 2015-07-08                         97119  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1707,6 +1793,8 @@ Modification_UnSuccessful
 2015-07-13                         74014  
 2015-07-14                         74014  
 2015-07-15                         85216  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1725,6 +1813,8 @@ Modification_UnSuccessful
 2015-07-19                         66907  
 2015-07-20                         80610  
 2015-07-21                         91512  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1744,6 +1834,8 @@ Modification_Successful
 2015-07-26                         54612  
 2015-07-27                         81017  
 2015-07-28                         93320  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1756,9 +1848,13 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                         12503  
 2015-07-31                         23705  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR COMMERCE CITY CO PSX - 0351 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR COMMERCE CITY CO PSX - 0351 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -1870,6 +1966,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-19                          8312  
 2015-07-20                          8312  
 2015-07-21                          8312  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
@@ -1966,6 +2064,8 @@ Modification_UnSuccessful
 2015-07-19                          8312  
 2015-07-20                          8312  
 2015-07-21                          8312  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -1997,22 +2097,24 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR COMMERCE CITY CO SUN - 0352 (CLOSED 6/18/15) GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR COMMERCE CITY CO SUN - 0352 (CLOSED 6/18/15) GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR CORALVILLE IA MMP - 035B GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR CORALVILLE IA MMP - 035B GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR DALLAS TX WM - 035Q GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR DALLAS TX WM - 035Q GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR DEL CITY OK MMP - 03RR DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR DEL CITY OK MMP - 03RR DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR DEL CITY OK MMP - 03RR GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR DEL CITY OK MMP - 03RR GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR EVANSVILLE WY SI - 0339 DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR EVANSVILLE WY SI - 0339 DISTILLATES
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -2101,6 +2203,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         46916  
 2015-07-07                         64917  
 2015-07-08                         68417  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2192,6 +2296,8 @@ Modification_UnSuccessful
 2015-07-06                         46916  
 2015-07-07                         64917  
 2015-07-08                         68417  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2212,6 +2318,8 @@ Modification_UnSuccessful
 2015-07-13                         52889  
 2015-07-14                         71292  
 2015-07-15                         79786  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2230,6 +2338,8 @@ Modification_UnSuccessful
 2015-07-19                         40476  
 2015-07-20                         58881  
 2015-07-21                         71829  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2249,6 +2359,8 @@ Modification_Successful
 2015-07-26                         68361  
 2015-07-27                         80665  
 2015-07-28                         80665  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2261,9 +2373,13 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                         18986  
 2015-07-31                         37970  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR EVANSVILLE WY SI - 0339 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR EVANSVILLE WY SI - 0339 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -2352,6 +2468,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         25388  
 2015-07-07                         35282  
 2015-07-08                         44774  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
@@ -2446,6 +2564,8 @@ Modification_UnSuccessful
 2015-07-06                         25388  
 2015-07-07                         35282  
 2015-07-08                         44774  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -2467,6 +2587,8 @@ Modification_UnSuccessful
 2015-07-13                         36101  
 2015-07-14                         36101  
 2015-07-15                         45591  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2485,6 +2607,8 @@ Modification_UnSuccessful
 2015-07-19                         30410  
 2015-07-20                         30410  
 2015-07-21                         44589  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2505,6 +2629,8 @@ Modification_UnSuccessful
 2015-07-26                         18695  
 2015-07-27                         24797  
 2015-07-28                         34281  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2517,10 +2643,14 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                         10001  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR GLENPOOL OK PSX - 032N GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR GLENPOOL OK PSX - 032N GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -2609,6 +2739,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         44296  
 2015-07-07                         53296  
 2015-07-08                         53296  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
@@ -2701,6 +2833,8 @@ Modification_UnSuccessful
 2015-07-06                         44296  
 2015-07-07                         53296  
 2015-07-08                         53296  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -2722,6 +2856,8 @@ Modification_UnSuccessful
 2015-07-13                         52800  
 2015-07-14                         61500  
 2015-07-15                         61500  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2740,6 +2876,8 @@ Modification_UnSuccessful
 2015-07-19                         35100  
 2015-07-20                         35100  
 2015-07-21                         52800  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -2759,6 +2897,8 @@ Modification_Successful
 2015-07-26                         26200  
 2015-07-27                         26200  
 2015-07-28                         44201  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2771,12 +2911,16 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                         17700  
 2015-07-31                         17700  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR GRAPEVINE TX MMP - A3ZC DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR GRAPEVINE TX MMP - A3ZC DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR GRAPEVINE TX MMP - A3ZC GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR GRAPEVINE TX MMP - A3ZC GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -2865,6 +3009,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         41099  
 2015-07-07                         41099  
 2015-07-08                         41099  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
@@ -2955,6 +3101,8 @@ Modification_UnSuccessful
 2015-07-06                         41099  
 2015-07-07                         41099  
 2015-07-08                         41099  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -2976,6 +3124,8 @@ Modification_UnSuccessful
 2015-07-13                         24909  
 2015-07-14                         33708  
 2015-07-15                         33708  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2994,6 +3144,8 @@ Modification_UnSuccessful
 2015-07-19                         44388  
 2015-07-20                         44388  
 2015-07-21                         44388  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3013,6 +3165,8 @@ Modification_Successful
 2015-07-26                         43825  
 2015-07-27                         43825  
 2015-07-28                         43825  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -3025,10 +3179,12 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR HARTFORD IL PSX CLLC - 0394 B11
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR HARTFORD IL PSX CLLC - 0394 B11
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR HARTFORD IL PSX CLLC - 0394 B5
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR HARTFORD IL PSX CLLC - 0394 B5
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -3207,6 +3363,8 @@ Modification_Successful
 2015-07-05                        228643  
 2015-07-06                        274764  
 2015-07-07                        420899  
+Opening Balance Lifted_Daily 46217
+Opening Balance Lifted_Weekly 46217
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3226,6 +3384,8 @@ Modification_Successful
 2015-07-12                        303358  
 2015-07-13                        372888  
 2015-07-14                        457440  
+Opening Balance Lifted_Daily 46217
+Opening Balance Lifted_Weekly 46217
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
 ****Invalid Week****
@@ -3246,6 +3406,8 @@ Modification_Successful
 2015-07-19                        307245  
 2015-07-20                        384513  
 2015-07-21                        469022  
+Opening Balance Lifted_Daily 46217
+Opening Balance Lifted_Weekly 46217
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3265,6 +3427,8 @@ Modification_Successful
 2015-07-26                        376023  
 2015-07-27                        453177  
 2015-07-28                        530222  
+Opening Balance Lifted_Daily 46217
+Opening Balance Lifted_Weekly 46217
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3276,25 +3440,27 @@ Modification_Successful
 2015-07-29                         84555  
 2015-07-30                        168974  
 2015-07-31                        222852  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR HARTFORD IL PSX CLLC - 0394 NON BIO DIESEL
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR HARTFORD IL PSX CLLC - 0394 NON BIO DIESEL
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR JASPER MO MMP - 03A8 DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR JASPER MO MMP - 03A8 DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR JASPER MO MMP - 03A8 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR JASPER MO MMP - 03A8 GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS PSX - 03AG 7# RVP GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS PSX - 03AG 7# RVP GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS PSX - 03AG 9# RVP GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS PSX - 03AG 9# RVP GASOLINE
+[datetime.datetime(2015, 7, 7, 0, 0)]
+[datetime.datetime(2015, 7, 7, 0, 0), datetime.datetime(2015, 7, 14, 0, 0), datetime.datetime(2015, 7, 21, 0, 0), datetime.datetime(2015, 7, 28, 0, 0), datetime.datetime(2015, 8, 4, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -3391,6 +3557,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-11                          8709  
 2015-07-12                          8709  
 2015-07-13                          8709  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
@@ -3447,8 +3615,101 @@ Modification_Successful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-Exception in verifyWeekByNRD in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS PSX - 03AG 9# RVP GASOLINE can't compare datetime.datetime to int
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS PSX - 03AG DISTILLATES
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-01                      2015-07-07                            0   
+2015-07-02                      2015-07-07                            0   
+2015-07-03                      2015-07-07                            0   
+2015-07-04                      2015-07-07                            0   
+2015-07-05                      2015-07-07                            0   
+2015-07-06                      2015-07-07                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                             0  
+2015-07-02                             0  
+2015-07-03                             0  
+2015-07-04                             0  
+2015-07-05                             0  
+2015-07-06                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-07                      2015-07-14                            0   
+2015-07-08                      2015-07-14                            0   
+2015-07-09                      2015-07-14                            0   
+2015-07-10                      2015-07-14                            0   
+2015-07-11                      2015-07-14                            0   
+2015-07-12                      2015-07-14                            0   
+2015-07-13                      2015-07-14                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-07                             0  
+2015-07-08                             0  
+2015-07-09                             0  
+2015-07-10                             0  
+2015-07-11                          8709  
+2015-07-12                          8709  
+2015-07-13                          8709  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-14                      2015-07-21                            0   
+2015-07-15                      2015-07-21                            0   
+2015-07-16                      2015-07-21                            0   
+2015-07-17                      2015-07-21                            0   
+2015-07-18                      2015-07-21                            0   
+2015-07-19                      2015-07-21                            0   
+2015-07-20                      2015-07-21                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-14                          8697  
+2015-07-15                          8697  
+2015-07-16                          8697  
+2015-07-17                          8697  
+2015-07-18                          8697  
+2015-07-19                          8697  
+2015-07-20                          8697  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
+Modification_Successful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-21                      2015-07-28                            0   
+2015-07-22                      2015-07-28                            0   
+2015-07-23                      2015-07-28                            0   
+2015-07-24                      2015-07-28                            0   
+2015-07-25                      2015-07-28                            0   
+2015-07-26                      2015-07-28                            0   
+2015-07-27                      2015-07-28                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-21                             0  
+2015-07-22                             0  
+2015-07-23                             0  
+2015-07-24                             0  
+2015-07-25                             0  
+2015-07-26                             0  
+2015-07-27                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-28                      2015-08-04                            0   
+2015-07-29                      2015-08-04                            0   
+2015-07-30                      2015-08-04                            0   
+2015-07-31                      2015-08-04                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-28                             0  
+2015-07-29                             0  
+2015-07-30                             0  
+2015-07-31                             0  
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS PSX - 03AG DISTILLATES
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -3574,6 +3835,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-26                         63957  
 2015-07-27                         71521  
 2015-07-28                         86617  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
@@ -3687,7 +3950,9 @@ Modification_UnSuccessful
 2015-07-29                         15390  
 2015-07-30                         30382  
 2015-07-31                         45636  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR LINCOLN NE PSX - 03R5 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR LINCOLN NE PSX - 03R5 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -3776,6 +4041,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         33798  
 2015-07-07                         50795  
 2015-07-08                         50795  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -3865,6 +4132,8 @@ Modification_UnSuccessful
 2015-07-06                         33798  
 2015-07-07                         50795  
 2015-07-08                         50795  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -3885,6 +4154,8 @@ Modification_UnSuccessful
 2015-07-13                         25698  
 2015-07-14                         34301  
 2015-07-15                         42899  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -3903,6 +4174,8 @@ Modification_UnSuccessful
 2015-07-19                          8501  
 2015-07-20                          8501  
 2015-07-21                         25600  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -3922,6 +4195,8 @@ Modification_Successful
 2015-07-26                          8501  
 2015-07-27                         17001  
 2015-07-28                         25600  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -3934,10 +4209,12 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR MCPHERSON KS NCR - 03CF GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR MCPHERSON KS NCR - 03CF GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR MT VERNON MO PSX - 03DR GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR MT VERNON MO PSX - 03DR GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -4026,6 +4303,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         43002  
 2015-07-07                         60400  
 2015-07-08                         60400  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4113,6 +4392,8 @@ Modification_Successful
 2015-07-06                         43002  
 2015-07-07                         60400  
 2015-07-08                         60400  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4133,6 +4414,8 @@ Modification_UnSuccessful
 2015-07-13                         42901  
 2015-07-14                         51601  
 2015-07-15                         51601  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4151,6 +4434,8 @@ Modification_UnSuccessful
 2015-07-19                         34908  
 2015-07-20                         43608  
 2015-07-21                         43608  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -4180,10 +4465,12 @@ Modification_Successful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR N PLATTE NE NUS - 03E6 DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR N PLATTE NE NUS - 03E6 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR N PLATTE NE NUS - 03E6 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR N PLATTE NE NUS - 03E6 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -4272,6 +4559,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         23201  
 2015-07-07                         23201  
 2015-07-08                         23201  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons
@@ -4365,6 +4654,8 @@ Modification_UnSuccessful
 2015-07-06                         23201  
 2015-07-07                         23201  
 2015-07-08                         23201  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
@@ -4387,6 +4678,8 @@ Modification_UnSuccessful
 2015-07-13                         29301  
 2015-07-14                         47001  
 2015-07-15                         47001  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4405,6 +4698,8 @@ Modification_UnSuccessful
 2015-07-19                          4500  
 2015-07-20                         24001  
 2015-07-21                         24001  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -4424,6 +4719,8 @@ Modification_Successful
 2015-07-26                         25601  
 2015-07-27                         35101  
 2015-07-28                         42902  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4436,9 +4733,13 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                          9499  
 2015-07-31                          9499  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR OKLAHOMA CITY OK PSX - 03FD GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR OKLAHOMA CITY OK PSX - 03FD GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -4527,6 +4828,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                        128709  
 2015-07-07                        163687  
 2015-07-08                        198095  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4617,6 +4920,8 @@ Modification_Successful
 2015-07-06                        128709  
 2015-07-07                        163687  
 2015-07-08                        198095  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4637,6 +4942,8 @@ Modification_UnSuccessful
 2015-07-13                        138238  
 2015-07-14                        155640  
 2015-07-15                        155640  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4655,6 +4962,8 @@ Modification_UnSuccessful
 2015-07-19                        106681  
 2015-07-20                        132559  
 2015-07-21                        168113  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -4674,6 +4983,8 @@ Modification_Successful
 2015-07-26                         61290  
 2015-07-27                         87704  
 2015-07-28                        105307  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
 ****Invalid Week****
@@ -4686,20 +4997,24 @@ Modification_Successful
 2015-07-29                          8876  
 2015-07-30                         17576  
 2015-07-31                         35083  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR OMAHA NE MMP - 03FH GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR OMAHA NE MMP - 03FH GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX KM - A3AM DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX KM - A3AM DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX KM - A3AM GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX KM - A3AM GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX PSX CLLC - 03FV DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX PSX CLLC - 03FV DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX PSX CLLC - 03FV GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR PASADENA TX PSX CLLC - 03FV GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -4788,6 +5103,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                        105701  
 2015-07-07                        131585  
 2015-07-08                        145187  
+Opening Balance Lifted_Daily 17403
+Opening Balance Lifted_Weekly 17403
 Modification_Successful
 ****Invalid Week****
            WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
@@ -4876,6 +5193,8 @@ Modification_Successful
 2015-07-06                        105701  
 2015-07-07                        131585  
 2015-07-08                        145187  
+Opening Balance Lifted_Daily 17403
+Opening Balance Lifted_Weekly 17403
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -4895,6 +5214,8 @@ Modification_Successful
 2015-07-13                         95509  
 2015-07-14                        113114  
 2015-07-15                        130517  
+Opening Balance Lifted_Daily 17403
+Opening Balance Lifted_Weekly 17403
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -4913,6 +5234,8 @@ Modification_UnSuccessful
 2015-07-19                         87337  
 2015-07-20                        104744  
 2015-07-21                        130948  
+Opening Balance Lifted_Daily 17403
+Opening Balance Lifted_Weekly 17403
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -4932,6 +5255,8 @@ Modification_Successful
 2015-07-26                         96825  
 2015-07-27                        114428  
 2015-07-28                        139018  
+Opening Balance Lifted_Daily 17403
+Opening Balance Lifted_Weekly 17403
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -4943,14 +5268,18 @@ Modification_Successful
 2015-07-29                         17202  
 2015-07-30                         43207  
 2015-07-31                         69601  
+Opening Balance Lifted_Daily 17403
+Opening Balance Lifted_Weekly 17403
 Modification_Successful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR ROCA NE MMP - 03JF DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR ROCA NE MMP - 03JF DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR ROCA NE MMP - 03JF GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR ROCA NE MMP - 03JF GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR ROCK SPRINGS WY PSX - 03JM DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR ROCK SPRINGS WY PSX - 03JM DISTILLATES
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -5038,6 +5367,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         46802  
 2015-07-07                         69001  
 2015-07-08                         80100  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            WeeksByLiftedGallons  ('lifted_gallons', 'Daily')  \
@@ -5120,6 +5451,8 @@ Modification_UnSuccessful
 2015-07-06                         46802  
 2015-07-07                         69001  
 2015-07-08                         80100  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -5139,6 +5472,8 @@ Modification_Successful
 2015-07-13                         28239  
 2015-07-14                         28239  
 2015-07-15                         28239  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -5186,7 +5521,9 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR ROCK SPRINGS WY PSX - 03JM GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR ROCK SPRINGS WY PSX - 03JM GASOLINE
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -5367,6 +5704,8 @@ Modification_UnSuccessful
 2015-07-05                         43698  
 2015-07-06                         43698  
 2015-07-07                         55998  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -5386,6 +5725,8 @@ Modification_Successful
 2015-07-12                         47673  
 2015-07-13                         59375  
 2015-07-14                         59375  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -5407,6 +5748,8 @@ Modification_UnSuccessful
 2015-07-19                         46264  
 2015-07-20                         56268  
 2015-07-21                         63770  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -5437,12 +5780,16 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                         12442  
 2015-07-31                         23945  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR SCOTT CITY MO TEP - 03L7 DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR SCOTT CITY MO TEP - 03L7 DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR SCOTT CITY MO TEP - 03L7 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR SCOTT CITY MO TEP - 03L7 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -5531,6 +5878,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         33054  
 2015-07-07                         42052  
 2015-07-08                         42052  
+Opening Balance Lifted_Daily 9036
+Opening Balance Lifted_Weekly 9036
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
@@ -5622,6 +5971,8 @@ Modification_Successful
 2015-07-06                         33054  
 2015-07-07                         42052  
 2015-07-08                         42052  
+Opening Balance Lifted_Daily 9036
+Opening Balance Lifted_Weekly 9036
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -5643,6 +5994,8 @@ Modification_UnSuccessful
 2015-07-13                         17900  
 2015-07-14                         26945  
 2015-07-15                         26945  
+Opening Balance Lifted_Daily 9036
+Opening Balance Lifted_Weekly 9036
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -5661,6 +6014,8 @@ Modification_UnSuccessful
 2015-07-19                         26900  
 2015-07-20                         35899  
 2015-07-21                         44849  
+Opening Balance Lifted_Daily 9036
+Opening Balance Lifted_Weekly 9036
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -5690,9 +6045,14 @@ Modification_Successful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
+Opening Balance Lifted_Daily 9036
+Opening Balance Lifted_Weekly 9036
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
-Exception in verifyWeekByNRD in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR SCOTT CITY MO TEP - 03L7 GASOLINE index 3 is out of bounds for axis 0 with size 3
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR SPOKANE WA PSX - 03M2 DISTILLATES
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_Successful
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR SPOKANE WA PSX - 03M2 DISTILLATES
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -5872,6 +6232,8 @@ Modification_Successful
 2015-07-05                         80314  
 2015-07-06                         90312  
 2015-07-07                        116812  
+Opening Balance Lifted_Daily 21804
+Opening Balance Lifted_Weekly 21804
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -5891,6 +6253,8 @@ Modification_Successful
 2015-07-12                        107915  
 2015-07-13                        129116  
 2015-07-14                        160223  
+Opening Balance Lifted_Daily 21804
+Opening Balance Lifted_Weekly 21804
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
 ****Invalid Week****
@@ -5911,6 +6275,8 @@ Modification_Successful
 2015-07-19                        104806  
 2015-07-20                        130514  
 2015-07-21                        150515  
+Opening Balance Lifted_Daily 21804
+Opening Balance Lifted_Weekly 21804
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -5931,6 +6297,8 @@ Modification_UnSuccessful
 2015-07-26                        112792  
 2015-07-27                        125491  
 2015-07-28                        155496  
+Opening Balance Lifted_Daily 21804
+Opening Balance Lifted_Weekly 21804
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -5942,28 +6310,30 @@ Modification_Successful
 2015-07-29                         29799  
 2015-07-30                         59802  
 2015-07-31                         96405  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR SPOKANE WA PSX - 03M2 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR SPOKANE WA PSX - 03M2 GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR SPRINGFIELD MO MMP - 032U DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR SPRINGFIELD MO MMP - 032U DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR SPRINGFIELD MO MMP - 032U GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR SPRINGFIELD MO MMP - 032U GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR TULSA OK MMP - 03NC DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR TULSA OK MMP - 03NC DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR TULSA OK MMP - 03NC GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR TULSA OK MMP - 03NC GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR VALLEY CENTER KS MMP - A3AA DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR VALLEY CENTER KS MMP - A3AA DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR VALLEY CENTER KS MMP - A3AA GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR VALLEY CENTER KS MMP - A3AA GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR WATERLOO IA MMP - 03NW GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR WATERLOO IA MMP - 03NW GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -6052,6 +6422,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         26594  
 2015-07-07                         35342  
 2015-07-08                         35342  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6144,6 +6516,8 @@ Modification_UnSuccessful
 2015-07-06                         26594  
 2015-07-07                         35342  
 2015-07-08                         35342  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6164,6 +6538,8 @@ Modification_UnSuccessful
 2015-07-13                         26398  
 2015-07-14                         35145  
 2015-07-15                         35145  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6182,6 +6558,8 @@ Modification_UnSuccessful
 2015-07-19                         26245  
 2015-07-20                         26245  
 2015-07-21                         26245  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6202,6 +6580,8 @@ Modification_UnSuccessful
 2015-07-26                         17446  
 2015-07-27                         26246  
 2015-07-28                         35047  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6214,9 +6594,13 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                          8699  
 2015-07-31                         17447  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR WICHITA KS PSXN - 03P9 DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR WICHITA KS PSXN - 03P9 DISTILLATES
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -6305,6 +6689,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                        104154  
 2015-07-07                        189110  
 2015-07-08                        220000  
+Opening Balance Lifted_Daily 15477
+Opening Balance Lifted_Weekly 15477
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
@@ -6395,6 +6781,8 @@ Modification_Successful
 2015-07-06                        104154  
 2015-07-07                        189110  
 2015-07-08                        220000  
+Opening Balance Lifted_Daily 15477
+Opening Balance Lifted_Weekly 15477
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
@@ -6416,6 +6804,8 @@ Modification_UnSuccessful
 2015-07-13                        227686  
 2015-07-14                        289913  
 2015-07-15                        297689  
+Opening Balance Lifted_Daily 15477
+Opening Balance Lifted_Weekly 15477
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6434,6 +6824,8 @@ Modification_UnSuccessful
 2015-07-19                        166421  
 2015-07-20                        205298  
 2015-07-21                        259758  
+Opening Balance Lifted_Daily 15477
+Opening Balance Lifted_Weekly 15477
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -6453,6 +6845,8 @@ Modification_Successful
 2015-07-26                        161512  
 2015-07-27                        215693  
 2015-07-28                        270076  
+Opening Balance Lifted_Daily 15477
+Opening Balance Lifted_Weekly 15477
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -6464,8 +6858,12 @@ Modification_Successful
 2015-07-29                         23030  
 2015-07-30                         61840  
 2015-07-31                         92970  
+Opening Balance Lifted_Daily 15477
+Opening Balance Lifted_Weekly 15477
 Modification_Successful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR WICHITA KS PSXN - 03P9 GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR WICHITA KS PSXN - 03P9 GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -6554,6 +6952,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         25402  
 2015-07-07                         25402  
 2015-07-08                         25402  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6643,6 +7043,8 @@ Modification_UnSuccessful
 2015-07-06                         25402  
 2015-07-07                         25402  
 2015-07-08                         25402  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6663,6 +7065,8 @@ Modification_UnSuccessful
 2015-07-13                         22902  
 2015-07-14                         22902  
 2015-07-15                         22902  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6681,6 +7085,8 @@ Modification_UnSuccessful
 2015-07-19                         22460  
 2015-07-20                         22460  
 2015-07-21                         22460  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -6700,6 +7106,8 @@ Modification_Successful
 2015-07-26                         19303  
 2015-07-27                         19303  
 2015-07-28                         19303  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Valid Week***
@@ -6712,7 +7120,9 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR WOODRIVER IL BP - 03PF CONVENTIONAL GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR WOODRIVER IL BP - 03PF CONVENTIONAL GASOLINE
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0)]
+[datetime.datetime(2015, 7, 1, 18, 0), datetime.datetime(2015, 7, 8, 18, 0), datetime.datetime(2015, 7, 15, 18, 0), datetime.datetime(2015, 7, 22, 18, 0), datetime.datetime(2015, 7, 29, 18, 0), datetime.datetime(2015, 8, 5, 18, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -6801,6 +7211,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-06                         34405  
 2015-07-07                         43010  
 2015-07-08                         43010  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6892,6 +7304,8 @@ Modification_UnSuccessful
 2015-07-06                         34405  
 2015-07-07                         43010  
 2015-07-08                         43010  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6912,6 +7326,8 @@ Modification_UnSuccessful
 2015-07-13                         24448  
 2015-07-14                         33056  
 2015-07-15                         41661  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6930,6 +7346,8 @@ Modification_UnSuccessful
 2015-07-19                         26316  
 2015-07-20                         34873  
 2015-07-21                         34873  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -6949,6 +7367,8 @@ Modification_Successful
 2015-07-26                         17372  
 2015-07-27                         25970  
 2015-07-28                         43298  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -6961,15 +7381,19 @@ Modification_UnSuccessful
 2015-07-29                             0  
 2015-07-30                          8600  
 2015-07-31                         17206  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR WOODRIVER IL BP - 03PF DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR WOODRIVER IL BP - 03PF DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR WOODRIVER IL BP - 03PF REFORMULATED GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR WOODRIVER IL BP - 03PF REFORMULATED GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB AMARILLO TX VAL - A3CE DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB AMARILLO TX VAL - A3CE DISTILLATES
+[datetime.datetime(2015, 7, 3, 0, 0), datetime.datetime(2015, 7, 10, 0, 0), datetime.datetime(2015, 7, 17, 0, 0), datetime.datetime(2015, 7, 24, 0, 0), datetime.datetime(2015, 7, 31, 0, 0)]
+[datetime.datetime(2015, 7, 3, 0, 0), datetime.datetime(2015, 7, 10, 0, 0), datetime.datetime(2015, 7, 17, 0, 0), datetime.datetime(2015, 7, 24, 0, 0), datetime.datetime(2015, 7, 31, 0, 0), datetime.datetime(2015, 8, 7, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -7129,11 +7553,114 @@ Modification_UnSuccessful
 
             ('lifted_gallons', 'Weekly')  
 2015-07-31                         32199  
-Exception in verifyWeekByNRD in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB AMARILLO TX VAL - A3CE DISTILLATES can't compare datetime.datetime to int
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB CLERMONT IN BU - A3K6 DISTILLATES
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-01                      2015-07-03                            0   
+2015-07-02                      2015-07-03                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-01                             0  
+2015-07-02                             0  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-03                      2015-07-10                            0   
+2015-07-04                      2015-07-10                            0   
+2015-07-05                      2015-07-10                            0   
+2015-07-06                      2015-07-10                            0   
+2015-07-07                      2015-07-10                            0   
+2015-07-08                      2015-07-10                            0   
+2015-07-09                      2015-07-10                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-03                             0  
+2015-07-04                             0  
+2015-07-05                             0  
+2015-07-06                             0  
+2015-07-07                             0  
+2015-07-08                             0  
+2015-07-09                             0  
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-10                      2015-07-17                         8099   
+2015-07-11                      2015-07-17                         7649   
+2015-07-12                      2015-07-17                        16254   
+2015-07-13                      2015-07-17                         4506   
+2015-07-14                      2015-07-17                        30507   
+2015-07-15                      2015-07-17                        15200   
+2015-07-16                      2015-07-17                        15246   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-10                             0  
+2015-07-11                             0  
+2015-07-12                             0  
+2015-07-13                             0  
+2015-07-14                             0  
+2015-07-15                             0  
+2015-07-16                             0  
+Unable to fetch Opening Balance
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Invalid Week****
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-17                      2015-07-24                        15251   
+2015-07-18                      2015-07-24                        27950   
+2015-07-19                      2015-07-24                        23850   
+2015-07-20                      2015-07-24                            0   
+2015-07-21                      2015-07-24                            0   
+2015-07-22                      2015-07-24                            0   
+2015-07-23                      2015-07-24                            0   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-17                             0  
+2015-07-18                             0  
+2015-07-19                             0  
+2015-07-20                             0  
+2015-07-21                             0  
+2015-07-22                             0  
+2015-07-23                             0  
+Unable to fetch Opening Balance
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons NRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+No Enough Data available to Fill Lifted Gallons NRD
+Modification_UnSuccessful
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-24                      2015-07-31                            0   
+2015-07-25                      2015-07-31                        15703   
+2015-07-26                      2015-07-31                        16201   
+2015-07-27                      2015-07-31                            0   
+2015-07-28                      2015-07-31                            0   
+2015-07-29                      2015-07-31                            0   
+2015-07-30                      2015-07-31                        32256   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-24                             0  
+2015-07-25                         15703  
+2015-07-26                         31904  
+2015-07-27                         31904  
+2015-07-28                         31904  
+2015-07-29                         31904  
+2015-07-30                         64160  
+****Valid Week***
+           ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
+2015-07-31                      2015-08-07                        32199   
+
+            ('lifted_gallons', 'Weekly')  
+2015-07-31                         32199  
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB CLERMONT IN BU - A3K6 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB FORSYTH IL BU - A3Y8 DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB FORSYTH IL BU - A3Y8 DISTILLATES
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -7313,6 +7840,8 @@ Modification_Successful
 2015-07-05                        194635  
 2015-07-06                        232180  
 2015-07-07                        311406  
+Opening Balance Lifted_Daily 82788
+Opening Balance Lifted_Weekly 82788
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -7332,6 +7861,8 @@ Modification_Successful
 2015-07-12                        292496  
 2015-07-13                        336001  
 2015-07-14                        418779  
+Opening Balance Lifted_Daily 82788
+Opening Balance Lifted_Weekly 82788
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
 ****Invalid Week****
@@ -7352,6 +7883,8 @@ Modification_Successful
 2015-07-19                        307475  
 2015-07-20                        390089  
 2015-07-21                        448851  
+Opening Balance Lifted_Daily 82788
+Opening Balance Lifted_Weekly 82788
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -7371,6 +7904,8 @@ Modification_Successful
 2015-07-26                        232135  
 2015-07-27                        284729  
 2015-07-28                        375070  
+Opening Balance Lifted_Daily 82788
+Opening Balance Lifted_Weekly 82788
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -7382,8 +7917,12 @@ Modification_Successful
 2015-07-29                         45110  
 2015-07-30                        147276  
 2015-07-31                        177395  
+Opening Balance Lifted_Daily 82788
+Opening Balance Lifted_Weekly 82788
 Modification_Successful
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB LUBBOCK TX PSX - 03BN DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB LUBBOCK TX PSX - 03BN DISTILLATES
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -7561,6 +8100,8 @@ Modification_Successful
 2015-07-05                         91915  
 2015-07-06                        108015  
 2015-07-07                        148414  
+Opening Balance Lifted_Daily 15500
+Opening Balance Lifted_Weekly 15500
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -7580,6 +8121,8 @@ Modification_Successful
 2015-07-12                        115592  
 2015-07-13                        145893  
 2015-07-14                        177391  
+Opening Balance Lifted_Daily 15500
+Opening Balance Lifted_Weekly 15500
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
 ****Invalid Week****
@@ -7600,6 +8143,8 @@ Modification_Successful
 2015-07-19                         99669  
 2015-07-20                        117070  
 2015-07-21                        140444  
+Opening Balance Lifted_Daily 15500
+Opening Balance Lifted_Weekly 15500
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -7629,13 +8174,15 @@ Modification_Successful
 2015-07-29                         30800  
 2015-07-30                         59022  
 2015-07-31                         75170  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB LUBBOCK TX VAL - A3TX DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB LUBBOCK TX VAL - A3TX DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB LUBBOCK TX VAL - A3TX GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB LUBBOCK TX VAL - A3TX GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB STOCKTON CA VA - 03MH DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB STOCKTON CA VA - 03MH DISTILLATES
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -7734,6 +8281,8 @@ Freq: D, Name: WeeksByLiftedGallons, dtype: object
 2015-07-12                          7502  
 2015-07-13                         15202  
 2015-07-14                         15202  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
@@ -7824,6 +8373,8 @@ Modification_UnSuccessful
 2015-07-12                          7502  
 2015-07-13                         15202  
 2015-07-14                         15202  
+Opening Balance Lifted_Daily 0
+Opening Balance Lifted_Weekly 0
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
@@ -7875,10 +8426,12 @@ Modification_Successful
 2015-07-29                             0  
 2015-07-30                             0  
 2015-07-31                             0  
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB STOCKTON CA VA - 03MH GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB STOCKTON CA VA - 03MH GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB ZIONSVILLE IN BU - 03PL DISTILLATES
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB ZIONSVILLE IN BU - 03PL DISTILLATES
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0)]
+[datetime.datetime(2015, 7, 1, 0, 0), datetime.datetime(2015, 7, 8, 0, 0), datetime.datetime(2015, 7, 15, 0, 0), datetime.datetime(2015, 7, 22, 0, 0), datetime.datetime(2015, 7, 29, 0, 0), datetime.datetime(2015, 8, 5, 0, 0)]
 2015-07-01 00:00:00 1
 2015-07-02 00:00:00 1
 2015-07-03 00:00:00 1
@@ -8057,6 +8610,8 @@ Modification_Successful
 2015-07-05                        379847  
 2015-07-06                        469830  
 2015-07-07                        552457  
+Opening Balance Lifted_Daily 173575
+Opening Balance Lifted_Weekly 173575
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -8076,6 +8631,8 @@ Modification_Successful
 2015-07-12                        859477  
 2015-07-13                       1008725  
 2015-07-14                       1016325  
+Opening Balance Lifted_Daily 173575
+Opening Balance Lifted_Weekly 173575
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_Successful
 ****Invalid Week****
@@ -8096,6 +8653,8 @@ Modification_Successful
 2015-07-19                        695624  
 2015-07-20                        748664  
 2015-07-21                        808489  
+Opening Balance Lifted_Daily 173575
+Opening Balance Lifted_Weekly 173575
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -8115,6 +8674,8 @@ Modification_Successful
 2015-07-26                        802880  
 2015-07-27                        954850  
 2015-07-28                       1022732  
+Opening Balance Lifted_Daily 173575
+Opening Balance Lifted_Weekly 173575
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -8126,727 +8687,728 @@ Modification_Successful
 2015-07-29                        187955  
 2015-07-30                        375739  
 2015-07-31                        496314  
-***** Execution in Combination: pilot p66 UB RACK ALBANY GA MMP - 0302 C
+***** Execution in Combination: pilot P66 UB RACK ALBANY GA MMP - 0302 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ALBANY GA MMP - 0302 D
+***** Execution in Combination: pilot P66 UB RACK ALBANY GA MMP - 0302 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ALBANY GA MMP - 0302 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK ALBANY GA MMP - 0302 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ALBANY GA MMP - 0302 P
+***** Execution in Combination: pilot P66 UB RACK ALBANY GA MMP - 0302 P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ALBANY NY GC - 0308 GASOLINE
+***** Execution in Combination: pilot P66 UB RACK ALBANY NY GC - 0308 GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ALBANY NY GC - 0308 V
+***** Execution in Combination: pilot P66 UB RACK ALBANY NY GC - 0308 V
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ALBUQUERQUE NM PSX - 030A DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK ALBUQUERQUE NM PSX - 030A DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ALBUQUERQUE NM PSX - 030A GASOLINE
+***** Execution in Combination: pilot P66 UB RACK ALBUQUERQUE NM PSX - 030A GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK AMARILLO TX PSX - 030J D
+***** Execution in Combination: pilot P66 UB RACK AMARILLO TX PSX - 030J D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK AMARILLO TX PSX - 030J DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK AMARILLO TX PSX - 030J DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK AMARILLO TX PSX - 030J GASOLINE
+***** Execution in Combination: pilot P66 UB RACK AMARILLO TX PSX - 030J GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK APEX NC MOT - 030Q DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK APEX NC MOT - 030Q DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK APEX NC MOT - 030Q GASOLINE
+***** Execution in Combination: pilot P66 UB RACK APEX NC MOT - 030Q GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ARDMORE OK VAL - 030W DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK ARDMORE OK VAL - 030W DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ATHENS GA KM1 - 0315 C
+***** Execution in Combination: pilot P66 UB RACK ATHENS GA KM1 - 0315 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ATHENS GA KM1 - 0315 D
+***** Execution in Combination: pilot P66 UB RACK ATHENS GA KM1 - 0315 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ATHENS GA KM1 - 0315 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK ATHENS GA KM1 - 0315 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ATHENS GA KM1 - 0315 P
+***** Execution in Combination: pilot P66 UB RACK ATHENS GA KM1 - 0315 P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK AURORA CO MMP - A3CG - A3NS DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK AURORA CO MMP - A3CG - A3NS DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK AURORA CO MMP - A3CG - A3NS JET
+***** Execution in Combination: pilot P66 UB RACK AURORA CO MMP - A3CG - A3NS JET
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BALTIMORE MD SUN - 031G DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK BALTIMORE MD SUN - 031G DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BALTIMORE MD SUN - 031G O
+***** Execution in Combination: pilot P66 UB RACK BALTIMORE MD SUN - 031G O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BALTIMORE MD SUN - 031G Q
+***** Execution in Combination: pilot P66 UB RACK BALTIMORE MD SUN - 031G Q
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BALTIMORE MD SUN - 031G R
+***** Execution in Combination: pilot P66 UB RACK BALTIMORE MD SUN - 031G R
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #7 Pre
+***** Execution in Combination: pilot P66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #7 Pre
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #7 Reg
+***** Execution in Combination: pilot P66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #7 Reg
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #9 Pre
+***** Execution in Combination: pilot P66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #9 Pre
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #9 Reg
+***** Execution in Combination: pilot P66 UB RACK BIRMINGHAM AL MMP - 032B Birmingham #9 Reg
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BIRMINGHAM AL MMP - 032B DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK BIRMINGHAM AL MMP - 032B DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BRADSHAW CA KM - 03PX O
+***** Execution in Combination: pilot P66 UB RACK BRADSHAW CA KM - 03PX O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BREWERTON NY BU - 032M D
+***** Execution in Combination: pilot P66 UB RACK BREWERTON NY BU - 032M D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK BREWERTON NY BU - 032M DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK BREWERTON NY BU - 032M DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CAHOKIA IL PSX - 036M AVGAS
+***** Execution in Combination: pilot P66 UB RACK CAHOKIA IL PSX - 036M AVGAS
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CAHOKIA IL PSX - 036M JET
+***** Execution in Combination: pilot P66 UB RACK CAHOKIA IL PSX - 036M JET
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CARSON CA KM - 03NZ O
+***** Execution in Combination: pilot P66 UB RACK CARSON CA KM - 03NZ O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHARLOTTE NC MMP1 - 033M D
+***** Execution in Combination: pilot P66 UB RACK CHARLOTTE NC MMP1 - 033M D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHARLOTTE NC MMP1 - 033M DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK CHARLOTTE NC MMP1 - 033M DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHARLOTTE NC MMP1 - 033M P
+***** Execution in Combination: pilot P66 UB RACK CHARLOTTE NC MMP1 - 033M P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHARLOTTE NC MMP2 - A3D3 D
+***** Execution in Combination: pilot P66 UB RACK CHARLOTTE NC MMP2 - A3D3 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHARLOTTE NC MMP2 - A3D3 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK CHARLOTTE NC MMP2 - A3D3 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHARLOTTE NC MMP2 - A3D3 P
+***** Execution in Combination: pilot P66 UB RACK CHARLOTTE NC MMP2 - A3D3 P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHATTANOOGA TN MMP2 - A3D4 C
+***** Execution in Combination: pilot P66 UB RACK CHATTANOOGA TN MMP2 - A3D4 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHATTANOOGA TN MMP2 - A3D4 D
+***** Execution in Combination: pilot P66 UB RACK CHATTANOOGA TN MMP2 - A3D4 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHATTANOOGA TN MMP2 - A3D4 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK CHATTANOOGA TN MMP2 - A3D4 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHATTANOOGA TN MMP2 - A3D4 P
+***** Execution in Combination: pilot P66 UB RACK CHATTANOOGA TN MMP2 - A3D4 P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK CHICO CA KM - 0347 O
+***** Execution in Combination: pilot P66 UB RACK CHICO CA KM - 0347 O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLLINS MS EM - 034K DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK COLLINS MS EM - 034K DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLLINS MS EM - 034K GASOLINE
+***** Execution in Combination: pilot P66 UB RACK COLLINS MS EM - 034K GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLLINS MS TM - 034N DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK COLLINS MS TM - 034N DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLLINS MS TM - 034N GASOLINE
+***** Execution in Combination: pilot P66 UB RACK COLLINS MS TM - 034N GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLTON CA KM - 034R GASOLINE
+***** Execution in Combination: pilot P66 UB RACK COLTON CA KM - 034R GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLTON CA PSX - 034Q O
+***** Execution in Combination: pilot P66 UB RACK COLTON CA PSX - 034Q O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLTON CA PSX - 034Q Q
+***** Execution in Combination: pilot P66 UB RACK COLTON CA PSX - 034Q Q
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLTON CA PSX - 034Q R
+***** Execution in Combination: pilot P66 UB RACK COLTON CA PSX - 034Q R
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK COLUMBIA MO MMP - 034T DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK COLUMBIA MO MMP - 034T DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DALLAS TX WM - 035Q DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK DALLAS TX WM - 035Q DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DALLAS TX WM - 035Q Q
+***** Execution in Combination: pilot P66 UB RACK DALLAS TX WM - 035Q Q
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DALLAS TX WM - 035Q R
+***** Execution in Combination: pilot P66 UB RACK DALLAS TX WM - 035Q R
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DEL CITY OK MMP - 03RR DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK DEL CITY OK MMP - 03RR DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DEL CITY OK MMP - 03RR GASOLINE
+***** Execution in Combination: pilot P66 UB RACK DEL CITY OK MMP - 03RR GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DORAVILLE GA MMP - 0365 C
+***** Execution in Combination: pilot P66 UB RACK DORAVILLE GA MMP - 0365 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DORAVILLE GA MMP - 0365 D
+***** Execution in Combination: pilot P66 UB RACK DORAVILLE GA MMP - 0365 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DORAVILLE GA MMP - 0365 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK DORAVILLE GA MMP - 0365 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK DORAVILLE GA MMP - 0365 P
+***** Execution in Combination: pilot P66 UB RACK DORAVILLE GA MMP - 0365 P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK EUGENE OR KM - 0373 C
+***** Execution in Combination: pilot P66 UB RACK EUGENE OR KM - 0373 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK EUGENE OR KM - 0373 D
+***** Execution in Combination: pilot P66 UB RACK EUGENE OR KM - 0373 D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK EUGENE OR KM - 0373 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK EUGENE OR KM - 0373 DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK EUGENE OR KM - 0373 P
+***** Execution in Combination: pilot P66 UB RACK EUGENE OR KM - 0373 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK FERNDALE WA PSX - 03BF C
+***** Execution in Combination: pilot P66 UB RACK FERNDALE WA PSX - 03BF C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK FERNDALE WA PSX - 03BF D
+***** Execution in Combination: pilot P66 UB RACK FERNDALE WA PSX - 03BF D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK FERNDALE WA PSX - 03BF P
+***** Execution in Combination: pilot P66 UB RACK FERNDALE WA PSX - 03BF P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK FERNDALE WA PSX - 03BF V
+***** Execution in Combination: pilot P66 UB RACK FERNDALE WA PSX - 03BF V
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK FRESNO CA KM - 037L O
+***** Execution in Combination: pilot P66 UB RACK FRESNO CA KM - 037L O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GRAPEVINE TX MMP - A3ZC DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK GRAPEVINE TX MMP - A3ZC DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GRAPEVINE TX MMP - A3ZC GASOLINE
+***** Execution in Combination: pilot P66 UB RACK GRAPEVINE TX MMP - A3ZC GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GRAPEVINE TX MMP - A3ZC Q
+***** Execution in Combination: pilot P66 UB RACK GRAPEVINE TX MMP - A3ZC Q
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREAT BEND KS MMP - 038F DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK GREAT BEND KS MMP - 038F DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREAT BEND KS MMP - 038F GASOLINE
+***** Execution in Combination: pilot P66 UB RACK GREAT BEND KS MMP - 038F GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC KM1 - A3AD (RACK MARKETER) - A3XA DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC KM1 - A3AD (RACK MARKETER) - A3XA DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC KM1 - A3AD (RACK MARKETER) - A3XA GASOLINE
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC KM1 - A3AD (RACK MARKETER) - A3XA GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC KM1 - A3AD (RACK MARKETER) - A3XA P
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC KM1 - A3AD (RACK MARKETER) - A3XA P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC MMP1 - 038L D
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC MMP1 - 038L D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC MMP1 - 038L DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC MMP1 - 038L DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC MMP1 - 038L P
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC MMP1 - 038L P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC MMP2 - 038R D
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC MMP2 - 038R D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC MMP2 - 038R DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC MMP2 - 038R DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK GREENSBORO NC MMP2 - 038R P
+***** Execution in Combination: pilot P66 UB RACK GREENSBORO NC MMP2 - 038R P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK HOUSTON TX US - A3OF GASOLINE
+***** Execution in Combination: pilot P66 UB RACK HOUSTON TX US - A3OF GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KANSAS CITY KS MMP - 03AH DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK KANSAS CITY KS MMP - 03AH DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KANSAS CITY KS MMP - 03AH GASOLINE
+***** Execution in Combination: pilot P66 UB RACK KANSAS CITY KS MMP - 03AH GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KANSAS CITY KS MMP - 03AH JET
+***** Execution in Combination: pilot P66 UB RACK KANSAS CITY KS MMP - 03AH JET
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KANSAS CITY KS PSX - 03AG D
+***** Execution in Combination: pilot P66 UB RACK KANSAS CITY KS PSX - 03AG D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KANSAS CITY KS PSX - 03AG E85
+***** Execution in Combination: pilot P66 UB RACK KANSAS CITY KS PSX - 03AG E85
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KNOXVILLE TN MMP TM2 - A3AC C
+***** Execution in Combination: pilot P66 UB RACK KNOXVILLE TN MMP TM2 - A3AC C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KNOXVILLE TN MMP TM2 - A3AC D
+***** Execution in Combination: pilot P66 UB RACK KNOXVILLE TN MMP TM2 - A3AC D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KNOXVILLE TN MMP TM2 - A3AC DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK KNOXVILLE TN MMP TM2 - A3AC DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK KNOXVILLE TN MMP TM2 - A3AC P
+***** Execution in Combination: pilot P66 UB RACK KNOXVILLE TN MMP TM2 - A3AC P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LINCOLN NE PSX - 03R5 D
+***** Execution in Combination: pilot P66 UB RACK LINCOLN NE PSX - 03R5 D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LINCOLN NE PSX - 03R5 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK LINCOLN NE PSX - 03R5 DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LINDEN NJ PSX - 03BB O
+***** Execution in Combination: pilot P66 UB RACK LINDEN NJ PSX - 03BB O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LINDEN NJ PSX - 03BB Q
+***** Execution in Combination: pilot P66 UB RACK LINDEN NJ PSX - 03BB Q
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LINDEN NJ PSX - 03BB R
+***** Execution in Combination: pilot P66 UB RACK LINDEN NJ PSX - 03BB R
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LINDEN NJ PSX - 03BB V
+***** Execution in Combination: pilot P66 UB RACK LINDEN NJ PSX - 03BB V
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LOS ANGELES CA PSX - 03BJ DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK LOS ANGELES CA PSX - 03BJ DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LOS ANGELES CA PSX - 03BJ O
+***** Execution in Combination: pilot P66 UB RACK LOS ANGELES CA PSX - 03BJ O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LOS ANGELES CA PSX - 03BJ Q
+***** Execution in Combination: pilot P66 UB RACK LOS ANGELES CA PSX - 03BJ Q
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LOS ANGELES CA PSX - 03BJ R
+***** Execution in Combination: pilot P66 UB RACK LOS ANGELES CA PSX - 03BJ R
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LUBBOCK TX PSX - 03BN DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK LUBBOCK TX PSX - 03BN DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK LUBBOCK TX PSX - 03BN GASOLINE
+***** Execution in Combination: pilot P66 UB RACK LUBBOCK TX PSX - 03BN GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MACON GA MMP - 03BP C
+***** Execution in Combination: pilot P66 UB RACK MACON GA MMP - 03BP C
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MACON GA MMP - 03BP D
+***** Execution in Combination: pilot P66 UB RACK MACON GA MMP - 03BP D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MACON GA MMP - 03BP DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK MACON GA MMP - 03BP DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MACON GA MMP - 03BP P
+***** Execution in Combination: pilot P66 UB RACK MACON GA MMP - 03BP P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MANASSAS VA SUN - 03C1 CONVENTIONAL GASOLINE
+***** Execution in Combination: pilot P66 UB RACK MANASSAS VA SUN - 03C1 CONVENTIONAL GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MANASSAS VA SUN - 03C1 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK MANASSAS VA SUN - 03C1 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MANASSAS VA SUN - 03C1 O
+***** Execution in Combination: pilot P66 UB RACK MANASSAS VA SUN - 03C1 O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MANASSAS VA SUN - 03C1 Q
+***** Execution in Combination: pilot P66 UB RACK MANASSAS VA SUN - 03C1 Q
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MANASSAS VA SUN - 03C1 R
+***** Execution in Combination: pilot P66 UB RACK MANASSAS VA SUN - 03C1 R
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MERIDIAN MS CS - 03XK DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK MERIDIAN MS CS - 03XK DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MERIDIAN MS MGC - 03WF D
+***** Execution in Combination: pilot P66 UB RACK MERIDIAN MS MGC - 03WF D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MERIDIAN MS MGC - 03WF DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK MERIDIAN MS MGC - 03WF DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MERIDIAN MS MGC - 03WF P
+***** Execution in Combination: pilot P66 UB RACK MERIDIAN MS MGC - 03WF P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MISSION VALLEY CA KM - 03DB DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK MISSION VALLEY CA KM - 03DB DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MISSION VALLEY CA KM - 03DB R
+***** Execution in Combination: pilot P66 UB RACK MISSION VALLEY CA KM - 03DB R
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MONTVALE VA MMP - 03J8 C
+***** Execution in Combination: pilot P66 UB RACK MONTVALE VA MMP - 03J8 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MONTVALE VA MMP - 03J8 D
+***** Execution in Combination: pilot P66 UB RACK MONTVALE VA MMP - 03J8 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MONTVALE VA MMP - 03J8 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK MONTVALE VA MMP - 03J8 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MONTVALE VA MMP - 03J8 P
+***** Execution in Combination: pilot P66 UB RACK MONTVALE VA MMP - 03J8 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK MT VERNON MO PSX - 03DR DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK MT VERNON MO PSX - 03DR DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC KM2 - 03DX D
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC KM2 - 03DX D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC KM2 - 03DX DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC KM2 - 03DX DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC KM2 - 03DX P
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC KM2 - 03DX P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC MMP1 - A3EF C
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC MMP1 - A3EF C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC MMP1 - A3EF D
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC MMP1 - A3EF D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC MMP1 - A3EF DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC MMP1 - A3EF DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC MMP1 - A3EF P
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC MMP1 - A3EF P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC MMP2 - A3EE D
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC MMP2 - A3EE D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC MMP2 - A3EE DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC MMP2 - A3EE DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N AUGUSTA SC MMP2 - A3EE P
+***** Execution in Combination: pilot P66 UB RACK N AUGUSTA SC MMP2 - A3EE P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N PLATTE NE NUS - 03E6 D
+***** Execution in Combination: pilot P66 UB RACK N PLATTE NE NUS - 03E6 D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK N PLATTE NE NUS - 03E6 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK N PLATTE NE NUS - 03E6 DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 Nashville Clear Regular CBOB w Pre
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 Nashville Clear Regular CBOB w Pre
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 Nashville PRE 7.8 E10
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 Nashville PRE 7.8 E10
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 Nashville PRE 9.0 CLEAR
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 Nashville PRE 9.0 CLEAR
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 Nashville PRE 9.0 E10
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 Nashville PRE 9.0 E10
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 Nashville REG 7.8 CLEAR
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 Nashville REG 7.8 CLEAR
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 Nashville REG 7.8 E10
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 Nashville REG 7.8 E10
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 Nashville REG 9.0 E10
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 Nashville REG 9.0 E10
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN CB - 03E8 nashville PRE 7.8 CLEAR
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN CB - 03E8 nashville PRE 7.8 CLEAR
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN MMP1 - 03E9 D
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN MMP1 - 03E9 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NASHVILLE TN MMP1 - 03E9 P
+***** Execution in Combination: pilot P66 UB RACK NASHVILLE TN MMP1 - 03E9 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NEW WINDSOR NY GC1 - A3Z6 GASOLINE
+***** Execution in Combination: pilot P66 UB RACK NEW WINDSOR NY GC1 - A3Z6 GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NEW WINDSOR NY GC1 - A3Z6 V
+***** Execution in Combination: pilot P66 UB RACK NEW WINDSOR NY GC1 - A3Z6 V
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NORTH SALT LAKE UT PSX - A3EL D
+***** Execution in Combination: pilot P66 UB RACK NORTH SALT LAKE UT PSX - A3EL D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NORTH SALT LAKE UT PSX - A3EL DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK NORTH SALT LAKE UT PSX - A3EL DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK NORTH SALT LAKE UT PSX - A3EL P
+***** Execution in Combination: pilot P66 UB RACK NORTH SALT LAKE UT PSX - A3EL P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK OKLAHOMA CITY OK PSX - 03FD BIO DIESEL
+***** Execution in Combination: pilot P66 UB RACK OKLAHOMA CITY OK PSX - 03FD BIO DIESEL
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK OKLAHOMA CITY OK PSX - 03FD E10-GAS
+***** Execution in Combination: pilot P66 UB RACK OKLAHOMA CITY OK PSX - 03FD E10-GAS
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK OKLAHOMA CITY OK PSX - 03FD E85
+***** Execution in Combination: pilot P66 UB RACK OKLAHOMA CITY OK PSX - 03FD E85
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ORANGE CA KM - 03FM Q
+***** Execution in Combination: pilot P66 UB RACK ORANGE CA KM - 03FM Q
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASADENA TX PSX CLLC - 03FV H
+***** Execution in Combination: pilot P66 UB RACK PASADENA TX PSX CLLC - 03FV H
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASADENA TX PSX CLLC - 03FV JET
+***** Execution in Combination: pilot P66 UB RACK PASADENA TX PSX CLLC - 03FV JET
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASADENA TX PSX CLLC - 03FV O
+***** Execution in Combination: pilot P66 UB RACK PASADENA TX PSX CLLC - 03FV O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASADENA TX PSX CLLC - 03FV Q
+***** Execution in Combination: pilot P66 UB RACK PASADENA TX PSX CLLC - 03FV Q
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASADENA TX PSX CLLC - 03FV R
+***** Execution in Combination: pilot P66 UB RACK PASADENA TX PSX CLLC - 03FV R
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASADENA TX PSX CLLC - 03FV V
+***** Execution in Combination: pilot P66 UB RACK PASADENA TX PSX CLLC - 03FV V
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASCO WA TDW - 03G2 C
+***** Execution in Combination: pilot P66 UB RACK PASCO WA TDW - 03G2 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASCO WA TDW - 03G2 D
+***** Execution in Combination: pilot P66 UB RACK PASCO WA TDW - 03G2 D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASCO WA TDW - 03G2 P
+***** Execution in Combination: pilot P66 UB RACK PASCO WA TDW - 03G2 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASCO WA TDW - 03G2 Pasco #2 ULSD
+***** Execution in Combination: pilot P66 UB RACK PASCO WA TDW - 03G2 Pasco #2 ULSD
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PASCO WA TDW - 03G2 Pasco B5
+***** Execution in Combination: pilot P66 UB RACK PASCO WA TDW - 03G2 Pasco B5
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PLEASANT HILL IA MMP - 035X DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK PLEASANT HILL IA MMP - 035X DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PLEASANT HILL IA MMP - 035X GASOLINE
+***** Execution in Combination: pilot P66 UB RACK PLEASANT HILL IA MMP - 035X GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PLEASANT HILL IA PSX - 03GZ DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK PLEASANT HILL IA PSX - 03GZ DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PORTLAND OR PSX - 03H9 C
+***** Execution in Combination: pilot P66 UB RACK PORTLAND OR PSX - 03H9 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PORTLAND OR PSX - 03H9 D
+***** Execution in Combination: pilot P66 UB RACK PORTLAND OR PSX - 03H9 D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PORTLAND OR PSX - 03H9 P
+***** Execution in Combination: pilot P66 UB RACK PORTLAND OR PSX - 03H9 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PORTLAND OR PSX - 03H9 Portland Biodiesel
+***** Execution in Combination: pilot P66 UB RACK PORTLAND OR PSX - 03H9 Portland Biodiesel
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK PORTLAND OR PSX - 03H9 Portland Clear Diesel
+***** Execution in Combination: pilot P66 UB RACK PORTLAND OR PSX - 03H9 Portland Clear Diesel
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RENTON WA PSX - 03HT C
+***** Execution in Combination: pilot P66 UB RACK RENTON WA PSX - 03HT C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RENTON WA PSX - 03HT D
+***** Execution in Combination: pilot P66 UB RACK RENTON WA PSX - 03HT D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RENTON WA PSX - 03HT DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK RENTON WA PSX - 03HT DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RENTON WA PSX - 03HT P
+***** Execution in Combination: pilot P66 UB RACK RENTON WA PSX - 03HT P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND CA PSX - 03HW DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK RICHMOND CA PSX - 03HW DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND CA PSX - 03HW O
+***** Execution in Combination: pilot P66 UB RACK RICHMOND CA PSX - 03HW O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND CA PSX - 03HW Q
+***** Execution in Combination: pilot P66 UB RACK RICHMOND CA PSX - 03HW Q
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND CA PSX - 03HW R
+***** Execution in Combination: pilot P66 UB RACK RICHMOND CA PSX - 03HW R
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND CA PSX - 03HW V0Y
+***** Execution in Combination: pilot P66 UB RACK RICHMOND CA PSX - 03HW V0Y
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND VA KM - 03WP CONVENTIONAL GASOLINE
+***** Execution in Combination: pilot P66 UB RACK RICHMOND VA KM - 03WP CONVENTIONAL GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND VA KM - 03WP DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK RICHMOND VA KM - 03WP DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK RICHMOND VA KM - 03WP REFORMULATED GASOLINE
+***** Execution in Combination: pilot P66 UB RACK RICHMOND VA KM - 03WP REFORMULATED GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ROANOKE VA KM - 03J9 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK ROANOKE VA KM - 03J9 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ROANOKE VA KM - 03J9 GASOLINE
+***** Execution in Combination: pilot P66 UB RACK ROANOKE VA KM - 03J9 GASOLINE
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ROANOKE VA KM - 03J9 P
+***** Execution in Combination: pilot P66 UB RACK ROANOKE VA KM - 03J9 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SACRAMENTO CA PSX - 03K8 O
+***** Execution in Combination: pilot P66 UB RACK SACRAMENTO CA PSX - 03K8 O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SALINA KS NUS - 03KB DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK SALINA KS NUS - 03KB DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SALINA KS NUS - 03KB GASOLINE
+***** Execution in Combination: pilot P66 UB RACK SALINA KS NUS - 03KB GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SAN JOSE CA KM - 03KX O
+***** Execution in Combination: pilot P66 UB RACK SAN JOSE CA KM - 03KX O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SAN JOSE CA KM - 03KX P
+***** Execution in Combination: pilot P66 UB RACK SAN JOSE CA KM - 03KX P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SAN JOSE CA KM - 03KX R
+***** Execution in Combination: pilot P66 UB RACK SAN JOSE CA KM - 03KX R
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SEATTLE WA KM - 03L9 C
+***** Execution in Combination: pilot P66 UB RACK SEATTLE WA KM - 03L9 C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SEATTLE WA KM - 03L9 D
+***** Execution in Combination: pilot P66 UB RACK SEATTLE WA KM - 03L9 D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SEATTLE WA KM - 03L9 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK SEATTLE WA KM - 03L9 DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SEATTLE WA KM - 03L9 P
+***** Execution in Combination: pilot P66 UB RACK SEATTLE WA KM - 03L9 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SELMA NC MMP - 03LD C
+***** Execution in Combination: pilot P66 UB RACK SELMA NC MMP - 03LD C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SELMA NC MMP - 03LD D
+***** Execution in Combination: pilot P66 UB RACK SELMA NC MMP - 03LD D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SELMA NC MMP - 03LD DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK SELMA NC MMP - 03LD DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SELMA NC MMP - 03LD P
+***** Execution in Combination: pilot P66 UB RACK SELMA NC MMP - 03LD P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPARKS NV KM - 03LV C
+***** Execution in Combination: pilot P66 UB RACK SPARKS NV KM - 03LV C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPARTANBURG SC MMP1 - A3KF C
+***** Execution in Combination: pilot P66 UB RACK SPARTANBURG SC MMP1 - A3KF C
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPARTANBURG SC MMP1 - A3KF D
+***** Execution in Combination: pilot P66 UB RACK SPARTANBURG SC MMP1 - A3KF D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPARTANBURG SC MMP1 - A3KF DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK SPARTANBURG SC MMP1 - A3KF DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPARTANBURG SC MMP1 - A3KF P
+***** Execution in Combination: pilot P66 UB RACK SPARTANBURG SC MMP1 - A3KF P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPOKANE WA PSX - 03M2 D
+***** Execution in Combination: pilot P66 UB RACK SPOKANE WA PSX - 03M2 D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPOKANE WA PSX - 03M2 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK SPOKANE WA PSX - 03M2 DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPOKANE WA PSX - 03M2 DYED DIESEL CLEAR
+***** Execution in Combination: pilot P66 UB RACK SPOKANE WA PSX - 03M2 DYED DIESEL CLEAR
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPOKANE WA PSX - 03M2 P
+***** Execution in Combination: pilot P66 UB RACK SPOKANE WA PSX - 03M2 P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPRINGFIELD MO MMP - 032U DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK SPRINGFIELD MO MMP - 032U DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK SPRINGFIELD MO MMP - 032U GASOLINE
+***** Execution in Combination: pilot P66 UB RACK SPRINGFIELD MO MMP - 032U GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK STOCKTON CA VA - 03MH DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK STOCKTON CA VA - 03MH DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK STOCKTON CA VA - 03MH O
+***** Execution in Combination: pilot P66 UB RACK STOCKTON CA VA - 03MH O
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK TACOMA WA PSX - 03MQ D
+***** Execution in Combination: pilot P66 UB RACK TACOMA WA PSX - 03MQ D
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK TACOMA WA PSX - 03MQ P
+***** Execution in Combination: pilot P66 UB RACK TACOMA WA PSX - 03MQ P
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK TACOMA WA PSX - 03MQ V
+***** Execution in Combination: pilot P66 UB RACK TACOMA WA PSX - 03MQ V
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK TREMLEY PT NJ PSX - 03N5 O
+***** Execution in Combination: pilot P66 UB RACK TREMLEY PT NJ PSX - 03N5 O
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK TREMLEY PT NJ PSX - 03N5 Q
+***** Execution in Combination: pilot P66 UB RACK TREMLEY PT NJ PSX - 03N5 Q
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK TREMLEY PT NJ PSX - 03N5 R
+***** Execution in Combination: pilot P66 UB RACK TREMLEY PT NJ PSX - 03N5 R
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK TREMLEY PT NJ PSX - 03N5 V
+***** Execution in Combination: pilot P66 UB RACK TREMLEY PT NJ PSX - 03N5 V
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WATERLOO IA MMP - 03NW DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK WATERLOO IA MMP - 03NW DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WESTLAKE LA PSX - 03P2 D
+***** Execution in Combination: pilot P66 UB RACK WESTLAKE LA PSX - 03P2 D
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WESTLAKE LA PSX - 03P2 DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK WESTLAKE LA PSX - 03P2 DISTILLATES
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WESTLAKE LA PSX - 03P2 P
+***** Execution in Combination: pilot P66 UB RACK WESTLAKE LA PSX - 03P2 P
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WICHITA FALLS TX HEP - A3FM DISTILLATES
+***** Execution in Combination: pilot P66 UB RACK WICHITA FALLS TX HEP - A3FM DISTILLATES
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WICHITA FALLS TX HEP - A3FM GASOLINE
+***** Execution in Combination: pilot P66 UB RACK WICHITA FALLS TX HEP - A3FM GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WICHITA KS PSXN - 03P9 E85
+***** Execution in Combination: pilot P66 UB RACK WICHITA KS PSXN - 03P9 E85
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK WICHITA KS PSXN - 03P9 GASOLINE
+***** Execution in Combination: pilot P66 UB RACK WICHITA KS PSXN - 03P9 GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 UB RACK ZIONSVILLE IN BU - 03PL JET
+***** Execution in Combination: pilot P66 UB RACK ZIONSVILLE IN BU - 03PL JET
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH 7# RVP GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH 7# RVP GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH 9# RVP GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029BR KANSAS CITY KS MMP - 03AH 9# RVP GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
-***** Execution in Combination: pilot p66 PILOT TRAVEL CENTERS LLC-10024029UB AMARILLO TX VAL - A3CE GASOLINE
+***** Execution in Combination: pilot P66 PILOT TRAVEL CENTERS LLC-10024029UB AMARILLO TX VAL - A3CE GASOLINE
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
 Completed Execution Thanks for you Patience 
+0:01:05.593000

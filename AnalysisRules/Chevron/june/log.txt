@@ -32,6 +32,8 @@ No Weekly Lifted gallons to Compute week switches....
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1002 TRACY CA TRM CHEVRON DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -144,7 +146,7 @@ No Enough Data available to Fill Lifted Gallons for daily and weekly using apost
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
-No Enough Data available to Fill Lifted Gallons
+No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriWeeklyValues
@@ -187,6 +189,47 @@ Modification_UnSuccessful
 2015-06-29                        169259  
 2015-06-30                        207673  
 Modification_Successful
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+30811 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+38613 30811 7802
+77127 38613 38514
+107939 77127 30812
+137046 107939 29107
+152453 137046 15407
+175563 152453 23110
+175563 175563 0
+183366 175563 7803
+237280 183366 53914
+275792 237280 38512
+314307 275792 38515
+360424 314307 38414
+406639 360424 46215
+414243 406639 7604
+421946 414243 7703
+445051 421946 23105
+483465 445051 38414
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -272,11 +315,14 @@ Modification_UnSuccessful
 2015-06-28                        146154  
 2015-06-29                        169259  
 2015-06-30                        207673  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1021 FT LAUDERDALE FL TRM CHEVRON DIESEL #2
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1022 TAMPA FL TRM CHEVRON DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -445,6 +491,39 @@ Modification_Successful
 2015-06-28                        384838  
 2015-06-29                        502166  
 2015-06-30                        667903  
+118950 0 28232
+Insufficient Data to Compute Daily Lifted using Monthly
+232457 118950 45481
+344682 232457 19871
+417473 344682 13340
+0 417473 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+574698 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+0 574698 0
+762797 762797 0
+889574 762797 22518
+0 889574 0
+1067811 1007975 59836
+1106220 1067811 38409
+1181674 1106220 75454
+1234904 1181674 53230
+1332068 1234904 97164
+1473912 1332068 134239
+1571650 1473912 97738
+1647524 1571650 60569
+1655129 1647524 7605
+1738059 1655129 82930
+1851076 1738059 105514
+1979548 1851076 128472
+2070280 1979548 90732
+2175633 2070280 105353
+2213407 2175633 37774
+2235914 2213407 22507
+2353242 2235914 117328
+2518979 2353242 165737
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -473,10 +552,13 @@ Modification_UnSuccessful
 2015-06-07                             0  
 2015-06-08                        387722  
 2015-06-09                             0  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -496,9 +578,10 @@ Modification_UnSuccessful
 2015-06-14                        343423  
 2015-06-15                        418877  
 2015-06-16                        472107  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-17                      2015-06-24                        97164   
@@ -517,6 +600,9 @@ Modification_UnSuccessful
 2015-06-21                        420225  
 2015-06-22                        503155  
 2015-06-23                        616172  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -540,6 +626,8 @@ Modification_Successful
 No Weekly Refresh Dates to Compute....
  Exiting Execution.....
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1037 PASCAGOULA MS TRM CHEVRON DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -714,6 +802,39 @@ Modification_Successful
 2015-06-29                        440475  
 2015-06-30                        524930  
 Modification_Successful
+85417 0 20295
+Insufficient Data to Compute Daily Lifted using Monthly
+149392 85417 15273
+218183 149392 11822
+294165 218183 0
+0 294165 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+441272 0 50776
+Insufficient Data to Compute Daily Lifted using Monthly
+0 441272 0
+587452 510710 76742
+706685 587452 19095
+0 706685 0
+908001 841915 66086
+969507 908001 53782
+1040226 969507 66718
+1109968 1040226 61939
+1215145 1109968 97510
+1312608 1215145 89739
+1374185 1312608 53908
+1459253 1374185 69624
+1525766 1459253 66513
+1571880 1525766 46114
+1659789 1571880 80240
+1709124 1659789 49335
+1806522 1709124 89737
+1869045 1806522 59223
+1931050 1869045 62005
+2023447 1931050 92397
+2100264 2023447 76817
+2184719 2100264 84455
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -744,10 +865,13 @@ Modification_UnSuccessful
 2015-06-08                        307153  
 2015-06-09                             0  
 2015-06-10                        453333  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -766,7 +890,12 @@ Modification_UnSuccessful
 2015-06-14                        382055  
 2015-06-15                        452774  
 2015-06-16                        522516  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -786,7 +915,12 @@ Modification_Successful
 2015-06-21                        408131  
 2015-06-22                        454245  
 2015-06-23                        542154  
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-24                      2015-07-01                        49335   
@@ -805,8 +939,12 @@ Modification_Successful
 2015-06-28                        363658  
 2015-06-29                        440475  
 2015-06-30                        524930  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1043 MONTEBELLO CA TRM CHEVRON DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -981,6 +1119,39 @@ Modification_Successful
 2015-06-29                        227676  
 2015-06-30                        265662  
 Modification_Successful
+45503 0 30304
+Insufficient Data to Compute Daily Lifted using Monthly
+83408 45503 15204
+91008 83408 0
+136307 91008 0
+0 136307 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+159010 0 7500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 159010 0
+219717 174115 45602
+280319 219717 7600
+0 280319 0
+356124 340923 15201
+371325 356124 7600
+409323 371325 22799
+439721 409323 22799
+500330 439721 45407
+545835 500330 37905
+568632 545835 22797
+598835 568632 22602
+613937 598835 7500
+659436 613937 37899
+674835 659436 15399
+727836 674835 45400
+765803 727836 37967
+811407 765803 45604
+841708 811407 22701
+887309 841708 30400
+910112 887309 15202
+948098 910112 30388
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -1011,10 +1182,13 @@ Modification_UnSuccessful
 2015-06-08                         90806  
 2015-06-09                             0  
 2015-06-10                        151513  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1033,7 +1207,12 @@ Modification_UnSuccessful
 2015-06-14                        151608  
 2015-06-15                        189606  
 2015-06-16                        220004  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1053,7 +1232,12 @@ Modification_Successful
 2015-06-21                        159014  
 2015-06-22                        204513  
 2015-06-23                        219912  
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-24                      2015-07-01                        45400   
@@ -1072,8 +1256,15 @@ Modification_Successful
 2015-06-28                        204873  
 2015-06-29                        227676  
 2015-06-30                        265662  
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1045 SALT LAKE CITY UT TRM CHEVRON DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -1248,6 +1439,40 @@ Modification_Successful
 2015-06-29                        935581  
 2015-06-30                       1045677  
 Modification_Successful
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+57995 0 20501
+Insufficient Data to Compute Daily Lifted using Monthly
+91992 57995 10499
+132995 91992 0
+0 132995 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+255402 0 37000
+Insufficient Data to Compute Daily Lifted using Monthly
+0 255402 0
+392420 301924 90496
+480941 392420 0
+0 480941 0
+698672 646654 52018
+803084 698672 104412
+912399 803084 109315
+1022028 912399 109629
+1117134 1022028 95106
+1313964 1117134 193830
+1379976 1313964 66012
+1554193 1379976 128321
+1656138 1554193 89926
+1747561 1656138 91423
+1892518 1747561 144957
+2111571 1892518 195043
+2394796 2111571 271024
+2532307 2394796 137511
+2708455 2532307 176148
+2764162 2708455 55707
+2852109 2764162 87947
+2962205 2852109 103095
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -1278,10 +1503,12 @@ Modification_UnSuccessful
 2015-06-08                        217908  
 2015-06-09                             0  
 2015-06-10                        354926  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1300,9 +1527,10 @@ Modification_UnSuccessful
 2015-06-14                        410664  
 2015-06-15                        519979  
 2015-06-16                        629608  
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-17                      2015-06-24                        95106   
@@ -1321,6 +1549,9 @@ Modification_UnSuccessful
 2015-06-21                        634110  
 2015-06-22                        725533  
 2015-06-23                        870490  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1340,8 +1571,13 @@ Modification_Successful
 2015-06-28                        847634  
 2015-06-29                        935581  
 2015-06-30                       1045677  
-Modification_Successful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_UnSuccessful
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1046 SAN DIEGO CA TRM CHEVRON DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -1515,6 +1751,39 @@ Modification_UnSuccessful
 2015-06-28                         93108  
 2015-06-29                        116541  
 2015-06-30                        132165  
+24031 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+46865 24031 0
+69699 46865 0
+92531 69699 0
+0 92531 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+107745 0 7603
+Insufficient Data to Compute Daily Lifted using Monthly
+0 107745 0
+145798 122964 22834
+168636 145798 0
+0 168636 0
+229482 221875 7607
+237184 229482 7702
+260016 237184 22832
+275637 260016 15621
+306881 275637 31244
+330313 306881 23432
+353742 330313 23429
+361345 353742 7603
+368946 361345 7601
+392378 368946 23432
+407999 392378 15621
+431435 407999 23436
+454871 431435 23436
+485905 454871 31034
+501107 485905 15202
+501107 501107 0
+524540 501107 23433
+540164 524540 15624
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -1545,11 +1814,13 @@ Modification_UnSuccessful
 2015-06-08                         60880  
 2015-06-09                             0  
 2015-06-10                         98933  
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1568,9 +1839,10 @@ Modification_UnSuccessful
 2015-06-14                         91386  
 2015-06-15                        114218  
 2015-06-16                        129839  
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-17                      2015-06-24                        31244   
@@ -1608,6 +1880,8 @@ Modification_UnSuccessful
 2015-06-29                        116541  
 2015-06-30                        132165  
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1066 BOISE ID TRM TESORO DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -1783,6 +2057,39 @@ Modification_Successful
 2015-06-29                        138554  
 2015-06-30                        178050  
 Modification_Successful
+19809 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+39820 19809 0
+59526 39820 0
+79451 59526 0
+0 79451 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+138640 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+0 138640 0
+187832 158549 29283
+207641 187832 0
+0 207641 0
+267169 257268 9901
+274775 267169 7606
+292379 274775 17604
+312180 292379 19801
+322185 312180 10005
+329892 322185 7707
+349801 329892 19909
+349801 349801 0
+359711 349801 9910
+379615 359711 10008
+379615 379615 0
+399536 379615 19921
+419440 399536 9901
+449339 419440 19899
+488296 449339 19480
+498306 488296 10010
+518169 498306 19863
+557665 518169 39496
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -1813,11 +2120,13 @@ Modification_UnSuccessful
 2015-06-08                         98820  
 2015-06-09                             0  
 2015-06-10                        148012  
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -1836,9 +2145,10 @@ Modification_UnSuccessful
 2015-06-14                         86943  
 2015-06-15                        104547  
 2015-06-16                        124348  
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-17                      2015-06-24                        10005   
@@ -1857,6 +2167,7 @@ Modification_UnSuccessful
 2015-06-21                         47531  
 2015-06-22                         67435  
 2015-06-23                         67435  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
@@ -1876,6 +2187,9 @@ Modification_Successful
 2015-06-28                        118691  
 2015-06-29                        138554  
 2015-06-30                        178050  
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 Modification_Successful
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 1107 ORLANDO FL TRM KINDER MORGAN DIESEL #2
 No Weekly Lifted gallons to Compute week switches....
@@ -1890,6 +2204,8 @@ No Weekly Lifted gallons to Compute week switches....
 No Weekly Lifted gallons to Compute week switches....
  Exiting Execution.....
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 2778 STOCKTON CA TRM NUSTAR DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -2063,6 +2379,39 @@ Modification_UnSuccessful
 2015-06-28                             0  
 2015-06-29                             0  
 2015-06-30                             0  
+7700 0 7700
+Insufficient Data to Compute Daily Lifted using Monthly
+46303 7700 0
+92606 46303 7702
+108111 92606 0
+0 108111 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+185217 0 7800
+Insufficient Data to Compute Daily Lifted using Monthly
+0 185217 0
+262323 216117 46206
+292935 262323 0
+0 292935 0
+354246 346646 7600
+369646 354246 15400
+377246 369646 7600
+384846 377246 0
+384846 384846 0
+400046 384846 7600
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
+400046 400046 0
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -2091,11 +2440,13 @@ Modification_UnSuccessful
 2015-06-08                        138914  
 2015-06-09                             0  
 2015-06-10                        216020  
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2114,9 +2465,11 @@ Modification_UnSuccessful
 2015-06-14                        107323  
 2015-06-15                        114923  
 2015-06-16                        122523  
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_Successful
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-17                      2015-06-24                            0   
@@ -2135,8 +2488,8 @@ Modification_UnSuccessful
 2015-06-21                         15200  
 2015-06-22                         15200  
 2015-06-23                         15200  
-No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-24                      2015-07-01                            0   
@@ -2156,6 +2509,8 @@ Modification_UnSuccessful
 2015-06-29                             0  
 2015-06-30                             0  
 ***** Execution in Combination: pilot Chevron PILOT TRAVEL CENTERS LLC : CHV7460761 3351 PHOENIX AZ TRM KINDER MORGAN DIESEL #2
+[datetime.datetime(2015, 6, 3, 0, 0)]
+[datetime.datetime(2015, 6, 3, 0, 0), datetime.datetime(2015, 6, 10, 0, 0), datetime.datetime(2015, 6, 17, 0, 0), datetime.datetime(2015, 6, 24, 0, 0), datetime.datetime(2015, 7, 1, 0, 0)]
 2015-06-01 00:00:00 1
 2015-06-02 00:00:00 1
 [Timestamp('2015-06-01 00:00:00', offset='D'), Timestamp('2015-06-02 00:00:00', offset='D')]
@@ -2329,6 +2684,39 @@ Modification_UnSuccessful
 2015-06-28                         70075  
 2015-06-29                         93505  
 2015-06-30                         93505  
+28800 0 0
+Insufficient Data to Compute Daily Lifted using Monthly
+36100 28800 0
+65100 36100 0
+83000 65100 0
+0 83000 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+0 0 0
+No Enough Data available to Fill Lifted Gallons for daily and monthly using aposterioriNRD
+115701 0 7500
+Insufficient Data to Compute Daily Lifted using Monthly
+0 115701 0
+165291 142866 22425
+172791 165291 0
+0 172791 0
+231349 231349 0
+236249 231349 4900
+241499 236249 5250
+276401 241499 34902
+313811 276401 37410
+321311 313811 7500
+350261 321311 28950
+357761 350261 7500
+365261 357761 7500
+380281 365261 15020
+387784 380281 7503
+402684 387784 14900
+417759 402684 15075
+438159 417759 20400
+454259 438159 16100
+457859 454259 3600
+481289 457859 23430
+481289 481289 0
 ****Invalid Week****
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-01                      2015-06-03                            0   
@@ -2359,11 +2747,13 @@ Modification_UnSuccessful
 2015-06-08                         79601  
 2015-06-09                             0  
 2015-06-10                        129191  
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
 No Enough Data available to Fill Lifted Gallons NRD
-No Enough Data available to Fill Lifted Gallons NRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
 Modification_UnSuccessful
 ****Invalid Week****
@@ -2382,9 +2772,10 @@ Modification_UnSuccessful
 2015-06-14                         70958  
 2015-06-15                         76208  
 2015-06-16                        111110  
-No Enough Data available to Fill Lifted Gallons for daily and weekly using aposterioriNRD
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
+The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values 
 No Enough Data available to Fill Lifted Gallons NRD
-Modification_UnSuccessful
+Modification_Successful
 ****Valid Week***
            ('next_refresh_date', 'Weekly')  ('lifted_gallons', 'Daily')  \
 2015-06-17                      2015-06-24                        37410   

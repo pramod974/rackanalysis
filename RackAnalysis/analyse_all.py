@@ -5,9 +5,10 @@ import datetime
 import MySQLdb
 import matplotlib.pyplot as plt
 plt.interactive(False)
+import numpy as np
 db = MySQLdb.connect("172.16.0.55","root","admin123*","rack_analysis")
 import sys
-sys.stdout = open('report.txt', 'w')
+sys.stdout = open('report_citgo_PRM_may.txt', 'w')
 class analysis:
     def __init__(self):
         errors={}
@@ -15,12 +16,13 @@ class analysis:
         self.supplierDetails=[]
         self.getSuppliers()
         self.savepath="C:\\sqlData\\"
-        self.month='05'
         self.year=2015
         self.analysisDate='01-05-2015'
         self.dateDetails=datetime.datetime.strptime(self.analysisDate,"%d-%m-%Y")
+        self.month=self.dateDetails.month
         self.fromDate='2015-'+str(self.dateDetails.month).zfill(2)+'-01 00:00:00'
         self.toDate='2015-'+str(self.dateDetails.month+1).zfill(2)+'-01 00:00:00'
+        self.validity={'weekly':True,'monthly':True}
         print "Execution Started"
         for i in range(len(self.supplierDetails)):
             supplierData=self.supplierDetails[i]
@@ -30,7 +32,7 @@ class analysis:
             self.terminal_name=supplierData['terminal_name']
             print "****************************************************************************************************"
             print "---------------------------------------------------------------------------------------------------"
-            print "Supplier:",self.supplier,"\t Account type:",self.account_type, "\t\n product name:",self.product_name, "\t Terminal name:",self.terminal_name
+            print "Supplier:",self.supplier,"\t Account type:",self.account_type,"\t EnAccount type: Contract", "\t\n product name:",self.product_name, "\t Terminal name:",self.terminal_name
             self.df_daily=self.analyse(self.supplierDetails[i],'daily')
             print("===================================================================================================")
             self.df_weekly=self.analyse(self.supplierDetails[i],'weekly')
@@ -38,10 +40,13 @@ class analysis:
             self.df_monthly=self.analyse(self.supplierDetails[i],'monthly')
             print("=========================================Contradiction=============================================")
             print "\n\n******** Cumulative Daily Lifted and Lifed Gallons Monthly********\n"
-            self.check_LiftedGallons_DM()
+            if self.validity['monthly']:
+                self.check_LiftedGallons_DM()
+
             print "\n\n******** Cumulative Daily Lifted per Week and Lifed Gallons Weekly********\n"
-            self.check_LiftedGallons_weekly()
-            print("\n====================================Consistency of Next_Refresh_Date================================")
+            if self.validity['weekly']:
+                self.check_LiftedGallons_weekly()
+            print("\n============================Consistency of Next_Refresh_Date for Weekly===========================")
             self.weeklyNextRefreshDate()
             print("======================================Trend In Percentage Allocation================================")
             self.trend_percentageAllocation()
@@ -51,7 +56,8 @@ class analysis:
         try:
             db = MySQLdb.connect("172.16.0.55","root","admin123*","rack_analysis")
             dbCursor=db.cursor(MySQLdb.cursors.DictCursor)
-            sql=sql="SELECT distinct supplier,account_type,terminal_name,product_name FROM rack_analysis.supplier_details where supplier='exxon' and Account_Type='MANSFIELD OIL COMPANY OF 106305 IW' and terminal_name='LOCKPORT IL (MOC) - 00MD' and product_name='ULSD';"
+            sql="SELECT distinct supplier,account_type,terminal_name,product_name FROM rack_analysis.supplier_details_contract where supplier='CITGO' and Account_Type='MANSFIELD OIL CO-383369' and terminal_name='1262-LEMONT-CITGO' and product_name='PRM';"
+            # sql=sql="SELECT distinct supplier,account_type,terminal_name,product_name FROM rack_analysis.supplier_details_contract where supplier='chevron' and Account_Type='MANSFIELD OIL COMPANY : AC5246494' and terminal_name='3355 CHATTANOOGA TN TRM K MORGAN' and product_name='DIESEL #2';"
             # sql="SELECT distpplier,account_type,terminal_name,product_name FROM rack_analysis.supplier_details where supplier='chevron';"
             dbCursor.execute(sql)
             rows=dbCursor.fetchall()
@@ -62,77 +68,110 @@ class analysis:
             db.close()
             print e
     def analyse(self,supplierData,period):
-        supplier=supplierData['supplier']
-        account_type=supplierData['account_type']
-        product_name=supplierData['product_name']
-        terminal_name=supplierData['terminal_name']
-        name='_'.join(supplierData.values())
-        # name=name.replace(':','')
-        name=name.replace(' ','-')
-        name=terminal_name.replace(' ','')+"_"+product_name.replace(' ','')
-        self.filename=filename=supplier+"_"+period+"_"+name+".csv"
-        print "---------------------------------","\t Period:",period,"------------------------------------------------"
-        sql="""select *,date(execution_date) as date from
-        (SELECT
-        enallocationstatus,percentage_allocation,account_type,base_gallons,beginning_gallons,terminal_name,lifted_gallons,remaining_gallons,additional_gallons_allowed,additional_gallons_remaining,next_refresh_date,
-        next_refresh_base_gallons,product_name,period,batchno,execution_date,rid
-        FROM enallocationarchive
-        where supplier='%s' and account_type="%s" and Terminal_Name="%s" and product_name="%s" and period='%s'
-        and Execution_Date>='%s' and Execution_Date<='%s'
-        order by execution_date desc,batchno desc,period) x
-        GROUP BY date(execution_date),period
-        having maX(batchno);"""%(supplier,account_type,terminal_name,product_name,period,self.fromDate,self.toDate)
-        df_mysql = pd.read_sql(sql, con=db)
-        df2=pd.read_sql(sql, con=db)
+        try:
+            supplier=supplierData['supplier']
+            account_type=supplierData['account_type']
+            product_name=supplierData['product_name']
+            terminal_name=supplierData['terminal_name']
+            name='_'.join(supplierData.values())
+            # name=name.replace(':','')
+            name=name.replace(' ','-')
+            name=terminal_name.replace(' ','')+"_"+product_name.replace(' ','')
+            self.filename=filename=supplier+"_"+period+"_"+name+"_"+str(self.dateDetails.month)+".csv"
+            print "---------------------------------","\t Period:",period,"------------------------------------------------"
+            sql="""select *,date(execution_date) as date from
+            (SELECT
+            enallocationstatus,percentage_allocation,account_type,base_gallons,beginning_gallons,terminal_name,lifted_gallons,remaining_gallons,additional_gallons_allowed,additional_gallons_remaining,next_refresh_date,
+            next_refresh_base_gallons,product_name,period,batchno,execution_date,rid
+            FROM enallocationarchive
+            where supplier='%s' and account_type="%s" and Terminal_Name="%s" and product_name="%s" and period='%s'
+            and Execution_Date>='%s' and Execution_Date<='%s'
+            order by execution_date desc,batchno desc,period) x
+            GROUP BY date(execution_date),period
+            having maX(batchno);"""%(supplier,account_type,terminal_name,product_name,period,self.fromDate,self.toDate)
+            df_mysql = pd.read_sql(sql, con=db)
+            df2=pd.read_sql(sql, con=db)
 
-        daysInMonth=str(calendar.monthrange(self.dateDetails.year,self.dateDetails.month)[1])
-        idx=pd.date_range('05-01-2015','05-'+daysInMonth+'-2015')
-        df2['date']= pd.to_datetime(df2[u'date'],format='%Y-%m-%d')
-        df2.index=pd.DatetimeIndex(df2['date'])
-        df2 = df2.reindex(idx, fill_value=0)
-        df2['date']=df2.index.values
-        df2['Month']=df2['date'].apply(lambda x:x.month)
-        df2['Day']=df2['date'].apply(lambda x:x.day)
-        df2['cum_base_gallons']=df2.groupby(['Month'])['base_gallons'].cumsum()
-        df2['avg_base_perday']=df2.apply(lambda x: x['cum_base_gallons']/x['date'].day ,axis=1)
-        df2['cum_beginning_gallons']=df2.groupby(['Month'])['beginning_gallons'].cumsum()
-        df2['avg_beginning_perday']=df2.apply(lambda x: x['cum_beginning_gallons']/x['date'].day ,axis=1)
-        df2['cum_lifted_gallons']=df2.groupby(['Month'])['lifted_gallons'].cumsum()
-        df2['avg_lifted_perday']=df2.apply(lambda x: x['cum_lifted_gallons']/x['date'].day ,axis=1)
-        
-        df2.to_csv(filename)
-        missingDays=df2.loc[df2['period'] == 0]
-        print "***************************************Missing Values***************************************************"
-        if len(missingDays)==int(daysInMonth):
-            print "Missing Values:"
-            print "\t \t \t period:",period," Not available for this supplier",len(missingDays)
+            daysInMonth=str(calendar.monthrange(self.dateDetails.year,self.dateDetails.month)[1])
+
+            # idx=pd.date_range('05-01-2015','05-'+daysInMonth+'-2015')
+            idx=pd.date_range(self.dateDetails.strftime('%m-%d-%Y'),str(self.dateDetails.month)+'-'+daysInMonth+'-'+str(self.dateDetails.year))
+            df2['date']= pd.to_datetime(df2[u'date'],format='%Y-%m-%d')
+            df2.index=pd.DatetimeIndex(df2['date'])
+            df2 = df2.reindex(idx, fill_value=0)
+            df2['date']=df2.index.values
+            df2['Month']=df2['date'].apply(lambda x:x.month)
+            df2['Day']=df2['date'].apply(lambda x:x.day)
+            df2['cum_base_gallons']=df2.groupby(['Month'])['base_gallons'].cumsum()
+            df2['avg_base_perday']=df2.apply(lambda x: x['cum_base_gallons']/x['date'].day ,axis=1)
+            df2['cum_beginning_gallons']=df2.groupby(['Month'])['beginning_gallons'].cumsum()
+            df2['avg_beginning_perday']=df2.apply(lambda x: x['cum_beginning_gallons']/x['date'].day ,axis=1)
+            df2['cum_lifted_gallons']=df2.groupby(['Month'])['lifted_gallons'].cumsum()
+            df2['avg_lifted_perday']=df2.apply(lambda x: x['cum_lifted_gallons']/x['date'].day ,axis=1)
+
+            df2.to_csv(filename)
+            missingDays=df2.loc[df2['period'] == 0]
+            print "***************************************Missing Values***************************************************"
+            if len(missingDays)==int(daysInMonth):
+                print "Missing Values:"
+                print "period:",period," Not available for this supplier",len(missingDays)
+                self.validity['monthly']=False
+                return
+                # print "***************************************************************************************************"
+            elif len(missingDays)>0:
+                # print "*************************************************************************************************"
+                # print "Supplier",supplier,"\t Account type",account_type, "\t product name",product_name, "Terminal name",terminal_name
+                print "Total periods Missing for period",period,len(missingDays)
+                # print "****************************************************************************************************"
+            else:
+                # print "*************************************************************************************************"
+                # print "Supplier",supplier,"\t Account type",account_type, "\t product name",product_name, "Terminal name",terminal_name
+                print "All days of month have the period:",period
+
+            sanityString=['enallocationstatus','percentage_allocation','next_refresh_date']
+            sanityNum=['base_gallons', 'beginning_gallons', 'lifted_gallons', 'remaining_gallons', 'additional_gallons_allowed', 'additional_gallons_remaining']
+            df2=df2.fillna(np.nan)
+            for i in sanityNum:
+                print "    "
+                sanityResult=dict(np.isnan(df2[i]).value_counts())
+                if sanityResult.has_key(False):
+                    print "For ",i,", Rows with Valid Numerics: ",sanityResult[False]-len(missingDays)
+                if sanityResult.has_key(True):
+                    print "For ",i,", Rows with No Values: ",sanityResult[True]
+                print "    "
+            for i in sanityString:
+                print "    "
+                sanityResult=len(df2.loc[(df2[i]=='Unknown') | (df2[i]=='') | (df2[i]==None)])
+                print "For ",i," Rows with Unknown Values: ",sanityResult
+                print "    "
+            self.checkBeginningGallons(df2)
+            self.checkRemainingGallons(df2)
             print "****************************************************************************************************"
-        elif len(missingDays)>0:
-            # print "*************************************************************************************************"
-            # print "Supplier",supplier,"\t Account type",account_type, "\t product name",product_name, "Terminal name",terminal_name
-            print "\t \t \tTotal periods Missing for period",period,len(missingDays)
-            print "****************************************************************************************************"
-        else:
-            # print "*************************************************************************************************"
-            # print "Supplier",supplier,"\t Account type",account_type, "\t product name",product_name, "Terminal name",terminal_name
-            print "\t \t \t All days of month have the period:",period
-            print "****************************************************************************************************"
-        self.static_rules(df2)
-        return df2
+            self.static_rules(df2)
+            return df2
+        except Exception as e:
+            print e
     def static_rules(self,df2):
 
         print "****************************************Miscellaneous Inferences*****************************************"
         liftedGallonsGTbeginning=df2.loc[(df2['lifted_gallons']>df2['beginning_gallons'])& (df2['period']!=0) ]
         if len(liftedGallonsGTbeginning)>0:
             print "Number of Lifted gallons greater than beginning gallons : ", len(liftedGallonsGTbeginning)
-
+            print liftedGallonsGTbeginning.loc[:,['beginning_gallons','lifted_gallons']]
+        else:
+            print "Number of Lifted gallons greater than beginning gallons : None"
         remainingGallonsLessThanZero=df2.loc[(df2['remaining_gallons']<=0)& (df2['period']!=0) ]
         if len(remainingGallonsLessThanZero)>0:
             print "Number of Remaining gallons less than zero ", len(remainingGallonsLessThanZero)
+            print remainingGallonsLessThanZero.loc[:,['rid','remaining_gallons']]
             additional_gallons_allowed_zero=remainingGallonsLessThanZero.loc[(remainingGallonsLessThanZero['additional_gallons_allowed']==0)& (remainingGallonsLessThanZero['period']!=0) ]
             print "Number of additional_gallons_allowed zero ", len(additional_gallons_allowed_zero)
-            additional_gallons_remaining_zero=remainingGallonsLessThanZero.loc[(remainingGallonsLessThanZero['additional_gallons_remaining']<=0)& (remainingGallonsLessThanZero['period']!=0) ]
+            print remainingGallonsLessThanZero.loc[:,['rid','remaining_gallons']]
+            additional_gallons_remaining_zero=remainingGallonsLessThanZero.loc[(remainingGallonsLessThanZero['additional_gallons_remaining']<0)& (remainingGallonsLessThanZero['period']!=0) ]
             print "Number of additional_gallons_remaining less than or equal to zero ", len(additional_gallons_remaining_zero)
+            print remainingGallonsLessThanZero.loc[:,['rid','remaining_gallons']]
+        else:
+            print "Number of Remaining gallons less than zero : None"
     def check_LiftedGallons_DM(self):
 
         # df_daily=pd.read_csv('C:\Users\pramod.kumar\PycharmProjects\PlayArena\RackAnalysis\Chevron_daily.csv',index_col='Unnamed: 0')
@@ -155,26 +194,29 @@ class analysis:
         # df_monthly=pd.read_csv('C:\Users\pramod.kumar\PycharmProjects\PlayArena\RackAnalysis\Chevron_monthly.csv',index_col='Unnamed: 0')
         df_monthly=self.df_monthly.copy()
         df_monthly['percentage_allocation']=df_monthly['percentage_allocation'].apply(lambda x: int(str(x).strip('%')))
+        pall_monthly=df_monthly['percentage_allocation']
+        df_daily['percentageAllocation_avg_Monthly']=pall_monthly.mean()
+        print "Percentage allocation Monthly Mean",pall_monthly.mean()
+        print "Percentage allocation Monthly Min",pall_monthly.min()," max:",pall_monthly.max()
         # df_weekly=pd.read_csv('C:\Users\pramod.kumar\PycharmProjects\PlayArena\RackAnalysis\Chevron_weekly.csv',index_col='Unnamed: 0')
         df_weekly=self.df_weekly.copy()
         df_weekly['percentage_allocation']=df_weekly['percentage_allocation'].apply(lambda x: int(str(x).strip('%')))
         df_daily['pa_monthly']=df_monthly['percentage_allocation']
         df_daily['pa_weekly']=df_weekly['percentage_allocation']
-        pall_monthly=df_monthly['percentage_allocation']
+
         pall_weekly=df_weekly['percentage_allocation']
-        df_daily['percentageAllocation_avg_Monthly']=pall_monthly.mean()
+
         df_daily['percentageAllocation_avg_Weekly']=pall_weekly.mean()
         print "Percentage allocation Daily Mean",pall.mean()
-        print "Percentage allocation Monthly Mean",pall_monthly.mean()
+
         print "Percentage allocation Weekly Mean",pall_weekly.mean()
         print "Percentage allocation Daily Min: ",pall.min()," max:",pall.max()
-        print "Percentage allocation Monthly Min",pall_monthly.min()," max:",pall_monthly.max()
         print "Percentage allocation Weekly Min",pall_weekly.min()," max:",pall_weekly.max()
         print pall.describe()
         df_daily.plot(y=['percentage_allocation','percentageAllocation_avg_daily','pa_monthly','percentageAllocation_avg_Monthly','pa_weekly','percentageAllocation_avg_Weekly'],x='Day',kind='bar',subplots=True)
 
         plt.plot()
-        plt.savefig(self.filename+'.png')
+        plt.savefig(self.filename.replace('.csv','.png'))
         # raw_input()
     def check_LiftedGallons_weekly(self):
         # df_daily=pd.read_csv('C:\Users\pramod.kumar\PycharmProjects\PlayArena\RackAnalysis\Chevron_daily.csv',index_col='Unnamed: 0')
@@ -192,13 +234,40 @@ class analysis:
         errors_lifted=dict(errors_lifted)
         if errors_lifted.has_key(True):
             print "Number of rows where lifted_weekly == cum_lifted_daily_perWeek   : ",errors_lifted[True]
+            error_lifted_rows=df_weekly.loc[df_weekly['lifted_gallons']==df_daily['cum_lifted_weekly']]
+            print error_lifted_rows.loc[:,['lifted_gallons','next_refresh_date','rid']]
         if errors_lifted.has_key(False):
             print "Number of Errors where lifted_weekly != cum_lifted_daily_perWeek : ",errors_lifted[False]
+            error_lifted_rows=df_weekly.loc[df_weekly['lifted_gallons']!=df_daily['cum_lifted_weekly']]
+            print error_lifted_rows.loc[:,['lifted_gallons','next_refresh_date','rid']]
     def weeklyNextRefreshDate(self):
         df_weekly=self.df_weekly.copy()
-        nxtRefreshWeek=df_weekly['next_refresh_date']
-        print nxtRefreshWeek.value_counts()
-
+        nxtRefreshWeek=df_weekly.loc[:,'next_refresh_date']
+        nxtRefreshWeek=dict(nxtRefreshWeek.value_counts())
+        if nxtRefreshWeek.has_key(0):
+            print "Number of values where Date for Weekly is missing :",nxtRefreshWeek.pop(0)
+        minweeks=int(calendar.monthrange(int(self.year),int(self.month))[1]/7)
+        if len(nxtRefreshWeek)>=minweeks:
+            print "All weeks are consistent !"
+            for k,v in nxtRefreshWeek.items():
+                print "Date:",k,"Value:",v
+        else:
+            print "All weeks are inconsistent !"
+    def checkBeginningGallons(self,df2):
+        df2['percentage_allocation_num']=df2['percentage_allocation'].apply(lambda x: int(str(x).strip('%')))
+        cal=df2['percentage_allocation_num']*df2['base_gallons']/100
+        cal=cal.apply(lambda x:int(round(float(x))))
+        dd=df2.loc[df2['beginning_gallons']!=cal]
+        if len(dd)>0:
+            print "Number of Beginning gallons != Allocation_Percentage*base",len(dd)
+            print dd
+    def checkRemainingGallons(self,df2):
+        cal=df2['beginning_gallons']-df2['lifted_gallons']
+        cal=cal.apply(lambda x:int(round(float(x))))
+        dd=df2.loc[df2['remaining_gallons']!=cal]
+        if len(dd)>0:
+            print "Number of incorrect Remaining gallons ",len(dd)
+            print dd
 try:
     result=analysis()
 except Exception as e:

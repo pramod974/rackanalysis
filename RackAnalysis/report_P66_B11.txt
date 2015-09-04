@@ -1,0 +1,239 @@
+Execution Started
+****************************************************************************************************
+---------------------------------------------------------------------------------------------------
+Supplier: Citgo 	 Account type: MANSFIELD OIL CO-383369 	 EnAccount type: Contract 	
+ product name: PRM 	 Terminal name: 1262-LEMONT-CITGO
+--------------------------------- 	 Period: daily ------------------------------------------------
+***************************************Missing Values***************************************************
+All days of month have the period: daily
+    
+For  base_gallons , Rows with Valid Numerics:  30
+    
+    
+For  beginning_gallons , Rows with Valid Numerics:  30
+    
+    
+For  lifted_gallons , Rows with Valid Numerics:  30
+    
+    
+For  remaining_gallons , Rows with Valid Numerics:  30
+    
+    
+For  additional_gallons_allowed , Rows with Valid Numerics:  3
+For  additional_gallons_allowed , Rows with No Values:  27
+    
+    
+For  additional_gallons_remaining , Rows with Valid Numerics:  3
+For  additional_gallons_remaining , Rows with No Values:  27
+    
+    
+For  enallocationstatus  Rows with Unknown Values:  30
+    
+    
+For  percentage_allocation  Rows with Unknown Values:  0
+    
+    
+For  next_refresh_date  Rows with Unknown Values:  0
+    
+****************************************************************************************************
+****************************************Miscellaneous Inferences*****************************************
+Number of Lifted gallons greater than beginning gallons :  11
+            beginning_gallons  lifted_gallons
+2015-06-01              20834           26094
+2015-06-02              20834           36921
+2015-06-04              20834           35606
+2015-06-05              20834           26007
+2015-06-08              20834           26095
+2015-06-13              20834           22394
+2015-06-16              20834           27330
+2015-06-19              20834           28612
+2015-06-22              20834           25998
+2015-06-23              20834           31593
+2015-06-26              25000           26102
+Number of Remaining gallons less than zero  11
+                rid  remaining_gallons
+2015-06-01  2446696              -5260
+2015-06-02  2485738             -16087
+2015-06-04  2562242             -14772
+2015-06-05  2606246              -5173
+2015-06-08  2717481              -5261
+2015-06-13  2899516              -1560
+2015-06-16  3004282              -6496
+2015-06-19  3117377              -7778
+2015-06-22  3219590              -5164
+2015-06-23  3257572             -10759
+2015-06-26  3371678              -1102
+Number of additional_gallons_allowed zero  0
+                rid  remaining_gallons
+2015-06-01  2446696              -5260
+2015-06-02  2485738             -16087
+2015-06-04  2562242             -14772
+2015-06-05  2606246              -5173
+2015-06-08  2717481              -5261
+2015-06-13  2899516              -1560
+2015-06-16  3004282              -6496
+2015-06-19  3117377              -7778
+2015-06-22  3219590              -5164
+2015-06-23  3257572             -10759
+2015-06-26  3371678              -1102
+Number of additional_gallons_remaining less than or equal to zero  2
+                rid  remaining_gallons
+2015-06-01  2446696              -5260
+2015-06-02  2485738             -16087
+2015-06-04  2562242             -14772
+2015-06-05  2606246              -5173
+2015-06-08  2717481              -5261
+2015-06-13  2899516              -1560
+2015-06-16  3004282              -6496
+2015-06-19  3117377              -7778
+2015-06-22  3219590              -5164
+2015-06-23  3257572             -10759
+2015-06-26  3371678              -1102
+===================================================================================================
+--------------------------------- 	 Period: weekly ------------------------------------------------
+***************************************Missing Values***************************************************
+All days of month have the period: weekly
+    
+For  base_gallons , Rows with Valid Numerics:  30
+    
+    
+For  beginning_gallons , Rows with Valid Numerics:  30
+    
+    
+For  lifted_gallons , Rows with Valid Numerics:  30
+    
+    
+For  remaining_gallons , Rows with Valid Numerics:  30
+    
+    
+For  additional_gallons_allowed , Rows with No Values:  30
+    
+    
+For  additional_gallons_remaining , Rows with No Values:  30
+    
+    
+For  enallocationstatus  Rows with Unknown Values:  30
+    
+    
+For  percentage_allocation  Rows with Unknown Values:  0
+    
+    
+For  next_refresh_date  Rows with Unknown Values:  0
+    
+****************************************************************************************************
+****************************************Miscellaneous Inferences*****************************************
+Number of Lifted gallons greater than beginning gallons :  1
+            beginning_gallons  lifted_gallons
+2015-06-10             145834          147350
+Number of Remaining gallons less than zero  1
+                rid  remaining_gallons
+2015-06-10  2794788              -1516
+Number of additional_gallons_allowed zero  0
+                rid  remaining_gallons
+2015-06-10  2794788              -1516
+Number of additional_gallons_remaining less than or equal to zero  0
+                rid  remaining_gallons
+2015-06-10  2794788              -1516
+===================================================================================================
+--------------------------------- 	 Period: monthly ------------------------------------------------
+***************************************Missing Values***************************************************
+All days of month have the period: monthly
+    
+For  base_gallons , Rows with Valid Numerics:  30
+    
+    
+For  beginning_gallons , Rows with Valid Numerics:  30
+    
+    
+For  lifted_gallons , Rows with Valid Numerics:  30
+    
+    
+For  remaining_gallons , Rows with Valid Numerics:  30
+    
+    
+For  additional_gallons_allowed , Rows with No Values:  30
+    
+    
+For  additional_gallons_remaining , Rows with No Values:  30
+    
+    
+For  enallocationstatus  Rows with Unknown Values:  30
+    
+    
+For  percentage_allocation  Rows with Unknown Values:  0
+    
+    
+For  next_refresh_date  Rows with Unknown Values:  0
+    
+****************************************************************************************************
+****************************************Miscellaneous Inferences*****************************************
+Number of Lifted gallons greater than beginning gallons : None
+Number of Remaining gallons less than zero : None
+=========================================Contradiction=============================================
+
+
+******** Cumulative Daily Lifted and Lifed Gallons Monthly********
+
+Number of rows where lifted_Monthly == cum_lifted_daily   :  3
+Number of Errors where lifted_Monthly != cum_lifted_daily :  27
+
+
+******** Cumulative Daily Lifted per Week and Lifed Gallons Weekly********
+
+Number of rows where lifted_weekly == cum_lifted_daily_perWeek   :  30
+            lifted_gallons   next_refresh_date      rid
+2015-06-01           57889  06/04 00:01:00 CDT  2446697
+2015-06-02           94810  06/04 00:01:00 CDT  2485739
+2015-06-03          104508  06/04 00:01:00 CDT  2523700
+2015-06-04           35606  06/11 00:01:00 CDT  2562243
+2015-06-05           61613  06/11 00:01:00 CDT  2606247
+2015-06-06           75312  06/11 00:01:00 CDT  2643459
+2015-06-07           92735  06/11 00:01:00 CDT  2679035
+2015-06-08          118830  06/11 00:01:00 CDT  2717482
+2015-06-09          130050  06/11 00:01:00 CDT  2756056
+2015-06-10          147350  06/11 00:01:00 CDT  2794788
+2015-06-11           10699  06/18 00:01:00 CDT  2834573
+2015-06-12           28101  06/18 00:01:00 CDT  2872369
+2015-06-13           50495  06/18 00:01:00 CDT  2899517
+2015-06-14           67900  06/18 00:01:00 CDT  2930348
+2015-06-15           85298  06/18 00:01:00 CDT  2968886
+2015-06-16          112628  06/18 00:01:00 CDT  3004283
+2015-06-17          132526  06/18 00:01:00 CDT  3042299
+2015-06-18            8602  06/25 00:01:00 CDT  3080926
+2015-06-19           37214  06/25 00:01:00 CDT  3117378
+2015-06-20           50012  06/25 00:01:00 CDT  3152813
+2015-06-21           67413  06/25 00:01:00 CDT  3183687
+2015-06-22           93411  06/25 00:01:00 CDT  3219591
+2015-06-23          125004  06/25 00:01:00 CDT  3257573
+2015-06-24          142408  06/25 00:01:00 CDT  3293253
+2015-06-25           17398  07/02 00:01:00 CDT  3332894
+2015-06-26           43500  07/02 00:01:00 CDT  3371679
+2015-06-27           52199  07/02 00:01:00 CDT  3410390
+2015-06-28           69601  07/02 00:01:00 CDT  3444543
+2015-06-29           87003  07/02 00:01:00 CDT  3483381
+2015-06-30           87003  07/02 00:01:00 CDT  3495046
+
+============================Consistency of Next_Refresh_Date for Weekly===========================
+All weeks are consistent !
+Date: 06/25 00:01:00 CDT Value: 7
+Date: 06/18 00:01:00 CDT Value: 7
+Date: 07/02 00:01:00 CDT Value: 6
+Date: 06/11 00:01:00 CDT Value: 7
+Date: 06/04 00:01:00 CDT Value: 3
+======================================Trend In Percentage Allocation================================
+Percentage allocation Monthly Mean 100.0
+Percentage allocation Monthly Min 100  max: 100
+Percentage allocation Daily Mean 125.0
+Percentage allocation Weekly Mean 125.0
+Percentage allocation Daily Min:  125  max: 125
+Percentage allocation Weekly Min 125  max: 125
+count     30
+mean     125
+std        0
+min      125
+25%      125
+50%      125
+75%      125
+max      125
+Name: percentage_allocation, dtype: float64
+---------------------------------------------------------------------------------------------------

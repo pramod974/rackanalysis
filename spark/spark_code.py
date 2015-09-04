@@ -1,5 +1,3 @@
-from copy import copy
-
 __author__ = 'pramod.kumar'
 #modification 1 -> normal modification
 #modification 2-> modification using computeMissingLiftedWeeklyAndDailyOneDay
@@ -11,24 +9,25 @@ import MySQLdb
 import os
 import sys
 import copy
-
+import entities
+import time
 class readDb:
     def __init__(self,tableName,account,terminal,product,dbcon):
         self.tableName = tableName
-        self.account=account
-        self.terminal=terminal
-        self.product=product
-        self.dbcon=dbcon
+        self.appConst.account=account
+        self.appConst.terminal=terminal
+        self.appConst.product=product
+        self.appConst.dbcon=dbcon
     def fetch_frame(self):
         try:
-            sql="select * from %s where account_type='%s' and supplier_terminal_name='%s' and product_name='%s';"%(self.tableName,self.account,self.terminal,self.product)
-            # db = MySQLdb.connect(self.dbcon[0],self.dbcon[1],self.dbcon[2],self.dbcon[3])
-            df2=pd.read_sql(sql, con=self.dbcon)
+            sql="select * from %s where account_type='%s' and supplier_terminal_name='%s' and product_name='%s';"%(self.tableName,self.appConst.account,self.appConst.terminal,self.appConst.product)
+            # db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
+            df2=pd.read_sql(sql, con=self.appConst.dbcon)
             # db.close()
             return df2
         except Exception as e:
             if 'db' in locals():
-                self.dbcon.close()
+                self.appConst.dbcon.close()
             else:
                 print "Exception Oh no Unable to connect to DataBase !"
             print e
@@ -54,31 +53,31 @@ class ruleFactory:
             print 'In valid Customer',customer
             sys.exit(-1)
 class rules:
-
-    def __init__(self,details):
+    def __init__(self,appConst):
         errors={}
         self.fileName=""
-        self.customer=details[0]
-        self.supplier=details[1]
-        self.account=details[2]
-        self.terminal=details[3]
-        self.product=details[4]
-        self.month=details[5]
-        self.analysisDate=details[6]
-        self.db=details[7]
-        self.savelocation=details[8]
-        self.supplierdata=details[9]
-        self.savepath=self.savelocation+"\\"+self.supplier+"\\"+self.month
+        self.appConst=appConst
+        # self.appConst.customer=details[0]
+        # self.appConst.supplier=details[1]
+        # self.appConst.account=details[2]
+        # self.appConst.terminal=details[3]
+        # self.appConst.product=details[4]
+        # self.appConst.month=details[5]
+        # self.appConst.analysisDate=details[6]
+        # self.appConst.db=details[7]
+        # self.appConst.savelocation=details[8]
+        # self.appConst.mp=details[9]
+        # self.appConst.savepath=self.appConst.savelocation+"\\"+self.appConst.supplier+"\\"+self.appConst.month
 
     def verifyOpeningBalance(self):
         try:
-            previousMonth=self.dateDetails.month-1
+            previousMonth=self.appConst.dateDetails.month-1
             previousMonthName=calendar.month_name[previousMonth].lower()
-            daysInPreviousMonth=calendar.monthrange(self.dateDetails.year,self.dateDetails.month-1)[1]
-            tableName=self.customer+"_"+previousMonthName+"_maxbatch"
-            sql="select * from %s where account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and day(execution_date)='%s'"%(tableName,self.account,self.terminal,self.product,daysInPreviousMonth)
+            daysInPreviousMonth=calendar.monthrange(self.appConst.dateDetails.year,self.appConst.dateDetails.month-1)[1]
+            tableName=self.appConst.customer+"_"+previousMonthName+"_maxbatch"
+            sql="select * from %s where account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and day(execution_date)='%s'"%(tableName,self.appConst.account,self.appConst.terminal,self.appConst.product,daysInPreviousMonth)
             dbcon=["172.16.0.55","root","admin123*","rules_spark"]
-            db = MySQLdb.connect(self.dbcon[0],self.dbcon[1],self.dbcon[2],self.dbcon[3])
+            db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
             dfOpeningBalance=pd.read_sql(sql, con=db)
 
             lifted_weekly=-1
@@ -226,13 +225,13 @@ class rules:
                         validLiftedGallons=df2.loc[df2["WeeksByLiftedGallons"]==key,"lifted_gallons_modified_WeeksByLiftedGallons"].cumsum()==df2.loc[df2["WeeksByLiftedGallons"]==key,"lifted_gallons_Weekly"]
                         df2.loc[df2["WeeksByLiftedGallons"]==key,"sanityWeekly_CumulativeDaily_WeeksByLiftedGallons"]=validLiftedGallons
         except Exception as e:
-            savepath=self.savepath+"\\"+"Exception"
+            savepath=self.appConst.savepath+"\\"+"Exception"
             if not os.path.exists(savepath):
                 os.makedirs(savepath)
             file=open(savepath+"\\"+self.fileName+".txt","w")
-            file.write("Exception in Combination:"+"\ncustomer : "+self.customer+"\nSupplier : "+self.supplier+"\nAccount : "+self.account+"\nTerminal: "+self.terminal+"\nProduct : "+self.product+"\nException : "+str(e))
+            file.write("Exception in Combination:"+"\ncustomer : "+self.appConst.customer+"\nSupplier : "+self.appConst.supplier+"\nAccount : "+self.appConst.account+"\nTerminal: "+self.appConst.terminal+"\nProduct : "+self.appConst.product+"\nException : "+str(e))
             file.close()
-            print "Exception in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product,e
+            print "Exception in Combination:",self.appConst.customer,self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,e
             return 0
        
     def verifyWeekByNRD(self,df2):
@@ -317,16 +316,16 @@ class rules:
                         validLiftedGallons=df2.loc[df2["next_refresh_date_Weekly"]==key,"lifted_gallons_daily_modified"].cumsum()==df2.loc[df2["next_refresh_date_Weekly"]==key,"lifted_gallons_Weekly"]
                         df2.loc[df2["next_refresh_date_Weekly"]==key,"sanityWeekly_CumulativeDaily_NextRefreshDate"]=validLiftedGallons
         except Exception as e:
-            savepath=self.savepath+"\\"+"Exception"
+            savepath=self.appConst.savepath+"\\"+"Exception"
             if not os.path.exists(savepath):
                 os.makedirs(savepath)
             file=open(savepath+"\\"+self.fileName+".txt","w")
-            file.write("Exception in verifyWeekByNRD for Combination:"+"\ncustomer : "+self.customer+"\nSupplier : "+self.supplier+"\nAccount : "+self.account+"\nTerminal: "+self.terminal+"\nProduct : "+self.product+"\nException : "+str(e))
+            file.write("Exception in verifyWeekByNRD for Combination:"+"\ncustomer : "+self.appConst.customer+"\nSupplier : "+self.appConst.supplier+"\nAccount : "+self.appConst.account+"\nTerminal: "+self.appConst.terminal+"\nProduct : "+self.appConst.product+"\nException : "+str(e))
             file.close()
-            print "Exception in verifyWeekByNRD in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product,e
+            print "Exception in verifyWeekByNRD in Combination:",self.appConst.customer,self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,e
             return 0
     def get_filename(self):
-            fileName=self.account.replace(' ','').replace(':','')+"_"+self.terminal.replace(' ','').replace(':','')+"_"+self.product.replace(' ','')
+            fileName=self.appConst.account.replace(' ','').replace(':','')+"_"+self.appConst.terminal.replace(' ','').replace(':','')+"_"+self.appConst.product.replace(' ','')
             fileName=fileName.replace('/','')
             fileName=fileName.replace('*','')
             fileName=fileName.replace('>','')
@@ -336,7 +335,7 @@ class rules:
         nd=uniqueDatesList[0]-datetime.timedelta(7)
         #until date goes past the current month then exit
         while (nd.month == uniqueDatesList[0].month):
-            if nd.month<self.dateDetails.month:
+            if nd.month<self.appConst.dateDetails.month:
                 if nd not in uniqueDatesList:
                     uniqueDatesList.insert(0,nd)
             else:
@@ -347,7 +346,7 @@ class rules:
     def fillNRDforward(self,uniqueDatesList):
         while (1):
             nd=uniqueDatesList[-1]+datetime.timedelta(7)
-            if nd.month>self.dateDetails.month:
+            if nd.month>self.appConst.dateDetails.month:
                 if nd not in uniqueDatesList and len(uniqueDatesList) <6:
                     uniqueDatesList.append(nd)
                 break
@@ -361,7 +360,7 @@ class rules:
         for i in uniqueDatesList:
             newDate=i-datetime.timedelta(7)
             # print newDate,i
-            if newDate.month<self.dateDetails.month:
+            if newDate.month<self.appConst.dateDetails.month:
                 for a in range(1,i.day):
                     validDates.append([a,i])
                     # print a,i;
@@ -416,14 +415,14 @@ class rules:
                     self.df2.loc[ind,"lifted_gallons_daily_flag"]=1
     def executeRules(self):
         try:
-            print "***** Execution in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product
-            savepath=self.savepath
+            print "***** Execution in Combination:",self.appConst.customer,self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product
+            savepath=self.appConst.savepath
             if not os.path.exists(savepath):
                 os.makedirs(savepath)
             self.fileName=self.get_filename()
-            self.df2=copy.deepcopy(self.supplierdata.loc[(self.supplierdata["account_type"]==self.account)&(self.supplierdata["supplier_terminal_name"]==self.terminal)&(self.supplierdata["product_name"]==self.product),:])
-            dateDetails=datetime.datetime.strptime(self.analysisDate,"%d-%m-%Y")
-            self.dateDetails=dateDetails
+            self.df2=copy.deepcopy(self.appConst.mp.loc[(self.appConst.mp["account_type"]==self.appConst.account)&(self.appConst.mp["supplier_terminal_name"]==self.appConst.terminal)&(self.appConst.mp["product_name"]==self.appConst.product),:])
+            dateDetails=datetime.datetime.strptime(self.appConst.analysisDate,"%d-%m-%Y")
+            self.appConst.dateDetails=dateDetails
             self.daysInMonth=calendar.monthrange(dateDetails.year,dateDetails.month)[1]
             idx=pd.date_range(dateDetails.strftime('%m-%d-%Y'),str(dateDetails.month)+'-'+str(self.daysInMonth)+'-'+str(dateDetails.year))
             self.df2['date']= pd.to_datetime(self.df2[u'date'],format='%Y-%m-%d')
@@ -487,9 +486,9 @@ class rules:
                         # self.df2.loc[str(dateDetails.replace(day=validDate[0])),'account_type']=self.df2.loc[str(xcc[validDate[1]]),'account_type']
                         # self.df2.loc[str(dateDetails.replace(day=validDate[0])),'supplier_terminal_name']=self.df2.loc[str(xcc[validDate[1]]),'supplier_terminal_name']
                         # self.df2.loc[str(dateDetails.replace(day=validDate[0])),'product_name']=self.df2.loc[str(xcc[validDate[1]]),'product_name']
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'account_type']=self.account
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'supplier_terminal_name']=self.terminal
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'product_name']=self.product
+                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'account_type']=self.appConst.account
+                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'supplier_terminal_name']=self.appConst.terminal
+                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'product_name']=self.appConst.product
                         self.df2.loc[str(dateDetails.replace(day=validDate[0])),"Modified_NRD"]=1
                         # print validDate
             else:
@@ -502,7 +501,7 @@ class rules:
             self.df2.insert(self.df2.keys().get_loc("lifted_gallons_Monthly"),"Lifted_actual_monthly",self.df2["lifted_gallons_Monthly"].values)
             self.df2.insert(self.df2.keys().get_loc("lifted_gallons_Monthly"),"lifted_gallons_monthly_flag",0)
             ruleFactoryObj=ruleFactory()
-            ruleAttributes=ruleFactoryObj.fetch_rules((self.customer).lower(),(self.supplier).lower())
+            ruleAttributes=ruleFactoryObj.fetch_rules((self.appConst.customer).lower(),(self.appConst.supplier).lower())
             for ruleAttribute in ruleAttributes:
                 stat=getattr(self,ruleAttribute)(self.df2)
                 if type(stat) is int:
@@ -516,43 +515,42 @@ class rules:
             self.df2.to_excel(savepath+"\\"+self.fileName+".xls")
             return self.df2
         except Exception as e:
-            savepath=self.savepath+"\\"+"Exception"
+            savepath=self.appConst.savepath+"\\"+"Exception"
             if not os.path.exists(savepath):
                 os.makedirs(savepath)
             file=open(savepath+"\\"+self.fileName+".txt","w")
-            file.write("Exception in Combination:"+"\ncustomer : "+self.customer+"\nSupplier : "+self.supplier+"\nAccount : "+self.account+"\nTerminal: "+self.terminal+"\nProduct : "+self.product+"\nException : "+str(e))
+            file.write("Exception in Combination:"+"\ncustomer : "+self.appConst.customer+"\nSupplier : "+self.appConst.supplier+"\nAccount : "+self.appConst.account+"\nTerminal: "+self.appConst.terminal+"\nProduct : "+self.appConst.product+"\nException : "+str(e))
             file.close()
-            print "Exception in Combination:",self.customer,self.supplier,self.account,self.terminal,self.product,e
+            print "Exception in Combination:",self.appConst.customer,self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,e
             return 0
 
 
 
 
 class ruleEngine:
-    def __init__(self,details):
-        self.customer=details[0]
-        self.supplier=details[1]
-        self.analysisDate=details[2]
-        self.savelocation=details[3]
-        self.dateDetails=datetime.datetime.strptime(self.analysisDate,"%d-%m-%Y")
-        self.month=calendar.month_name[self.dateDetails.month].lower()
-        self.frames=[]
-        self.pivotFrames=[]
-        self.suppliersCombinations=[]
-        self.savepath=self.savelocation+"\\"+self.supplier+"\\"+self.month+"\\"
-        self.dbcon=["172.16.0.55","root","admin123*","rules_spark"]
-        self.db = MySQLdb.connect(self.dbcon[0],self.dbcon[1],self.dbcon[2],self.dbcon[3])
-        # self.cursor=self.db.cursor()
-        self.executionFrom=self.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
-        self.executionTo=self.dateDetails.replace(month=self.dateDetails.month+1).strftime("%Y-%m-%d %H:%M:%S")
-        if not os.path.exists(self.savepath):
-            os.makedirs(self.savepath)
-        # sys.stdout = open(self.savepath+'log.txt_w')
-    def __del__(self):
-        self.db.close()
+    def __init__(self,appConst):
+        self.appConst=appConst
+        # self.appConst.customer=details[0]
+        # self.appConst.supplier=details[1]
+        # self.appConst.analysisDate=details[2]
+        # self.appConst.savelocation=details[3]
+        # self.appConst.dateDetails=datetime.datetime.strptime(self.appConst.analysisDate,"%d-%m-%Y")
+        # self.appConst.month=calendar.month_name[self.appConst.dateDetails.month].lower()
+        # self.appConst.frames=[]
+        # self.appConst.pivotFrames=[]
+        # self.appConst.suppliersCombinations=[]
+        # self.appConst.savepath=self.appConst.savelocation+"\\"+self.appConst.supplier+"\\"+self.appConst.month+"\\"
+        # self.appConst.dbcon=["172.16.0.55","root","admin123*","rules_spark"]
+        # self.appConst.db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
+        # # self.cursor=self.appConst.db.cursor()
+        # self.appConst.executionFrom=self.appConst.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
+        # self.appConst.executionTo=self.appConst.dateDetails.replace(month=self.appConst.dateDetails.month+1).strftime("%Y-%m-%d %H:%M:%S")
+        # if not os.path.exists(self.appConst.savepath):
+        #     os.makedirs(self.appConst.savepath)
+        # sys.stdout = open(self.appConst.savepath+'log.txt_w')
     def fetchSupplierCombi(self):
        try:
-           combi=self.mp[["account_type","supplier_terminal_name","product_name"]].drop_duplicates()
+           combi=self.appConst.mp[["account_type","supplier_terminal_name","product_name"]].drop_duplicates()
            return combi
        except Exception as e:
            print "Exception:",e
@@ -576,7 +574,7 @@ class ruleEngine:
         if len(frms)>0:
             resultNew=pd.concat(frms)
             mp=pd.pivot_table(resultNew,index=["date","account_type","supplier_terminal_name","product_name","lifted_cal_type"])
-            self.pivotFrames.append(mp)
+            self.appConst.pivotFrames.append(mp)
     def createPivotAll(self,frame):
         frms=[]
         frame["excel_color_flag"]=0
@@ -600,44 +598,43 @@ class ruleEngine:
         if len(frms)>0:
             resultNew=pd.concat(frms)
             mp=pd.pivot_table(resultNew,index=["date","account_type","supplier_terminal_name","product_name","lifted_cal_type"])
-            self.pivotFrames.append(mp)
+            self.appConst.pivotFrames.append(mp)
     def runRules(self,suppliersCombinations=[]):
         try:
-            self.get_maxbatch_analysis_pivot()
+            self.appConst.mp=self.get_maxbatch_analysis_pivot(self.appConst.executionFrom,self.appConst.executionTo)
             if suppliersCombinations==[]:
                 suppliersCombinations=self.fetchSupplierCombi()
             if len(suppliersCombinations)==0:
                 raise ValueError("No Combinations found to execute!")
             for supplierInfo in suppliersCombinations.values:
-                details=[self.customer,self.supplier,supplierInfo[0],supplierInfo[1],supplierInfo[2],self.month,self.analysisDate,self.db,self.savelocation,copy.deepcopy(self.mp)]
-                supplierRule=rules(details)
+                self.appConst.account=supplierInfo[0]
+                self.appConst.terminal=supplierInfo[1]
+                self.appConst.product=supplierInfo[2]
+                # details=[self.appConst.customer,self.appConst.supplier,supplierInfo[0],supplierInfo[1],supplierInfo[2],self.appConst.month,self.appConst.analysisDate,self.appConst.db,self.appConst.savelocation,copy.deepcopy(self.appConst.mp)]
+                supplierRule=rules(self.appConst)
                 frame=supplierRule.executeRules()
                 if type(frame) != int:
-                    self.frames.append(frame)
+                    self.appConst.frames.append(frame)
                     self.createPivotAll(frame)
 
-            if len(self.pivotFrames)>0:
-                resultNew=pd.concat(self.pivotFrames)
-                resultNew.to_excel(self.savepath+self.supplier+"_"+self.month+"_reconciledPivotAll.xls")
-            result=pd.concat(self.frames)
-            db = MySQLdb.connect(self.dbcon[0],self.dbcon[1],self.dbcon[2],self.dbcon[3])
-            result.to_sql(name=self.customer+"_"+self.supplier+"_"+self.month+"_reconciled",con=db,flavor='mysql', if_exists='replace')
-            # resultNew.to_sql(name=self.customer+"_"+self.supplier+"_reconciledPivot",con=db,flavor='mysql', if_exists='replace')
+            if len(self.appConst.pivotFrames)>0:
+                resultNew=pd.concat(self.appConst.pivotFrames)
+                resultNew.to_excel(self.appConst.savepath+self.appConst.supplier+"_"+self.appConst.month+"_reconciledPivotAll.xls")
+            result=pd.concat(self.appConst.frames)
+            db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
+            result.to_sql(name=self.appConst.customer+"_"+self.appConst.supplier+"_"+self.appConst.month+"_reconciled",con=db,flavor='mysql', if_exists='replace')
+            # resultNew.to_sql(name=self.appConst.customer+"_"+self.appConst.supplier+"_reconciledPivot",con=db,flavor='mysql', if_exists='replace')
             db.close()
             indexCol=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','lifted_gallons_modified_WeeksByLiftedGallons','lifted_gallons_daily_flag','lifted_gallons_daily_modified', "lifted_gallons_Daily",'lifted_gallons_weekly_flag',"lifted_gallons_Weekly", "Lifted_actual_weekly",'lifted_gallons_monthly_flag',"lifted_gallons_Monthly", "Lifted_actual_monthly", 'WeeksByLiftedGallons','Week_switch', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'Modified_WeeksByLiftedGallons', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate']
             columnHeader=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','Lifted_mod_daily_weekly_value','lifted_gallons_daily_flag','Lifted_mod_daily_nextrefresh','Lifted_actual_daily','lifted_gallons_weekly_flag','lifted_gallons_weekly_modified','Lifted_actual_weekly','lifted_gallons_weekly_flag','lifted_gallons_monthly_modified','Lifted_actual_monthly','Week_structure_weekly_value','Week_structure_next_refresh', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'daily_weekValue_flag', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate']
-            result.to_excel(self.savepath+self.supplier+"_"+self.month+"_reconciled.xls",columns=indexCol,header=columnHeader)
+            result.to_excel(self.appConst.savepath+self.appConst.supplier+"_"+self.appConst.month+"_reconciled.xls",columns=indexCol,header=columnHeader)
 
         except Exception as e:
             print "Exception:",e
 
-
-
-
-
-    def get_maxbatch_analysis_pivot(self):
+    def get_maxbatch_analysis_pivot(self,executionFrom,executionTo):
         try:
-            condition="Execution_Date>='%s' and Execution_Date<='%s' and supplier_name='%s'"%(self.executionFrom,self.executionTo,self.supplier)
+            condition="Execution_Date>='%s' and Execution_Date<='%s' and supplier_name='%s'"%(executionFrom,executionTo,self.appConst.supplier)
             sql="""select *,date(execution_date) as date from (select
             `x`.`alerts_ratability`,
             `x`.`en_allocation_status`,
@@ -670,8 +667,9 @@ class ruleEngine:
             where
             (period='Daily' or period='Weekly' or period='Monthly')
                         order by execution_date desc,batchno desc,account_type,supplier_terminal_name,product_name,period )w;"""%(condition,condition)
-            # df_mysql = pd.read_sql(sql, con=self.db)
-            df_mysql=pd.read_csv("df_mysql.csv")
+            df_mysql = pd.read_sql(sql, con=self.appConst.db)
+            time.sleep(50)
+            # df_mysql=pd.read_csv("df_mysql.csv")
             mp=pd.pivot_table(df_mysql,index=["date","account_type","supplier_terminal_name","product_name"],values=["base_gallons","lifted_gallons","beginning_gallons","en_allocation_status",'percentage_allocation','alerts_ratability','next_refresh_date'],columns="period",aggfunc = lambda x: x)
             mp.columns=['_'.join(col).strip() for col in mp.columns.values]
             dates=[]
@@ -688,17 +686,19 @@ class ruleEngine:
             mp.insert(0,"account_type",accounts)
             mp.insert(0,"date",dates)
             mp=mp.fillna(0)
-            self.mp=mp
+            return mp
         except Exception as e:
             print e
 if __name__ == "__main__":
     # 'BP','Holly','Chevron','Exxon','Valero','P66','Tesoro'
     # suppliers=['Holly','Valero','P66','Tesoro']
-    suppliers=['Exxon']
+    # suppliers=['Chevron','Exxon','Holly','Valero','P66','Tesoro','BP']
+    suppliers=['Chevron']
     print "Execution Started Please Wait....."
     for i in suppliers:
-        detailedList=["pilot",i,'01-06-2015',r"C:\spark_output\AnalysisRules"]
-        executeEngine=ruleEngine(detailedList)
+        detailedList=["pilot",i,'01-06-2015',r"C:\spark_output\AnalysisRulesSept4"]
+        appConst=entities.entity(detailedList)
+        executeEngine=ruleEngine(appConst)
         # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC : CHV7460761_1037 PASCAGOULA MS TRM CHEVRON_DIESEL #2'),))
         # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC 103637 IW_GLENDIVE MT CENEX EX - 02PT_ULSD'),))
         executeEngine.runRules()
