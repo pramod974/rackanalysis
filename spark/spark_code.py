@@ -11,6 +11,7 @@ import sys
 import copy
 import entities
 import time
+import dateutil
 class readDb:
     def __init__(self,tableName,account,terminal,product,dbcon):
         self.tableName = tableName
@@ -36,10 +37,10 @@ class ruleFactory:
     def __init__(self):
         self.ruleAttributes={'pilot':{'chevron':['verifyWeeksByValuesAll','reconcileUsingMonthy','verifyWeekByNRD'],
                                       'exxon':['verifyWeeksByValuesAll','reconcileUsingMonthy','verifyWeekByNRD'],
-                                      'holly':['verifyWeeksByValuesAll','verifyWeekByNRD'],
-                                      'valero':['verifyWeeksByValuesAll','verifyWeekByNRD'],
-                                      'p66':['verifyWeeksByValuesAll','verifyWeekByNRD'],
-                                      'tesoro':['verifyWeeksByValuesAll','verifyWeekByNRD']}}
+                                      'holly':['verifyWeeksByValuesAll','reconcileUsingMonthy','verifyWeekByNRD'],
+                                      'valero':['verifyWeeksByValuesAll','reconcileUsingMonthy','verifyWeekByNRD'],
+                                      'p66':['verifyWeeksByValuesAll','reconcileUsingMonthy','verifyWeekByNRD'],
+                                      'tesoro':['verifyWeeksByValuesAll','reconcileUsingMonthy','verifyWeekByNRD']}}
 
     def fetch_rules(self,customer,supplier):
         if self.ruleAttributes.has_key(customer.lower()):
@@ -74,30 +75,27 @@ class rules:
             previousMonth=self.appConst.dateDetails.month-1
             previousMonthName=calendar.month_name[previousMonth].lower()
             daysInPreviousMonth=calendar.monthrange(self.appConst.dateDetails.year,self.appConst.dateDetails.month-1)[1]
-            tableName=self.appConst.customer+"_"+previousMonthName+"_maxbatch"
-            sql="select * from %s where account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and day(execution_date)='%s'"%(tableName,self.appConst.account,self.appConst.terminal,self.appConst.product,daysInPreviousMonth)
-            dbcon=["172.16.0.55","root","admin123*","rules_spark"]
-            db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
-            dfOpeningBalance=pd.read_sql(sql, con=db)
+            # tableName=self.appConst.customer+"_"+previousMonthName+"_maxbatch"
+            # sql="select * from %s where account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and day(execution_date)='%s'"%(tableName,self.appConst.account,self.appConst.terminal,self.appConst.product,daysInPreviousMonth)
+            # dbcon=["172.16.0.55","root","admin123*","rules_spark"]
+            # db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
+            # dfOpeningBalance=pd.read_sql(sql, con=db)
+            previousMonthexecutionFrom=(self.appConst.dateDetails-dateutil.relativedelta.relativedelta(months=1)).strftime("%Y-%m-%d %H:%M:%S")
 
+            previousMonthexecutionTo=self.appConst.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
+            dfOpeningBalance=copy.deepcopy(self.appConst.mp.loc[(self.appConst.mp["account_type"]==self.appConst.account)&(self.appConst.mp["supplier_terminal_name"]==self.appConst.terminal)&(self.appConst.mp["product_name"]==self.appConst.product)&(self.appConst.mp["date"]==(self.appConst.dateDetails.replace(month=previousMonth,day=daysInPreviousMonth)).strftime("%Y-%m-%d")),:])
             lifted_weekly=-1
             lifted_daily=0
-            if 'Daily' in dfOpeningBalance['period'].values:
-                lifted_daily=dfOpeningBalance.loc[dfOpeningBalance['period']=='Daily','lifted_gallons'].iloc[0]
-            if 'Weekly' in dfOpeningBalance['period'].values:
-                lifted_weekly=dfOpeningBalance.loc[dfOpeningBalance['period']=='Weekly','lifted_gallons'].iloc[0]
-            if lifted_weekly!=-1:
+            if len(dfOpeningBalance)>0:
+                lifted_daily=dfOpeningBalance["lifted_gallons_Daily"][0]
+                lifted_weekly=dfOpeningBalance["lifted_gallons_Weekly"][0]
                 print "Opening Balance Lifted_Daily",lifted_daily
-                print "Opening Balance Lifted_Weekly",lifted_daily
+                print "Opening Balance Lifted_Weekly",lifted_weekly
                 return {'lifted_daily':lifted_daily,'lifted_weekly':lifted_weekly}
             else:
                 print "Unable to fetch Opening Balance"
                 return {'lifted_daily':0,'lifted_weekly':0}
         except Exception as e:
-            if 'db' in locals():
-                db.close()
-            else:
-                print "Exception Oh no Unable to connect to DataBase !"
             return {'lifted_daily':0,'lifted_weekly':0}
     def computeMissingLiftedWeeklyAndDailyOneDayNRD(self,df2,grp,i):
         if grp.ix[i+1]["lifted_gallons_Weekly"] != 0 and grp.ix[i+1]["lifted_gallons_Daily"]!=0:
@@ -190,6 +188,7 @@ class rules:
                         else:
                             # opening balance
                             if key==firstNRD and  firstNRD!=0 :
+                                openingBalances={}
                                 nrdGroups=self.df2["WeeksByLiftedGallons"].value_counts()
                                 if nrdGroups[firstNRD]!=7:
                                     openingBalances=self.verifyOpeningBalance()
@@ -257,11 +256,10 @@ class rules:
                 else:
                     print "****Invalid Week****\n",grp.loc[:,["next_refresh_date_Weekly","lifted_gallons_Daily","lifted_gallons_Weekly"]]
                     # print key
-
                     # opening balance
-                    openingBalances={}
+                    # openingBalances={'lifted_daily':0,'lifted_weekly':0}
                     nrdGroups=self.df2["next_refresh_date_Weekly"].value_counts()
-                    openingBalances=self.verifyOpeningBalance()
+                    openingBalances={}
                     for i in range(len(grp)):
                         if df2.loc[str(grp.ix[i]['date']),"lifted_gallons_daily_flag"]==0:
                             if i!=0:
@@ -281,7 +279,7 @@ class rules:
                                 if key==firstNRD and  firstNRD!=0 :
 
                                     if nrdGroups[firstNRD]!=7:
-
+                                        openingBalances=self.verifyOpeningBalance()
                                         if openingBalances !={}:
                                             if openingBalances['lifted_weekly'] != 0 and grp.ix[i]["lifted_gallons_Weekly"] != 0:
                                                 if df2.loc[str(grp.ix[i]['date']),"lifted_gallons_Daily"] != grp.ix[i]["lifted_gallons_Weekly"]-openingBalances['lifted_weekly']:
@@ -297,7 +295,7 @@ class rules:
                                     df2.loc[str(grp.ix[i]['date']),"lifted_gallons_daily_flag"]=3
                         else:
                                     print "The Lifted Gallons cant be modified using weekly Lifted, as it is already Modified using Monthly values "
-                    if key==firstNRD and nrdGroups[firstNRD]!=7:
+                    if key==firstNRD and nrdGroups[firstNRD]!=7 and openingBalances!={}:
                         currentMonthCumLGD=df2.loc[df2["next_refresh_date_Weekly"]==key,"lifted_gallons_daily_modified"].cumsum()[-1]
                         presentMonthLastWeeklyLifted=df2.loc[df2["next_refresh_date_Weekly"]==key,"lifted_gallons_Weekly"][-1]
                         if (openingBalances['lifted_weekly']+currentMonthCumLGD)==presentMonthLastWeeklyLifted:
@@ -413,6 +411,8 @@ class rules:
                 if actualLiftedDaily != liftedMonthlyPresent:
                     self.df2.loc[ind,"lifted_gallons_daily_modified"]=liftedMonthlyPresent
                     self.df2.loc[ind,"lifted_gallons_daily_flag"]=1
+                elif actualLiftedDaily == liftedMonthlyPresent:
+                    self.df2.loc[ind,"lifted_gallons_daily_flag"]=1
     def executeRules(self):
         try:
             print "***** Execution in Combination:",self.appConst.customer,self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product
@@ -420,7 +420,7 @@ class rules:
             if not os.path.exists(savepath):
                 os.makedirs(savepath)
             self.fileName=self.get_filename()
-            self.df2=copy.deepcopy(self.appConst.mp.loc[(self.appConst.mp["account_type"]==self.appConst.account)&(self.appConst.mp["supplier_terminal_name"]==self.appConst.terminal)&(self.appConst.mp["product_name"]==self.appConst.product),:])
+            self.df2=copy.deepcopy(self.appConst.mp.loc[(self.appConst.mp["account_type"]==self.appConst.account)&(self.appConst.mp["supplier_terminal_name"]==self.appConst.terminal)&(self.appConst.mp["product_name"]==self.appConst.product)&(self.appConst.mp["date"]>=self.appConst.dateDetails.strftime("%Y-%m-%d")),:])
             dateDetails=datetime.datetime.strptime(self.appConst.analysisDate,"%d-%m-%Y")
             self.appConst.dateDetails=dateDetails
             self.daysInMonth=calendar.monthrange(dateDetails.year,dateDetails.month)[1]
@@ -550,7 +550,8 @@ class ruleEngine:
         # sys.stdout = open(self.appConst.savepath+'log.txt_w')
     def fetchSupplierCombi(self):
        try:
-           combi=self.appConst.mp[["account_type","supplier_terminal_name","product_name"]].drop_duplicates()
+           # combi=self.appConst.mp[["account_type","supplier_terminal_name","product_name"]].drop_duplicates()
+           combi=self.appConst.mp.loc[self.appConst.mp["date"]>=self.appConst.dateDetails.strftime("%Y-%m-%d"),["account_type","supplier_terminal_name","product_name"]].drop_duplicates()
            return combi
        except Exception as e:
            print "Exception:",e
@@ -604,18 +605,28 @@ class ruleEngine:
             self.appConst.mp=self.get_maxbatch_analysis_pivot(self.appConst.executionFrom,self.appConst.executionTo)
             if suppliersCombinations==[]:
                 suppliersCombinations=self.fetchSupplierCombi()
-            if len(suppliersCombinations)==0:
-                raise ValueError("No Combinations found to execute!")
-            for supplierInfo in suppliersCombinations.values:
-                self.appConst.account=supplierInfo[0]
-                self.appConst.terminal=supplierInfo[1]
-                self.appConst.product=supplierInfo[2]
-                # details=[self.appConst.customer,self.appConst.supplier,supplierInfo[0],supplierInfo[1],supplierInfo[2],self.appConst.month,self.appConst.analysisDate,self.appConst.db,self.appConst.savelocation,copy.deepcopy(self.appConst.mp)]
-                supplierRule=rules(self.appConst)
-                frame=supplierRule.executeRules()
-                if type(frame) != int:
-                    self.appConst.frames.append(frame)
-                    self.createPivotAll(frame)
+                if len(suppliersCombinations)==0:
+                    raise ValueError("No Combinations found to execute!")
+                for supplierInfo in suppliersCombinations.values:
+                    self.appConst.account=supplierInfo[0]
+                    self.appConst.terminal=supplierInfo[1]
+                    self.appConst.product=supplierInfo[2]
+                    # details=[self.appConst.customer,self.appConst.supplier,supplierInfo[0],supplierInfo[1],supplierInfo[2],self.appConst.month,self.appConst.analysisDate,self.appConst.db,self.appConst.savelocation,copy.deepcopy(self.appConst.mp)]
+                    supplierRule=rules(self.appConst)
+                    frame=supplierRule.executeRules()
+                    if type(frame) != int:
+                        self.appConst.frames.append(frame)
+                        self.createPivotAll(frame)
+            else:
+                for supplierInfo in suppliersCombinations:
+                    self.appConst.account=supplierInfo[0]
+                    self.appConst.terminal=supplierInfo[1]
+                    self.appConst.product=supplierInfo[2]
+                    supplierRule=rules(self.appConst)
+                    frame=supplierRule.executeRules()
+                    if type(frame) != int:
+                            self.appConst.frames.append(frame)
+                            self.createPivotAll(frame)
 
             if len(self.appConst.pivotFrames)>0:
                 resultNew=pd.concat(self.appConst.pivotFrames)
@@ -634,7 +645,7 @@ class ruleEngine:
 
     def get_maxbatch_analysis_pivot(self,executionFrom,executionTo):
         try:
-            condition="Execution_Date>='%s' and Execution_Date<='%s' and supplier_name='%s'"%(executionFrom,executionTo,self.appConst.supplier)
+            condition="Execution_Date>='%s' and Execution_Date<='%s' and supplier_name='%s'"%(self.appConst.previousMonthexecutionFrom,executionTo,self.appConst.supplier)
             sql="""select *,date(execution_date) as date from (select
             `x`.`alerts_ratability`,
             `x`.`en_allocation_status`,
@@ -662,14 +673,18 @@ class ruleEngine:
             (SELECT
             *
             FROM enallocationarchive
-            where %s) x on a.batchno=x.batchno and a.dt=date(x.Execution_Date) and a.supplier_name=x.supplier_name
+            where %s and
+            (period='Daily' or period='Weekly' or period='Monthly') and (Account_Type<>"Unknown" and supplier_terminal_name<>"Unknown" and product_name<>"Unknown")
+                        order by execution_date desc,batchno desc,account_type,supplier_terminal_name,product_name,period ) x on a.batchno=x.batchno and a.dt=date(x.Execution_Date) and a.supplier_name=x.supplier_name)w
+                        GROUP BY date(execution_date),account_type,supplier_terminal_name,product_name,period
 
-            where
-            (period='Daily' or period='Weekly' or period='Monthly')
-                        order by execution_date desc,batchno desc,account_type,supplier_terminal_name,product_name,period )w;"""%(condition,condition)
+            having maX(batchno)
+            order by account_type,supplier_terminal_name,product_name,date,period;"""%(condition,condition)
             df_mysql = pd.read_sql(sql, con=self.appConst.db)
-            time.sleep(50)
-            # df_mysql=pd.read_csv("df_mysql.csv")
+            # time.sleep(1)
+            frameName=self.appConst.customer+"_"+self.appConst.supplier+"_"+self.appConst.month+"_maxBatchFrame.csv"
+            df_mysql.to_csv(self.appConst.savepath+frameName)
+            # df_mysql=pd.read_csv(self.appConst.savepath+frameName)
             mp=pd.pivot_table(df_mysql,index=["date","account_type","supplier_terminal_name","product_name"],values=["base_gallons","lifted_gallons","beginning_gallons","en_allocation_status",'percentage_allocation','alerts_ratability','next_refresh_date'],columns="period",aggfunc = lambda x: x)
             mp.columns=['_'.join(col).strip() for col in mp.columns.values]
             dates=[]
@@ -677,7 +692,7 @@ class ruleEngine:
             terminals=[]
             products=[]
             for i in mp.index.values:
-                dates.append(i[0])
+                dates.append(str(i[0]))
                 accounts.append(i[1])
                 terminals.append(i[2])
                 products.append(i[3])
@@ -693,13 +708,16 @@ if __name__ == "__main__":
     # 'BP','Holly','Chevron','Exxon','Valero','P66','Tesoro'
     # suppliers=['Holly','Valero','P66','Tesoro']
     # suppliers=['Chevron','Exxon','Holly','Valero','P66','Tesoro','BP']
-    suppliers=['Chevron']
-    print "Execution Started Please Wait....."
+
+    suppliers=['Holly','P66','Tesoro','BP']
     for i in suppliers:
-        detailedList=["pilot",i,'01-06-2015',r"C:\spark_output\AnalysisRulesSept4"]
+        start=datetime.datetime.now()
+        print "Execution Started Please Wait....."
+        detailedList=["pilot",i,'01-07-2015',r"C:\spark_output\AnalysisRulesSept8"]
         appConst=entities.entity(detailedList)
         executeEngine=ruleEngine(appConst)
         # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC : CHV7460761_1037 PASCAGOULA MS TRM CHEVRON_DIESEL #2'),))
-        # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC 103637 IW_GLENDIVE MT CENEX EX - 02PT_ULSD'),))
+        # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC 103637 IW','BATON ROUGE LA (MOC) - 00CE','ULSD'),))
         executeEngine.runRules()
-    print "Completed Execution Thanks for you Patience "
+        print "Completed Execution Thanks for you Patience "
+        print datetime.datetime.now()-start
