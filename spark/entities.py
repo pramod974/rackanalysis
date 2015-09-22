@@ -3,7 +3,9 @@ import datetime
 import MySQLdb
 import os
 import pandas as pd
+import time
 import sys
+import dateutil
 class entity:
     def __init__(self,details):
         self.customer=details[0]
@@ -23,14 +25,18 @@ class entity:
         self.db = MySQLdb.connect(self.dbcon[0],self.dbcon[1],self.dbcon[2],self.dbcon[3])
         self.executionFrom=self.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
         self.executionTo=self.dateDetails.replace(month=self.dateDetails.month+1).strftime("%Y-%m-%d %H:%M:%S")
+        self.previousMonthexecutionFrom=(self.dateDetails-dateutil.relativedelta.relativedelta(months=1)).strftime("%Y-%m-%d %H:%M:%S")
+
+        self.previousMonthexecutionTo=self.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
         if not os.path.exists(self.savepath):
             os.makedirs(self.savepath)
         # sys.stdout = open(self.savepath+'log.txt','w')
+        print "Entities thread id:",self.db.thread_id()
     def __del__(self):
         self.db.close()
     def get_maxbatch_analysis_pivot(self,executionFrom,executionTo):
         try:
-            condition="Execution_Date>='%s' and Execution_Date<='%s' and supplier_name='%s'"%(executionFrom,executionTo,self.appConst.supplier)
+            condition="Execution_Date>='%s' and Execution_Date<='%s' and supplier_name='%s'"%(executionFrom,executionTo,self.supplier)
             sql="""select *,date(execution_date) as date from (select
             `x`.`alerts_ratability`,
             `x`.`en_allocation_status`,
@@ -58,13 +64,18 @@ class entity:
             (SELECT
             *
             FROM enallocationarchive
-            where %s) x on a.batchno=x.batchno and a.dt=date(x.Execution_Date) and a.supplier_name=x.supplier_name
+            where %s and
+            (period='Daily' or period='Weekly' or period='Monthly') and (Account_Type<>"Unknown" and supplier_terminal_name<>"Unknown" and product_name<>"Unknown")
+                        order by execution_date desc,batchno desc,account_type,supplier_terminal_name,product_name,period ) x on a.batchno=x.batchno and a.dt=date(x.Execution_Date) and a.supplier_name=x.supplier_name)w
+                        GROUP BY date(execution_date),account_type,supplier_terminal_name,product_name,period
 
-            where
-            (period='Daily' or period='Weekly' or period='Monthly')
-                        order by execution_date desc,batchno desc,account_type,supplier_terminal_name,product_name,period )w;"""%(condition,condition)
-            # df_mysql = pd.read_sql(sql, con=self.appConst.db)
-            df_mysql=pd.read_csv("df_mysql.csv")
+            having maX(batchno)
+            order by account_type,supplier_terminal_name,product_name,date,period;"""%(condition,condition)
+            df_mysql = pd.read_sql(sql, con=self.appConst.db)
+            time.sleep(15)
+            frameName=self.customer+"_"+self.supplier+"_"+self.month+"_maxBatchFrame.csv"
+            # df_mysql.to_csv(self.savepath++frameName)
+            df_mysql=pd.read_csv(self.savepath+frameName)
             mp=pd.pivot_table(df_mysql,index=["date","account_type","supplier_terminal_name","product_name"],values=["base_gallons","lifted_gallons","beginning_gallons","en_allocation_status",'percentage_allocation','alerts_ratability','next_refresh_date'],columns="period",aggfunc = lambda x: x)
             if len(mp)==0:
                 return 0
