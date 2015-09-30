@@ -76,7 +76,7 @@ class rules:
             previousMonth=self.appConst.dateDetails.month-1
             daysInPreviousMonth=calendar.monthrange(self.appConst.dateDetails.year,self.appConst.dateDetails.month-1)[1]
             lastdayPrevious=self.appConst.dateDetails.replace(month=previousMonth,day=daysInPreviousMonth)
-            sql="SELECT supplier_name,lifted_gallons_daily_modified,lifted_gallons_Weekly,computedWeekly FROM rules_spark.enallocationarchive_reconciled where supplier_name='%s' and account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and date='%s'"%(self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,str(lastdayPrevious))
+            sql="SELECT supplier_name,lifted_gallons_daily_modified,lifted_gallons_Weekly,computedWeekly FROM rules_spark.enallocationarchive_reconcilednew where supplier_name='%s' and account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and date='%s'"%(self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,str(lastdayPrevious))
             dfOpeningBalance=pd.read_sql(sql, con=self.appConst.db)
             # dfOpeningBalance=copy.deepcopy(self.appConst.mp.loc[(self.appConst.mp["account_type"]==self.appConst.account)&(self.appConst.mp["supplier_terminal_name"]==self.appConst.terminal)&(self.appConst.mp["product_name"]==self.appConst.product)&(self.appConst.mp["date"]==(self.appConst.dateDetails.replace(month=previousMonth,day=daysInPreviousMonth)).strftime("%Y-%m-%d")),:])
             if len(dfOpeningBalance)>0:
@@ -263,7 +263,26 @@ class rules:
             file.close()
             print "Exception in Combination:",self.appConst.customer,self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,e
             return 0
-
+    def computeMonthlyandWeeklyFromReconciledDailyMissing(self,df2):
+        try:
+            if -1 in self.df2["lifted_gallons_daily_modified"].values:
+                print "Reconcile using Round 2"
+                self.df2.insert(self.df2.keys().get_loc("lifted_gallons_daily_flag"),"lifted_gallons_daily_flag_round1",self.df2["lifted_gallons_daily_flag"].values)
+                for i in self.df2.index:
+                    if self.df2.loc[i,"lifted_gallons_daily_modified"]!=-1:
+                        if self.df2.loc[i,"lifted_gallons_Monthly"]==-1:
+                            if i.day==1:
+                                self.df2.loc[i,"lifted_gallons_Monthly"]=self.df2.loc[i,"lifted_gallons_daily_modified"]
+                            else:
+                                self.df2.loc[i,"lifted_gallons_Monthly"]=self.df2.loc[i-datetime.timedelta(1),"lifted_gallons_Monthly"]+self.df2.loc[i,"lifted_gallons_daily_modified"]
+                    else:
+                        break
+                self.reconcileUsingMonthy(self.df2)
+            else:
+                print "No missing Lifted Daily to Reconcile using Round 2"
+                return 1
+        except Exception as e:
+            print e
     def computeMonthlyandWeeklyFromReconciledDaily(self,df2):
         try:
             self.df2["computedWeekly"]=0
@@ -286,8 +305,10 @@ class rules:
                         #check if not first day of week
                         if i!=0:
                             if grp.ix[i]["lifted_gallons_daily_flag"]>0:
-                                self.df2.loc[grp.ix[i]["date"],"lifted_gallons_Weekly"]=self.df2.loc[grp.ix[i-1]["date"],"lifted_gallons_Weekly"]+grp.ix[i]["lifted_gallons_daily_modified"]
-                                self.df2.loc[grp.ix[i]["date"],"lifted_gallons_weekly_flag"]=grp.ix[i]["lifted_gallons_daily_flag"]
+                                previousDayWeekly=self.df2.loc[grp.ix[i-1]["date"],"lifted_gallons_Weekly"]
+                                if previousDayWeekly !=-1:
+                                    self.df2.loc[grp.ix[i]["date"],"lifted_gallons_Weekly"]=previousDayWeekly+grp.ix[i]["lifted_gallons_daily_modified"]
+                                    self.df2.loc[grp.ix[i]["date"],"lifted_gallons_weekly_flag"]=grp.ix[i]["lifted_gallons_daily_flag"]
                         else:
                             if grp.ix[i]["lifted_gallons_daily_flag"]>0:
                                 self.df2.loc[grp.ix[i]["date"],"lifted_gallons_Weekly"]=grp.ix[i]["lifted_gallons_daily_modified"]
@@ -557,17 +578,39 @@ class rules:
                 if xcc.has_key(-1):
                     xcc.pop(-1)
                 self.df2.insert(self.df2.keys().get_loc("next_refresh_date_Weekly"),"Modified_NRD",0)
+
+                values=self.df2.loc[self.df2['base_gallons_Daily']!=-1]['base_gallons_Daily'].unique()
+                baseDaily=min(values)if len(values)>0 else -1
+                values=self.df2.loc[self.df2['base_gallons_Monthly']!=-1]['base_gallons_Monthly'].unique()
+                baseMonthly=min(values)if len(values)>0 else -1
+                values=self.df2.loc[self.df2['base_gallons_Weekly']!=-1]['base_gallons_Weekly'].unique()
+                baseWeekly=min(values)if len(values)>0 else -1
+                values=self.df2.loc[self.df2['beginning_gallons_Daily']!=-1]['beginning_gallons_Daily'].unique()
+                beginningDaily=min(values)if len(values)>0 else -1
+                values=self.df2.loc[self.df2['beginning_gallons_Monthly']!=-1]['beginning_gallons_Monthly'].unique()
+                beginningMonthly=min(values)if len(values)>0 else -1
+                values=self.df2.loc[self.df2['beginning_gallons_Weekly']!=-1]['beginning_gallons_Weekly'].unique()
+                beginningWeekly=min(values)if len(values)>0 else -1
                 for validDate in validDates:
-                    if self.df2.loc[str(dateDetails.replace(day=validDate[0])),"next_refresh_date_Weekly"]==-1:
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),"next_refresh_date_Weekly"]=validDate[1]
+                    validDateday=validDate[0]
+                    if self.df2.loc[str(dateDetails.replace(day=validDateday)),"next_refresh_date_Weekly"]==-1:
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),"next_refresh_date_Weekly"]=validDate[1]
                         # self.df2.loc[str(dateDetails.replace(day=validDate[0])),'account_type']=self.df2.loc[str(xcc[validDate[1]]),'account_type']
                         # self.df2.loc[str(dateDetails.replace(day=validDate[0])),'supplier_terminal_name']=self.df2.loc[str(xcc[validDate[1]]),'supplier_terminal_name']
                         # self.df2.loc[str(dateDetails.replace(day=validDate[0])),'product_name']=self.df2.loc[str(xcc[validDate[1]]),'product_name']
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'account_type']=self.appConst.account
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'supplier_name']=self.appConst.supplier
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'supplier_terminal_name']=self.appConst.terminal
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),'product_name']=self.appConst.product
-                        self.df2.loc[str(dateDetails.replace(day=validDate[0])),"Modified_NRD"]=1
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'account_type']=self.appConst.account
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'supplier_name']=self.appConst.supplier
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'supplier_terminal_name']=self.appConst.terminal
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'product_name']=self.appConst.product
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),"Modified_NRD"]=1
+
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Daily']=baseDaily
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Monthly']=baseMonthly
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Weekly']=baseWeekly
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Daily']=beginningDaily
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Monthly']=beginningMonthly
+                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Weekly']=beginningWeekly
+
                         # print validDate
             else:
                 print "All next refresh Dates Valid"
@@ -715,7 +758,7 @@ class ruleEngine:
                 # db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
                 if self.deleteOldMonth():
                     print "Deletion Success"
-                result.to_sql(name="enallocationarchive_reconciled",con=self.appConst.db,flavor='mysql', if_exists='append')
+                result.to_sql(name="enallocationarchive_reconciledNew",con=self.appConst.db,flavor='mysql', if_exists='append')
                 # resultNew.to_sql(name=self.appConst.customer+"_"+self.appConst.supplier+"_reconciledPivot",con=db,flavor='mysql', if_exists='replace')
                 # db.close()
                 indexCol=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','lifted_gallons_modified_WeeksByLiftedGallons','lifted_gallons_daily_flag','lifted_gallons_daily_modified', "lifted_gallons_Daily",'lifted_gallons_weekly_flag',"lifted_gallons_Weekly", "Lifted_actual_weekly",'lifted_gallons_monthly_flag',"lifted_gallons_Monthly", "Lifted_actual_monthly", 'WeeksByLiftedGallons','Week_switch', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'Modified_WeeksByLiftedGallons', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly']
@@ -727,7 +770,7 @@ class ruleEngine:
     def deleteOldMonth(self):
         try:
             cursor=self.appConst.db.cursor()
-            sql="delete from enallocationarchive_reconciled where supplier_name='%s' and month(date)=%s"%(self.appConst.supplier,self.appConst.dateDetails.month)
+            sql="delete from enallocationarchive_reconciledNew where supplier_name='%s' and month(date)=%s"%(self.appConst.supplier,self.appConst.dateDetails.month)
             rows=cursor.execute(sql)
             print "Rows ",rows,"Deleted Successfully"
             return True
@@ -820,9 +863,9 @@ if __name__ == "__main__":
     # suppliers=['Holly','Valero','P66','Tesoro']
     suppliers=['Chevron','Exxon','Holly','Valero','P66','Tesoro','BP']
     customer="pilot"
-    suppliers=['Valero']
-    # exeDates=['01-07-2015','01-08-2015']
-    exeDates=['01-07-2015']
+    # suppliers=['Exxon']
+    exeDates=['01-06-2015','01-07-2015','01-08-2015']
+    # exeDates=['01-07-2015']
     savePath=r"C:\spark_output\AnalysisRules_Contract"+str(datetime.datetime.now().date())
     # customer=sys.argv[1]
     # suppliers=sys.argv[2]
@@ -836,7 +879,7 @@ if __name__ == "__main__":
             appConst=entities.entity(detailedList)
             executeEngine=ruleEngine(appConst)
             # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC-10024029BR', 'KANSAS CITY KS PSX - 03AG', '9# RVP GASOLINE'),))
-            # executeEngine.runRules((('PILOT TRAVEL CENTE-122194-W/S - UNB Contract', 'Magellan - Dallas/Singleton (B645)', 'DSL - LSD/ULSD'),))
+            # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC 103637 IW', 'HAMMOND IN (MOC) - 00DH', 'Reg RFG'),))
             executeEngine.runRules()
             print "Completed Execution Thanks for you Patience "
             print datetime.datetime.now()-start
