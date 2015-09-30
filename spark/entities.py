@@ -30,7 +30,7 @@ class entity:
         self.previousMonthexecutionTo=self.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
         if not os.path.exists(self.savepath):
             os.makedirs(self.savepath)
-        # sys.stdout = open(self.savepath+'log.txt','w')
+        sys.stdout = open(self.savepath+'log.txt','w')
         print "Entities thread id:",self.db.thread_id()
     def __del__(self):
         self.db.close()
