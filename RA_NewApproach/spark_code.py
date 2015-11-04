@@ -126,7 +126,27 @@ class rules:
             try:
                 reconcile_pa=["percentage_allocation_Daily","percentage_allocation_Monthly","percentage_allocation_Weekly"]
                 for i in reconcile_pa:
-                    self.df2[i]=self.df2[i].apply(lambda x:int(str(x).strip().replace('%','')) if x != -1 else 100)
+                    # self.df2[i+"_actual"]=self.df2[i]
+                    self.df2.insert(df2.keys().get_loc(i),i+"_actual",self.df2[i])
+                    findPA=dict(self.df2[i].value_counts())
+                    countPA=0
+                    if findPA.has_key(-1):
+                        countPA+=findPA[-1]
+                    if countPA==self.daysInMonth:
+                        self.df2[i]=100
+                    else:
+                        for ind in self.df2.index:
+                            if ind.day!=1:
+                                if self.df2.loc[ind,i]==-1:
+                                    self.df2.loc[ind,i]=self.df2.loc[ind-datetime.timedelta(1),i]
+                                else:
+                                    self.df2.loc[ind,i]=int(str(self.df2.loc[ind,i]).strip().replace('%',''))
+                            elif ind.day==1:
+                                if self.df2.loc[ind,i]==-1:
+                                    pass
+                                else:
+                                    self.df2.loc[ind,i]=int(str(self.df2.loc[ind,i]).strip().replace('%',''))
+
             except Exception as e:
                 print "Exception",e
 
@@ -140,7 +160,21 @@ class rules:
             # self.df2.loc[self.df2.base_gallons_Daily!=-1,["base_gallons_Daily_Reconciled"]]=self.df2[self.df2.base_gallons_Daily!=-1]["percentage_allocation_Daily"]*self.df2[self.df2.base_gallons_Daily!=-1]["beginning_gallons_Daily"]
             for i,j,k in zip(reconcile_ba,reconcile_pa,reconcile_be):
                 self.df2[i+"_Reconciled"] = -1
-                self.df2.loc[self.df2[i] != -1, [i+"_Reconciled"] ]= (self.df2[self.df2[i]!=-1][k] / self.df2[self.df2[i]!=-1][j] * 100).apply(lambda x:int(round(x)))
+                # self.df2.loc[self.df2[i] != -1, [i+"_Reconciled"] ]= (self.df2[self.df2[i]!=-1][k] / self.df2[self.df2[i]!=-1][j] * 100).apply(lambda x:int(round(x)))
+                for ind in self.df2.index:
+                    if ind.day!=1:
+                        if self.df2.loc[ind,i]==-1:
+                            if self.df2.loc[ind-datetime.timedelta(1), k] != -1:
+                                self.df2.loc[ind,i+"_Reconciled"]=int(round(self.df2.loc[ind-datetime.timedelta(1),k] / self.df2.loc[ind-datetime.timedelta(1),j] * 100))
+                            else:
+                                self.df2.loc[ind,i+"_Reconciled"]=self.df2.loc[ind-datetime.timedelta(1),i]
+                        else:
+                            self.df2.loc[ind,i+"_Reconciled"]=int(round(self.df2.loc[ind,k] / self.df2.loc[ind,j] * 100))
+                    elif ind.day==1:
+                        if self.df2.loc[ind,i] == -1:
+                            pass
+                        else:
+                            self.df2.loc[ind,i+"_Reconciled"]=int(round(self.df2.loc[ind,k] / self.df2.loc[ind,j] * 100))
         except Exception as e:
             print "Exception",e
 
@@ -151,7 +185,21 @@ class rules:
                 reconcile_be=[u'beginning_gallons_Daily', u'beginning_gallons_Monthly', u'beginning_gallons_Weekly']
                 for i,j,k in zip(reconcile_ba,reconcile_pa,reconcile_be):
                     self.df2[k+"_Reconciled"] = -1
-                    self.df2.loc[self.df2[k] != -1, [k+"_Reconciled"]] = (self.df2[self.df2[k] != -1][i] * self.df2[self.df2[k] != -1][j] / 100).apply(lambda x:round(x))
+                    # self.df2.loc[self.df2[k] != -1, [k+"_Reconciled"]] = (self.df2[self.df2[k] != -1][i] * self.df2[self.df2[k] != -1][j] / 100).apply(lambda x:round(x))
+                    for ind in self.df2.index:
+                        if ind.day!=1:
+                            if self.df2.loc[ind, k] == -1:
+                                if self.df2.loc[ind-datetime.timedelta(1), i] != -1:
+                                    self.df2.loc[ind,k+"_Reconciled"]=int(round(self.df2.loc[ind-datetime.timedelta(1),i] * self.df2.loc[ind-datetime.timedelta(1),j] / 100))
+                                else:
+                                    self.df2.loc[ind,k+"_Reconciled"]=self.df2.loc[ind-datetime.timedelta(1),k]
+                            else:
+                                self.df2.loc[ind,k+"_Reconciled"]=int(round(self.df2.loc[ind,i] * self.df2.loc[ind,j] / 100))
+                        elif ind.day==1:
+                            if self.df2.loc[ind,k]==-1:
+                                pass
+                            else:
+                                self.df2.loc[ind,k+"_Reconciled"]=int(round(self.df2.loc[ind,i] * self.df2.loc[ind,j] / 100))
             except Exception as e:
                 print "Exception",e
     def verifyOpeningBalanceReconciled(self):
@@ -686,18 +734,18 @@ class rules:
                     xcc.pop(-1)
                 self.df2.insert(self.df2.keys().get_loc("next_refresh_date_Weekly"),"Modified_NRD",0)
 
-                values=self.df2.loc[self.df2['base_gallons_Daily']!=-1]['base_gallons_Daily'].unique()
-                baseDaily=min(values)if len(values)>0 else -1
-                values=self.df2.loc[self.df2['base_gallons_Monthly']!=-1]['base_gallons_Monthly'].unique()
-                baseMonthly=min(values)if len(values)>0 else -1
-                values=self.df2.loc[self.df2['base_gallons_Weekly']!=-1]['base_gallons_Weekly'].unique()
-                baseWeekly=min(values)if len(values)>0 else -1
-                values=self.df2.loc[self.df2['beginning_gallons_Daily']!=-1]['beginning_gallons_Daily'].unique()
-                beginningDaily=min(values)if len(values)>0 else -1
-                values=self.df2.loc[self.df2['beginning_gallons_Monthly']!=-1]['beginning_gallons_Monthly'].unique()
-                beginningMonthly=min(values)if len(values)>0 else -1
-                values=self.df2.loc[self.df2['beginning_gallons_Weekly']!=-1]['beginning_gallons_Weekly'].unique()
-                beginningWeekly=min(values)if len(values)>0 else -1
+                # values=self.df2.loc[self.df2['base_gallons_Daily']!=-1]['base_gallons_Daily'].unique()
+                # baseDaily=min(values)if len(values)>0 else -1
+                # values=self.df2.loc[self.df2['base_gallons_Monthly']!=-1]['base_gallons_Monthly'].unique()
+                # baseMonthly=min(values)if len(values)>0 else -1
+                # values=self.df2.loc[self.df2['base_gallons_Weekly']!=-1]['base_gallons_Weekly'].unique()
+                # baseWeekly=min(values)if len(values)>0 else -1
+                # values=self.df2.loc[self.df2['beginning_gallons_Daily']!=-1]['beginning_gallons_Daily'].unique()
+                # beginningDaily=min(values)if len(values)>0 else -1
+                # values=self.df2.loc[self.df2['beginning_gallons_Monthly']!=-1]['beginning_gallons_Monthly'].unique()
+                # beginningMonthly=min(values)if len(values)>0 else -1
+                # values=self.df2.loc[self.df2['beginning_gallons_Weekly']!=-1]['beginning_gallons_Weekly'].unique()
+                # beginningWeekly=min(values)if len(values)>0 else -1
                 for validDate in validDates:
                     validDateday=validDate[0]
                     if self.df2.loc[str(dateDetails.replace(day=validDateday)),"next_refresh_date_Weekly"]==-1:
@@ -711,12 +759,12 @@ class rules:
                         self.df2.loc[str(dateDetails.replace(day=validDateday)),'product_name']=self.appConst.product
                         self.df2.loc[str(dateDetails.replace(day=validDateday)),"Modified_NRD"]=1
 
-                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Daily']=baseDaily
-                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Monthly']=baseMonthly
-                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Weekly']=baseWeekly
-                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Daily']=beginningDaily
-                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Monthly']=beginningMonthly
-                        self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Weekly']=beginningWeekly
+                        # self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Daily']=baseDaily
+                        # self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Monthly']=baseMonthly
+                        # self.df2.loc[str(dateDetails.replace(day=validDateday)),'base_gallons_Weekly']=baseWeekly
+                        # self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Daily']=beginningDaily
+                        # self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Monthly']=beginningMonthly
+                        # self.df2.loc[str(dateDetails.replace(day=validDateday)),'beginning_gallons_Weekly']=beginningWeekly
 
                         # print validDate
             else:
@@ -868,8 +916,8 @@ class ruleEngine:
                     print "Deletion Success"
                 # resultNew.to_sql(name=self.appConst.customer+"_"+self.appConst.supplier+"_reconciledPivot",con=db,flavor='mysql', if_exists='replace')
                 # db.close()
-                indexCol=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','lifted_gallons_modified_WeeksByLiftedGallons','lifted_gallons_daily_flag','lifted_gallons_daily_modified', "lifted_gallons_Daily",'lifted_gallons_weekly_flag',"lifted_gallons_Weekly", "Lifted_actual_weekly",'lifted_gallons_monthly_flag',"lifted_gallons_Monthly", "Lifted_actual_monthly", 'WeeksByLiftedGallons','Week_switch', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'Modified_WeeksByLiftedGallons', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly','sanityComputedWeekly', "base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled", "base_gallons_Weekly_Reconciled" ,"beginning_gallons_Daily_Reconciled", "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled","next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly","NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly', u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily', u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly', u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly', u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled"]
-                columnHeader=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','Lifted_mod_daily_weekly_value','lifted_gallons_daily_flag','Lifted_mod_daily_nextrefresh','Lifted_actual_daily','lifted_gallons_weekly_flag','lifted_gallons_weekly_modified','Lifted_actual_weekly','lifted_gallons_monthly_flag','lifted_gallons_monthly_modified','Lifted_actual_monthly','Week_structure_weekly_value','Week_structure_next_refresh', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'daily_weekValue_flag', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly','sanityComputedWeekly',"base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled", "base_gallons_Weekly_Reconciled", "beginning_gallons_Daily_Reconciled", "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled","next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly","NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly', u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily', u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly', u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly', u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled"]
+                indexCol=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','lifted_gallons_modified_WeeksByLiftedGallons','lifted_gallons_daily_flag','lifted_gallons_daily_modified', "lifted_gallons_Daily",'lifted_gallons_weekly_flag',"lifted_gallons_Weekly", "Lifted_actual_weekly",'lifted_gallons_monthly_flag',"lifted_gallons_Monthly", "Lifted_actual_monthly", 'WeeksByLiftedGallons','Week_switch', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'Modified_WeeksByLiftedGallons', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly","percentage_allocation_Daily_actual","percentage_allocation_Monthly_actual","percentage_allocation_Weekly_actual", "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly','sanityComputedWeekly', "base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled", "base_gallons_Weekly_Reconciled" ,"beginning_gallons_Daily_Reconciled", "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled","next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly","NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly', u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily', u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly', u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly', u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled"]
+                columnHeader=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','Lifted_mod_daily_weekly_value','lifted_gallons_daily_flag','Lifted_mod_daily_nextrefresh','Lifted_actual_daily','lifted_gallons_weekly_flag','lifted_gallons_weekly_modified','Lifted_actual_weekly','lifted_gallons_monthly_flag','lifted_gallons_monthly_modified','Lifted_actual_monthly','Week_structure_weekly_value','Week_structure_next_refresh', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'daily_weekValue_flag', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "percentage_allocation_Daily_actual","percentage_allocation_Monthly_actual","percentage_allocation_Weekly_actual" ,"alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly','sanityComputedWeekly',"base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled", "base_gallons_Weekly_Reconciled", "beginning_gallons_Daily_Reconciled", "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled","next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly","NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly', u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily', u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly', u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly', u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled"]
                 result.to_excel(self.appConst.savepath+self.appConst.supplier+"_"+self.appConst.month+"_reconciled.xls",columns=indexCol,header=columnHeader)
                 result.to_sql(name="enallocationarchive_debug",con=self.appConst.db,flavor='mysql', if_exists='append')
 
@@ -979,9 +1027,9 @@ if __name__ == "__main__":
     # suppliers=['Holly','Valero','P66','Tesoro']
     suppliers=['Chevron','Exxon','Holly','Valero','P66','Tesoro','BP','Shell']
     customer="pilot"
-    # suppliers=['Chevron']
-    exeDates=['01-06-2015','01-08-2015']
-    # exeDates=['01-07-2015']
+    # suppliers=['Exxon']
+    exeDates=['01-06-2015','01-07-2015','01-08-2015']
+    # exeDates=['01-08-2015']
     savePath=r"C:\spark_output\Ra_Newapproach\AnalysisRules_Contract_NewApproach"+str(datetime.datetime.now().date())
     # customer=sys.argv[1]
     # suppliers=sys.argv[2]
