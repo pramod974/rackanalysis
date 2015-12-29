@@ -212,13 +212,13 @@ class rules:
                 maxDaily=self.df2.loc[i,'base_gallons_Daily_Reconciled']
                 maxMonthly=self.df2.loc[i,'base_gallons_Monthly_Reconciled']
                 if maxMonthly !=-1:
-                    synDaily=round(maxMonthly/30)
-                    synWeekly=round((maxMonthly/30)*7)
+                    synDaily=round((maxMonthly+0.0)/30.0)
+                    synWeekly=round(((maxMonthly+0.0)/30.0)*7.0)
                     self.df2.loc[i,'Synthetic_Base_Monthly']=maxMonthly
                     self.df2.loc[i,'Synthetic_Base_Daily']=synDaily
                     self.df2.loc[i,'Synthetic_Base_Weekly']=synWeekly
                 if maxWeekly !=-1:
-                    synDaily=round(maxWeekly/7)
+                    synDaily=round((maxWeekly+0.0)/7.0)
                     synMonthly=self.daysInMonth*synDaily
                     self.df2.loc[i,'Synthetic_Base_Monthly']=synMonthly
                     self.df2.loc[i,'Synthetic_Base_Daily']=synDaily
@@ -245,16 +245,16 @@ class rules:
                     if ind.day!=1:
                         if self.df2.loc[ind,i]==-1:
                             if self.df2.loc[ind-datetime.timedelta(1), k] != -1:
-                                self.df2.loc[ind,i+"_Reconciled"]=int(round(self.df2.loc[ind-datetime.timedelta(1),k] / self.df2.loc[ind-datetime.timedelta(1),j] * 100))
+                                self.df2.loc[ind,i+"_Reconciled"]=int(round((self.df2.loc[ind-datetime.timedelta(1),k]+0.0) / (self.df2.loc[ind-datetime.timedelta(1),j]+0.0) * 100.0))
                             else:
                                 self.df2.loc[ind,i+"_Reconciled"]=self.df2.loc[ind-datetime.timedelta(1),i]
                         else:
-                            self.df2.loc[ind,i+"_Reconciled"]=int(round(self.df2.loc[ind,k] / self.df2.loc[ind,j] * 100))
+                            self.df2.loc[ind,i+"_Reconciled"]=int(round((self.df2.loc[ind,k]+0.0) / (self.df2.loc[ind,j]+0.0) * 100.0))
                     elif ind.day==1:
                         if self.df2.loc[ind,i] == -1:
                             pass
                         else:
-                            self.df2.loc[ind,i+"_Reconciled"]=int(round(self.df2.loc[ind,k] / self.df2.loc[ind,j] * 100))
+                            self.df2.loc[ind,i+"_Reconciled"]=int(round((self.df2.loc[ind,k]+0.0) / (self.df2.loc[ind,j]+0.0) * 100.0))
         except Exception as e:
             print "Exception",e
 
@@ -270,16 +270,16 @@ class rules:
                         if ind.day!=1:
                             if self.df2.loc[ind, k] == -1:
                                 if self.df2.loc[ind-datetime.timedelta(1), i] != -1:
-                                    self.df2.loc[ind,k+"_Reconciled"]=int(round(self.df2.loc[ind-datetime.timedelta(1),i] * self.df2.loc[ind-datetime.timedelta(1),j] / 100))
+                                    self.df2.loc[ind,k+"_Reconciled"]=int(round((self.df2.loc[ind-datetime.timedelta(1),i]+0.0) * (self.df2.loc[ind-datetime.timedelta(1),j]+0.0) / 100.0))
                                 else:
                                     self.df2.loc[ind,k+"_Reconciled"]=self.df2.loc[ind-datetime.timedelta(1),k]
                             else:
-                                self.df2.loc[ind,k+"_Reconciled"]=int(round(self.df2.loc[ind,i] * self.df2.loc[ind,j] / 100))
+                                self.df2.loc[ind,k+"_Reconciled"]=int(round((self.df2.loc[ind,i]+0.0) * (self.df2.loc[ind,j]+0.0) / 100.0))
                         elif ind.day==1:
                             if self.df2.loc[ind,k]==-1:
                                 pass
                             else:
-                                self.df2.loc[ind,k+"_Reconciled"]=int(round(self.df2.loc[ind,i] * self.df2.loc[ind,j] / 100))
+                                self.df2.loc[ind,k+"_Reconciled"]=int((round(self.df2.loc[ind,i]+0.0) * (self.df2.loc[ind,j]+0.0)/ 100.0))
             except Exception as e:
                 print "Exception",e
     def verifyOpeningBalanceReconciled(self):
@@ -417,16 +417,32 @@ class rules:
                     print "****Invalid Week****\n",grp.loc[:,["WeeksByLiftedGallons","lifted_gallons_Daily","lifted_gallons_Weekly"]]
                     for i in range(len(grp)):
                         if i!=0:
-                            if grp.ix[i-1]["lifted_gallons_Weekly"] != -1 and grp.ix[i]["lifted_gallons_Weekly"] != -1:
-                                if df2.loc[str(grp.ix[i]['date']),"lifted_gallons_Daily"] != (grp.ix[i]["lifted_gallons_Weekly"]-grp.ix[i-1]["lifted_gallons_Weekly"]):
-                                    df2.loc[str(grp.ix[i]['date']),"lifted_gallons_modified_WeeksByLiftedGallons"]=grp.ix[i]["lifted_gallons_Weekly"]-grp.ix[i-1]["lifted_gallons_Weekly"]
-                                    df2.loc[str(grp.ix[i]['date']),"Modified_WeeksByLiftedGallons"]=1
-                                    # print i,grp.ix[i+1]["lifted_gallons_Weekly"]-grp.ix[i]["lifted_gallons_Weekly"]
+                            liftedWeeklyPrevious=df2.loc[str(grp.ix[i-1]['date']),"lifted_gallons_Weekly"]
+                            lifteddailyPrevious=df2.loc[str(grp.ix[i-1]['date']),"lifted_gallons_Daily"]
+                            actualLiftedDaily=df2.loc[str(grp.ix[i]['date']),"lifted_gallons_Daily"]
+                            liftedWeeklyPresent=df2.loc[str(grp.ix[i]['date']),"lifted_gallons_Weekly"]
+                            if liftedWeeklyPrevious != -1 and liftedWeeklyPresent != -1 and lifteddailyPrevious!=-1 and actualLiftedDaily!=-1:
+                                    beginPreviousWeekly=liftedWeeklyPrevious-lifteddailyPrevious
+                                    beginPresentWeekly=liftedWeeklyPresent-actualLiftedDaily
+                                    previousTrueDaily=beginPresentWeekly-beginPreviousWeekly
+                                    df2.loc[str(grp.ix[i-1]['date']),"lifted_gallons_modified_WeeksByLiftedGallons"]=previousTrueDaily
+                                    df2.loc[str(grp.ix[i-1]['date']),"Modified_WeeksByLiftedGallons"]=3
+
                             else:
-                                if grp.ix[i]["lifted_gallons_Weekly"] == -1 and grp.ix[i]["lifted_gallons_Daily"]==-1 and i!=(len(grp)-1):
-                                    self.computeMissingLiftedWeeklyAndDailyOneDayWeekValue(df2,grp,i)
+                                if liftedWeeklyPresent == -1 and actualLiftedDaily==-1 and i!=(len(grp)-1):
+                                    self.computeMissingLiftedWeeklyAndDailyOneDayNRD(df2,grp,i)
                                 else:
-                                    print "No Enough Data available to Fill Lifted Gallons"
+                                    print "No Enough Data available to Fill Lifted Gallons NRD"
+                            # if grp.ix[i-1]["lifted_gallons_Weekly"] != -1 and grp.ix[i]["lifted_gallons_Weekly"] != -1:
+                            #     if df2.loc[str(grp.ix[i]['date']),"lifted_gallons_Daily"] != (grp.ix[i]["lifted_gallons_Weekly"]-grp.ix[i-1]["lifted_gallons_Weekly"]):
+                            #         df2.loc[str(grp.ix[i]['date']),"lifted_gallons_modified_WeeksByLiftedGallons"]=grp.ix[i]["lifted_gallons_Weekly"]-grp.ix[i-1]["lifted_gallons_Weekly"]
+                            #         df2.loc[str(grp.ix[i]['date']),"Modified_WeeksByLiftedGallons"]=1
+                            #         # print i,grp.ix[i+1]["lifted_gallons_Weekly"]-grp.ix[i]["lifted_gallons_Weekly"]
+                            # else:
+                            #     if grp.ix[i]["lifted_gallons_Weekly"] == -1 and grp.ix[i]["lifted_gallons_Daily"]==-1 and i!=(len(grp)-1):
+                            #         self.computeMissingLiftedWeeklyAndDailyOneDayWeekValue(df2,grp,i)
+                            #     else:
+                            #         print "No Enough Data available to Fill Lifted Gallons"
                         else:
                             # opening balance
                             if key==firstNRD and  firstNRD!=0 :
@@ -741,7 +757,7 @@ class rules:
                 os.makedirs(self.appConst.savepath)
             self.fileName=self.get_filename()
             self.df2=copy.deepcopy(self.appConst.mp.loc[(self.appConst.mp["account_type"]==self.appConst.account)&(self.appConst.mp["supplier_terminal_name"]==self.appConst.terminal)&(self.appConst.mp["product_name"]==self.appConst.product)&(self.appConst.mp["date"]>=self.appConst.dateDetails.strftime("%Y-%m-%d")),:])
-            time.sleep(10)
+            # time.sleep(10)
             dateDetails=datetime.datetime.strptime(self.appConst.analysisDate,"%d-%m-%Y")
             self.appConst.dateDetails=dateDetails
             self.daysInMonth=calendar.monthrange(dateDetails.year,dateDetails.month)[1]
@@ -1119,7 +1135,7 @@ if __name__ == "__main__":
     # suppliers=['Holly','Valero','P66','Tesoro']
     suppliers=['Chevron','Exxon','Holly','Valero','P66','Tesoro','BP','Shell']
     customer="pilot"
-    # suppliers=['BP']
+    suppliers=['P66']
     # exeDates=['01-06-2015','01-07-2015','01-08-2015']
     exeDates=['01-09-2015','01-10-2015']
     savePath=r"C:\spark_output\Ra_Newapproach\AnalysisRules_Contract_NewApproach"+str(datetime.datetime.now().date())
@@ -1134,7 +1150,7 @@ if __name__ == "__main__":
             detailedList=[customer,i,exeDate,savePath]
             appConst=entities.entity(detailedList)
             executeEngine=ruleEngine(appConst)
-            # executeEngine.runRules((('Channel: 50 - Commercial', 'CANTON OH - BUCKEYE (PLANT 9180)', 'PREMIUM'),))
+            # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC-10024029BR', 'ALBUQUERQUE NM PSX - 030A', 'GASOLINE'),))
             # executeEngine.runRules((('UNBRANDED', 'Albuquerque NM - VEC - T109', 'V'),))
             executeEngine.runRules()
             print "Completed Execution Thanks for you Patience "
