@@ -6,6 +6,7 @@ import pandas as pd
 import time
 import sys
 import dateutil
+from pymongo import MongoClient
 class entity:
     def __init__(self,details):
         self.customer=details[0]
@@ -24,16 +25,23 @@ class entity:
         self.dbcon=["172.16.0.55","root","admin123*","rules_spark"]
         self.db = MySQLdb.connect(self.dbcon[0],self.dbcon[1],self.dbcon[2],self.dbcon[3])
         self.executionFrom=self.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
-        self.executionTo=self.dateDetails.replace(month=self.dateDetails.month+1).strftime("%Y-%m-%d %H:%M:%S")
+        self.executionTo=(self.dateDetails+dateutil.relativedelta.relativedelta(months=1)).strftime("%Y-%m-%d %H:%M:%S")
         self.previousMonthexecutionFrom=(self.dateDetails-dateutil.relativedelta.relativedelta(months=1)).strftime("%Y-%m-%d %H:%M:%S")
 
         self.previousMonthexecutionTo=self.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
         if not os.path.exists(self.savepath):
             os.makedirs(self.savepath)
+        self.oldsys=sys.stdout
+
         sys.stdout = open(self.savepath+'log.txt','w')
         print "Entities thread id:",self.db.thread_id()
     def __del__(self):
         self.db.close()
+    def mongo_connector(self):
+        client = MongoClient('172.16.0.55', 27017)
+        self.mdb = client.reconciled_data
+        self.collection=self.mdb[self.dateDetails.strftime("%b")]
+
     def get_maxbatch_analysis_pivot(self,executionFrom,executionTo):
         try:
             condition="Execution_Date>='%s' and Execution_Date<='%s' and supplier_name='%s'"%(executionFrom,executionTo,self.supplier)
