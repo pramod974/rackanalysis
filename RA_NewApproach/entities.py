@@ -13,6 +13,7 @@ class entity:
         self.supplier=details[1]
         self.analysisDate=details[2]
         self.savelocation=details[3]
+        self.setConfig=details[4]
         self.account=""
         self.terminal=""
         self.product=""
@@ -22,8 +23,10 @@ class entity:
         self.pivotFrames=[]
         self.suppliersCombinations=[]
         self.savepath=self.savelocation+"\\"+self.supplier+"\\"+self.month+"\\"
-        self.dbcon=["172.16.0.55","root","admin123*","rules_spark"]
+        self.dbcon=[self.setConfig[self.customer]["mysqlIPAddress"],self.setConfig[self.customer]["mysqlUserName"],
+                    self.setConfig[self.customer]["mysqlPassword"],self.setConfig[self.customer]["mysqlDatabaseName"]]
         self.db = MySQLdb.connect(self.dbcon[0],self.dbcon[1],self.dbcon[2],self.dbcon[3])
+        self.get_databasename()
         self.executionFrom=self.dateDetails.strftime("%Y-%m-%d %H:%M:%S")
         self.executionTo=(self.dateDetails+dateutil.relativedelta.relativedelta(months=1)).strftime("%Y-%m-%d %H:%M:%S")
         self.previousMonthexecutionFrom=(self.dateDetails-dateutil.relativedelta.relativedelta(months=1)).strftime("%Y-%m-%d %H:%M:%S")
@@ -35,12 +38,28 @@ class entity:
 
         sys.stdout = open(self.savepath+'log.txt','w')
         print "Entities thread id:",self.db.thread_id()
+
     def __del__(self):
         self.db.close()
+
     def mongo_connector(self):
-        client = MongoClient('172.16.0.55', 27017)
-        self.mdb = client.reconciled_data
-        self.collection=self.mdb[self.dateDetails.strftime("%b")]
+        client = MongoClient(self.setConfig[self.customer]["mongoIPAddress"], 27017)
+        self.mdb = client[self.customer]
+        self.collection=self.mdb[str(self.dateDetails.year)+"_"+self.dateDetails.strftime("%b")]
+    def get_databasename(self):
+        try:
+            sql="SELECT databasename FROM systemdb.ra_databaseredirector where customer='%s'"%(self.customer)
+            cursor=self.db.cursor()
+            cursor.execute(sql)
+            row=cursor.fetchall()
+            if row !=():
+                self.databasename=row[0][0]
+                self.contracts_tablename=self.customer+"_enallocationarchivecontract"
+            else:
+                print "database not found"
+                raise LookupError
+        except Exception as e:
+            print e
 
     def get_maxbatch_analysis_pivot(self,executionFrom,executionTo):
         try:

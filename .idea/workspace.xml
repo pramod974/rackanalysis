@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AnalysisUIOptions">
-    <option name="SCOPE_TYPE" value="3" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="81926c22-6a48-49fa-9b10-85316a115f9c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployScript/allDB.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/deployScript/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compliance_factor/json_creator.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RA_NewApproach/entities.py" afterPath="$PROJECT_DIR$/RA_NewApproach/entities.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RA_NewApproach/spark_code.py" afterPath="$PROJECT_DIR$/RA_NewApproach/spark_code.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/compliance_factor/spark_code.py" afterPath="$PROJECT_DIR$/compliance_factor/spark_code.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark/spark_code.py" afterPath="$PROJECT_DIR$/spark/spark_code.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="rackanalysis.iws" />
@@ -37,43 +32,38 @@
       <file leaf-file-name="spark_code.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RA_NewApproach/spark_code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.42434782" vertical-offset="10211" max-vertical-offset="12529">
-              <caret line="893" column="55" selection-start-line="893" selection-start-column="55" selection-end-line="893" selection-end-column="55" />
+            <state vertical-scroll-proportion="-5.284644" vertical-offset="1785" max-vertical-offset="22219">
+              <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
-                <element signature="e#424#1414#0" expanded="false" />
-                <element signature="e#493#724#0" expanded="false" />
-                <element signature="e#760#1414#0" expanded="false" />
-                <element signature="e#4770#5379#0" expanded="false" />
-                <element signature="e#8801#10494#0" expanded="false" />
-                <element signature="e#10534#11180#0" expanded="false" />
-                <element signature="e#11222#11780#0" expanded="false" />
-                <element signature="e#11822#12362#0" expanded="false" />
-                <element signature="e#21112#22306#0" expanded="false" />
-                <element signature="e#22384#23623#0" expanded="false" />
-                <element signature="e#23707#24721#0" expanded="false" />
-                <element signature="e#24802#25374#0" expanded="false" />
-                <element signature="e#38560#39666#0" expanded="false" />
-                <element signature="e#39710#47292#0" expanded="false" />
-                <element signature="e#47333#47708#0" expanded="false" />
-                <element signature="e#47764#48277#0" expanded="false" />
-                <element signature="e#48332#48768#0" expanded="false" />
-                <element signature="e#48823#49491#0" expanded="false" />
-                <element signature="e#68134#68523#0" expanded="false" />
-                <element signature="e#68565#70006#0" expanded="false" />
-                <element signature="e#70051#71771#0" expanded="false" />
-                <element signature="e#79422#79869#0" expanded="false" />
-                <element signature="e#79947#84961#0" expanded="false" />
+                <element signature="e#205#224#0" expanded="true" />
+                <element signature="e#457#688#0" expanded="false" />
+                <element signature="e#724#1378#0" expanded="false" />
+                <element signature="e#42642#43771#0" expanded="false" />
+                <element signature="e#43827#45028#0" expanded="false" />
+                <element signature="e#65054#66068#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="temp.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RA_NewApproach/temp.py">
+      <file leaf-file-name="config.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RA_NewApproach/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="261" />
+            <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="867">
+              <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="entities.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RA_NewApproach/entities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="2244">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,7 +75,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="september_4" />
+        <entry key="$PROJECT_DIR$" value="compliance_factor" />
       </map>
     </option>
     <option name="PUSH_TAGS">
@@ -120,9 +110,11 @@
         <option value="$PROJECT_DIR$/RA_NewApproach/temp.py" />
         <option value="$PROJECT_DIR$/deployScript/data.py" />
         <option value="$PROJECT_DIR$/spark/spark_code.py" />
+        <option value="$PROJECT_DIR$/deployScript/allDB.py" />
+        <option value="$PROJECT_DIR$/compliance_factor/json_creator.py" />
         <option value="$PROJECT_DIR$/RA_NewApproach/entities.py" />
         <option value="$PROJECT_DIR$/RA_NewApproach/spark_code.py" />
-        <option value="$PROJECT_DIR$/deployScript/allDB.py" />
+        <option value="$PROJECT_DIR$/RA_NewApproach/config.ini" />
       </list>
     </option>
   </component>
@@ -253,12 +245,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\spark" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Python.allDB">
+  <component name="RunManager" selected="Python.spark_code (1)">
     <configuration default="false" name="spark_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -272,27 +259,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="rackanalysis" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spark/spark_code.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="spark_code (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RA_NewApproach" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="rackanalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RA_NewApproach/spark_code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <RunnerSettings RunnerId="PyDebugRunner" />
@@ -322,41 +288,66 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="data" type="PythonConfigurationType" factoryName="Python" editBeforeRun="true" temporary="true" show_console_on_std_err="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deployScript" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="rackanalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployScript/data.py" />
-      <option name="PARAMETERS" value="Pilot" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="data_fetch" type="PythonConfigurationType" factoryName="Python" temporary="true" show_console_on_std_err="true">
+    <configuration default="false" name="json_creator" type="PythonConfigurationType" factoryName="Python" temporary="true" show_console_on_std_err="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spark" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/compliance_factor" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="rackanalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spark/data_fetch.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/compliance_factor/json_creator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="entities" type="PythonConfigurationType" factoryName="Python" temporary="true" show_console_on_std_err="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Python27\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RA_NewApproach" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RA_NewApproach/entities.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="spark_code (1)" type="PythonConfigurationType" factoryName="Python" editBeforeRun="true" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RA_NewApproach" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RA_NewApproach/spark_code.py" />
+      <option name="PARAMETERS" value="-c Costco -s BP Chevron Exxon FlintHills Gulf Holly Husky P66 PBF Placid Shell Tesoro Valero -d 01-04-2015 01-05-2015 01-06-2015 01-07-2015 01-08-2015 01-09-2015 01-10-2015 01-11-2015 01-12-2015 01-01-2016" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -484,25 +475,22 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.spark_code" />
-      <item index="1" class="java.lang.String" itemvalue="Python.spark_code (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.allDB" />
-      <item index="3" class="java.lang.String" itemvalue="Python.data" />
-      <item index="4" class="java.lang.String" itemvalue="Python.data_fetch" />
+      <item index="1" class="java.lang.String" itemvalue="Python.allDB" />
+      <item index="2" class="java.lang.String" itemvalue="Python.json_creator" />
+      <item index="3" class="java.lang.String" itemvalue="Python.entities" />
+      <item index="4" class="java.lang.String" itemvalue="Python.spark_code (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.allDB" />
-        <item index="1" class="java.lang.String" itemvalue="Python.spark_code (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.spark_code" />
-        <item index="3" class="java.lang.String" itemvalue="Python.data_fetch" />
-        <item index="4" class="java.lang.String" itemvalue="Python.data" />
+        <item index="0" class="java.lang.String" itemvalue="Python.spark_code (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.entities" />
+        <item index="2" class="java.lang.String" itemvalue="Python.json_creator" />
+        <item index="3" class="java.lang.String" itemvalue="Python.allDB" />
+        <item index="4" class="java.lang.String" itemvalue="Python.spark_code" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="81926c22-6a48-49fa-9b10-85316a115f9c" name="Default" comment="" />
@@ -618,33 +606,39 @@
       <option name="project" value="LOCAL" />
       <updated>1449035709882</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="feb 2 save to mongodb and reports">
+      <created>1454307439171</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1454307439171</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23048328" sideWeight="0.83224756" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17174721" sideWeight="0.7794562" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.262215" sideWeight="0.50037175" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34731543" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35016286" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46091205" sideWeight="0.49962825" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24943481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23048328" sideWeight="0.16612378" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17174721" sideWeight="0.2205438" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37947884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39966556" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26342282" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32736155" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3843648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -673,7 +667,8 @@
     <MESSAGE value="nov 4 ,updated Re,BE,Ba,PA" />
     <MESSAGE value="initial commit before , BE,BA,PA,RE" />
     <MESSAGE value="december 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="december 2" />
+    <MESSAGE value="feb 2 save to mongodb and reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="feb 2 save to mongodb and reports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -954,48 +949,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>531</line>
+          <line>667</line>
           <option name="timeStamp" value="421" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>902</line>
-          <option name="timeStamp" value="449" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>484</line>
+          <line>620</line>
           <option name="timeStamp" value="450" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://C:/Python27/Lib/site-packages/IPython/core/interactiveshell.py</url>
           <line>3034</line>
           <option name="timeStamp" value="459" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>1041</line>
-          <option name="timeStamp" value="465" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>1031</line>
-          <option name="timeStamp" value="466" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>283</line>
-          <option name="timeStamp" value="468" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>1131</line>
-          <option name="timeStamp" value="476" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>1028</line>
-          <option name="timeStamp" value="485" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/spark/spark_code.py</url>
@@ -1019,13 +984,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>154</line>
+          <line>268</line>
           <option name="timeStamp" value="509" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>1029</line>
-          <option name="timeStamp" value="510" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/deployScript/data.py</url>
@@ -1034,182 +994,146 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>124</line>
+          <line>238</line>
           <option name="timeStamp" value="521" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>108</line>
+          <line>222</line>
           <option name="timeStamp" value="523" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>87</line>
+          <line>201</line>
           <option name="timeStamp" value="524" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>33</line>
+          <line>32</line>
           <option name="timeStamp" value="528" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>35</line>
+          <line>34</line>
           <option name="timeStamp" value="529" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>36</line>
+          <line>35</line>
           <option name="timeStamp" value="530" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>143</line>
+          <line>257</line>
           <option name="timeStamp" value="531" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>201</line>
+          <line>315</line>
           <option name="timeStamp" value="538" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>174</line>
+          <line>288</line>
           <option name="timeStamp" value="539" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>164</line>
+          <line>278</line>
           <option name="timeStamp" value="540" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>258</line>
+          <line>386</line>
           <option name="timeStamp" value="545" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>241</line>
-          <option name="timeStamp" value="546" />
+          <url>file://$PROJECT_DIR$/compliance_factor/json_creator.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="557" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>247</line>
-          <option name="timeStamp" value="547" />
+          <line>1038</line>
+          <option name="timeStamp" value="593" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
-          <line>251</line>
-          <option name="timeStamp" value="548" />
+          <line>1208</line>
+          <option name="timeStamp" value="595" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>766</line>
+          <option name="timeStamp" value="603" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>411</line>
+          <option name="timeStamp" value="607" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>438</line>
+          <option name="timeStamp" value="608" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>1028</line>
+          <option name="timeStamp" value="609" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/entities.py</url>
+          <line>61</line>
+          <option name="timeStamp" value="622" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>161</line>
+          <option name="timeStamp" value="631" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>346</line>
+          <option name="timeStamp" value="632" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>1321</line>
+          <option name="timeStamp" value="644" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>1322</line>
+          <option name="timeStamp" value="645" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>1323</line>
+          <option name="timeStamp" value="646" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/spark_code.py</url>
+          <line>1211</line>
+          <option name="timeStamp" value="647" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
       <default-breakpoints>
-        <breakpoint suspend="NONE" type="python-exception">
-          <properties notifyOnTerminate="true" exception="BaseException">
-            <option name="notifyOnTerminate" value="true" />
+        <breakpoint log-message="true" suspend="NONE" type="python-exception">
+          <dependency leave-enabled="true" master-id="0" />
+          <properties notifyAlways="true" exception="BaseException">
+            <option name="notifyAlways" value="true" />
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="550" />
+      <option name="time" value="648" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RackAnalysis/analyse_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4556">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="374">
-          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCarto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="28186">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RackAnalysis/analyse_all.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="4556">
-          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
-          <folding>
-            <element signature="e#28#47#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="374">
-          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCarto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="28186">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RackAnalysis/play.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <caret line="3" column="95" selection-start-line="3" selection-start-column="95" selection-end-line="3" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCarto.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="28186">
-          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OpenRefineService/InsertNMFTA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="1003">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#14#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/flask/globals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="434" max-vertical-offset="833">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="12334" max-vertical-offset="30991">
-          <caret line="757" column="0" selection-start-line="757" selection-start-column="0" selection-end-line="757" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenRefineService/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.3518072" vertical-offset="0" max-vertical-offset="935">
@@ -1272,24 +1196,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33142856" vertical-offset="30246" max-vertical-offset="84881">
-          <caret line="1786" column="0" selection-start-line="1786" selection-start-column="0" selection-end-line="1786" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/pandas/core/internals.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19660194" vertical-offset="51599" max-vertical-offset="75276">
           <caret line="3072" column="0" selection-start-line="3072" selection-start-column="0" selection-end-line="3072" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="21682" max-vertical-offset="30124">
-          <caret line="1293" column="0" selection-start-line="1293" selection-start-column="0" selection-end-line="1293" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1304,9 +1214,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4743">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="50" />
-          <folding>
-            <element signature="e#28#47#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1317,24 +1225,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/groupby.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="6.240854" vertical-offset="16143" max-vertical-offset="63835">
-          <caret line="1102" column="0" selection-start-line="1102" selection-start-column="0" selection-end-line="1102" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/pandas/io/sql.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48910412" vertical-offset="7720" max-vertical-offset="27217">
           <caret line="483" column="0" selection-start-line="483" selection-start-column="0" selection-end-line="483" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm40/system/python_stubs/-762174762/__builtin__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3773" max-vertical-offset="88400">
-          <caret line="234" column="75" selection-start-line="234" selection-start-column="75" selection-end-line="234" selection-end-column="75" />
         </state>
       </provider>
     </entry>
@@ -1357,17 +1251,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33333334" vertical-offset="2493" max-vertical-offset="6460">
           <caret line="406" column="160" selection-start-line="406" selection-start-column="155" selection-end-line="406" selection-end-column="160" />
-          <folding>
-            <element signature="e#204#223#0" expanded="false" />
-            <element signature="e#2254#2660#0" expanded="false" />
-            <element signature="e#5608#6667#0" expanded="false" />
-            <element signature="e#6718#14974#0" expanded="false" />
-            <element signature="e#15019#22793#0" expanded="false" />
-            <element signature="e#22834#23182#0" expanded="false" />
-            <element signature="e#23238#23735#0" expanded="false" />
-            <element signature="e#23790#24217#0" expanded="false" />
-            <element signature="e#24272#24931#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1396,13 +1280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/compliance_factor/spark_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="13560" max-vertical-offset="14960">
-          <caret line="930" column="62" selection-start-line="930" selection-start-column="62" selection-end-line="930" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/site-packages/IPython/core/interactiveshell.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.814024" vertical-offset="56333" max-vertical-offset="56661">
@@ -1425,31 +1302,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/six.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33231708" vertical-offset="3070" max-vertical-offset="14246">
-          <caret line="193" column="0" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Python27/Lib/sre_parse.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2101" max-vertical-offset="13753">
           <caret line="132" column="0" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="39450" max-vertical-offset="49742">
-          <caret line="2337" column="0" selection-start-line="2337" selection-start-column="0" selection-end-line="2337" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38414633" vertical-offset="32718" max-vertical-offset="70482">
-          <caret line="1957" column="30" selection-start-line="1957" selection-start-column="30" selection-end-line="1957" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1478,25 +1334,168 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RA_NewApproach/entities.py">
+    <entry file="file://$PROJECT_DIR$/spark/entities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="595">
-          <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.32807016" vertical-offset="0" max-vertical-offset="578">
+          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#1491#1506#0" expanded="false" />
+            <element signature="e#1584#4711#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployScript/data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.2962298" vertical-offset="0" max-vertical-offset="1989">
+          <caret line="112" column="40" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RA_NewApproach/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029565217" vertical-offset="0" max-vertical-offset="575">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="261" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployScript/allDB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/compliance_factor/json_creator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="1717">
+          <caret line="31" column="25" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
+          <folding>
+            <element signature="e#28#42#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/io/json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="988" max-vertical-offset="12801">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="27631" max-vertical-offset="37485">
+          <caret line="1636" column="0" selection-start-line="1636" selection-start-column="0" selection-end-line="1637" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/six.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33238637" vertical-offset="835" max-vertical-offset="14246">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/groupby.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="35361" max-vertical-offset="63835">
+          <caret line="2119" column="0" selection-start-line="2119" selection-start-column="0" selection-end-line="2119" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/_strptime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="5186" max-vertical-offset="7939">
+          <caret line="324" column="0" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/indexing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="27014" max-vertical-offset="30124">
+          <caret line="1607" column="0" selection-start-line="1607" selection-start-column="0" selection-end-line="1607" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="21234" max-vertical-offset="54281">
+          <caret line="1275" column="0" selection-start-line="1275" selection-start-column="0" selection-end-line="1275" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31466666" vertical-offset="35565" max-vertical-offset="84881">
+          <caret line="2099" column="0" selection-start-line="2099" selection-start-column="0" selection-end-line="2099" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31466666" vertical-offset="39441" max-vertical-offset="49742">
+          <caret line="2337" column="0" selection-start-line="2337" selection-start-column="0" selection-end-line="2337" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/tseries/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31466666" vertical-offset="21557" max-vertical-offset="34408">
+          <caret line="1305" column="0" selection-start-line="1305" selection-start-column="0" selection-end-line="1305" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31466666" vertical-offset="9385" max-vertical-offset="13651">
+          <caret line="565" column="0" selection-start-line="565" selection-start-column="0" selection-end-line="565" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/dateutil/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31466666" vertical-offset="3911" max-vertical-offset="15810">
+          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/tseries/tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33239436" vertical-offset="8909" max-vertical-offset="9894">
+          <caret line="541" column="0" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pymongo/collection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="37503" max-vertical-offset="39525">
+          <caret line="2242" column="0" selection-start-line="2242" selection-start-column="0" selection-end-line="2242" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/Lib/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="48604" max-vertical-offset="70482">
+          <caret line="2891" column="0" selection-start-line="2891" selection-start-column="0" selection-end-line="2891" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spark/spark_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.0125" vertical-offset="436" max-vertical-offset="1768">
-          <caret line="867" column="17" selection-start-line="867" selection-start-column="17" selection-end-line="867" selection-end-column="17" />
+        <state vertical-scroll-proportion="-0.8947368" vertical-offset="510" max-vertical-offset="2363">
+          <caret line="41" column="92" selection-start-line="41" selection-start-column="92" selection-end-line="41" selection-end-column="92" />
           <folding>
             <element signature="e#366#1356#0" expanded="false" />
             <element signature="e#435#666#0" expanded="false" />
             <element signature="e#702#1356#0" expanded="false" />
-            <element signature="e#1381#4657#0" expanded="false" />
-            <element signature="e#1409#4179#0" expanded="false" />
-            <element signature="e#4234#4657#0" expanded="false" />
-            <element signature="e#4712#5321#0" expanded="false" />
             <element signature="e#5369#6476#0" expanded="false" />
             <element signature="e#6521#7864#0" expanded="false" />
             <element signature="e#7910#8702#0" expanded="false" />
@@ -1537,69 +1536,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark/entities.py">
+    <entry file="file://$PROJECT_DIR$/compliance_factor/spark_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32807016" vertical-offset="0" max-vertical-offset="578">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.5964912" vertical-offset="51" max-vertical-offset="16966">
+          <caret line="21" column="67" selection-start-line="21" selection-start-column="67" selection-end-line="21" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm40/system/python_stubs/-762174762/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="3248" max-vertical-offset="88400">
+          <caret line="198" column="4" selection-start-line="198" selection-start-column="4" selection-end-line="198" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RA_NewApproach/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="867">
+          <caret line="6" column="67" selection-start-line="6" selection-start-column="67" selection-end-line="6" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RA_NewApproach/entities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="736" max-vertical-offset="2244">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
           <folding>
-            <element signature="e#1491#1506#0" expanded="false" />
-            <element signature="e#1584#4711#0" expanded="false" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployScript/allDB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3967684" vertical-offset="0" max-vertical-offset="557">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployScript/data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.2962298" vertical-offset="0" max-vertical-offset="1989">
-          <caret line="112" column="40" selection-start-line="112" selection-start-column="40" selection-end-line="112" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RA_NewApproach/temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="119">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="261" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RA_NewApproach/spark_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42434782" vertical-offset="10211" max-vertical-offset="12529">
-          <caret line="893" column="55" selection-start-line="893" selection-start-column="55" selection-end-line="893" selection-end-column="55" />
+        <state vertical-scroll-proportion="-5.284644" vertical-offset="1785" max-vertical-offset="22219">
+          <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <element signature="e#424#1414#0" expanded="false" />
-            <element signature="e#493#724#0" expanded="false" />
-            <element signature="e#760#1414#0" expanded="false" />
-            <element signature="e#4770#5379#0" expanded="false" />
-            <element signature="e#8801#10494#0" expanded="false" />
-            <element signature="e#10534#11180#0" expanded="false" />
-            <element signature="e#11222#11780#0" expanded="false" />
-            <element signature="e#11822#12362#0" expanded="false" />
-            <element signature="e#21112#22306#0" expanded="false" />
-            <element signature="e#22384#23623#0" expanded="false" />
-            <element signature="e#23707#24721#0" expanded="false" />
-            <element signature="e#24802#25374#0" expanded="false" />
-            <element signature="e#38560#39666#0" expanded="false" />
-            <element signature="e#39710#47292#0" expanded="false" />
-            <element signature="e#47333#47708#0" expanded="false" />
-            <element signature="e#47764#48277#0" expanded="false" />
-            <element signature="e#48332#48768#0" expanded="false" />
-            <element signature="e#48823#49491#0" expanded="false" />
-            <element signature="e#68134#68523#0" expanded="false" />
-            <element signature="e#68565#70006#0" expanded="false" />
-            <element signature="e#70051#71771#0" expanded="false" />
-            <element signature="e#79422#79869#0" expanded="false" />
-            <element signature="e#79947#84961#0" expanded="false" />
+            <element signature="e#205#224#0" expanded="true" />
+            <element signature="e#457#688#0" expanded="false" />
+            <element signature="e#724#1378#0" expanded="false" />
+            <element signature="e#42642#43771#0" expanded="false" />
+            <element signature="e#43827#45028#0" expanded="false" />
+            <element signature="e#65054#66068#0" expanded="false" />
           </folding>
         </state>
       </provider>

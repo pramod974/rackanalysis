@@ -1,21 +1,18 @@
-from IPython.core.magic_arguments import magic_arguments
-
 __author__ = 'pramod.kumar'
 #modification 1 -> normal modification
 #modification 2-> modification using computeMissingLiftedWeeklyAndDailyOneDay
 #modification 3 -> modification using verifyOpeningBalance
 
-import json
 import pandas as pd
 import calendar
 import datetime
-import MySQLdb
 import os
 import sys
 import copy
 import entities
-import time
 import dateutil
+from pymongo import MongoClient
+import argparse
 class readDb:
     def __init__(self,tableName,account,terminal,product,dbcon):
         self.tableName = tableName
@@ -40,7 +37,8 @@ class readDb:
 
 class ruleFactory:
     def __init__(self):
-        self.ruleAttributes={'pilot':{'chevron':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+        self.ruleAttributes={
+            'pilot':{'chevron':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
                                       'exxon':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
                                       'holly':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
                                       'valero':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
@@ -53,35 +51,110 @@ class ruleFactory:
                                       'sinclair':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
                                       'pbf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
                                       'murphy':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
-                                      'mpc':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed']}}
+                                      'mpc':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed']},
+            'app':{'chevron':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'exxon':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'holly':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'valero':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'p66':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed',],
+                                      'tesoro':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed',],
+                                      'bp':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                                      'shell':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                                      'alon':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'husky':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'sinclair':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'pbf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'murphy':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'mpc':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed']},
+            'mansfield':{ 'bp':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                                      'chevron':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'chs':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'citgo':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'exxon':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'holly':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'husky':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'murphy':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'mpc':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'valero':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'p66':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tesoro':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'shell':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                                      'pbf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'placid':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tmg':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed']},
+            'costco':{'bp':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                            'chevron':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                            'chs':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                            'citgo':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'exxon':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'holly':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'husky':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'murphy':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'mpc':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'valero':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'p66':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tesoro':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'shell':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                                      'pbf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'placid':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tmg':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'Gulf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'FlintHills':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed']},
+            'ryder':{'bp':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                            'chevron':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                            'chs':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                            'citgo':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'exxon':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'holly':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'husky':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'murphy':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'mpc':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'valero':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'p66':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tesoro':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'shell':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                                      'pbf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'placid':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tmg':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'Gulf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'FlintHills':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed']},
+            'ups':{'bp':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                            'chevron':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                            'chs':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                            'citgo':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'exxon':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'holly':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'husky':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'murphy':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'mpc':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'valero':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'p66':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tesoro':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'shell':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_synthetic'],
+                                      'pbf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'placid':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'tmg':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'Gulf':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed'],
+                                      'FlintHills':['reconcilePA','reconcileBase','reconcileBe','reconcileNRBD','reconcileNRBM','verifyWeeksByValuesAll','reconcileUsingMonthy','computeWeeklyfromReconciledDaily','verifyWeekByNRD','computeMonthlyandWeeklyFromReconciledDaily','reconcileRG','reconcileAGR','ratability_Monthly','ratability_Daily','ratability_Weekly','reconcile_unknown_base','ratability_Monthly_computed']}
+
+        }
 
     def fetch_rules(self,customer,supplier):
         if self.ruleAttributes.has_key(customer.lower()):
-            if self.ruleAttributes[customer].has_key(supplier.lower()):
-                rules=self.ruleAttributes[customer][supplier]
+            if self.ruleAttributes[customer.lower()].has_key(supplier.lower()):
+                rules=self.ruleAttributes[customer.lower()][supplier]
                 return rules
             else:
                 print 'In valid Supplier ',supplier,' for customer ',customer
-                sys.exit(-1)
+                raise ImportError
         else:
-            print 'In valid Customer',customer
-            sys.exit(-1)
+            print 'Exception in fetch rules Customer',customer
+            raise ImportError
 class rules:
     def __init__(self,appConst):
         errors={}
         self.fileName=""
         self.appConst=appConst
-        # self.appConst.customer=details[0]
-        # self.appConst.supplier=details[1]
-        # self.appConst.account=details[2]
-        # self.appConst.terminal=details[3]
-        # self.appConst.product=details[4]
-        # self.appConst.month=details[5]
-        # self.appConst.analysisDate=details[6]
-        # self.appConst.db=details[7]
-        # self.appConst.savelocation=details[8]
-        # self.appConst.mp=details[9]
-        # self.appConst.savepath=self.appConst.savelocation+"\\"+self.appConst.supplier+"\\"+self.appConst.month
 
     def ratability_Monthly_synthetic(self,df2):
         try:
@@ -96,6 +169,7 @@ class rules:
             self.df2["Ratability_Monthly_computed"].fillna(0,inplace=True)
         except Exception as e:
             print "Exception",e
+            return 0
     def ratability_Monthly_computed(self,df2):
         try:
             #new
@@ -109,6 +183,7 @@ class rules:
             self.df2["Ratability_Monthly_computed"].fillna(0,inplace=True)
         except Exception as e:
             print "Exception",e
+            return 0
     def ratability_Monthly(self,df2):
         try:
             # lg_cols=['lifted_gallons_daily_modified','lifted_gallons_Monthly',u'lifted_gallons_Weekly']
@@ -256,7 +331,7 @@ class rules:
                     self.df2.loc[i,'Synthetic_Base_Monthly']=maxMonthly
                     self.df2.loc[i,'Synthetic_Base_Daily']=synDaily
                     self.df2.loc[i,'Synthetic_Base_Weekly']=synWeekly
-                if maxWeekly !=-1:
+                elif maxWeekly !=-1:
                     synDaily=round((maxWeekly+0.0)/7.0)
                     synMonthly=self.daysInMonth*synDaily
                     self.df2.loc[i,'Synthetic_Base_Monthly']=synMonthly
@@ -340,8 +415,16 @@ class rules:
             previousMonth=self.appConst.dateDetails.month-1
             daysInPreviousMonth=calendar.monthrange(self.appConst.dateDetails.year,self.appConst.dateDetails.month-1)[1]
             lastdayPrevious=self.appConst.dateDetails.replace(month=previousMonth,day=daysInPreviousMonth)
-            sql="SELECT supplier_name,lifted_gallons_daily_modified,lifted_gallons_Weekly,computedWeekly FROM rules_spark.enallocationarchive_debug where supplier_name='%s' and account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and date='%s'"%(self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,str(lastdayPrevious))
-            dfOpeningBalance=pd.read_sql(sql, con=self.appConst.db)
+            query={'supplier_name':self.appConst.supplier,'account_type':self.appConst.account,
+                   'supplier_terminal_name':self.appConst.terminal,'product_name':self.appConst.product,
+                   'date':self.appConst.dateDetails-dateutil.relativedelta.relativedelta(days=1)}
+            client = MongoClient('172.16.0.55', 27017)
+            mdb = client[self.appConst.customer]
+            collection=mdb[query['date'].strftime("%b")]
+            dfOpeningBalance =  pd.DataFrame(list(collection.find(query)))
+            client.close()
+            # sql="SELECT supplier_name,lifted_gallons_daily_modified,lifted_gallons_Weekly,computedWeekly FROM rules_spark.enallocationarchive_debug where supplier_name='%s' and account_type='%s' and supplier_terminal_name='%s' and product_name='%s' and date='%s'"%(self.appConst.supplier,self.appConst.account,self.appConst.terminal,self.appConst.product,str(lastdayPrevious))
+            # dfOpeningBalance=pd.read_sql(sql, con=self.appConst.db)
             # dfOpeningBalance=copy.deepcopy(self.appConst.mp.loc[(self.appConst.mp["account_type"]==self.appConst.account)&(self.appConst.mp["supplier_terminal_name"]==self.appConst.terminal)&(self.appConst.mp["product_name"]==self.appConst.product)&(self.appConst.mp["date"]==(self.appConst.dateDetails.replace(month=previousMonth,day=daysInPreviousMonth)).strftime("%Y-%m-%d")),:])
             if len(dfOpeningBalance)>0:
                 lifted_daily=dfOpeningBalance["lifted_gallons_daily_modified"][0]
@@ -1072,15 +1155,52 @@ class ruleEngine:
             if len(self.appConst.frames)>0:
                 result=pd.concat(self.appConst.frames)
                 # db = MySQLdb.connect(self.appConst.dbcon[0],self.appConst.dbcon[1],self.appConst.dbcon[2],self.appConst.dbcon[3])
-                if self.deleteOldMonth():
-
-                    print "Deletion Success"
+                # if self.deleteOldMonth():
+                #
+                #     print "Deletion Success"
                 # resultNew.to_sql(name=self.appConst.customer+"_"+self.appConst.supplier+"_reconciledPivot",con=db,flavor='mysql', if_exists='replace')
                 # db.close()
-                indexCol=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','lifted_gallons_modified_WeeksByLiftedGallons','lifted_gallons_daily_flag','lifted_gallons_daily_modified', "lifted_gallons_Daily",'lifted_gallons_weekly_flag',"lifted_gallons_Weekly", "Lifted_actual_weekly",'lifted_gallons_monthly_flag',"lifted_gallons_Monthly", "Lifted_actual_monthly", 'WeeksByLiftedGallons','Week_switch', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'Modified_WeeksByLiftedGallons', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly","percentage_allocation_Daily_actual","percentage_allocation_Monthly_actual","percentage_allocation_Weekly_actual", "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly','sanityComputedWeekly', "base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled", "base_gallons_Weekly_Reconciled" ,"beginning_gallons_Daily_Reconciled", "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled","next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly","NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly', u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily', u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly', u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly', u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled","Ratability_Daily","Ratability_Weekly","Ratability_Monthly",'Synthetic_Base_Daily','Synthetic_Base_Weekly','Synthetic_Base_Monthly']
-                columnHeader=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','Lifted_mod_daily_weekly_value','lifted_gallons_daily_flag','Lifted_mod_daily_nextrefresh','Lifted_actual_daily','lifted_gallons_weekly_flag','lifted_gallons_weekly_modified','Lifted_actual_weekly','lifted_gallons_monthly_flag','lifted_gallons_monthly_modified','Lifted_actual_monthly','Week_structure_weekly_value','Week_structure_next_refresh', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'daily_weekValue_flag', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "percentage_allocation_Daily_actual","percentage_allocation_Monthly_actual","percentage_allocation_Weekly_actual" ,"alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly','sanityComputedWeekly',"base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled", "base_gallons_Weekly_Reconciled", "beginning_gallons_Daily_Reconciled", "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled","next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly","NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly', u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily', u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly', u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly', u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled","Ratability_Daily","Ratability_Weekly","Ratability_Monthly",'Synthetic_Base_Daily','Synthetic_Base_Weekly','Synthetic_Base_Monthly']
+                indexCol=[u'date', u'account_type', u'supplier_terminal_name', u'product_name',
+                          'lifted_gallons_modified_WeeksByLiftedGallons','lifted_gallons_daily_flag',
+                          'lifted_gallons_daily_modified', "lifted_gallons_Daily",'lifted_gallons_weekly_flag',
+                          "lifted_gallons_Weekly", "Lifted_actual_weekly",'lifted_gallons_monthly_flag',
+                          "lifted_gallons_Monthly", "Lifted_actual_monthly", 'WeeksByLiftedGallons','Week_switch',
+                          "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly",
+                          'Modified_WeeksByLiftedGallons', "beginning_gallons_Daily", "beginning_gallons_Monthly",
+                          "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly",
+                          "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly",
+                          "percentage_allocation_Weekly","percentage_allocation_Daily_actual",
+                          "percentage_allocation_Monthly_actual","percentage_allocation_Weekly_actual",
+                          "alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly",
+                          "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD',
+                          "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons',
+                          'sanityWeekly_CumulativeDaily_NextRefreshDate',
+                          'sanityMonthly_CumulativeDaily_WeeksByLiftedGallons',
+                          'sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly',
+                          'computedMonthly','sanityComputedMonthly','sanityComputedWeekly',
+                          "base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled",
+                          "base_gallons_Weekly_Reconciled" ,"beginning_gallons_Daily_Reconciled",
+                          "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled",
+                          "next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly",
+                          "NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly',
+                          u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily',
+                          u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly',
+                          u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly',
+                          u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled",
+                          "remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled",
+                          "additional_gallons_remaining_Daily_Reconciled",
+                          "additional_gallons_remaining_Monthly_Reconciled",
+                          "additional_gallons_remaining_Weekly_Reconciled","Ratability_Daily","Ratability_Weekly",
+                          "Ratability_Monthly",'Synthetic_Base_Daily','Synthetic_Base_Weekly',
+                          'Synthetic_Base_Monthly','customer_name']
+                columnHeader=[u'date', u'account_type', u'supplier_terminal_name', u'product_name','Lifted_mod_daily_weekly_value','lifted_gallons_daily_flag','Lifted_mod_daily_nextrefresh','Lifted_actual_daily','lifted_gallons_weekly_flag','lifted_gallons_weekly_modified','Lifted_actual_weekly','lifted_gallons_monthly_flag','lifted_gallons_monthly_modified','Lifted_actual_monthly','Week_structure_weekly_value','Week_structure_next_refresh', "base_gallons_Daily", "base_gallons_Monthly", "base_gallons_Weekly", 'daily_weekValue_flag', "beginning_gallons_Daily", "beginning_gallons_Monthly", "beginning_gallons_Weekly", "en_allocation_status_Daily", "en_allocation_status_Monthly", "en_allocation_status_Weekly", "percentage_allocation_Daily", "percentage_allocation_Monthly", "percentage_allocation_Weekly", "percentage_allocation_Daily_actual","percentage_allocation_Monthly_actual","percentage_allocation_Weekly_actual" ,"alerts_ratability_Daily", "alerts_ratability_Monthly", "alerts_ratability_Weekly", "next_refresh_date_Daily", "next_refresh_date_Monthly", 'Modified_NRD', "next_refresh_date_Weekly", 'sanityWeekly_CumulativeDaily_WeeksByLiftedGallons','sanityWeekly_CumulativeDaily_NextRefreshDate','sanityMonthly_CumulativeDaily_WeeksByLiftedGallons','sanityMonthly_CumulativeDaily_WeeksByNextRefreshDate','computedWeekly','computedMonthly','sanityComputedMonthly','sanityComputedWeekly',"base_gallons_Daily_Reconciled", "base_gallons_Monthly_Reconciled", "base_gallons_Weekly_Reconciled", "beginning_gallons_Daily_Reconciled", "beginning_gallons_Monthly_Reconciled", "beginning_gallons_Weekly_Reconciled","next_refresh_base_gallons_Daily","next_refresh_base_gallons_Monthly","NRB_Daily","NRB_Monthly",u'remaining_gallons_Daily', u'remaining_gallons_Monthly', u'remaining_gallons_Weekly', u'additional_gallons_allowed_Daily', u'additional_gallons_allowed_Monthly', u'additional_gallons_allowed_Weekly', u'additional_gallons_remaining_Daily', u'additional_gallons_remaining_Monthly', u'additional_gallons_remaining_Weekly',"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled","Ratability_Daily","Ratability_Weekly","Ratability_Monthly",'Synthetic_Base_Daily','Synthetic_Base_Weekly','Synthetic_Base_Monthly','customer_name']
                 result.to_excel(self.appConst.savepath+self.appConst.supplier+"_"+self.appConst.month+"_reconciled.xls",columns=indexCol,header=columnHeader)
+                result['day']=result.index.day
+                result['month']=result.index.month
+                result['year']=result.index.year
                 self.appConst.mongo_connector()
+                # dateend=self.appConst.dateDetails+dateutil.relativedelta.relativedelta(
+                #     days=calendar.monthrange(self.appConst.dateDetails.year,self.appConst.dateDetails.month)[1])
                 self.appConst.collection.remove({"supplier_name":self.appConst.supplier})
                 # self.appConst.collection.insert(json.loads(result.to_json(orient='records')))
                 self.appConst.collection.insert(result.to_dict(orient='records'))
@@ -1122,21 +1242,22 @@ class ruleEngine:
             `x`.`period`,
             `x`.`batchno`,
             `x`.`execution_date`,
-            `x`.`staging_id`
+            `x`.`staging_id`,
+            `x`.customer_name
              from
-            (select supplier_name,max(batchno) as batchno,date(Execution_Date) as dt from `pilot_production_dump`.`enallocationarchivecontract_2015` %s
+            (select supplier_name,max(batchno) as batchno,date(Execution_Date) as dt from `%s`.`%s` %s
             where %s
             group by supplier_name,date(Execution_Date)) a join
 
             (SELECT
             *
-            FROM `pilot_production_dump`.`enallocationarchivecontract_2015` %s
+            FROM `%s`.`%s` %s
             where %s and (Account_Type<>"Unknown" and supplier_terminal_name<>"Unknown" and product_name<>"Unknown")
                         order by execution_date desc,batchno desc,account_type,supplier_terminal_name,product_name,period ) x on a.batchno=x.batchno and a.dt=date(x.Execution_Date) and a.supplier_name=x.supplier_name)w
                         GROUP BY date(execution_date),account_type,supplier_terminal_name,product_name,period
 
             having maX(batchno)
-            order by account_type,supplier_terminal_name,product_name,date,period;"""%(partition,condition,partition,condition)
+            order by account_type,supplier_terminal_name,product_name,date,period;"""%(self.appConst.databasename,self.appConst.contracts_tablename,partition,condition,self.appConst.databasename,self.appConst.contracts_tablename,partition,condition)
             frameName=self.appConst.customer+"_"+self.appConst.supplier+"_"+self.appConst.month+"_maxBatchFrame.csv"
             if os.path.isfile(self.appConst.savepath+frameName):
                 df_mysql=pd.read_csv(self.appConst.savepath+frameName)
@@ -1146,7 +1267,7 @@ class ruleEngine:
                 df_mysql1.to_csv(self.appConst.savepath+frameName)
                 del(df_mysql1)
                 df_mysql=pd.read_csv(self.appConst.savepath+frameName)
-            mp=pd.pivot_table(df_mysql,index=["date","supplier_name","account_type","supplier_terminal_name","product_name"],values=["base_gallons","lifted_gallons","beginning_gallons","en_allocation_status",'percentage_allocation','alerts_ratability','next_refresh_date','en_account_type','next_refresh_base_gallons','remaining_gallons','additional_gallons_allowed','additional_gallons_remaining','staging_id','execution_date'],columns="period",aggfunc = lambda x: x)
+            mp=pd.pivot_table(df_mysql,index=["date","supplier_name","account_type","supplier_terminal_name","product_name"],values=["base_gallons","lifted_gallons","beginning_gallons","en_allocation_status",'percentage_allocation','alerts_ratability','next_refresh_date','en_account_type','next_refresh_base_gallons','remaining_gallons','additional_gallons_allowed','additional_gallons_remaining','staging_id','execution_date','customer_name'],columns="period",aggfunc = lambda x: x)
             mp.columns=['_'.join(col).strip() for col in mp.columns.values]
             stdColumns=['base_gallons_Daily', 'base_gallons_Monthly', 'base_gallons_Weekly',
        'lifted_gallons_Daily', 'lifted_gallons_Monthly',
@@ -1191,14 +1312,31 @@ class ruleEngine:
         except Exception as e:
             print e
 if __name__ == "__main__":
-    # suppliers=['Chevron','Exxon','Holly','Valero','P66','Tesoro','BP','Shell','Alon','Husky','PBF','Sinclair','Murphy','MPC']
-    customer="pilot"
-    suppliers=[sys.argv[1]]
-    # suppliers=['Chevron']
-    # exeDates=['01-10-2015','01-11-2015','01-12-2015',]
+    # suppliers=['Chevron','Exxon','Holly','Valero','P66','Tesoro','BP','Shell','Alon','Husky','PBF','Sinclair','Murphy','MPC','Citgo','TMG','Placid']
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-c')
+    parser.add_argument('-s', nargs='*')
+    parser.add_argument('-d', nargs='*')
+    parser.add_argument('baz', nargs='*')
+    args=parser.parse_args(sys.argv)
+    basedir = r"C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\RA_NewApproach\config.ini"
+    config = {}
+    execfile(basedir,config)
+    customer=args.c
+    suppliers=args.s
+    exeDates=args.d
+    # if len(sys.argv)>=3:
+    #     suppliers=[sys.argv[2]]
+    # else:
+    #     suppliers=config[customer]["suppliers"]
+    # if len(sys.argv)>=4:
+    #     exeDates=[sys.argv[3]]
+    # else:
+    #     exeDates=config[customer]["exeDates"]
     # exeDates=[sys.argv[2]]
-    exeDates=['01-06-2015','01-07-2015','01-08-2015','01-09-2015','01-10-2015','01-11-2015','01-12-2015']
-    savePath=r"C:\spark_output\Ra_Newapproach\AnalysisRules_Contract_NewApproach"+str(datetime.datetime.now().date())
+    # exeDates=['01-06-2015','01-07-2015','01-08-2015','01-09-2015','01-10-2015','01-11-2015','01-12-2015']
+    savePath=r"C:\spark_output\reconciled_data\\"+customer+"\\"+str(datetime.datetime.now().date())
     # customer=sys.argv[1]
     # suppliers=sys.argv[2]
     # exeDate=sys.argv[3]
@@ -1206,12 +1344,15 @@ if __name__ == "__main__":
     for exeDate in exeDates:
         for i in suppliers:
             start=datetime.datetime.now()
-            print "Execution Started Please Wait....."
-            detailedList=[customer,i,exeDate,savePath]
+            print "Execution Started %s for Please Wait....."%(i)
+            detailedList=[customer,i,exeDate,savePath,config]
             appConst=entities.entity(detailedList)
             executeEngine=ruleEngine(appConst)
-            # executeEngine.runRules((('PILOT TRAVEL CENTERS LLC-10024029BR', 'ALBUQUERQUE NM PSX - 030A', 'GASOLINE'),))
+            # executeEngine.runRules((('MANSFIELD OIL COMPANY OF 12313997', 'JACKSONVILLE - BUCKEYE', 'GENERIC ULSD-SH'),))
             # executeEngine.runRules((('UNBRANDED', 'Albuquerque NM - VEC - T109', 'V'),))
             executeEngine.runRules()
+            print "Completed Execution Thanks for you Patience "
+            print datetime.datetime.now()-start
+            sys.stdout=appConst.oldsys
             print "Completed Execution Thanks for you Patience "
             print datetime.datetime.now()-start

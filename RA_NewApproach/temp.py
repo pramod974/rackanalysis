@@ -1,0 +1,2 @@
+
+"remaining_gallons_Daily_Reconciled","remaining_gallons_Monthly_Reconciled","remaining_gallons_Weekly_Reconciled", "additional_gallons_remaining_Daily_Reconciled","additional_gallons_remaining_Monthly_Reconciled","additional_gallons_remaining_Weekly_Reconciled"
