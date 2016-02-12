@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="81926c22-6a48-49fa-9b10-85316a115f9c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/compliance_factor/json_creator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RA_NewApproach/entities.py" afterPath="$PROJECT_DIR$/RA_NewApproach/entities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RA_NewApproach/spark_code.py" afterPath="$PROJECT_DIR$/RA_NewApproach/spark_code.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="81926c22-6a48-49fa-9b10-85316a115f9c" name="Default" comment="" />
     <ignored path="rackanalysis.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="spark_code.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spark_code.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RA_NewApproach/spark_code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.284644" vertical-offset="1785" max-vertical-offset="22219">
+            <state vertical-scroll-proportion="56.44" vertical-offset="1785" max-vertical-offset="22219">
               <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
               <folding>
                 <element signature="e#205#224#0" expanded="true" />
@@ -41,6 +36,18 @@
                 <element signature="e#42642#43771#0" expanded="false" />
                 <element signature="e#43827#45028#0" expanded="false" />
                 <element signature="e#65054#66068#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="generate_dataset.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.51369864" vertical-offset="564" max-vertical-offset="2465">
+              <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,6 +122,7 @@
         <option value="$PROJECT_DIR$/RA_NewApproach/entities.py" />
         <option value="$PROJECT_DIR$/RA_NewApproach/spark_code.py" />
         <option value="$PROJECT_DIR$/RA_NewApproach/config.ini" />
+        <option value="$PROJECT_DIR$/RA_NewApproach/dataset_generation.py" />
       </list>
     </option>
   </component>
@@ -245,49 +253,7 @@
       </console-settings>
     </option>
   </component>
-  <component name="RunManager" selected="Python.spark_code (1)">
-    <configuration default="false" name="spark_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spark" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="rackanalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spark/spark_code.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="allDB" type="PythonConfigurationType" factoryName="Python" temporary="true" show_console_on_std_err="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Python27\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/deployScript" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="rackanalysis" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/deployScript/allDB.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.generate_dataset">
     <configuration default="false" name="json_creator" type="PythonConfigurationType" factoryName="Python" temporary="true" show_console_on_std_err="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,6 +314,46 @@
       <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="dataset_generation" type="PythonConfigurationType" factoryName="Python" editBeforeRun="true" temporary="true" show_console_on_std_err="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RA_NewApproach" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="C:\Users\pramod.kumar\Documents\rackanalysis_proj\rackanalysis\RA_NewApproach\generate_dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="generate_dataset" type="PythonConfigurationType" factoryName="Python" editBeforeRun="true" temporary="true" show_console_on_std_err="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RA_NewApproach" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="rackanalysis" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RA_NewApproach/generate_dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
@@ -474,19 +480,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.spark_code" />
-      <item index="1" class="java.lang.String" itemvalue="Python.allDB" />
-      <item index="2" class="java.lang.String" itemvalue="Python.json_creator" />
-      <item index="3" class="java.lang.String" itemvalue="Python.entities" />
-      <item index="4" class="java.lang.String" itemvalue="Python.spark_code (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.json_creator" />
+      <item index="1" class="java.lang.String" itemvalue="Python.entities" />
+      <item index="2" class="java.lang.String" itemvalue="Python.spark_code (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.dataset_generation" />
+      <item index="4" class="java.lang.String" itemvalue="Python.generate_dataset" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.spark_code (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.entities" />
-        <item index="2" class="java.lang.String" itemvalue="Python.json_creator" />
-        <item index="3" class="java.lang.String" itemvalue="Python.allDB" />
-        <item index="4" class="java.lang.String" itemvalue="Python.spark_code" />
+        <item index="0" class="java.lang.String" itemvalue="Python.generate_dataset" />
+        <item index="1" class="java.lang.String" itemvalue="Python.dataset_generation" />
+        <item index="2" class="java.lang.String" itemvalue="Python.spark_code (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.entities" />
+        <item index="4" class="java.lang.String" itemvalue="Python.json_creator" />
       </list>
     </recent_temporary>
   </component>
@@ -617,7 +623,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943144" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17174721" sideWeight="0.7794562" order="0" side_tool="false" content_ui="combo" />
@@ -1117,6 +1123,36 @@
           <line>1211</line>
           <option name="timeStamp" value="647" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py</url>
+          <line>132</line>
+          <option name="timeStamp" value="648" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py</url>
+          <line>128</line>
+          <option name="timeStamp" value="649" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="650" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="651" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="652" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="654" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -1129,18 +1165,11 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="648" />
+      <option name="time" value="655" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/OpenRefineService/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3518072" vertical-offset="0" max-vertical-offset="935">
-          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OpenRefineService/carrierService.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.42265195" vertical-offset="459" max-vertical-offset="884">
@@ -1571,7 +1600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RA_NewApproach/spark_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.284644" vertical-offset="1785" max-vertical-offset="22219">
+        <state vertical-scroll-proportion="56.44" vertical-offset="1785" max-vertical-offset="22219">
           <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
             <element signature="e#205#224#0" expanded="true" />
@@ -1580,6 +1609,16 @@
             <element signature="e#42642#43771#0" expanded="false" />
             <element signature="e#43827#45028#0" expanded="false" />
             <element signature="e#65054#66068#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RA_NewApproach/generate_dataset.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51369864" vertical-offset="564" max-vertical-offset="2465">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
