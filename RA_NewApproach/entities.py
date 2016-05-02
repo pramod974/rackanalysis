@@ -54,7 +54,7 @@ class entity:
             row=cursor.fetchall()
             if row !=():
                 self.databasename=row[0][0]
-                self.contracts_tablename=self.customer+"_enallocationarchivecontract"
+                self.contracts_tablename=self.customer+"_enallocationarchivecontracttest"
             else:
                 print "database not found"
                 raise LookupError

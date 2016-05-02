@@ -56,7 +56,7 @@ class DatasetGenerator:
             collection=db['contract_compliance']
             # remove month
             res=list(collection.aggregate([{'$unwind': "$bymonth"},
-                    {'$match':{'bymonth.year':year,'bymonth.monthname':monthname}},
+                    {'$match':{'bymonth.year':year,'bymonth.month':monthname}},
                         {'$project':{'bymonth':1}}
                 ]))
             for row in res:
